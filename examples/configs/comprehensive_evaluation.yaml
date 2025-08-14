@@ -1,0 +1,52 @@
+# Comprehensive evaluation comparing multiple RoPE methods
+# This config runs all benchmarks to compare different RoPE extensions
+
+model:
+  type: "hf_local"
+  name: "meta-llama/Llama-2-7b-hf"
+  path: "./models/llama-2-7b-hf"
+  max_length: 32768
+  device_map: "auto"
+
+rope_extension:
+  method: "ntk_aware"
+  ntk_aware:
+    alpha: 1.0
+    beta: 32.0
+
+benchmarks:
+  niah:
+    enabled: true
+    variants: ["standard", "multi_needle", "nolib"]
+    context_lengths: [4000, 8000, 16000, 32000]
+    
+  ruler:
+    enabled: true
+    categories: ["retrieval", "multi_hop", "aggregation", "qa"]
+    max_length: 32000
+    num_samples: 200
+    
+  longbench:
+    enabled: true
+    tasks: ["narrativeqa", "qasper", "hotpotqa", "gov_report"]
+    max_samples: 50
+    
+  longbench_v2:
+    enabled: true
+    tasks: ["single_doc_qa", "multi_doc_qa"]
+    max_samples: 20
+
+evaluation:
+  batch_size: 1
+  save_predictions: true
+  compute_metrics: true
+  generate_plots: true
+  export_formats: ["json", "csv", "wandb"]
+  
+logging:
+  level: "INFO"
+  file: "logs/comprehensive_eval.log"
+  wandb:
+    enabled: true
+    project: "rope-evaluation-suite"
+    tags: ["ntk_aware", "comprehensive", "llama2-7b"]

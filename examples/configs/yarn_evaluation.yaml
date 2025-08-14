@@ -1,0 +1,55 @@
+# Example configuration for YaRN evaluation
+# This config evaluates YaRN method with Llama-2-7B on multiple benchmarks
+
+model:
+  type: "hf_local"
+  name: "meta-llama/Llama-2-7b-hf"
+  path: "./models/llama-2-7b-hf"
+  tokenizer_path: "./models/llama-2-7b-hf"
+  max_length: 65536
+  device_map: "auto"
+  torch_dtype: "float16"
+
+rope_extension:
+  method: "yarn"
+  yarn:
+    s: 16
+    alpha: 1.0
+    beta: 32.0
+    attention_factor: 0.1
+    beta_fast: 32.0
+    beta_slow: 1.0
+
+benchmarks:
+  niah:
+    enabled: true
+    variants: ["standard", "multi_needle"]
+    context_lengths: [4000, 8000, 16000, 32000, 65536]
+    
+  ruler:
+    enabled: true
+    categories: ["retrieval", "multi_hop", "aggregation", "qa"]
+    max_length: 65536
+    num_samples: 100
+    
+  longbench:
+    enabled: false
+    
+  longbench_v2:
+    enabled: false
+
+evaluation:
+  batch_size: 1
+  save_predictions: true
+  compute_metrics: true
+  generate_plots: true
+  export_formats: ["json", "csv"]
+  
+  generation:
+    max_new_tokens: 256
+    temperature: 0.0
+    do_sample: false
+
+logging:
+  level: "INFO"
+  file: "logs/yarn_evaluation.log"
