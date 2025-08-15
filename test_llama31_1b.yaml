@@ -1,0 +1,56 @@
+# Test configuration for Llama 3.1 1B model
+model:
+  type: "hf_hub"
+  name: "meta-llama/Llama-3.1-1B"
+  max_length: 8192
+  device_map: "auto"
+  torch_dtype: "float16"
+  trust_remote_code: false
+
+rope_extension:
+  method: "yarn"
+  yarn:
+    s: 4
+    alpha: 1.0
+    beta: 32.0
+    attention_factor: 0.1
+
+benchmarks:
+  niah:
+    enabled: true
+    variants: ["standard"]
+    context_lengths: [2048, 4096, 8192]
+    
+  ruler:
+    enabled: true
+    categories: ["retrieval", "qa"]
+    max_length: 8192
+    num_samples: 10
+    
+  longbench:
+    enabled: false
+    
+  longbench_v2:
+    enabled: false
+
+evaluation:
+  batch_size: 1
+  save_predictions: true
+  compute_metrics: true
+  generate_plots: false
+  export_formats: ["json"]
+  
+  generation:
+    max_new_tokens: 100
+    temperature: 0.0
+    do_sample: false
+
+data:
+  cache_dir: "./cache/"
+  output_dir: "./results/llama31_1b/"
+
+logging:
+  level: "INFO"
+  file: "logs/llama31_1b_test.log"
+
+seed: 42
