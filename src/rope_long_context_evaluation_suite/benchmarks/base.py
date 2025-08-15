@@ -89,15 +89,28 @@ class BaseBenchmark(ABC):
         if self.model is None:
             raise ValueError("Model is None - this benchmark requires a local model")
         
-        inputs = self.tokenizer.encode(input_text, return_tensors="pt")
+        # Encode and ensure proper device placement
+        inputs = self.tokenizer(
+            input_text, 
+            return_tensors="pt",
+            truncation=True,
+            max_length=self.model.config.max_position_embeddings,
+            padding=False
+        )
         
-        if inputs.shape[1] > self.model.config.max_position_embeddings:
-            logger.warning(f"Input length {inputs.shape[1]} exceeds model's max position embeddings "
+        # Move ALL inputs to the same device as the model
+        if self.model is not None:
+            # Get device from model parameters
+            model_device = next(self.model.parameters()).device
+            inputs = {k: v.to(model_device) for k, v in inputs.items()}
+        
+        if inputs['input_ids'].shape[1] > self.model.config.max_position_embeddings:
+            logger.warning(f"Input length {inputs['input_ids'].shape[1]} exceeds model's max position embeddings "
                           f"{self.model.config.max_position_embeddings}")
         
         with torch.no_grad():
             outputs = self.model.generate(
-                inputs,
+                **inputs,  # Unpack the dict with input_ids and attention_mask
                 max_new_tokens=self.generation_config.get("max_new_tokens", 256),
                 temperature=self.generation_config.get("temperature", 0.0),
                 do_sample=self.generation_config.get("do_sample", False),
@@ -111,7 +124,8 @@ class BaseBenchmark(ABC):
             )
         
         # Decode only the newly generated tokens
-        new_tokens = outputs[0][inputs.shape[1]:]
+        input_length = inputs['input_ids'].shape[1]
+        new_tokens = outputs[0][input_length:]
         response = self.tokenizer.decode(new_tokens, skip_special_tokens=True)
         
         return response.strip()
