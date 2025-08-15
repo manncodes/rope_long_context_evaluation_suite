@@ -1,0 +1,56 @@
+# Test configuration with Mistral-7B model
+model:
+  type: "hf_hub"
+  name: "mistralai/Mistral-7B-v0.1"
+  max_length: 8192
+  device_map: "auto"
+  torch_dtype: "float16"
+  trust_remote_code: false
+
+rope_extension:
+  method: "yarn"
+  yarn:
+    s: 4
+    alpha: 1.0
+    beta: 32.0
+    attention_factor: 0.1
+
+benchmarks:
+  niah:
+    enabled: true
+    variants: ["standard"]
+    context_lengths: [1024, 2048, 4096]
+    
+  ruler:
+    enabled: true
+    categories: ["retrieval"]
+    max_length: 4096
+    num_samples: 3
+    
+  longbench:
+    enabled: false
+    
+  longbench_v2:
+    enabled: false
+
+evaluation:
+  batch_size: 1
+  save_predictions: true
+  compute_metrics: true
+  generate_plots: false
+  export_formats: ["json"]
+  
+  generation:
+    max_new_tokens: 50
+    temperature: 0.0
+    do_sample: false
+
+data:
+  cache_dir: "./cache/"
+  output_dir: "./results/mistral_test/"
+
+logging:
+  level: "INFO"
+  file: "logs/mistral_test.log"
+
+seed: 42

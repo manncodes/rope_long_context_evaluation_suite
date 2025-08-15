@@ -1,0 +1,51 @@
+# Test configuration with a smaller RoPE-based model
+model:
+  type: "hf_hub"
+  name: "microsoft/DialoGPT-small"
+  max_length: 1024
+  device_map: "auto"
+  torch_dtype: "float32"
+  trust_remote_code: false
+
+rope_extension:
+  method: "none"  # DialoGPT doesn't use RoPE either
+
+benchmarks:
+  niah:
+    enabled: true
+    variants: ["standard"]
+    context_lengths: [256, 512]
+    
+  ruler:
+    enabled: true
+    categories: ["retrieval"]
+    max_length: 512
+    num_samples: 3
+    
+  longbench:
+    enabled: false
+    
+  longbench_v2:
+    enabled: false
+
+evaluation:
+  batch_size: 1
+  save_predictions: true
+  compute_metrics: true
+  generate_plots: false
+  export_formats: ["json"]
+  
+  generation:
+    max_new_tokens: 30
+    temperature: 0.0
+    do_sample: false
+
+data:
+  cache_dir: "./cache/"
+  output_dir: "./results/small_test/"
+
+logging:
+  level: "INFO"
+  file: "logs/small_test.log"
+
+seed: 42

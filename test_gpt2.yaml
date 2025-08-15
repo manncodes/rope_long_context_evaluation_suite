@@ -1,0 +1,51 @@
+# Simple test configuration with GPT-2 for validation
+model:
+  type: "hf_hub"
+  name: "gpt2"
+  max_length: 1024
+  device_map: "auto"
+  torch_dtype: "float32"
+  trust_remote_code: false
+
+rope_extension:
+  method: "none"
+
+benchmarks:
+  niah:
+    enabled: true
+    variants: ["standard"]
+    context_lengths: [256, 512, 1024]
+    
+  ruler:
+    enabled: true
+    categories: ["retrieval"]
+    max_length: 1024
+    num_samples: 5
+    
+  longbench:
+    enabled: false
+    
+  longbench_v2:
+    enabled: false
+
+evaluation:
+  batch_size: 1
+  save_predictions: true
+  compute_metrics: true
+  generate_plots: false
+  export_formats: ["json"]
+  
+  generation:
+    max_new_tokens: 50
+    temperature: 0.0
+    do_sample: false
+
+data:
+  cache_dir: "./cache/"
+  output_dir: "./results/gpt2_test/"
+
+logging:
+  level: "INFO"
+  file: "logs/gpt2_test.log"
+
+seed: 42
