@@ -2,6 +2,7 @@
 """Setup script to download and prepare benchmark datasets."""
 
 import argparse
+import json
 import logging
 import os
 from pathlib import Path
@@ -43,14 +44,46 @@ def setup_longbench_data(data_dir: Path) -> None:
     longbench_dir = data_dir / "longbench"
     longbench_dir.mkdir(parents=True, exist_ok=True)
     
-    try:
-        # Load LongBench dataset from HuggingFace
-        dataset = load_dataset("THUDM/LongBench", cache_dir=str(longbench_dir))
-        logger.info(f"LongBench dataset downloaded to {longbench_dir}")
-        
-    except Exception as e:
-        logger.error(f"Failed to download LongBench: {e}")
-        logger.info("You may need to install the datasets library or check your internet connection")
+    # Key LongBench tasks to download
+    key_tasks = [
+        'narrativeqa',        # Reading comprehension
+        'qasper',            # Scientific QA  
+        'multifieldqa_en',   # Multi-domain QA
+        'hotpotqa',          # Multi-hop reasoning
+        '2wikimqa',          # Multi-hop QA
+        'qmsum',             # Meeting summarization
+        'trec',              # Question classification
+        'triviaqa',          # Knowledge QA
+        'samsum',            # Dialogue summary
+        'passage_retrieval_en',  # Information retrieval
+        'passage_count',     # Counting task
+        'lcc',               # Code completion
+    ]
+    
+    logger.info(f"Downloading {len(key_tasks)} LongBench tasks...")
+    
+    success_count = 0
+    for task in key_tasks:
+        try:
+            logger.info(f"  Downloading {task}...")
+            dataset = load_dataset("THUDM/LongBench", task, cache_dir=str(longbench_dir), trust_remote_code=True)
+            
+            # Save to JSONL format for easier access
+            task_file = longbench_dir / f"{task}.jsonl"
+            
+            # Convert dataset to JSONL
+            with open(task_file, 'w', encoding='utf-8') as f:
+                for split in dataset:
+                    for example in dataset[split]:
+                        f.write(json.dumps(example, ensure_ascii=False) + '\n')
+            
+            logger.info(f"  ✅ {task} saved to {task_file}")
+            success_count += 1
+            
+        except Exception as e:
+            logger.error(f"  ❌ Failed to download {task}: {e}")
+    
+    logger.info(f"LongBench setup completed: {success_count}/{len(key_tasks)} tasks downloaded to {longbench_dir}")
 
 
 def setup_longbench_v2_data(data_dir: Path) -> None:

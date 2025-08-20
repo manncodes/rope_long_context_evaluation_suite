@@ -1,0 +1,1394 @@
+[
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 2.0,
+      "beta_fast": 24,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 20.355,
+      "longppl": 13.657,
+      "passkey_retrieval": 0.967
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 24,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:14.148805",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 2.0,
+      "beta_fast": 24,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 22.696,
+      "longppl": 18.001,
+      "passkey_retrieval": 0.367
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 24,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:14.349157",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 2.0,
+      "beta_fast": 24,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 30.241,
+      "longppl": 23.053,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 24,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:14.549471",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 2.0,
+      "beta_fast": 24,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 46.6,
+      "longppl": 32.428,
+      "passkey_retrieval": 0.063
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 24,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:14.749756",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 2.0,
+      "beta_fast": 32,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 19.97,
+      "longppl": 14.758,
+      "passkey_retrieval": 0.992
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 32,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:14.950099",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 2.0,
+      "beta_fast": 32,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 22.931,
+      "longppl": 17.861,
+      "passkey_retrieval": 0.379
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 32,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:15.150440",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 2.0,
+      "beta_fast": 32,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 29.634,
+      "longppl": 22.285,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 32,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:15.350772",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 2.0,
+      "beta_fast": 32,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 46.055,
+      "longppl": 36.223,
+      "passkey_retrieval": 0.038
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 32,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:15.551124",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 2.0,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 20.522,
+      "longppl": 17.365,
+      "passkey_retrieval": 0.962
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:15.751892",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 2.0,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 22.309,
+      "longppl": 16.647,
+      "passkey_retrieval": 0.368
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:15.952268",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 2.0,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 30.972,
+      "longppl": 23.007,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:16.152700",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 2.0,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 46.332,
+      "longppl": 35.487,
+      "passkey_retrieval": 0.048
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:16.353144",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 3.0,
+      "beta_fast": 24,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 20.451,
+      "longppl": 14.232,
+      "passkey_retrieval": 0.941
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 24,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:16.553450",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 3.0,
+      "beta_fast": 24,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 22.148,
+      "longppl": 16.645,
+      "passkey_retrieval": 0.388
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 24,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:16.754030",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 3.0,
+      "beta_fast": 24,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 30.261,
+      "longppl": 23.766,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 24,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:16.954733",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 3.0,
+      "beta_fast": 24,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 46.044,
+      "longppl": 35.322,
+      "passkey_retrieval": 0.052
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 24,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:17.155268",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 3.0,
+      "beta_fast": 32,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 19.836,
+      "longppl": 15.394,
+      "passkey_retrieval": 0.969
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 32,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:17.355630",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 3.0,
+      "beta_fast": 32,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 21.399,
+      "longppl": 14.598,
+      "passkey_retrieval": 0.411
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 32,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:17.556280",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 3.0,
+      "beta_fast": 32,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 29.911,
+      "longppl": 23.54,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 32,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:17.756738",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 3.0,
+      "beta_fast": 32,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 45.948,
+      "longppl": 32.23,
+      "passkey_retrieval": 0.045
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 32,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:17.957124",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 3.0,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 21.154,
+      "longppl": 15.743,
+      "passkey_retrieval": 0.977
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:18.158059",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 3.0,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 22.431,
+      "longppl": 16.651,
+      "passkey_retrieval": 0.4
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:18.358540",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 3.0,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 30.156,
+      "longppl": 24.238,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:18.558914",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 3.0,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 46.263,
+      "longppl": 31.828,
+      "passkey_retrieval": 0.027
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:18.759600",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 4.0,
+      "beta_fast": 24,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 19.868,
+      "longppl": 15.89,
+      "passkey_retrieval": 0.96
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 24,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:18.960173",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 4.0,
+      "beta_fast": 24,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 22.45,
+      "longppl": 17.792,
+      "passkey_retrieval": 0.429
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 24,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:19.160912",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 4.0,
+      "beta_fast": 24,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 30.242,
+      "longppl": 21.335,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 24,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:19.361162",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 4.0,
+      "beta_fast": 24,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 46.484,
+      "longppl": 34.233,
+      "passkey_retrieval": 0.06
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 24,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:19.561901",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 4.0,
+      "beta_fast": 32,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 20.269,
+      "longppl": 15.358,
+      "passkey_retrieval": 0.968
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 32,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:19.763581",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 4.0,
+      "beta_fast": 32,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 22.363,
+      "longppl": 18.221,
+      "passkey_retrieval": 0.369
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 32,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:19.963942",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 4.0,
+      "beta_fast": 32,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 29.847,
+      "longppl": 22.707,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 32,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:20.164257",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 4.0,
+      "beta_fast": 32,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 46.12,
+      "longppl": 36.236,
+      "passkey_retrieval": 0.022
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 32,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:20.364603",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 4.0,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 20.085,
+      "longppl": 16.163,
+      "passkey_retrieval": 0.923
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:20.565118",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 4.0,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 22.845,
+      "longppl": 16.057,
+      "passkey_retrieval": 0.385
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:20.765472",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 4.0,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 30.393,
+      "longppl": 22.324,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:20.966316",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 4.0,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 46.654,
+      "longppl": 33.936,
+      "passkey_retrieval": 0.064
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:21.167019",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 8.0,
+      "beta_fast": 24,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 20.933,
+      "longppl": 15.424,
+      "passkey_retrieval": 0.894
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 24,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:21.367415",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 8.0,
+      "beta_fast": 24,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 22.584,
+      "longppl": 17.326,
+      "passkey_retrieval": 0.377
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 24,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:21.568126",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 8.0,
+      "beta_fast": 24,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 30.628,
+      "longppl": 23.092,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 24,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:21.768571",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 8.0,
+      "beta_fast": 24,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 46.599,
+      "longppl": 31.113,
+      "passkey_retrieval": 0.013
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 24,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:21.968891",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 8.0,
+      "beta_fast": 32,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 20.46,
+      "longppl": 15.699,
+      "passkey_retrieval": 0.887
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 32,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:22.169408",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 8.0,
+      "beta_fast": 32,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 22.489,
+      "longppl": 15.949,
+      "passkey_retrieval": 0.378
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 32,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:22.370177",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 8.0,
+      "beta_fast": 32,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 30.878,
+      "longppl": 21.779,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 32,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:22.570399",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 8.0,
+      "beta_fast": 32,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 46.189,
+      "longppl": 36.251,
+      "passkey_retrieval": 0.036
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 32,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:22.770625",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 8.0,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 20.791,
+      "longppl": 17.306,
+      "passkey_retrieval": 0.92
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:22.970914",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 8.0,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 23.029,
+      "longppl": 17.79,
+      "passkey_retrieval": 0.381
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:23.171251",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 8.0,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 30.587,
+      "longppl": 23.247,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:23.371975",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 8.0,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 46.728,
+      "longppl": 30.943,
+      "passkey_retrieval": 0.04
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:23.572462",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  }
+]

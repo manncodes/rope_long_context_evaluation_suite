@@ -1,0 +1,338 @@
+[
+  {
+    "rope_method": "linear_interpolation",
+    "rope_config": {
+      "scaling_factor": 2.0
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 22.421,
+      "longppl": 16.638,
+      "passkey_retrieval": 0.997
+    },
+    "scaling_info": {
+      "method": "linear_interpolation",
+      "scaling_factor": 2.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:03.672120",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "linear_interpolation",
+    "rope_config": {
+      "scaling_factor": 2.0
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 24.251,
+      "longppl": 18.593,
+      "passkey_retrieval": 0.36
+    },
+    "scaling_info": {
+      "method": "linear_interpolation",
+      "scaling_factor": 2.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:03.872978",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "linear_interpolation",
+    "rope_config": {
+      "scaling_factor": 2.0
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 32.752,
+      "longppl": 26.637,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "linear_interpolation",
+      "scaling_factor": 2.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:04.074422",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "linear_interpolation",
+    "rope_config": {
+      "scaling_factor": 2.0
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 48.624,
+      "longppl": 34.667,
+      "passkey_retrieval": 0.028
+    },
+    "scaling_info": {
+      "method": "linear_interpolation",
+      "scaling_factor": 2.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:04.275012",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "linear_interpolation",
+    "rope_config": {
+      "scaling_factor": 3.0
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 23.275,
+      "longppl": 18.078,
+      "passkey_retrieval": 0.952
+    },
+    "scaling_info": {
+      "method": "linear_interpolation",
+      "scaling_factor": 3.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:04.475475",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "linear_interpolation",
+    "rope_config": {
+      "scaling_factor": 3.0
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 24.607,
+      "longppl": 19.182,
+      "passkey_retrieval": 0.404
+    },
+    "scaling_info": {
+      "method": "linear_interpolation",
+      "scaling_factor": 3.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:04.675937",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "linear_interpolation",
+    "rope_config": {
+      "scaling_factor": 3.0
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 32.775,
+      "longppl": 24.567,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "linear_interpolation",
+      "scaling_factor": 3.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:04.877203",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "linear_interpolation",
+    "rope_config": {
+      "scaling_factor": 3.0
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 49.24,
+      "longppl": 34.474,
+      "passkey_retrieval": 0.024
+    },
+    "scaling_info": {
+      "method": "linear_interpolation",
+      "scaling_factor": 3.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:05.077917",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "linear_interpolation",
+    "rope_config": {
+      "scaling_factor": 4.0
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 22.817,
+      "longppl": 16.664,
+      "passkey_retrieval": 0.984
+    },
+    "scaling_info": {
+      "method": "linear_interpolation",
+      "scaling_factor": 4.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:05.278586",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "linear_interpolation",
+    "rope_config": {
+      "scaling_factor": 4.0
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 24.744,
+      "longppl": 18.565,
+      "passkey_retrieval": 0.379
+    },
+    "scaling_info": {
+      "method": "linear_interpolation",
+      "scaling_factor": 4.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:05.479082",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "linear_interpolation",
+    "rope_config": {
+      "scaling_factor": 4.0
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 32.844,
+      "longppl": 25.154,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "linear_interpolation",
+      "scaling_factor": 4.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:05.679518",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "linear_interpolation",
+    "rope_config": {
+      "scaling_factor": 4.0
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 48.934,
+      "longppl": 33.192,
+      "passkey_retrieval": 0.043
+    },
+    "scaling_info": {
+      "method": "linear_interpolation",
+      "scaling_factor": 4.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:05.880458",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "linear_interpolation",
+    "rope_config": {
+      "scaling_factor": 8.0
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 23.647,
+      "longppl": 18.542,
+      "passkey_retrieval": 0.945
+    },
+    "scaling_info": {
+      "method": "linear_interpolation",
+      "scaling_factor": 8.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:06.081399",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "linear_interpolation",
+    "rope_config": {
+      "scaling_factor": 8.0
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 25.599,
+      "longppl": 20.632,
+      "passkey_retrieval": 0.394
+    },
+    "scaling_info": {
+      "method": "linear_interpolation",
+      "scaling_factor": 8.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:06.282781",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "linear_interpolation",
+    "rope_config": {
+      "scaling_factor": 8.0
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 33.083,
+      "longppl": 24.344,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "linear_interpolation",
+      "scaling_factor": 8.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:06.484038",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "linear_interpolation",
+    "rope_config": {
+      "scaling_factor": 8.0
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 49.15,
+      "longppl": 34.619,
+      "passkey_retrieval": 0.086
+    },
+    "scaling_info": {
+      "method": "linear_interpolation",
+      "scaling_factor": 8.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:06.685079",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  }
+]

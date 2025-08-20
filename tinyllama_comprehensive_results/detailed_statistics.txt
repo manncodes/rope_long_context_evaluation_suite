@@ -1,0 +1,206 @@
+# TinyLlama 1.1B RoPE Evaluation - Detailed Statistical Analysis
+================================================================================
+
+## OVERALL PERFORMANCE STATISTICS
+
+Total successful experiments: 364
+Methods evaluated: 6
+Context lengths tested: [2048, 4096, 8192, 16384]
+
+## BEST OVERALL CONFIGURATION
+
+Method: yarn
+Context Length: 2048
+Perplexity: 21.882
+LongPPL: 16.835
+Passkey Accuracy: 0.981
+Configuration: {'scaling_factor': 3.0, 'alpha': nan, 'beta': nan, 'beta_fast': 32.0, 'beta_slow': 1.0, 's': 2.0, 'original_max_position_embeddings': nan, 'factor': nan, 'low_freq_factor': nan, 'high_freq_factor': nan}
+
+## METHOD-WISE PERFORMANCE
+
+### LINEAR_INTERPOLATION
+  Experiments: 24
+  Perplexity: 40.133 ± 13.607
+  Best Perplexity: 25.863
+  Worst Perplexity: 62.721
+  LongPPL: 32.631 ± 11.008
+  Passkey Accuracy: 0.304 ± 0.374
+
+  Best Configuration:
+    Context Length: 2048
+    Perplexity: 25.863
+    Parameters: {'scaling_factor': 4.0, 'alpha': nan, 'beta': nan, 'beta_fast': nan, 'beta_slow': nan, 's': nan, 'original_max_position_embeddings': nan, 'factor': nan, 'low_freq_factor': nan, 'high_freq_factor': nan}
+
+### NTK_AWARE
+  Experiments: 100
+  Perplexity: 38.269 ± 13.492
+  Best Perplexity: 23.616
+  Worst Perplexity: 60.818
+  LongPPL: 30.936 ± 12.124
+  Passkey Accuracy: 0.354 ± 0.395
+
+  Best Configuration:
+    Context Length: 2048
+    Perplexity: 23.616
+    Parameters: {'scaling_factor': nan, 'alpha': 1.5, 'beta': 48.0, 'beta_fast': nan, 'beta_slow': nan, 's': nan, 'original_max_position_embeddings': nan, 'factor': nan, 'low_freq_factor': nan, 'high_freq_factor': nan}
+
+### YARN
+  Experiments: 100
+  Perplexity: 38.074 ± 13.611
+  Best Perplexity: 21.882
+  Worst Perplexity: 61.308
+  LongPPL: 30.748 ± 11.362
+  Passkey Accuracy: 0.223 ± 0.320
+
+  Best Configuration:
+    Context Length: 2048
+    Perplexity: 21.882
+    Parameters: {'scaling_factor': 3.0, 'alpha': nan, 'beta': nan, 'beta_fast': 32.0, 'beta_slow': 1.0, 's': 2.0, 'original_max_position_embeddings': nan, 'factor': nan, 'low_freq_factor': nan, 'high_freq_factor': nan}
+
+### LONGROPE
+  Experiments: 20
+  Perplexity: 38.332 ± 13.702
+  Best Perplexity: 23.370
+  Worst Perplexity: 60.080
+  LongPPL: 31.873 ± 11.144
+  Passkey Accuracy: 0.292 ± 0.369
+
+  Best Configuration:
+    Context Length: 2048
+    Perplexity: 23.370
+    Parameters: {'scaling_factor': 4.0, 'alpha': nan, 'beta': nan, 'beta_fast': nan, 'beta_slow': nan, 's': nan, 'original_max_position_embeddings': 2048.0, 'factor': nan, 'low_freq_factor': nan, 'high_freq_factor': nan}
+
+### DYNAMIC_NTK
+  Experiments: 20
+  Perplexity: 38.724 ± 13.737
+  Best Perplexity: 24.070
+  Worst Perplexity: 60.780
+  LongPPL: 31.209 ± 11.344
+  Passkey Accuracy: 0.333 ± 0.390
+
+  Best Configuration:
+    Context Length: 2048
+    Perplexity: 24.070
+    Parameters: {'scaling_factor': 4.0, 'alpha': nan, 'beta': nan, 'beta_fast': nan, 'beta_slow': nan, 's': nan, 'original_max_position_embeddings': 2048.0, 'factor': nan, 'low_freq_factor': nan, 'high_freq_factor': nan}
+
+### LLAMA3
+  Experiments: 100
+  Perplexity: 37.368 ± 13.491
+  Best Perplexity: 22.653
+  Worst Perplexity: 59.707
+  LongPPL: 29.176 ± 10.960
+  Passkey Accuracy: 0.334 ± 0.385
+
+  Best Configuration:
+    Context Length: 2048
+    Perplexity: 22.653
+    Parameters: {'scaling_factor': nan, 'alpha': nan, 'beta': nan, 'beta_fast': nan, 'beta_slow': nan, 's': nan, 'original_max_position_embeddings': 2048.0, 'factor': 4.0, 'low_freq_factor': 2.0, 'high_freq_factor': 4.0}
+
+## CONTEXT LENGTH ANALYSIS
+
+### Context Length: 2048
+  Experiments: 91
+  Average Perplexity: 24.328
+  Best Method: yarn
+  Best Perplexity: 21.882
+  Average Passkey Accuracy: 0.855
+
+### Context Length: 4096
+  Experiments: 91
+  Average Perplexity: 29.379
+  Best Method: yarn
+  Best Perplexity: 27.287
+  Average Passkey Accuracy: 0.364
+
+### Context Length: 8192
+  Experiments: 91
+  Average Perplexity: 39.380
+  Best Method: yarn
+  Best Perplexity: 37.323
+  Average Passkey Accuracy: 0.000
+
+### Context Length: 16384
+  Experiments: 91
+  Average Perplexity: 59.390
+  Best Method: llama3
+  Best Perplexity: 57.289
+  Average Passkey Accuracy: 0.000
+
+## CORRELATION ANALYSIS
+
+Correlation Matrix:
+                  perplexity   longppl  passkey_accuracy
+perplexity          1.000000  0.934263          -0.75821
+longppl             0.934263  1.000000          -0.70146
+passkey_accuracy   -0.758210 -0.701460           1.00000
+
+## KEY INSIGHTS
+
+1. Best performing method overall: llama3
+2. Most consistent method: llama3
+3. Performance degrades with longer contexts as expected
+4. Passkey accuracy drops significantly beyond 2048 tokens
+5. LongPPL generally correlates with perplexity but shows less variance
+
+## TOP 10 CONFIGURATIONS (by Perplexity)
+
+1. yarn @ 2048 tokens
+   Perplexity: 21.882
+   LongPPL: 16.835
+   Passkey: 0.981
+   Config: {'scaling_factor': 3.0, 'alpha': nan, 'beta': nan, 'beta_fast': 32.0, 'beta_slow': 1.0, 's': 2.0, 'original_max_position_embeddings': nan, 'factor': nan, 'low_freq_factor': nan, 'high_freq_factor': nan}
+
+2. yarn @ 2048 tokens
+   Perplexity: 22.645
+   LongPPL: 22.370
+   Passkey: 0.969
+   Config: {'scaling_factor': 4.0, 'alpha': nan, 'beta': nan, 'beta_fast': 32.0, 'beta_slow': 1.0, 's': 0.5, 'original_max_position_embeddings': nan, 'factor': nan, 'low_freq_factor': nan, 'high_freq_factor': nan}
+
+3. llama3 @ 2048 tokens
+   Perplexity: 22.653
+   LongPPL: 16.973
+   Passkey: 1.000
+   Config: {'scaling_factor': nan, 'alpha': nan, 'beta': nan, 'beta_fast': nan, 'beta_slow': nan, 's': nan, 'original_max_position_embeddings': 2048.0, 'factor': 4.0, 'low_freq_factor': 2.0, 'high_freq_factor': 4.0}
+
+4. llama3 @ 2048 tokens
+   Perplexity: 22.746
+   LongPPL: 13.686
+   Passkey: 0.939
+   Config: {'scaling_factor': nan, 'alpha': nan, 'beta': nan, 'beta_fast': nan, 'beta_slow': nan, 's': nan, 'original_max_position_embeddings': 2048.0, 'factor': 3.0, 'low_freq_factor': 1.0, 'high_freq_factor': 4.0}
+
+5. llama3 @ 2048 tokens
+   Perplexity: 22.984
+   LongPPL: 15.192
+   Passkey: 0.987
+   Config: {'scaling_factor': nan, 'alpha': nan, 'beta': nan, 'beta_fast': nan, 'beta_slow': nan, 's': nan, 'original_max_position_embeddings': 2048.0, 'factor': 4.0, 'low_freq_factor': 1.5, 'high_freq_factor': 6.0}
+
+6. yarn @ 2048 tokens
+   Perplexity: 23.004
+   LongPPL: 18.967
+   Passkey: 0.983
+   Config: {'scaling_factor': 4.0, 'alpha': nan, 'beta': nan, 'beta_fast': 32.0, 'beta_slow': 3.0, 's': 1.0, 'original_max_position_embeddings': nan, 'factor': nan, 'low_freq_factor': nan, 'high_freq_factor': nan}
+
+7. yarn @ 2048 tokens
+   Perplexity: 23.011
+   LongPPL: 19.977
+   Passkey: 0.941
+   Config: {'scaling_factor': 2.0, 'alpha': nan, 'beta': nan, 'beta_fast': 32.0, 'beta_slow': 2.0, 's': 1.5, 'original_max_position_embeddings': nan, 'factor': nan, 'low_freq_factor': nan, 'high_freq_factor': nan}
+
+8. llama3 @ 2048 tokens
+   Perplexity: 23.016
+   LongPPL: 21.909
+   Passkey: 0.847
+   Config: {'scaling_factor': nan, 'alpha': nan, 'beta': nan, 'beta_fast': nan, 'beta_slow': nan, 's': nan, 'original_max_position_embeddings': 2048.0, 'factor': 8.0, 'low_freq_factor': 0.5, 'high_freq_factor': 6.0}
+
+9. yarn @ 2048 tokens
+   Perplexity: 23.066
+   LongPPL: 21.862
+   Passkey: 0.900
+   Config: {'scaling_factor': 2.0, 'alpha': nan, 'beta': nan, 'beta_fast': 24.0, 'beta_slow': 1.0, 's': 0.5, 'original_max_position_embeddings': nan, 'factor': nan, 'low_freq_factor': nan, 'high_freq_factor': nan}
+
+10. yarn @ 2048 tokens
+   Perplexity: 23.081
+   LongPPL: 20.020
+   Passkey: 0.846
+   Config: {'scaling_factor': 2.0, 'alpha': nan, 'beta': nan, 'beta_fast': 24.0, 'beta_slow': 3.0, 's': 1.0, 'original_max_position_embeddings': nan, 'factor': nan, 'low_freq_factor': nan, 'high_freq_factor': nan}
+

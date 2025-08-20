@@ -1,0 +1,2302 @@
+[
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 1.0,
+      "beta": 16
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 24.095,
+      "longppl": 16.904,
+      "passkey_retrieval": 0.98
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 1.0,
+      "beta": 16,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:02.108052",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 1.0,
+      "beta": 16
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 29.446,
+      "longppl": 22.345,
+      "passkey_retrieval": 0.448
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 1.0,
+      "beta": 16,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:02.208426",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 1.0,
+      "beta": 16
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 40.061,
+      "longppl": 25.987,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 1.0,
+      "beta": 16,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:02.308705",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 1.0,
+      "beta": 16
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 59.144,
+      "longppl": 56.771,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 1.0,
+      "beta": 16,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:02.409149",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 1.0,
+      "beta": 24
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 23.988,
+      "longppl": 20.372,
+      "passkey_retrieval": 0.942
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 1.0,
+      "beta": 24,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:02.509758",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 1.0,
+      "beta": 24
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 29.689,
+      "longppl": 25.368,
+      "passkey_retrieval": 0.498
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 1.0,
+      "beta": 24,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:02.610219",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 1.0,
+      "beta": 24
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 40.186,
+      "longppl": 29.565,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 1.0,
+      "beta": 24,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:02.710518",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 1.0,
+      "beta": 24
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 60.27,
+      "longppl": 43.774,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 1.0,
+      "beta": 24,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:02.810936",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 1.0,
+      "beta": 32
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 24.114,
+      "longppl": 13.482,
+      "passkey_retrieval": 1.0
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 1.0,
+      "beta": 32,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:02.911228",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 1.0,
+      "beta": 32
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 29.423,
+      "longppl": 27.798,
+      "passkey_retrieval": 0.525
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 1.0,
+      "beta": 32,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:03.011550",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 1.0,
+      "beta": 32
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 39.54,
+      "longppl": 37.639,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 1.0,
+      "beta": 32,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:03.111949",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 1.0,
+      "beta": 32
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 59.614,
+      "longppl": 49.785,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 1.0,
+      "beta": 32,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:03.212535",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 1.0,
+      "beta": 48
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 24.279,
+      "longppl": 16.819,
+      "passkey_retrieval": 0.915
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 1.0,
+      "beta": 48,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:03.313222",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 1.0,
+      "beta": 48
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 30.026,
+      "longppl": 26.009,
+      "passkey_retrieval": 0.479
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 1.0,
+      "beta": 48,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:03.413891",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 1.0,
+      "beta": 48
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 39.819,
+      "longppl": 32.619,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 1.0,
+      "beta": 48,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:03.514568",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 1.0,
+      "beta": 48
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 60.818,
+      "longppl": 50.218,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 1.0,
+      "beta": 48,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:03.615120",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 1.0,
+      "beta": 64
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 24.942,
+      "longppl": 24.163,
+      "passkey_retrieval": 0.884
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 1.0,
+      "beta": 64,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:03.715941",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 1.0,
+      "beta": 64
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 30.372,
+      "longppl": 28.688,
+      "passkey_retrieval": 0.444
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 1.0,
+      "beta": 64,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:03.816253",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 1.0,
+      "beta": 64
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 38.895,
+      "longppl": 27.317,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 1.0,
+      "beta": 64,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:03.916822",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 1.0,
+      "beta": 64
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 60.022,
+      "longppl": 45.398,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 1.0,
+      "beta": 64,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:04.017311",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 1.2,
+      "beta": 16
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 24.695,
+      "longppl": 24.761,
+      "passkey_retrieval": 0.94
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 1.2,
+      "beta": 16,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:04.117672",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 1.2,
+      "beta": 16
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 29.531,
+      "longppl": 23.13,
+      "passkey_retrieval": 0.441
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 1.2,
+      "beta": 16,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:04.218449",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 1.2,
+      "beta": 16
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 39.583,
+      "longppl": 32.271,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 1.2,
+      "beta": 16,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:04.319296",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 1.2,
+      "beta": 16
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 59.808,
+      "longppl": 43.516,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 1.2,
+      "beta": 16,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:04.419942",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 1.2,
+      "beta": 24
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 23.989,
+      "longppl": 21.673,
+      "passkey_retrieval": 1.0
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 1.2,
+      "beta": 24,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:04.520680",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 1.2,
+      "beta": 24
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 30.579,
+      "longppl": 25.545,
+      "passkey_retrieval": 0.467
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 1.2,
+      "beta": 24,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:04.620937",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 1.2,
+      "beta": 24
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 38.778,
+      "longppl": 34.343,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 1.2,
+      "beta": 24,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:04.721285",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 1.2,
+      "beta": 24
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 59.385,
+      "longppl": 46.211,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 1.2,
+      "beta": 24,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:04.821709",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 1.2,
+      "beta": 32
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 24.23,
+      "longppl": 18.242,
+      "passkey_retrieval": 0.891
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 1.2,
+      "beta": 32,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:04.922138",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 1.2,
+      "beta": 32
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 28.781,
+      "longppl": 20.36,
+      "passkey_retrieval": 0.426
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 1.2,
+      "beta": 32,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:05.022588",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 1.2,
+      "beta": 32
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 39.218,
+      "longppl": 34.42,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 1.2,
+      "beta": 32,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:05.123525",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 1.2,
+      "beta": 32
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 59.957,
+      "longppl": 49.457,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 1.2,
+      "beta": 32,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:05.223955",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 1.2,
+      "beta": 48
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 23.958,
+      "longppl": 18.751,
+      "passkey_retrieval": 0.955
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 1.2,
+      "beta": 48,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:05.324763",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 1.2,
+      "beta": 48
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 30.139,
+      "longppl": 23.862,
+      "passkey_retrieval": 0.43
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 1.2,
+      "beta": 48,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:05.425318",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 1.2,
+      "beta": 48
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 39.039,
+      "longppl": 31.344,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 1.2,
+      "beta": 48,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:05.526033",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 1.2,
+      "beta": 48
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 58.919,
+      "longppl": 57.564,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 1.2,
+      "beta": 48,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:05.626472",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 1.2,
+      "beta": 64
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 24.6,
+      "longppl": 15.931,
+      "passkey_retrieval": 0.963
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 1.2,
+      "beta": 64,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:05.727196",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 1.2,
+      "beta": 64
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 29.169,
+      "longppl": 24.897,
+      "passkey_retrieval": 0.479
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 1.2,
+      "beta": 64,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:05.827954",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 1.2,
+      "beta": 64
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 39.521,
+      "longppl": 41.355,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 1.2,
+      "beta": 64,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:05.928322",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 1.2,
+      "beta": 64
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 59.77,
+      "longppl": 52.139,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 1.2,
+      "beta": 64,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:06.029056",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 1.5,
+      "beta": 16
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 24.454,
+      "longppl": 18.384,
+      "passkey_retrieval": 0.924
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 1.5,
+      "beta": 16,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:06.129407",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 1.5,
+      "beta": 16
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 30.271,
+      "longppl": 25.266,
+      "passkey_retrieval": 0.388
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 1.5,
+      "beta": 16,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:06.229987",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 1.5,
+      "beta": 16
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 39.298,
+      "longppl": 37.492,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 1.5,
+      "beta": 16,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:06.330408",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 1.5,
+      "beta": 16
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 58.677,
+      "longppl": 44.679,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 1.5,
+      "beta": 16,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:06.430900",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 1.5,
+      "beta": 24
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 24.577,
+      "longppl": 20.452,
+      "passkey_retrieval": 0.973
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 1.5,
+      "beta": 24,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:06.531259",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 1.5,
+      "beta": 24
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 29.148,
+      "longppl": 22.606,
+      "passkey_retrieval": 0.511
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 1.5,
+      "beta": 24,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:06.631658",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 1.5,
+      "beta": 24
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 39.702,
+      "longppl": 25.996,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 1.5,
+      "beta": 24,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:06.732014",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 1.5,
+      "beta": 24
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 59.763,
+      "longppl": 46.998,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 1.5,
+      "beta": 24,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:06.832725",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 1.5,
+      "beta": 32
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 25.28,
+      "longppl": 22.071,
+      "passkey_retrieval": 1.0
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 1.5,
+      "beta": 32,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:06.933774",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 1.5,
+      "beta": 32
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 29.395,
+      "longppl": 22.375,
+      "passkey_retrieval": 0.396
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 1.5,
+      "beta": 32,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:07.034490",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 1.5,
+      "beta": 32
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 39.31,
+      "longppl": 36.178,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 1.5,
+      "beta": 32,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:07.134945",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 1.5,
+      "beta": 32
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 58.016,
+      "longppl": 61.576,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 1.5,
+      "beta": 32,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:07.235432",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 1.5,
+      "beta": 48
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 23.616,
+      "longppl": 17.325,
+      "passkey_retrieval": 0.93
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 1.5,
+      "beta": 48,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:07.336080",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 1.5,
+      "beta": 48
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 29.094,
+      "longppl": 20.482,
+      "passkey_retrieval": 0.53
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 1.5,
+      "beta": 48,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:07.436762",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 1.5,
+      "beta": 48
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 39.427,
+      "longppl": 34.099,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 1.5,
+      "beta": 48,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:07.537494",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 1.5,
+      "beta": 48
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 59.976,
+      "longppl": 43.898,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 1.5,
+      "beta": 48,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:07.638156",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 1.5,
+      "beta": 64
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 24.14,
+      "longppl": 15.506,
+      "passkey_retrieval": 0.873
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 1.5,
+      "beta": 64,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:07.738651",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 1.5,
+      "beta": 64
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 28.989,
+      "longppl": 19.251,
+      "passkey_retrieval": 0.419
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 1.5,
+      "beta": 64,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:07.839131",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 1.5,
+      "beta": 64
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 39.137,
+      "longppl": 27.902,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 1.5,
+      "beta": 64,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:07.939543",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 1.5,
+      "beta": 64
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 59.707,
+      "longppl": 41.561,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 1.5,
+      "beta": 64,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:08.040199",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 2.0,
+      "beta": 16
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 25.246,
+      "longppl": 21.451,
+      "passkey_retrieval": 0.909
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 2.0,
+      "beta": 16,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:08.140681",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 2.0,
+      "beta": 16
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 30.386,
+      "longppl": 22.075,
+      "passkey_retrieval": 0.492
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 2.0,
+      "beta": 16,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:08.241095",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 2.0,
+      "beta": 16
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 39.535,
+      "longppl": 25.741,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 2.0,
+      "beta": 16,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:08.341467",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 2.0,
+      "beta": 16
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 59.16,
+      "longppl": 55.894,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 2.0,
+      "beta": 16,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:08.441937",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 2.0,
+      "beta": 24
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 24.944,
+      "longppl": 19.698,
+      "passkey_retrieval": 1.0
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 2.0,
+      "beta": 24,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:08.542342",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 2.0,
+      "beta": 24
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 29.57,
+      "longppl": 24.538,
+      "passkey_retrieval": 0.48
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 2.0,
+      "beta": 24,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:08.642876",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 2.0,
+      "beta": 24
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 39.48,
+      "longppl": 26.585,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 2.0,
+      "beta": 24,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:08.743551",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 2.0,
+      "beta": 24
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 59.608,
+      "longppl": 56.662,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 2.0,
+      "beta": 24,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:08.844156",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 2.0,
+      "beta": 32
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 24.552,
+      "longppl": 20.376,
+      "passkey_retrieval": 0.934
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 2.0,
+      "beta": 32,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:08.944698",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 2.0,
+      "beta": 32
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 30.3,
+      "longppl": 20.309,
+      "passkey_retrieval": 0.494
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 2.0,
+      "beta": 32,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:09.045713",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 2.0,
+      "beta": 32
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 40.141,
+      "longppl": 29.683,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 2.0,
+      "beta": 32,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:09.146451",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 2.0,
+      "beta": 32
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 59.961,
+      "longppl": 50.224,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 2.0,
+      "beta": 32,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:09.247115",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 2.0,
+      "beta": 48
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 24.07,
+      "longppl": 20.721,
+      "passkey_retrieval": 0.875
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 2.0,
+      "beta": 48,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:09.348426",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 2.0,
+      "beta": 48
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 29.035,
+      "longppl": 26.666,
+      "passkey_retrieval": 0.518
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 2.0,
+      "beta": 48,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:09.448784",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 2.0,
+      "beta": 48
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 39.171,
+      "longppl": 22.813,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 2.0,
+      "beta": 48,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:09.549250",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 2.0,
+      "beta": 48
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 59.214,
+      "longppl": 28.366,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 2.0,
+      "beta": 48,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:09.649706",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 2.0,
+      "beta": 64
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 25.005,
+      "longppl": 17.966,
+      "passkey_retrieval": 0.878
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 2.0,
+      "beta": 64,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:09.750120",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 2.0,
+      "beta": 64
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 30.285,
+      "longppl": 23.941,
+      "passkey_retrieval": 0.494
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 2.0,
+      "beta": 64,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:09.850623",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 2.0,
+      "beta": 64
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 38.682,
+      "longppl": 32.743,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 2.0,
+      "beta": 64,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:09.951392",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 2.0,
+      "beta": 64
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 59.806,
+      "longppl": 50.776,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 2.0,
+      "beta": 64,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:10.052479",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 2.5,
+      "beta": 16
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 24.869,
+      "longppl": 21.201,
+      "passkey_retrieval": 1.0
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 2.5,
+      "beta": 16,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:10.153317",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 2.5,
+      "beta": 16
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 30.007,
+      "longppl": 23.74,
+      "passkey_retrieval": 0.517
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 2.5,
+      "beta": 16,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:10.254064",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 2.5,
+      "beta": 16
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 39.108,
+      "longppl": 27.93,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 2.5,
+      "beta": 16,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:10.354929",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 2.5,
+      "beta": 16
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 59.824,
+      "longppl": 54.809,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 2.5,
+      "beta": 16,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:10.455851",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 2.5,
+      "beta": 24
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 24.07,
+      "longppl": 19.072,
+      "passkey_retrieval": 1.0
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 2.5,
+      "beta": 24,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:10.556644",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 2.5,
+      "beta": 24
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 28.89,
+      "longppl": 22.792,
+      "passkey_retrieval": 0.492
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 2.5,
+      "beta": 24,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:10.657324",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 2.5,
+      "beta": 24
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 39.058,
+      "longppl": 31.655,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 2.5,
+      "beta": 24,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:10.757835",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 2.5,
+      "beta": 24
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 59.185,
+      "longppl": 40.098,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 2.5,
+      "beta": 24,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:10.858307",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 2.5,
+      "beta": 32
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 23.767,
+      "longppl": 18.548,
+      "passkey_retrieval": 0.922
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 2.5,
+      "beta": 32,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:10.958811",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 2.5,
+      "beta": 32
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 29.539,
+      "longppl": 20.747,
+      "passkey_retrieval": 0.435
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 2.5,
+      "beta": 32,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:11.059605",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 2.5,
+      "beta": 32
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 40.047,
+      "longppl": 29.839,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 2.5,
+      "beta": 32,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:11.160206",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 2.5,
+      "beta": 32
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 58.72,
+      "longppl": 51.075,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 2.5,
+      "beta": 32,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:11.260705",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 2.5,
+      "beta": 48
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 25.298,
+      "longppl": 21.544,
+      "passkey_retrieval": 0.974
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 2.5,
+      "beta": 48,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:11.361339",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 2.5,
+      "beta": 48
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 29.967,
+      "longppl": 28.666,
+      "passkey_retrieval": 0.462
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 2.5,
+      "beta": 48,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:11.461808",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 2.5,
+      "beta": 48
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 39.166,
+      "longppl": 33.91,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 2.5,
+      "beta": 48,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:11.562582",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 2.5,
+      "beta": 48
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 60.115,
+      "longppl": 54.355,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 2.5,
+      "beta": 48,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:11.663152",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 2.5,
+      "beta": 64
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 24.163,
+      "longppl": 21.975,
+      "passkey_retrieval": 1.0
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 2.5,
+      "beta": 64,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:11.763857",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 2.5,
+      "beta": 64
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 29.323,
+      "longppl": 29.049,
+      "passkey_retrieval": 0.495
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 2.5,
+      "beta": 64,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:11.864494",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 2.5,
+      "beta": 64
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 39.824,
+      "longppl": 33.663,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 2.5,
+      "beta": 64,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:11.965011",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 2.5,
+      "beta": 64
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 59.396,
+      "longppl": 46.842,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 2.5,
+      "beta": 64,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:12.065967",
+    "failed": false
+  }
+]

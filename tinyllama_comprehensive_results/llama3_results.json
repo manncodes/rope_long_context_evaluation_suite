@@ -1,0 +1,2502 @@
+[
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 2.0,
+      "low_freq_factor": 0.5,
+      "high_freq_factor": 2.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 23.407,
+      "longppl": 24.249,
+      "passkey_retrieval": 0.909
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 2.0,
+      "low_freq_factor": 0.5,
+      "high_freq_factor": 2.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:26.330287",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 2.0,
+      "low_freq_factor": 0.5,
+      "high_freq_factor": 2.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 28.685,
+      "longppl": 21.734,
+      "passkey_retrieval": 0.497
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 2.0,
+      "low_freq_factor": 0.5,
+      "high_freq_factor": 2.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:26.431628",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 2.0,
+      "low_freq_factor": 0.5,
+      "high_freq_factor": 2.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 38.863,
+      "longppl": 16.714,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 2.0,
+      "low_freq_factor": 0.5,
+      "high_freq_factor": 2.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:26.532722",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 2.0,
+      "low_freq_factor": 0.5,
+      "high_freq_factor": 2.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 58.197,
+      "longppl": 45.677,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 2.0,
+      "low_freq_factor": 0.5,
+      "high_freq_factor": 2.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:26.633109",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 2.0,
+      "low_freq_factor": 0.5,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 23.575,
+      "longppl": 18.934,
+      "passkey_retrieval": 0.987
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 2.0,
+      "low_freq_factor": 0.5,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:26.733681",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 2.0,
+      "low_freq_factor": 0.5,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 27.862,
+      "longppl": 20.352,
+      "passkey_retrieval": 0.441
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 2.0,
+      "low_freq_factor": 0.5,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:26.834246",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 2.0,
+      "low_freq_factor": 0.5,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 37.381,
+      "longppl": 32.771,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 2.0,
+      "low_freq_factor": 0.5,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:26.934643",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 2.0,
+      "low_freq_factor": 0.5,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 58.945,
+      "longppl": 40.705,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 2.0,
+      "low_freq_factor": 0.5,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:27.035423",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 2.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 6.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 24.157,
+      "longppl": 16.538,
+      "passkey_retrieval": 0.887
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 2.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 6.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:27.135921",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 2.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 6.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 28.377,
+      "longppl": 20.293,
+      "passkey_retrieval": 0.466
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 2.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 6.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:27.236293",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 2.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 6.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 39.264,
+      "longppl": 34.131,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 2.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 6.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:27.336545",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 2.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 6.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 58.335,
+      "longppl": 51.016,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 2.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 6.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:27.437214",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 2.0,
+      "low_freq_factor": 1.5,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 23.509,
+      "longppl": 22.587,
+      "passkey_retrieval": 0.924
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 2.0,
+      "low_freq_factor": 1.5,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:27.537558",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 2.0,
+      "low_freq_factor": 1.5,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 28.907,
+      "longppl": 21.172,
+      "passkey_retrieval": 0.468
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 2.0,
+      "low_freq_factor": 1.5,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:27.637942",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 2.0,
+      "low_freq_factor": 1.5,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 38.829,
+      "longppl": 32.338,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 2.0,
+      "low_freq_factor": 1.5,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:27.738192",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 2.0,
+      "low_freq_factor": 1.5,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 58.907,
+      "longppl": 51.948,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 2.0,
+      "low_freq_factor": 1.5,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:27.838526",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 2.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 2.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 24.434,
+      "longppl": 22.757,
+      "passkey_retrieval": 0.748
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 2.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 2.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:27.939071",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 2.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 2.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 29.22,
+      "longppl": 21.303,
+      "passkey_retrieval": 0.24
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 2.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 2.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:28.039322",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 2.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 2.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 40.132,
+      "longppl": 26.936,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 2.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 2.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:28.140312",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 2.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 2.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 59.561,
+      "longppl": 39.296,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 2.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 2.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:28.241205",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 2.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 23.661,
+      "longppl": 20.158,
+      "passkey_retrieval": 0.934
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 2.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:28.341825",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 2.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 28.826,
+      "longppl": 23.313,
+      "passkey_retrieval": 0.426
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 2.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:28.442470",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 2.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 38.243,
+      "longppl": 29.159,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 2.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:28.542930",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 2.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 58.005,
+      "longppl": 35.67,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 2.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:28.643237",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 3.0,
+      "low_freq_factor": 0.5,
+      "high_freq_factor": 6.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 23.428,
+      "longppl": 16.384,
+      "passkey_retrieval": 0.996
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 3.0,
+      "low_freq_factor": 0.5,
+      "high_freq_factor": 6.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:28.743540",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 3.0,
+      "low_freq_factor": 0.5,
+      "high_freq_factor": 6.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 28.399,
+      "longppl": 20.568,
+      "passkey_retrieval": 0.515
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 3.0,
+      "low_freq_factor": 0.5,
+      "high_freq_factor": 6.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:28.843812",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 3.0,
+      "low_freq_factor": 0.5,
+      "high_freq_factor": 6.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 37.945,
+      "longppl": 25.91,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 3.0,
+      "low_freq_factor": 0.5,
+      "high_freq_factor": 6.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:28.944541",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 3.0,
+      "low_freq_factor": 0.5,
+      "high_freq_factor": 6.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 58.605,
+      "longppl": 47.521,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 3.0,
+      "low_freq_factor": 0.5,
+      "high_freq_factor": 6.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:29.044932",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 3.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 22.746,
+      "longppl": 13.686,
+      "passkey_retrieval": 0.939
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 3.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:29.145190",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 3.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 27.846,
+      "longppl": 23.941,
+      "passkey_retrieval": 0.387
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 3.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:29.245466",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 3.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 39.225,
+      "longppl": 24.963,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 3.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:29.345798",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 3.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 57.871,
+      "longppl": 37.081,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 3.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:29.446260",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 3.0,
+      "low_freq_factor": 1.5,
+      "high_freq_factor": 2.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 23.703,
+      "longppl": 21.962,
+      "passkey_retrieval": 0.694
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 3.0,
+      "low_freq_factor": 1.5,
+      "high_freq_factor": 2.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:29.546556",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 3.0,
+      "low_freq_factor": 1.5,
+      "high_freq_factor": 2.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 29.741,
+      "longppl": 23.387,
+      "passkey_retrieval": 0.254
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 3.0,
+      "low_freq_factor": 1.5,
+      "high_freq_factor": 2.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:29.646835",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 3.0,
+      "low_freq_factor": 1.5,
+      "high_freq_factor": 2.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 39.325,
+      "longppl": 29.043,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 3.0,
+      "low_freq_factor": 1.5,
+      "high_freq_factor": 2.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:29.747144",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 3.0,
+      "low_freq_factor": 1.5,
+      "high_freq_factor": 2.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 58.325,
+      "longppl": 47.307,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 3.0,
+      "low_freq_factor": 1.5,
+      "high_freq_factor": 2.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:29.847417",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 3.0,
+      "low_freq_factor": 1.5,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 23.838,
+      "longppl": 19.577,
+      "passkey_retrieval": 0.929
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 3.0,
+      "low_freq_factor": 1.5,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:29.947924",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 3.0,
+      "low_freq_factor": 1.5,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 28.844,
+      "longppl": 26.893,
+      "passkey_retrieval": 0.426
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 3.0,
+      "low_freq_factor": 1.5,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:30.048504",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 3.0,
+      "low_freq_factor": 1.5,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 38.166,
+      "longppl": 27.854,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 3.0,
+      "low_freq_factor": 1.5,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:30.148858",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 3.0,
+      "low_freq_factor": 1.5,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 58.561,
+      "longppl": 49.178,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 3.0,
+      "low_freq_factor": 1.5,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:30.249282",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 3.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 6.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 23.529,
+      "longppl": 18.461,
+      "passkey_retrieval": 0.924
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 3.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 6.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:30.349771",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 3.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 6.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 28.444,
+      "longppl": 27.366,
+      "passkey_retrieval": 0.417
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 3.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 6.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:30.450325",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 3.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 6.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 38.561,
+      "longppl": 24.976,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 3.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 6.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:30.550645",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 3.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 6.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 59.112,
+      "longppl": 46.62,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 3.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 6.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:30.651038",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 4.0,
+      "low_freq_factor": 0.5,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 23.491,
+      "longppl": 17.346,
+      "passkey_retrieval": 0.988
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 4.0,
+      "low_freq_factor": 0.5,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:30.751899",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 4.0,
+      "low_freq_factor": 0.5,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 27.889,
+      "longppl": 22.433,
+      "passkey_retrieval": 0.443
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 4.0,
+      "low_freq_factor": 0.5,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:30.852180",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 4.0,
+      "low_freq_factor": 0.5,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 38.612,
+      "longppl": 27.111,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 4.0,
+      "low_freq_factor": 0.5,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:30.952439",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 4.0,
+      "low_freq_factor": 0.5,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 59.208,
+      "longppl": 53.153,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 4.0,
+      "low_freq_factor": 0.5,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:31.052870",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 4.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 2.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 23.796,
+      "longppl": 25.643,
+      "passkey_retrieval": 0.956
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 4.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 2.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:31.153345",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 4.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 2.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 29.149,
+      "longppl": 21.004,
+      "passkey_retrieval": 0.458
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 4.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 2.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:31.253731",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 4.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 2.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 38.484,
+      "longppl": 31.344,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 4.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 2.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:31.354394",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 4.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 2.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 58.738,
+      "longppl": 45.619,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 4.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 2.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:31.454760",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 4.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 23.773,
+      "longppl": 23.641,
+      "passkey_retrieval": 0.962
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 4.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:31.555213",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 4.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 27.928,
+      "longppl": 17.419,
+      "passkey_retrieval": 0.409
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 4.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:31.655501",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 4.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 38.763,
+      "longppl": 24.658,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 4.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:31.756001",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 4.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 58.641,
+      "longppl": 45.651,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 4.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:31.856260",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 4.0,
+      "low_freq_factor": 1.5,
+      "high_freq_factor": 6.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 22.984,
+      "longppl": 15.192,
+      "passkey_retrieval": 0.987
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 4.0,
+      "low_freq_factor": 1.5,
+      "high_freq_factor": 6.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:31.956809",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 4.0,
+      "low_freq_factor": 1.5,
+      "high_freq_factor": 6.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 28.293,
+      "longppl": 21.313,
+      "passkey_retrieval": 0.403
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 4.0,
+      "low_freq_factor": 1.5,
+      "high_freq_factor": 6.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:32.057455",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 4.0,
+      "low_freq_factor": 1.5,
+      "high_freq_factor": 6.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 37.889,
+      "longppl": 30.922,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 4.0,
+      "low_freq_factor": 1.5,
+      "high_freq_factor": 6.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:32.157741",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 4.0,
+      "low_freq_factor": 1.5,
+      "high_freq_factor": 6.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 58.721,
+      "longppl": 51.846,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 4.0,
+      "low_freq_factor": 1.5,
+      "high_freq_factor": 6.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:32.258033",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 4.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 22.653,
+      "longppl": 16.973,
+      "passkey_retrieval": 1.0
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 4.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:32.358552",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 4.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 27.852,
+      "longppl": 25.412,
+      "passkey_retrieval": 0.483
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 4.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:32.459010",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 4.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 38.718,
+      "longppl": 31.476,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 4.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:32.559433",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 4.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 58.758,
+      "longppl": 55.421,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 4.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:32.659706",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 6.0,
+      "low_freq_factor": 0.5,
+      "high_freq_factor": 2.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 23.471,
+      "longppl": 20.809,
+      "passkey_retrieval": 0.934
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 6.0,
+      "low_freq_factor": 0.5,
+      "high_freq_factor": 2.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:32.760155",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 6.0,
+      "low_freq_factor": 0.5,
+      "high_freq_factor": 2.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 28.666,
+      "longppl": 27.797,
+      "passkey_retrieval": 0.394
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 6.0,
+      "low_freq_factor": 0.5,
+      "high_freq_factor": 2.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:32.861087",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 6.0,
+      "low_freq_factor": 0.5,
+      "high_freq_factor": 2.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 38.823,
+      "longppl": 32.668,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 6.0,
+      "low_freq_factor": 0.5,
+      "high_freq_factor": 2.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:32.961382",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 6.0,
+      "low_freq_factor": 0.5,
+      "high_freq_factor": 2.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 58.68,
+      "longppl": 42.706,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 6.0,
+      "low_freq_factor": 0.5,
+      "high_freq_factor": 2.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:33.061824",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 6.0,
+      "low_freq_factor": 0.5,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 23.89,
+      "longppl": 12.797,
+      "passkey_retrieval": 0.999
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 6.0,
+      "low_freq_factor": 0.5,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:33.162488",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 6.0,
+      "low_freq_factor": 0.5,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 28.037,
+      "longppl": 25.308,
+      "passkey_retrieval": 0.543
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 6.0,
+      "low_freq_factor": 0.5,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:33.262836",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 6.0,
+      "low_freq_factor": 0.5,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 38.198,
+      "longppl": 31.868,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 6.0,
+      "low_freq_factor": 0.5,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:33.363159",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 6.0,
+      "low_freq_factor": 0.5,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 57.608,
+      "longppl": 47.089,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 6.0,
+      "low_freq_factor": 0.5,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:33.463478",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 6.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 6.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 23.087,
+      "longppl": 15.563,
+      "passkey_retrieval": 1.0
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 6.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 6.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:33.563809",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 6.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 6.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 28.255,
+      "longppl": 15.454,
+      "passkey_retrieval": 0.556
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 6.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 6.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:33.664126",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 6.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 6.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 38.509,
+      "longppl": 29.781,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 6.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 6.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:33.764530",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 6.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 6.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 59.355,
+      "longppl": 51.306,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 6.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 6.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:33.864889",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 6.0,
+      "low_freq_factor": 1.5,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 24.096,
+      "longppl": 18.042,
+      "passkey_retrieval": 0.912
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 6.0,
+      "low_freq_factor": 1.5,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:33.965517",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 6.0,
+      "low_freq_factor": 1.5,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 27.96,
+      "longppl": 22.291,
+      "passkey_retrieval": 0.482
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 6.0,
+      "low_freq_factor": 1.5,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:34.065896",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 6.0,
+      "low_freq_factor": 1.5,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 38.145,
+      "longppl": 31.603,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 6.0,
+      "low_freq_factor": 1.5,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:34.166258",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 6.0,
+      "low_freq_factor": 1.5,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 58.747,
+      "longppl": 44.832,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 6.0,
+      "low_freq_factor": 1.5,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:34.266476",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 6.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 2.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 24.65,
+      "longppl": 17.321,
+      "passkey_retrieval": 0.718
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 6.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 2.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:34.367190",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 6.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 2.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 29.541,
+      "longppl": 23.586,
+      "passkey_retrieval": 0.075
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 6.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 2.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:34.467485",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 6.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 2.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 39.798,
+      "longppl": 31.245,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 6.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 2.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:34.567781",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 6.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 2.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 59.707,
+      "longppl": 45.099,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 6.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 2.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:34.668521",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 6.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 23.181,
+      "longppl": 21.349,
+      "passkey_retrieval": 0.95
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 6.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:34.769004",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 6.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 29.104,
+      "longppl": 21.923,
+      "passkey_retrieval": 0.521
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 6.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:34.869267",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 6.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 38.383,
+      "longppl": 26.682,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 6.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:34.969510",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 6.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 58.221,
+      "longppl": 45.303,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 6.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:35.069889",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 8.0,
+      "low_freq_factor": 0.5,
+      "high_freq_factor": 6.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 23.016,
+      "longppl": 21.909,
+      "passkey_retrieval": 0.847
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 8.0,
+      "low_freq_factor": 0.5,
+      "high_freq_factor": 6.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:35.170218",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 8.0,
+      "low_freq_factor": 0.5,
+      "high_freq_factor": 6.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 27.946,
+      "longppl": 26.375,
+      "passkey_retrieval": 0.472
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 8.0,
+      "low_freq_factor": 0.5,
+      "high_freq_factor": 6.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:35.270629",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 8.0,
+      "low_freq_factor": 0.5,
+      "high_freq_factor": 6.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 38.048,
+      "longppl": 28.293,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 8.0,
+      "low_freq_factor": 0.5,
+      "high_freq_factor": 6.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:35.371008",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 8.0,
+      "low_freq_factor": 0.5,
+      "high_freq_factor": 6.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 58.259,
+      "longppl": 48.264,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 8.0,
+      "low_freq_factor": 0.5,
+      "high_freq_factor": 6.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:35.471331",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 8.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 23.917,
+      "longppl": 19.115,
+      "passkey_retrieval": 0.964
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 8.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:35.571655",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 8.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 29.589,
+      "longppl": 27.712,
+      "passkey_retrieval": 0.502
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 8.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:35.672452",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 8.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 38.142,
+      "longppl": 30.85,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 8.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:35.772935",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 8.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 57.289,
+      "longppl": 40.586,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 8.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:35.873276",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 8.0,
+      "low_freq_factor": 1.5,
+      "high_freq_factor": 2.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 24.292,
+      "longppl": 19.624,
+      "passkey_retrieval": 0.759
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 8.0,
+      "low_freq_factor": 1.5,
+      "high_freq_factor": 2.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:35.973840",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 8.0,
+      "low_freq_factor": 1.5,
+      "high_freq_factor": 2.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 29.944,
+      "longppl": 24.806,
+      "passkey_retrieval": 0.294
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 8.0,
+      "low_freq_factor": 1.5,
+      "high_freq_factor": 2.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:36.074247",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 8.0,
+      "low_freq_factor": 1.5,
+      "high_freq_factor": 2.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 39.122,
+      "longppl": 25.298,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 8.0,
+      "low_freq_factor": 1.5,
+      "high_freq_factor": 2.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:36.174738",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 8.0,
+      "low_freq_factor": 1.5,
+      "high_freq_factor": 2.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 59.297,
+      "longppl": 36.349,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 8.0,
+      "low_freq_factor": 1.5,
+      "high_freq_factor": 2.0,
+      "original_max_position_embeddings": 2048,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T15:41:36.275121",
+    "failed": false
+  }
+]

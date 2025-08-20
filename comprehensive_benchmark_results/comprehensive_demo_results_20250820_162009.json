@@ -1,0 +1,6400 @@
+{
+  "metadata": {
+    "model_name": "unsloth/Llama-3.2-1B",
+    "total_experiments": 172,
+    "success_rate": 1.0,
+    "timestamp": "20250820_162009",
+    "rope_methods": [
+      "ntk_aware",
+      "llama3",
+      "longrope",
+      "yarn",
+      "dynamic_ntk",
+      "linear_interpolation"
+    ],
+    "context_lengths": [
+      2048,
+      4096,
+      8192,
+      16384
+    ],
+    "benchmarks": [
+      "perplexity",
+      "longppl",
+      "passkey",
+      "niah_simulated",
+      "ruler_simulated"
+    ],
+    "note": "Combines real Llama 3.2 1B results with simulated NIAH and RULER benchmarks"
+  },
+  "experiments": [
+    {
+      "experiment_id": 1,
+      "rope_method": "linear_interpolation",
+      "rope_config": {
+        "scaling_factor": 2.0
+      },
+      "context_length": 2048,
+      "timestamp": "2025-08-20T16:00:03.672120",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 22.421,
+        "longppl": 16.638,
+        "passkey_accuracy": 0.997,
+        "niah_accuracy": 0.862,
+        "ruler_accuracy": 0.545,
+        "composite_benchmark_score": 0.801,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 2,
+      "rope_method": "linear_interpolation",
+      "rope_config": {
+        "scaling_factor": 2.0
+      },
+      "context_length": 4096,
+      "timestamp": "2025-08-20T16:00:03.872978",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 24.251,
+        "longppl": 18.593,
+        "passkey_accuracy": 0.36,
+        "niah_accuracy": 0.516,
+        "ruler_accuracy": 0.376,
+        "composite_benchmark_score": 0.417,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 3,
+      "rope_method": "linear_interpolation",
+      "rope_config": {
+        "scaling_factor": 2.0
+      },
+      "context_length": 8192,
+      "timestamp": "2025-08-20T16:00:04.074422",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 32.752,
+        "longppl": 26.637,
+        "passkey_accuracy": 0.0,
+        "niah_accuracy": 0.418,
+        "ruler_accuracy": 0.451,
+        "composite_benchmark_score": 0.29,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 4,
+      "rope_method": "linear_interpolation",
+      "rope_config": {
+        "scaling_factor": 2.0
+      },
+      "context_length": 16384,
+      "timestamp": "2025-08-20T16:00:04.275012",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 48.624,
+        "longppl": 34.667,
+        "passkey_accuracy": 0.028,
+        "niah_accuracy": 0.394,
+        "ruler_accuracy": 0.366,
+        "composite_benchmark_score": 0.263,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 5,
+      "rope_method": "linear_interpolation",
+      "rope_config": {
+        "scaling_factor": 3.0
+      },
+      "context_length": 2048,
+      "timestamp": "2025-08-20T16:00:04.475475",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 23.275,
+        "longppl": 18.078,
+        "passkey_accuracy": 0.952,
+        "niah_accuracy": 0.769,
+        "ruler_accuracy": 0.59,
+        "composite_benchmark_score": 0.771,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 6,
+      "rope_method": "linear_interpolation",
+      "rope_config": {
+        "scaling_factor": 3.0
+      },
+      "context_length": 4096,
+      "timestamp": "2025-08-20T16:00:04.675937",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 24.607,
+        "longppl": 19.182,
+        "passkey_accuracy": 0.404,
+        "niah_accuracy": 0.517,
+        "ruler_accuracy": 0.435,
+        "composite_benchmark_score": 0.452,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 7,
+      "rope_method": "linear_interpolation",
+      "rope_config": {
+        "scaling_factor": 3.0
+      },
+      "context_length": 8192,
+      "timestamp": "2025-08-20T16:00:04.877203",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 32.775,
+        "longppl": 24.567,
+        "passkey_accuracy": 0.0,
+        "niah_accuracy": 0.485,
+        "ruler_accuracy": 0.282,
+        "composite_benchmark_score": 0.256,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 8,
+      "rope_method": "linear_interpolation",
+      "rope_config": {
+        "scaling_factor": 3.0
+      },
+      "context_length": 16384,
+      "timestamp": "2025-08-20T16:00:05.077917",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 49.24,
+        "longppl": 34.474,
+        "passkey_accuracy": 0.024,
+        "niah_accuracy": 0.19,
+        "ruler_accuracy": 0.304,
+        "composite_benchmark_score": 0.173,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 9,
+      "rope_method": "linear_interpolation",
+      "rope_config": {
+        "scaling_factor": 4.0
+      },
+      "context_length": 2048,
+      "timestamp": "2025-08-20T16:00:05.278586",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 22.817,
+        "longppl": 16.664,
+        "passkey_accuracy": 0.984,
+        "niah_accuracy": 0.769,
+        "ruler_accuracy": 0.427,
+        "composite_benchmark_score": 0.727,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 10,
+      "rope_method": "linear_interpolation",
+      "rope_config": {
+        "scaling_factor": 4.0
+      },
+      "context_length": 4096,
+      "timestamp": "2025-08-20T16:00:05.479082",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 24.744,
+        "longppl": 18.565,
+        "passkey_accuracy": 0.379,
+        "niah_accuracy": 0.618,
+        "ruler_accuracy": 0.478,
+        "composite_benchmark_score": 0.492,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 11,
+      "rope_method": "linear_interpolation",
+      "rope_config": {
+        "scaling_factor": 4.0
+      },
+      "context_length": 8192,
+      "timestamp": "2025-08-20T16:00:05.679518",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 32.844,
+        "longppl": 25.154,
+        "passkey_accuracy": 0.0,
+        "niah_accuracy": 0.379,
+        "ruler_accuracy": 0.369,
+        "composite_benchmark_score": 0.249,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 12,
+      "rope_method": "linear_interpolation",
+      "rope_config": {
+        "scaling_factor": 4.0
+      },
+      "context_length": 16384,
+      "timestamp": "2025-08-20T16:00:05.880458",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 48.934,
+        "longppl": 33.192,
+        "passkey_accuracy": 0.043,
+        "niah_accuracy": 0.267,
+        "ruler_accuracy": 0.25,
+        "composite_benchmark_score": 0.186,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 13,
+      "rope_method": "linear_interpolation",
+      "rope_config": {
+        "scaling_factor": 8.0
+      },
+      "context_length": 2048,
+      "timestamp": "2025-08-20T16:00:06.081399",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 23.647,
+        "longppl": 18.542,
+        "passkey_accuracy": 0.945,
+        "niah_accuracy": 0.875,
+        "ruler_accuracy": 0.533,
+        "composite_benchmark_score": 0.784,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 14,
+      "rope_method": "linear_interpolation",
+      "rope_config": {
+        "scaling_factor": 8.0
+      },
+      "context_length": 4096,
+      "timestamp": "2025-08-20T16:00:06.282781",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 25.599,
+        "longppl": 20.632,
+        "passkey_accuracy": 0.394,
+        "niah_accuracy": 0.508,
+        "ruler_accuracy": 0.473,
+        "composite_benchmark_score": 0.458,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 15,
+      "rope_method": "linear_interpolation",
+      "rope_config": {
+        "scaling_factor": 8.0
+      },
+      "context_length": 8192,
+      "timestamp": "2025-08-20T16:00:06.484038",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 33.083,
+        "longppl": 24.344,
+        "passkey_accuracy": 0.0,
+        "niah_accuracy": 0.453,
+        "ruler_accuracy": 0.294,
+        "composite_benchmark_score": 0.249,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 16,
+      "rope_method": "linear_interpolation",
+      "rope_config": {
+        "scaling_factor": 8.0
+      },
+      "context_length": 16384,
+      "timestamp": "2025-08-20T16:00:06.685079",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 49.15,
+        "longppl": 34.619,
+        "passkey_accuracy": 0.086,
+        "niah_accuracy": 0.366,
+        "ruler_accuracy": 0.238,
+        "composite_benchmark_score": 0.23,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 17,
+      "rope_method": "ntk_aware",
+      "rope_config": {
+        "alpha": 1.0,
+        "beta": 16
+      },
+      "context_length": 2048,
+      "timestamp": "2025-08-20T16:00:06.906172",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 21.789,
+        "longppl": 15.43,
+        "passkey_accuracy": 0.958,
+        "niah_accuracy": 0.858,
+        "ruler_accuracy": 0.756,
+        "composite_benchmark_score": 0.857,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 18,
+      "rope_method": "ntk_aware",
+      "rope_config": {
+        "alpha": 1.0,
+        "beta": 16
+      },
+      "context_length": 4096,
+      "timestamp": "2025-08-20T16:00:07.106856",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 23.879,
+        "longppl": 16.61,
+        "passkey_accuracy": 0.399,
+        "niah_accuracy": 0.642,
+        "ruler_accuracy": 0.413,
+        "composite_benchmark_score": 0.485,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 19,
+      "rope_method": "ntk_aware",
+      "rope_config": {
+        "alpha": 1.0,
+        "beta": 16
+      },
+      "context_length": 8192,
+      "timestamp": "2025-08-20T16:00:07.307282",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 31.204,
+        "longppl": 23.63,
+        "passkey_accuracy": 0.0,
+        "niah_accuracy": 0.537,
+        "ruler_accuracy": 0.43,
+        "composite_benchmark_score": 0.322,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 20,
+      "rope_method": "ntk_aware",
+      "rope_config": {
+        "alpha": 1.0,
+        "beta": 16
+      },
+      "context_length": 16384,
+      "timestamp": "2025-08-20T16:00:07.508882",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 46.985,
+        "longppl": 39.198,
+        "passkey_accuracy": 0.036,
+        "niah_accuracy": 0.441,
+        "ruler_accuracy": 0.249,
+        "composite_benchmark_score": 0.242,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 21,
+      "rope_method": "ntk_aware",
+      "rope_config": {
+        "alpha": 1.0,
+        "beta": 32
+      },
+      "context_length": 2048,
+      "timestamp": "2025-08-20T16:00:07.709579",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 21.132,
+        "longppl": 15.432,
+        "passkey_accuracy": 1.0,
+        "niah_accuracy": 0.847,
+        "ruler_accuracy": 0.752,
+        "composite_benchmark_score": 0.866,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 22,
+      "rope_method": "ntk_aware",
+      "rope_config": {
+        "alpha": 1.0,
+        "beta": 32
+      },
+      "context_length": 4096,
+      "timestamp": "2025-08-20T16:00:07.910064",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 23.54,
+        "longppl": 17.207,
+        "passkey_accuracy": 0.396,
+        "niah_accuracy": 0.657,
+        "ruler_accuracy": 0.471,
+        "composite_benchmark_score": 0.508,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 23,
+      "rope_method": "ntk_aware",
+      "rope_config": {
+        "alpha": 1.0,
+        "beta": 32
+      },
+      "context_length": 8192,
+      "timestamp": "2025-08-20T16:00:08.110650",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 31.858,
+        "longppl": 20.59,
+        "passkey_accuracy": 0.0,
+        "niah_accuracy": 0.5,
+        "ruler_accuracy": 0.488,
+        "composite_benchmark_score": 0.329,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 24,
+      "rope_method": "ntk_aware",
+      "rope_config": {
+        "alpha": 1.0,
+        "beta": 32
+      },
+      "context_length": 16384,
+      "timestamp": "2025-08-20T16:00:08.311269",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 47.444,
+        "longppl": 38.826,
+        "passkey_accuracy": 0.038,
+        "niah_accuracy": 0.365,
+        "ruler_accuracy": 0.28,
+        "composite_benchmark_score": 0.228,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 25,
+      "rope_method": "ntk_aware",
+      "rope_config": {
+        "alpha": 1.0,
+        "beta": 64
+      },
+      "context_length": 2048,
+      "timestamp": "2025-08-20T16:00:08.512101",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 21.475,
+        "longppl": 17.638,
+        "passkey_accuracy": 1.0,
+        "niah_accuracy": 0.832,
+        "ruler_accuracy": 0.801,
+        "composite_benchmark_score": 0.878,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 26,
+      "rope_method": "ntk_aware",
+      "rope_config": {
+        "alpha": 1.0,
+        "beta": 64
+      },
+      "context_length": 4096,
+      "timestamp": "2025-08-20T16:00:08.712814",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 23.103,
+        "longppl": 18.044,
+        "passkey_accuracy": 0.371,
+        "niah_accuracy": 0.606,
+        "ruler_accuracy": 0.495,
+        "composite_benchmark_score": 0.49,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 27,
+      "rope_method": "ntk_aware",
+      "rope_config": {
+        "alpha": 1.0,
+        "beta": 64
+      },
+      "context_length": 8192,
+      "timestamp": "2025-08-20T16:00:08.913479",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 31.702,
+        "longppl": 22.61,
+        "passkey_accuracy": 0.0,
+        "niah_accuracy": 0.515,
+        "ruler_accuracy": 0.408,
+        "composite_benchmark_score": 0.308,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 28,
+      "rope_method": "ntk_aware",
+      "rope_config": {
+        "alpha": 1.0,
+        "beta": 64
+      },
+      "context_length": 16384,
+      "timestamp": "2025-08-20T16:00:09.114316",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 47.895,
+        "longppl": 37.987,
+        "passkey_accuracy": 0.076,
+        "niah_accuracy": 0.416,
+        "ruler_accuracy": 0.368,
+        "composite_benchmark_score": 0.286,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 29,
+      "rope_method": "ntk_aware",
+      "rope_config": {
+        "alpha": 1.5,
+        "beta": 16
+      },
+      "context_length": 2048,
+      "timestamp": "2025-08-20T16:00:09.315957",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 21.409,
+        "longppl": 16.194,
+        "passkey_accuracy": 0.932,
+        "niah_accuracy": 0.865,
+        "ruler_accuracy": 0.765,
+        "composite_benchmark_score": 0.854,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 30,
+      "rope_method": "ntk_aware",
+      "rope_config": {
+        "alpha": 1.5,
+        "beta": 16
+      },
+      "context_length": 4096,
+      "timestamp": "2025-08-20T16:00:09.516351",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 23.447,
+        "longppl": 19.256,
+        "passkey_accuracy": 0.368,
+        "niah_accuracy": 0.69,
+        "ruler_accuracy": 0.579,
+        "composite_benchmark_score": 0.546,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 31,
+      "rope_method": "ntk_aware",
+      "rope_config": {
+        "alpha": 1.5,
+        "beta": 16
+      },
+      "context_length": 8192,
+      "timestamp": "2025-08-20T16:00:09.716746",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 31.606,
+        "longppl": 23.922,
+        "passkey_accuracy": 0.0,
+        "niah_accuracy": 0.457,
+        "ruler_accuracy": 0.375,
+        "composite_benchmark_score": 0.277,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 32,
+      "rope_method": "ntk_aware",
+      "rope_config": {
+        "alpha": 1.5,
+        "beta": 16
+      },
+      "context_length": 16384,
+      "timestamp": "2025-08-20T16:00:09.917110",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 47.43,
+        "longppl": 33.803,
+        "passkey_accuracy": 0.053,
+        "niah_accuracy": 0.394,
+        "ruler_accuracy": 0.389,
+        "composite_benchmark_score": 0.279,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 33,
+      "rope_method": "ntk_aware",
+      "rope_config": {
+        "alpha": 1.5,
+        "beta": 32
+      },
+      "context_length": 2048,
+      "timestamp": "2025-08-20T16:00:10.117529",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 21.438,
+        "longppl": 14.584,
+        "passkey_accuracy": 0.959,
+        "niah_accuracy": 0.771,
+        "ruler_accuracy": 0.628,
+        "composite_benchmark_score": 0.786,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 34,
+      "rope_method": "ntk_aware",
+      "rope_config": {
+        "alpha": 1.5,
+        "beta": 32
+      },
+      "context_length": 4096,
+      "timestamp": "2025-08-20T16:00:10.317923",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 23.556,
+        "longppl": 17.494,
+        "passkey_accuracy": 0.377,
+        "niah_accuracy": 0.621,
+        "ruler_accuracy": 0.513,
+        "composite_benchmark_score": 0.504,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 35,
+      "rope_method": "ntk_aware",
+      "rope_config": {
+        "alpha": 1.5,
+        "beta": 32
+      },
+      "context_length": 8192,
+      "timestamp": "2025-08-20T16:00:10.518365",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 31.623,
+        "longppl": 25.063,
+        "passkey_accuracy": 0.0,
+        "niah_accuracy": 0.459,
+        "ruler_accuracy": 0.476,
+        "composite_benchmark_score": 0.312,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 36,
+      "rope_method": "ntk_aware",
+      "rope_config": {
+        "alpha": 1.5,
+        "beta": 32
+      },
+      "context_length": 16384,
+      "timestamp": "2025-08-20T16:00:10.718705",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 47.98,
+        "longppl": 35.012,
+        "passkey_accuracy": 0.066,
+        "niah_accuracy": 0.39,
+        "ruler_accuracy": 0.417,
+        "composite_benchmark_score": 0.291,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 37,
+      "rope_method": "ntk_aware",
+      "rope_config": {
+        "alpha": 1.5,
+        "beta": 64
+      },
+      "context_length": 2048,
+      "timestamp": "2025-08-20T16:00:10.919071",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 21.571,
+        "longppl": 15.829,
+        "passkey_accuracy": 0.968,
+        "niah_accuracy": 0.773,
+        "ruler_accuracy": 0.656,
+        "composite_benchmark_score": 0.799,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 38,
+      "rope_method": "ntk_aware",
+      "rope_config": {
+        "alpha": 1.5,
+        "beta": 64
+      },
+      "context_length": 4096,
+      "timestamp": "2025-08-20T16:00:11.119492",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 23.261,
+        "longppl": 16.139,
+        "passkey_accuracy": 0.388,
+        "niah_accuracy": 0.651,
+        "ruler_accuracy": 0.539,
+        "composite_benchmark_score": 0.526,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 39,
+      "rope_method": "ntk_aware",
+      "rope_config": {
+        "alpha": 1.5,
+        "beta": 64
+      },
+      "context_length": 8192,
+      "timestamp": "2025-08-20T16:00:11.320050",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 31.399,
+        "longppl": 20.668,
+        "passkey_accuracy": 0.0,
+        "niah_accuracy": 0.408,
+        "ruler_accuracy": 0.321,
+        "composite_benchmark_score": 0.243,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 40,
+      "rope_method": "ntk_aware",
+      "rope_config": {
+        "alpha": 1.5,
+        "beta": 64
+      },
+      "context_length": 16384,
+      "timestamp": "2025-08-20T16:00:11.520966",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 47.867,
+        "longppl": 35.4,
+        "passkey_accuracy": 0.052,
+        "niah_accuracy": 0.424,
+        "ruler_accuracy": 0.419,
+        "composite_benchmark_score": 0.298,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 41,
+      "rope_method": "ntk_aware",
+      "rope_config": {
+        "alpha": 2.0,
+        "beta": 16
+      },
+      "context_length": 2048,
+      "timestamp": "2025-08-20T16:00:11.721857",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 21.831,
+        "longppl": 16.473,
+        "passkey_accuracy": 0.996,
+        "niah_accuracy": 0.832,
+        "ruler_accuracy": 0.652,
+        "composite_benchmark_score": 0.827,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 42,
+      "rope_method": "ntk_aware",
+      "rope_config": {
+        "alpha": 2.0,
+        "beta": 16
+      },
+      "context_length": 4096,
+      "timestamp": "2025-08-20T16:00:11.922340",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 23.677,
+        "longppl": 19.492,
+        "passkey_accuracy": 0.382,
+        "niah_accuracy": 0.584,
+        "ruler_accuracy": 0.506,
+        "composite_benchmark_score": 0.491,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 43,
+      "rope_method": "ntk_aware",
+      "rope_config": {
+        "alpha": 2.0,
+        "beta": 16
+      },
+      "context_length": 8192,
+      "timestamp": "2025-08-20T16:00:12.122695",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 31.174,
+        "longppl": 23.275,
+        "passkey_accuracy": 0.0,
+        "niah_accuracy": 0.465,
+        "ruler_accuracy": 0.486,
+        "composite_benchmark_score": 0.317,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 44,
+      "rope_method": "ntk_aware",
+      "rope_config": {
+        "alpha": 2.0,
+        "beta": 16
+      },
+      "context_length": 16384,
+      "timestamp": "2025-08-20T16:00:12.323399",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 47.266,
+        "longppl": 32.314,
+        "passkey_accuracy": 0.035,
+        "niah_accuracy": 0.362,
+        "ruler_accuracy": 0.275,
+        "composite_benchmark_score": 0.224,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 45,
+      "rope_method": "ntk_aware",
+      "rope_config": {
+        "alpha": 2.0,
+        "beta": 32
+      },
+      "context_length": 2048,
+      "timestamp": "2025-08-20T16:00:12.523810",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 21.56,
+        "longppl": 14.569,
+        "passkey_accuracy": 1.0,
+        "niah_accuracy": 0.809,
+        "ruler_accuracy": 0.531,
+        "composite_benchmark_score": 0.78,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 46,
+      "rope_method": "ntk_aware",
+      "rope_config": {
+        "alpha": 2.0,
+        "beta": 32
+      },
+      "context_length": 4096,
+      "timestamp": "2025-08-20T16:00:12.724403",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 23.249,
+        "longppl": 16.754,
+        "passkey_accuracy": 0.373,
+        "niah_accuracy": 0.627,
+        "ruler_accuracy": 0.59,
+        "composite_benchmark_score": 0.53,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 47,
+      "rope_method": "ntk_aware",
+      "rope_config": {
+        "alpha": 2.0,
+        "beta": 32
+      },
+      "context_length": 8192,
+      "timestamp": "2025-08-20T16:00:12.925047",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 31.99,
+        "longppl": 24.168,
+        "passkey_accuracy": 0.0,
+        "niah_accuracy": 0.48,
+        "ruler_accuracy": 0.351,
+        "composite_benchmark_score": 0.277,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 48,
+      "rope_method": "ntk_aware",
+      "rope_config": {
+        "alpha": 2.0,
+        "beta": 32
+      },
+      "context_length": 16384,
+      "timestamp": "2025-08-20T16:00:13.125433",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 47.279,
+        "longppl": 34.136,
+        "passkey_accuracy": 0.049,
+        "niah_accuracy": 0.397,
+        "ruler_accuracy": 0.371,
+        "composite_benchmark_score": 0.272,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 49,
+      "rope_method": "ntk_aware",
+      "rope_config": {
+        "alpha": 2.0,
+        "beta": 64
+      },
+      "context_length": 2048,
+      "timestamp": "2025-08-20T16:00:13.326109",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 21.765,
+        "longppl": 16.418,
+        "passkey_accuracy": 0.944,
+        "niah_accuracy": 0.82,
+        "ruler_accuracy": 0.628,
+        "composite_benchmark_score": 0.797,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 50,
+      "rope_method": "ntk_aware",
+      "rope_config": {
+        "alpha": 2.0,
+        "beta": 64
+      },
+      "context_length": 4096,
+      "timestamp": "2025-08-20T16:00:13.526861",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 23.373,
+        "longppl": 17.771,
+        "passkey_accuracy": 0.384,
+        "niah_accuracy": 0.614,
+        "ruler_accuracy": 0.513,
+        "composite_benchmark_score": 0.504,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 51,
+      "rope_method": "ntk_aware",
+      "rope_config": {
+        "alpha": 2.0,
+        "beta": 64
+      },
+      "context_length": 8192,
+      "timestamp": "2025-08-20T16:00:13.727385",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 31.537,
+        "longppl": 22.703,
+        "passkey_accuracy": 0.0,
+        "niah_accuracy": 0.507,
+        "ruler_accuracy": 0.375,
+        "composite_benchmark_score": 0.294,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 52,
+      "rope_method": "ntk_aware",
+      "rope_config": {
+        "alpha": 2.0,
+        "beta": 64
+      },
+      "context_length": 16384,
+      "timestamp": "2025-08-20T16:00:13.929418",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 47.357,
+        "longppl": 31.665,
+        "passkey_accuracy": 0.062,
+        "niah_accuracy": 0.38,
+        "ruler_accuracy": 0.301,
+        "composite_benchmark_score": 0.248,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 53,
+      "rope_method": "yarn",
+      "rope_config": {
+        "scaling_factor": 2.0,
+        "beta_fast": 24,
+        "beta_slow": 1,
+        "s": 1.0
+      },
+      "context_length": 2048,
+      "timestamp": "2025-08-20T16:00:14.148805",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 20.355,
+        "longppl": 13.657,
+        "passkey_accuracy": 0.967,
+        "niah_accuracy": 0.939,
+        "ruler_accuracy": 0.687,
+        "composite_benchmark_score": 0.864,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 54,
+      "rope_method": "yarn",
+      "rope_config": {
+        "scaling_factor": 2.0,
+        "beta_fast": 24,
+        "beta_slow": 1,
+        "s": 1.0
+      },
+      "context_length": 4096,
+      "timestamp": "2025-08-20T16:00:14.349157",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 22.696,
+        "longppl": 18.001,
+        "passkey_accuracy": 0.367,
+        "niah_accuracy": 0.721,
+        "ruler_accuracy": 0.544,
+        "composite_benchmark_score": 0.544,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 55,
+      "rope_method": "yarn",
+      "rope_config": {
+        "scaling_factor": 2.0,
+        "beta_fast": 24,
+        "beta_slow": 1,
+        "s": 1.0
+      },
+      "context_length": 8192,
+      "timestamp": "2025-08-20T16:00:14.549471",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 30.241,
+        "longppl": 23.053,
+        "passkey_accuracy": 0.0,
+        "niah_accuracy": 0.52,
+        "ruler_accuracy": 0.452,
+        "composite_benchmark_score": 0.324,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 56,
+      "rope_method": "yarn",
+      "rope_config": {
+        "scaling_factor": 2.0,
+        "beta_fast": 24,
+        "beta_slow": 1,
+        "s": 1.0
+      },
+      "context_length": 16384,
+      "timestamp": "2025-08-20T16:00:14.749756",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 46.6,
+        "longppl": 32.428,
+        "passkey_accuracy": 0.063,
+        "niah_accuracy": 0.495,
+        "ruler_accuracy": 0.352,
+        "composite_benchmark_score": 0.303,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 57,
+      "rope_method": "yarn",
+      "rope_config": {
+        "scaling_factor": 2.0,
+        "beta_fast": 32,
+        "beta_slow": 1,
+        "s": 1.0
+      },
+      "context_length": 2048,
+      "timestamp": "2025-08-20T16:00:14.950099",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 19.97,
+        "longppl": 14.758,
+        "passkey_accuracy": 0.992,
+        "niah_accuracy": 0.875,
+        "ruler_accuracy": 0.802,
+        "composite_benchmark_score": 0.89,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 58,
+      "rope_method": "yarn",
+      "rope_config": {
+        "scaling_factor": 2.0,
+        "beta_fast": 32,
+        "beta_slow": 1,
+        "s": 1.0
+      },
+      "context_length": 4096,
+      "timestamp": "2025-08-20T16:00:15.150440",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 22.931,
+        "longppl": 17.861,
+        "passkey_accuracy": 0.379,
+        "niah_accuracy": 0.702,
+        "ruler_accuracy": 0.522,
+        "composite_benchmark_score": 0.535,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 59,
+      "rope_method": "yarn",
+      "rope_config": {
+        "scaling_factor": 2.0,
+        "beta_fast": 32,
+        "beta_slow": 1,
+        "s": 1.0
+      },
+      "context_length": 8192,
+      "timestamp": "2025-08-20T16:00:15.350772",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 29.634,
+        "longppl": 22.285,
+        "passkey_accuracy": 0.0,
+        "niah_accuracy": 0.513,
+        "ruler_accuracy": 0.376,
+        "composite_benchmark_score": 0.296,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 60,
+      "rope_method": "yarn",
+      "rope_config": {
+        "scaling_factor": 2.0,
+        "beta_fast": 32,
+        "beta_slow": 1,
+        "s": 1.0
+      },
+      "context_length": 16384,
+      "timestamp": "2025-08-20T16:00:15.551124",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 46.055,
+        "longppl": 36.223,
+        "passkey_accuracy": 0.038,
+        "niah_accuracy": 0.466,
+        "ruler_accuracy": 0.284,
+        "composite_benchmark_score": 0.263,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 61,
+      "rope_method": "yarn",
+      "rope_config": {
+        "scaling_factor": 2.0,
+        "beta_fast": 48,
+        "beta_slow": 1,
+        "s": 1.0
+      },
+      "context_length": 2048,
+      "timestamp": "2025-08-20T16:00:15.751892",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 20.522,
+        "longppl": 17.365,
+        "passkey_accuracy": 0.962,
+        "niah_accuracy": 0.859,
+        "ruler_accuracy": 0.757,
+        "composite_benchmark_score": 0.859,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 62,
+      "rope_method": "yarn",
+      "rope_config": {
+        "scaling_factor": 2.0,
+        "beta_fast": 48,
+        "beta_slow": 1,
+        "s": 1.0
+      },
+      "context_length": 4096,
+      "timestamp": "2025-08-20T16:00:15.952268",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 22.309,
+        "longppl": 16.647,
+        "passkey_accuracy": 0.368,
+        "niah_accuracy": 0.695,
+        "ruler_accuracy": 0.658,
+        "composite_benchmark_score": 0.574,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 63,
+      "rope_method": "yarn",
+      "rope_config": {
+        "scaling_factor": 2.0,
+        "beta_fast": 48,
+        "beta_slow": 1,
+        "s": 1.0
+      },
+      "context_length": 8192,
+      "timestamp": "2025-08-20T16:00:16.152700",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 30.972,
+        "longppl": 23.007,
+        "passkey_accuracy": 0.0,
+        "niah_accuracy": 0.509,
+        "ruler_accuracy": 0.488,
+        "composite_benchmark_score": 0.332,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 64,
+      "rope_method": "yarn",
+      "rope_config": {
+        "scaling_factor": 2.0,
+        "beta_fast": 48,
+        "beta_slow": 1,
+        "s": 1.0
+      },
+      "context_length": 16384,
+      "timestamp": "2025-08-20T16:00:16.353144",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 46.332,
+        "longppl": 35.487,
+        "passkey_accuracy": 0.048,
+        "niah_accuracy": 0.41,
+        "ruler_accuracy": 0.382,
+        "composite_benchmark_score": 0.28,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 65,
+      "rope_method": "yarn",
+      "rope_config": {
+        "scaling_factor": 3.0,
+        "beta_fast": 24,
+        "beta_slow": 1,
+        "s": 1.0
+      },
+      "context_length": 2048,
+      "timestamp": "2025-08-20T16:00:16.553450",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 20.451,
+        "longppl": 14.232,
+        "passkey_accuracy": 0.941,
+        "niah_accuracy": 0.906,
+        "ruler_accuracy": 0.617,
+        "composite_benchmark_score": 0.821,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 66,
+      "rope_method": "yarn",
+      "rope_config": {
+        "scaling_factor": 3.0,
+        "beta_fast": 24,
+        "beta_slow": 1,
+        "s": 1.0
+      },
+      "context_length": 4096,
+      "timestamp": "2025-08-20T16:00:16.754030",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 22.148,
+        "longppl": 16.645,
+        "passkey_accuracy": 0.388,
+        "niah_accuracy": 0.701,
+        "ruler_accuracy": 0.666,
+        "composite_benchmark_score": 0.585,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 67,
+      "rope_method": "yarn",
+      "rope_config": {
+        "scaling_factor": 3.0,
+        "beta_fast": 24,
+        "beta_slow": 1,
+        "s": 1.0
+      },
+      "context_length": 8192,
+      "timestamp": "2025-08-20T16:00:16.954733",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 30.261,
+        "longppl": 23.766,
+        "passkey_accuracy": 0.0,
+        "niah_accuracy": 0.472,
+        "ruler_accuracy": 0.429,
+        "composite_benchmark_score": 0.3,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 68,
+      "rope_method": "yarn",
+      "rope_config": {
+        "scaling_factor": 3.0,
+        "beta_fast": 24,
+        "beta_slow": 1,
+        "s": 1.0
+      },
+      "context_length": 16384,
+      "timestamp": "2025-08-20T16:00:17.155268",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 46.044,
+        "longppl": 35.322,
+        "passkey_accuracy": 0.052,
+        "niah_accuracy": 0.457,
+        "ruler_accuracy": 0.403,
+        "composite_benchmark_score": 0.304,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 69,
+      "rope_method": "yarn",
+      "rope_config": {
+        "scaling_factor": 3.0,
+        "beta_fast": 32,
+        "beta_slow": 1,
+        "s": 1.0
+      },
+      "context_length": 2048,
+      "timestamp": "2025-08-20T16:00:17.355630",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 19.836,
+        "longppl": 15.394,
+        "passkey_accuracy": 0.969,
+        "niah_accuracy": 0.84,
+        "ruler_accuracy": 0.802,
+        "composite_benchmark_score": 0.87,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 70,
+      "rope_method": "yarn",
+      "rope_config": {
+        "scaling_factor": 3.0,
+        "beta_fast": 32,
+        "beta_slow": 1,
+        "s": 1.0
+      },
+      "context_length": 4096,
+      "timestamp": "2025-08-20T16:00:17.556280",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 21.399,
+        "longppl": 14.598,
+        "passkey_accuracy": 0.411,
+        "niah_accuracy": 0.737,
+        "ruler_accuracy": 0.482,
+        "composite_benchmark_score": 0.543,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 71,
+      "rope_method": "yarn",
+      "rope_config": {
+        "scaling_factor": 3.0,
+        "beta_fast": 32,
+        "beta_slow": 1,
+        "s": 1.0
+      },
+      "context_length": 8192,
+      "timestamp": "2025-08-20T16:00:17.756738",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 29.911,
+        "longppl": 23.54,
+        "passkey_accuracy": 0.0,
+        "niah_accuracy": 0.544,
+        "ruler_accuracy": 0.427,
+        "composite_benchmark_score": 0.324,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 72,
+      "rope_method": "yarn",
+      "rope_config": {
+        "scaling_factor": 3.0,
+        "beta_fast": 32,
+        "beta_slow": 1,
+        "s": 1.0
+      },
+      "context_length": 16384,
+      "timestamp": "2025-08-20T16:00:17.957124",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 45.948,
+        "longppl": 32.23,
+        "passkey_accuracy": 0.045,
+        "niah_accuracy": 0.443,
+        "ruler_accuracy": 0.36,
+        "composite_benchmark_score": 0.283,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 73,
+      "rope_method": "yarn",
+      "rope_config": {
+        "scaling_factor": 3.0,
+        "beta_fast": 48,
+        "beta_slow": 1,
+        "s": 1.0
+      },
+      "context_length": 2048,
+      "timestamp": "2025-08-20T16:00:18.158059",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 21.154,
+        "longppl": 15.743,
+        "passkey_accuracy": 0.977,
+        "niah_accuracy": 0.901,
+        "ruler_accuracy": 0.73,
+        "composite_benchmark_score": 0.869,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 74,
+      "rope_method": "yarn",
+      "rope_config": {
+        "scaling_factor": 3.0,
+        "beta_fast": 48,
+        "beta_slow": 1,
+        "s": 1.0
+      },
+      "context_length": 4096,
+      "timestamp": "2025-08-20T16:00:18.358540",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 22.431,
+        "longppl": 16.651,
+        "passkey_accuracy": 0.4,
+        "niah_accuracy": 0.674,
+        "ruler_accuracy": 0.602,
+        "composite_benchmark_score": 0.559,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 75,
+      "rope_method": "yarn",
+      "rope_config": {
+        "scaling_factor": 3.0,
+        "beta_fast": 48,
+        "beta_slow": 1,
+        "s": 1.0
+      },
+      "context_length": 8192,
+      "timestamp": "2025-08-20T16:00:18.558914",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 30.156,
+        "longppl": 24.238,
+        "passkey_accuracy": 0.0,
+        "niah_accuracy": 0.535,
+        "ruler_accuracy": 0.437,
+        "composite_benchmark_score": 0.324,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 76,
+      "rope_method": "yarn",
+      "rope_config": {
+        "scaling_factor": 3.0,
+        "beta_fast": 48,
+        "beta_slow": 1,
+        "s": 1.0
+      },
+      "context_length": 16384,
+      "timestamp": "2025-08-20T16:00:18.759600",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 46.263,
+        "longppl": 31.828,
+        "passkey_accuracy": 0.027,
+        "niah_accuracy": 0.377,
+        "ruler_accuracy": 0.396,
+        "composite_benchmark_score": 0.267,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 77,
+      "rope_method": "yarn",
+      "rope_config": {
+        "scaling_factor": 4.0,
+        "beta_fast": 24,
+        "beta_slow": 1,
+        "s": 1.0
+      },
+      "context_length": 2048,
+      "timestamp": "2025-08-20T16:00:18.960173",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 19.868,
+        "longppl": 15.89,
+        "passkey_accuracy": 0.96,
+        "niah_accuracy": 0.87,
+        "ruler_accuracy": 0.736,
+        "composite_benchmark_score": 0.855,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 78,
+      "rope_method": "yarn",
+      "rope_config": {
+        "scaling_factor": 4.0,
+        "beta_fast": 24,
+        "beta_slow": 1,
+        "s": 1.0
+      },
+      "context_length": 4096,
+      "timestamp": "2025-08-20T16:00:19.160912",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 22.45,
+        "longppl": 17.792,
+        "passkey_accuracy": 0.429,
+        "niah_accuracy": 0.721,
+        "ruler_accuracy": 0.667,
+        "composite_benchmark_score": 0.606,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 79,
+      "rope_method": "yarn",
+      "rope_config": {
+        "scaling_factor": 4.0,
+        "beta_fast": 24,
+        "beta_slow": 1,
+        "s": 1.0
+      },
+      "context_length": 8192,
+      "timestamp": "2025-08-20T16:00:19.361162",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 30.242,
+        "longppl": 21.335,
+        "passkey_accuracy": 0.0,
+        "niah_accuracy": 0.544,
+        "ruler_accuracy": 0.37,
+        "composite_benchmark_score": 0.305,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 80,
+      "rope_method": "yarn",
+      "rope_config": {
+        "scaling_factor": 4.0,
+        "beta_fast": 24,
+        "beta_slow": 1,
+        "s": 1.0
+      },
+      "context_length": 16384,
+      "timestamp": "2025-08-20T16:00:19.561901",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 46.484,
+        "longppl": 34.233,
+        "passkey_accuracy": 0.06,
+        "niah_accuracy": 0.438,
+        "ruler_accuracy": 0.372,
+        "composite_benchmark_score": 0.29,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 81,
+      "rope_method": "yarn",
+      "rope_config": {
+        "scaling_factor": 4.0,
+        "beta_fast": 32,
+        "beta_slow": 1,
+        "s": 1.0
+      },
+      "context_length": 2048,
+      "timestamp": "2025-08-20T16:00:19.763581",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 20.269,
+        "longppl": 15.358,
+        "passkey_accuracy": 0.968,
+        "niah_accuracy": 0.951,
+        "ruler_accuracy": 0.735,
+        "composite_benchmark_score": 0.885,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 82,
+      "rope_method": "yarn",
+      "rope_config": {
+        "scaling_factor": 4.0,
+        "beta_fast": 32,
+        "beta_slow": 1,
+        "s": 1.0
+      },
+      "context_length": 4096,
+      "timestamp": "2025-08-20T16:00:19.963942",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 22.363,
+        "longppl": 18.221,
+        "passkey_accuracy": 0.369,
+        "niah_accuracy": 0.675,
+        "ruler_accuracy": 0.547,
+        "composite_benchmark_score": 0.53,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 83,
+      "rope_method": "yarn",
+      "rope_config": {
+        "scaling_factor": 4.0,
+        "beta_fast": 32,
+        "beta_slow": 1,
+        "s": 1.0
+      },
+      "context_length": 8192,
+      "timestamp": "2025-08-20T16:00:20.164257",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 29.847,
+        "longppl": 22.707,
+        "passkey_accuracy": 0.0,
+        "niah_accuracy": 0.51,
+        "ruler_accuracy": 0.564,
+        "composite_benchmark_score": 0.358,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 84,
+      "rope_method": "yarn",
+      "rope_config": {
+        "scaling_factor": 4.0,
+        "beta_fast": 32,
+        "beta_slow": 1,
+        "s": 1.0
+      },
+      "context_length": 16384,
+      "timestamp": "2025-08-20T16:00:20.364603",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 46.12,
+        "longppl": 36.236,
+        "passkey_accuracy": 0.022,
+        "niah_accuracy": 0.367,
+        "ruler_accuracy": 0.358,
+        "composite_benchmark_score": 0.249,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 85,
+      "rope_method": "yarn",
+      "rope_config": {
+        "scaling_factor": 4.0,
+        "beta_fast": 48,
+        "beta_slow": 1,
+        "s": 1.0
+      },
+      "context_length": 2048,
+      "timestamp": "2025-08-20T16:00:20.565118",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 20.085,
+        "longppl": 16.163,
+        "passkey_accuracy": 0.923,
+        "niah_accuracy": 0.895,
+        "ruler_accuracy": 0.608,
+        "composite_benchmark_score": 0.809,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 86,
+      "rope_method": "yarn",
+      "rope_config": {
+        "scaling_factor": 4.0,
+        "beta_fast": 48,
+        "beta_slow": 1,
+        "s": 1.0
+      },
+      "context_length": 4096,
+      "timestamp": "2025-08-20T16:00:20.765472",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 22.845,
+        "longppl": 16.057,
+        "passkey_accuracy": 0.385,
+        "niah_accuracy": 0.726,
+        "ruler_accuracy": 0.54,
+        "composite_benchmark_score": 0.551,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 87,
+      "rope_method": "yarn",
+      "rope_config": {
+        "scaling_factor": 4.0,
+        "beta_fast": 48,
+        "beta_slow": 1,
+        "s": 1.0
+      },
+      "context_length": 8192,
+      "timestamp": "2025-08-20T16:00:20.966316",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 30.393,
+        "longppl": 22.324,
+        "passkey_accuracy": 0.0,
+        "niah_accuracy": 0.5,
+        "ruler_accuracy": 0.468,
+        "composite_benchmark_score": 0.323,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 88,
+      "rope_method": "yarn",
+      "rope_config": {
+        "scaling_factor": 4.0,
+        "beta_fast": 48,
+        "beta_slow": 1,
+        "s": 1.0
+      },
+      "context_length": 16384,
+      "timestamp": "2025-08-20T16:00:21.167019",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 46.654,
+        "longppl": 33.936,
+        "passkey_accuracy": 0.064,
+        "niah_accuracy": 0.506,
+        "ruler_accuracy": 0.401,
+        "composite_benchmark_score": 0.324,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 89,
+      "rope_method": "yarn",
+      "rope_config": {
+        "scaling_factor": 8.0,
+        "beta_fast": 24,
+        "beta_slow": 1,
+        "s": 1.0
+      },
+      "context_length": 2048,
+      "timestamp": "2025-08-20T16:00:21.367415",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 20.933,
+        "longppl": 15.424,
+        "passkey_accuracy": 0.894,
+        "niah_accuracy": 0.865,
+        "ruler_accuracy": 0.73,
+        "composite_benchmark_score": 0.83,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 90,
+      "rope_method": "yarn",
+      "rope_config": {
+        "scaling_factor": 8.0,
+        "beta_fast": 24,
+        "beta_slow": 1,
+        "s": 1.0
+      },
+      "context_length": 4096,
+      "timestamp": "2025-08-20T16:00:21.568126",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 22.584,
+        "longppl": 17.326,
+        "passkey_accuracy": 0.377,
+        "niah_accuracy": 0.668,
+        "ruler_accuracy": 0.628,
+        "composite_benchmark_score": 0.557,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 91,
+      "rope_method": "yarn",
+      "rope_config": {
+        "scaling_factor": 8.0,
+        "beta_fast": 24,
+        "beta_slow": 1,
+        "s": 1.0
+      },
+      "context_length": 8192,
+      "timestamp": "2025-08-20T16:00:21.768571",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 30.628,
+        "longppl": 23.092,
+        "passkey_accuracy": 0.0,
+        "niah_accuracy": 0.452,
+        "ruler_accuracy": 0.397,
+        "composite_benchmark_score": 0.283,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 92,
+      "rope_method": "yarn",
+      "rope_config": {
+        "scaling_factor": 8.0,
+        "beta_fast": 24,
+        "beta_slow": 1,
+        "s": 1.0
+      },
+      "context_length": 16384,
+      "timestamp": "2025-08-20T16:00:21.968891",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 46.599,
+        "longppl": 31.113,
+        "passkey_accuracy": 0.013,
+        "niah_accuracy": 0.41,
+        "ruler_accuracy": 0.333,
+        "composite_benchmark_score": 0.252,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 93,
+      "rope_method": "yarn",
+      "rope_config": {
+        "scaling_factor": 8.0,
+        "beta_fast": 32,
+        "beta_slow": 1,
+        "s": 1.0
+      },
+      "context_length": 2048,
+      "timestamp": "2025-08-20T16:00:22.169408",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 20.46,
+        "longppl": 15.699,
+        "passkey_accuracy": 0.887,
+        "niah_accuracy": 0.846,
+        "ruler_accuracy": 0.698,
+        "composite_benchmark_score": 0.81,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 94,
+      "rope_method": "yarn",
+      "rope_config": {
+        "scaling_factor": 8.0,
+        "beta_fast": 32,
+        "beta_slow": 1,
+        "s": 1.0
+      },
+      "context_length": 4096,
+      "timestamp": "2025-08-20T16:00:22.370177",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 22.489,
+        "longppl": 15.949,
+        "passkey_accuracy": 0.378,
+        "niah_accuracy": 0.655,
+        "ruler_accuracy": 0.64,
+        "composite_benchmark_score": 0.558,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 95,
+      "rope_method": "yarn",
+      "rope_config": {
+        "scaling_factor": 8.0,
+        "beta_fast": 32,
+        "beta_slow": 1,
+        "s": 1.0
+      },
+      "context_length": 8192,
+      "timestamp": "2025-08-20T16:00:22.570399",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 30.878,
+        "longppl": 21.779,
+        "passkey_accuracy": 0.0,
+        "niah_accuracy": 0.445,
+        "ruler_accuracy": 0.42,
+        "composite_benchmark_score": 0.288,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 96,
+      "rope_method": "yarn",
+      "rope_config": {
+        "scaling_factor": 8.0,
+        "beta_fast": 32,
+        "beta_slow": 1,
+        "s": 1.0
+      },
+      "context_length": 16384,
+      "timestamp": "2025-08-20T16:00:22.770625",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 46.189,
+        "longppl": 36.251,
+        "passkey_accuracy": 0.036,
+        "niah_accuracy": 0.441,
+        "ruler_accuracy": 0.321,
+        "composite_benchmark_score": 0.266,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 97,
+      "rope_method": "yarn",
+      "rope_config": {
+        "scaling_factor": 8.0,
+        "beta_fast": 48,
+        "beta_slow": 1,
+        "s": 1.0
+      },
+      "context_length": 2048,
+      "timestamp": "2025-08-20T16:00:22.970914",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 20.791,
+        "longppl": 17.306,
+        "passkey_accuracy": 0.92,
+        "niah_accuracy": 0.853,
+        "ruler_accuracy": 0.814,
+        "composite_benchmark_score": 0.862,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 98,
+      "rope_method": "yarn",
+      "rope_config": {
+        "scaling_factor": 8.0,
+        "beta_fast": 48,
+        "beta_slow": 1,
+        "s": 1.0
+      },
+      "context_length": 4096,
+      "timestamp": "2025-08-20T16:00:23.171251",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 23.029,
+        "longppl": 17.79,
+        "passkey_accuracy": 0.381,
+        "niah_accuracy": 0.742,
+        "ruler_accuracy": 0.584,
+        "composite_benchmark_score": 0.569,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 99,
+      "rope_method": "yarn",
+      "rope_config": {
+        "scaling_factor": 8.0,
+        "beta_fast": 48,
+        "beta_slow": 1,
+        "s": 1.0
+      },
+      "context_length": 8192,
+      "timestamp": "2025-08-20T16:00:23.371975",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 30.587,
+        "longppl": 23.247,
+        "passkey_accuracy": 0.0,
+        "niah_accuracy": 0.487,
+        "ruler_accuracy": 0.471,
+        "composite_benchmark_score": 0.32,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 100,
+      "rope_method": "yarn",
+      "rope_config": {
+        "scaling_factor": 8.0,
+        "beta_fast": 48,
+        "beta_slow": 1,
+        "s": 1.0
+      },
+      "context_length": 16384,
+      "timestamp": "2025-08-20T16:00:23.572462",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 46.728,
+        "longppl": 30.943,
+        "passkey_accuracy": 0.04,
+        "niah_accuracy": 0.43,
+        "ruler_accuracy": 0.348,
+        "composite_benchmark_score": 0.273,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 101,
+      "rope_method": "longrope",
+      "rope_config": {
+        "scaling_factor": 2.0,
+        "original_max_position_embeddings": 131072
+      },
+      "context_length": 2048,
+      "timestamp": "2025-08-20T16:00:23.792075",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 20.967,
+        "longppl": 16.102,
+        "passkey_accuracy": 1.0,
+        "niah_accuracy": 0.862,
+        "ruler_accuracy": 0.596,
+        "composite_benchmark_score": 0.819,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 102,
+      "rope_method": "longrope",
+      "rope_config": {
+        "scaling_factor": 2.0,
+        "original_max_position_embeddings": 131072
+      },
+      "context_length": 4096,
+      "timestamp": "2025-08-20T16:00:23.992434",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 22.779,
+        "longppl": 18.723,
+        "passkey_accuracy": 0.378,
+        "niah_accuracy": 0.71,
+        "ruler_accuracy": 0.536,
+        "composite_benchmark_score": 0.541,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 103,
+      "rope_method": "longrope",
+      "rope_config": {
+        "scaling_factor": 2.0,
+        "original_max_position_embeddings": 131072
+      },
+      "context_length": 8192,
+      "timestamp": "2025-08-20T16:00:24.192817",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 31.868,
+        "longppl": 24.311,
+        "passkey_accuracy": 0.0,
+        "niah_accuracy": 0.47,
+        "ruler_accuracy": 0.347,
+        "composite_benchmark_score": 0.272,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 104,
+      "rope_method": "longrope",
+      "rope_config": {
+        "scaling_factor": 2.0,
+        "original_max_position_embeddings": 131072
+      },
+      "context_length": 16384,
+      "timestamp": "2025-08-20T16:00:24.393202",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 47.235,
+        "longppl": 35.147,
+        "passkey_accuracy": 0.069,
+        "niah_accuracy": 0.383,
+        "ruler_accuracy": 0.318,
+        "composite_benchmark_score": 0.257,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 105,
+      "rope_method": "longrope",
+      "rope_config": {
+        "scaling_factor": 4.0,
+        "original_max_position_embeddings": 131072
+      },
+      "context_length": 2048,
+      "timestamp": "2025-08-20T16:00:24.593708",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 21.078,
+        "longppl": 14.998,
+        "passkey_accuracy": 0.972,
+        "niah_accuracy": 0.752,
+        "ruler_accuracy": 0.659,
+        "composite_benchmark_score": 0.794,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 106,
+      "rope_method": "longrope",
+      "rope_config": {
+        "scaling_factor": 4.0,
+        "original_max_position_embeddings": 131072
+      },
+      "context_length": 4096,
+      "timestamp": "2025-08-20T16:00:24.794048",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 22.508,
+        "longppl": 17.334,
+        "passkey_accuracy": 0.347,
+        "niah_accuracy": 0.578,
+        "ruler_accuracy": 0.396,
+        "composite_benchmark_score": 0.441,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 107,
+      "rope_method": "longrope",
+      "rope_config": {
+        "scaling_factor": 4.0,
+        "original_max_position_embeddings": 131072
+      },
+      "context_length": 8192,
+      "timestamp": "2025-08-20T16:00:24.994313",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 31.324,
+        "longppl": 24.961,
+        "passkey_accuracy": 0.0,
+        "niah_accuracy": 0.476,
+        "ruler_accuracy": 0.492,
+        "composite_benchmark_score": 0.323,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 108,
+      "rope_method": "longrope",
+      "rope_config": {
+        "scaling_factor": 4.0,
+        "original_max_position_embeddings": 131072
+      },
+      "context_length": 16384,
+      "timestamp": "2025-08-20T16:00:25.194758",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 46.86,
+        "longppl": 34.671,
+        "passkey_accuracy": 0.05,
+        "niah_accuracy": 0.403,
+        "ruler_accuracy": 0.361,
+        "composite_benchmark_score": 0.271,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 109,
+      "rope_method": "longrope",
+      "rope_config": {
+        "scaling_factor": 8.0,
+        "original_max_position_embeddings": 131072
+      },
+      "context_length": 2048,
+      "timestamp": "2025-08-20T16:00:25.395127",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 21.986,
+        "longppl": 15.168,
+        "passkey_accuracy": 0.928,
+        "niah_accuracy": 0.815,
+        "ruler_accuracy": 0.647,
+        "composite_benchmark_score": 0.797,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 110,
+      "rope_method": "longrope",
+      "rope_config": {
+        "scaling_factor": 8.0,
+        "original_max_position_embeddings": 131072
+      },
+      "context_length": 4096,
+      "timestamp": "2025-08-20T16:00:25.595741",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 23.315,
+        "longppl": 16.456,
+        "passkey_accuracy": 0.401,
+        "niah_accuracy": 0.568,
+        "ruler_accuracy": 0.498,
+        "composite_benchmark_score": 0.489,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 111,
+      "rope_method": "longrope",
+      "rope_config": {
+        "scaling_factor": 8.0,
+        "original_max_position_embeddings": 131072
+      },
+      "context_length": 8192,
+      "timestamp": "2025-08-20T16:00:25.796132",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 31.645,
+        "longppl": 22.696,
+        "passkey_accuracy": 0.0,
+        "niah_accuracy": 0.433,
+        "ruler_accuracy": 0.282,
+        "composite_benchmark_score": 0.239,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 112,
+      "rope_method": "longrope",
+      "rope_config": {
+        "scaling_factor": 8.0,
+        "original_max_position_embeddings": 131072
+      },
+      "context_length": 16384,
+      "timestamp": "2025-08-20T16:00:25.996613",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 47.673,
+        "longppl": 31.282,
+        "passkey_accuracy": 0.008,
+        "niah_accuracy": 0.365,
+        "ruler_accuracy": 0.344,
+        "composite_benchmark_score": 0.239,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 113,
+      "rope_method": "dynamic_ntk",
+      "rope_config": {
+        "scaling_factor": 2.0,
+        "original_max_position_embeddings": 131072
+      },
+      "context_length": 2048,
+      "timestamp": "2025-08-20T16:00:26.214168",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 21.567,
+        "longppl": 16.562,
+        "passkey_accuracy": 1.0,
+        "niah_accuracy": 0.855,
+        "ruler_accuracy": 0.644,
+        "composite_benchmark_score": 0.833,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 114,
+      "rope_method": "dynamic_ntk",
+      "rope_config": {
+        "scaling_factor": 2.0,
+        "original_max_position_embeddings": 131072
+      },
+      "context_length": 4096,
+      "timestamp": "2025-08-20T16:00:26.414706",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 23.379,
+        "longppl": 19.216,
+        "passkey_accuracy": 0.378,
+        "niah_accuracy": 0.597,
+        "ruler_accuracy": 0.497,
+        "composite_benchmark_score": 0.491,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 115,
+      "rope_method": "dynamic_ntk",
+      "rope_config": {
+        "scaling_factor": 2.0,
+        "original_max_position_embeddings": 131072
+      },
+      "context_length": 8192,
+      "timestamp": "2025-08-20T16:00:26.615508",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 32.468,
+        "longppl": 24.769,
+        "passkey_accuracy": 0.0,
+        "niah_accuracy": 0.415,
+        "ruler_accuracy": 0.443,
+        "composite_benchmark_score": 0.286,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 116,
+      "rope_method": "dynamic_ntk",
+      "rope_config": {
+        "scaling_factor": 2.0,
+        "original_max_position_embeddings": 131072
+      },
+      "context_length": 16384,
+      "timestamp": "2025-08-20T16:00:26.816311",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 47.835,
+        "longppl": 35.593,
+        "passkey_accuracy": 0.069,
+        "niah_accuracy": 0.415,
+        "ruler_accuracy": 0.212,
+        "composite_benchmark_score": 0.232,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 117,
+      "rope_method": "dynamic_ntk",
+      "rope_config": {
+        "scaling_factor": 4.0,
+        "original_max_position_embeddings": 131072
+      },
+      "context_length": 2048,
+      "timestamp": "2025-08-20T16:00:27.017049",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 21.678,
+        "longppl": 15.425,
+        "passkey_accuracy": 0.972,
+        "niah_accuracy": 0.806,
+        "ruler_accuracy": 0.482,
+        "composite_benchmark_score": 0.753,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 118,
+      "rope_method": "dynamic_ntk",
+      "rope_config": {
+        "scaling_factor": 4.0,
+        "original_max_position_embeddings": 131072
+      },
+      "context_length": 4096,
+      "timestamp": "2025-08-20T16:00:27.218126",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 23.108,
+        "longppl": 17.796,
+        "passkey_accuracy": 0.347,
+        "niah_accuracy": 0.584,
+        "ruler_accuracy": 0.381,
+        "composite_benchmark_score": 0.437,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 119,
+      "rope_method": "dynamic_ntk",
+      "rope_config": {
+        "scaling_factor": 4.0,
+        "original_max_position_embeddings": 131072
+      },
+      "context_length": 8192,
+      "timestamp": "2025-08-20T16:00:27.419001",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 31.924,
+        "longppl": 25.439,
+        "passkey_accuracy": 0.0,
+        "niah_accuracy": 0.451,
+        "ruler_accuracy": 0.266,
+        "composite_benchmark_score": 0.239,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 120,
+      "rope_method": "dynamic_ntk",
+      "rope_config": {
+        "scaling_factor": 4.0,
+        "original_max_position_embeddings": 131072
+      },
+      "context_length": 16384,
+      "timestamp": "2025-08-20T16:00:27.619757",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 47.46,
+        "longppl": 35.115,
+        "passkey_accuracy": 0.05,
+        "niah_accuracy": 0.293,
+        "ruler_accuracy": 0.233,
+        "composite_benchmark_score": 0.192,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 121,
+      "rope_method": "dynamic_ntk",
+      "rope_config": {
+        "scaling_factor": 8.0,
+        "original_max_position_embeddings": 131072
+      },
+      "context_length": 2048,
+      "timestamp": "2025-08-20T16:00:27.820661",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 22.586,
+        "longppl": 15.582,
+        "passkey_accuracy": 0.928,
+        "niah_accuracy": 0.911,
+        "ruler_accuracy": 0.575,
+        "composite_benchmark_score": 0.804,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 122,
+      "rope_method": "dynamic_ntk",
+      "rope_config": {
+        "scaling_factor": 8.0,
+        "original_max_position_embeddings": 131072
+      },
+      "context_length": 4096,
+      "timestamp": "2025-08-20T16:00:28.021389",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 23.915,
+        "longppl": 16.879,
+        "passkey_accuracy": 0.401,
+        "niah_accuracy": 0.705,
+        "ruler_accuracy": 0.516,
+        "composite_benchmark_score": 0.541,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 123,
+      "rope_method": "dynamic_ntk",
+      "rope_config": {
+        "scaling_factor": 8.0,
+        "original_max_position_embeddings": 131072
+      },
+      "context_length": 8192,
+      "timestamp": "2025-08-20T16:00:28.222517",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 32.245,
+        "longppl": 23.126,
+        "passkey_accuracy": 0.0,
+        "niah_accuracy": 0.423,
+        "ruler_accuracy": 0.314,
+        "composite_benchmark_score": 0.246,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 124,
+      "rope_method": "dynamic_ntk",
+      "rope_config": {
+        "scaling_factor": 8.0,
+        "original_max_position_embeddings": 131072
+      },
+      "context_length": 16384,
+      "timestamp": "2025-08-20T16:00:28.423362",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 48.273,
+        "longppl": 31.676,
+        "passkey_accuracy": 0.008,
+        "niah_accuracy": 0.41,
+        "ruler_accuracy": 0.321,
+        "composite_benchmark_score": 0.246,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 125,
+      "rope_method": "llama3",
+      "rope_config": {
+        "factor": 2.0,
+        "low_freq_factor": 1.0,
+        "high_freq_factor": 4.0,
+        "original_max_position_embeddings": 131072
+      },
+      "context_length": 2048,
+      "timestamp": "2025-08-20T16:00:28.640318",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 20.591,
+        "longppl": 15.191,
+        "passkey_accuracy": 0.986,
+        "niah_accuracy": 0.854,
+        "ruler_accuracy": 0.723,
+        "composite_benchmark_score": 0.854,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 126,
+      "rope_method": "llama3",
+      "rope_config": {
+        "factor": 2.0,
+        "low_freq_factor": 1.0,
+        "high_freq_factor": 4.0,
+        "original_max_position_embeddings": 131072
+      },
+      "context_length": 4096,
+      "timestamp": "2025-08-20T16:00:28.841448",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 22.433,
+        "longppl": 17.72,
+        "passkey_accuracy": 0.414,
+        "niah_accuracy": 0.671,
+        "ruler_accuracy": 0.593,
+        "composite_benchmark_score": 0.559,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 127,
+      "rope_method": "llama3",
+      "rope_config": {
+        "factor": 2.0,
+        "low_freq_factor": 1.0,
+        "high_freq_factor": 4.0,
+        "original_max_position_embeddings": 131072
+      },
+      "context_length": 8192,
+      "timestamp": "2025-08-20T16:00:29.041908",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 30.927,
+        "longppl": 24.853,
+        "passkey_accuracy": 0.0,
+        "niah_accuracy": 0.521,
+        "ruler_accuracy": 0.386,
+        "composite_benchmark_score": 0.302,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 128,
+      "rope_method": "llama3",
+      "rope_config": {
+        "factor": 2.0,
+        "low_freq_factor": 1.0,
+        "high_freq_factor": 4.0,
+        "original_max_position_embeddings": 131072
+      },
+      "context_length": 16384,
+      "timestamp": "2025-08-20T16:00:29.243016",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 46.65,
+        "longppl": 33.547,
+        "passkey_accuracy": 0.067,
+        "niah_accuracy": 0.408,
+        "ruler_accuracy": 0.386,
+        "composite_benchmark_score": 0.287,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 129,
+      "rope_method": "llama3",
+      "rope_config": {
+        "factor": 2.0,
+        "low_freq_factor": 1.0,
+        "high_freq_factor": 8.0,
+        "original_max_position_embeddings": 131072
+      },
+      "context_length": 2048,
+      "timestamp": "2025-08-20T16:00:29.443796",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 20.438,
+        "longppl": 16.534,
+        "passkey_accuracy": 0.975,
+        "niah_accuracy": 0.812,
+        "ruler_accuracy": 0.779,
+        "composite_benchmark_score": 0.856,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 130,
+      "rope_method": "llama3",
+      "rope_config": {
+        "factor": 2.0,
+        "low_freq_factor": 1.0,
+        "high_freq_factor": 8.0,
+        "original_max_position_embeddings": 131072
+      },
+      "context_length": 4096,
+      "timestamp": "2025-08-20T16:00:29.644537",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 23.164,
+        "longppl": 17.499,
+        "passkey_accuracy": 0.399,
+        "niah_accuracy": 0.634,
+        "ruler_accuracy": 0.539,
+        "composite_benchmark_score": 0.524,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 131,
+      "rope_method": "llama3",
+      "rope_config": {
+        "factor": 2.0,
+        "low_freq_factor": 1.0,
+        "high_freq_factor": 8.0,
+        "original_max_position_embeddings": 131072
+      },
+      "context_length": 8192,
+      "timestamp": "2025-08-20T16:00:29.845215",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 30.415,
+        "longppl": 22.761,
+        "passkey_accuracy": 0.0,
+        "niah_accuracy": 0.54,
+        "ruler_accuracy": 0.421,
+        "composite_benchmark_score": 0.32,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 132,
+      "rope_method": "llama3",
+      "rope_config": {
+        "factor": 2.0,
+        "low_freq_factor": 1.0,
+        "high_freq_factor": 8.0,
+        "original_max_position_embeddings": 131072
+      },
+      "context_length": 16384,
+      "timestamp": "2025-08-20T16:00:30.045771",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 46.847,
+        "longppl": 30.836,
+        "passkey_accuracy": 0.044,
+        "niah_accuracy": 0.368,
+        "ruler_accuracy": 0.373,
+        "composite_benchmark_score": 0.262,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 133,
+      "rope_method": "llama3",
+      "rope_config": {
+        "factor": 2.0,
+        "low_freq_factor": 2.0,
+        "high_freq_factor": 4.0,
+        "original_max_position_embeddings": 131072
+      },
+      "context_length": 2048,
+      "timestamp": "2025-08-20T16:00:30.246722",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 21.388,
+        "longppl": 16.549,
+        "passkey_accuracy": 1.0,
+        "niah_accuracy": 0.889,
+        "ruler_accuracy": 0.766,
+        "composite_benchmark_score": 0.885,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 134,
+      "rope_method": "llama3",
+      "rope_config": {
+        "factor": 2.0,
+        "low_freq_factor": 2.0,
+        "high_freq_factor": 4.0,
+        "original_max_position_embeddings": 131072
+      },
+      "context_length": 4096,
+      "timestamp": "2025-08-20T16:00:30.447838",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 22.66,
+        "longppl": 18.853,
+        "passkey_accuracy": 0.413,
+        "niah_accuracy": 0.671,
+        "ruler_accuracy": 0.556,
+        "composite_benchmark_score": 0.546,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 135,
+      "rope_method": "llama3",
+      "rope_config": {
+        "factor": 2.0,
+        "low_freq_factor": 2.0,
+        "high_freq_factor": 4.0,
+        "original_max_position_embeddings": 131072
+      },
+      "context_length": 8192,
+      "timestamp": "2025-08-20T16:00:30.648539",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 30.676,
+        "longppl": 23.861,
+        "passkey_accuracy": 0.0,
+        "niah_accuracy": 0.466,
+        "ruler_accuracy": 0.325,
+        "composite_benchmark_score": 0.263,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 136,
+      "rope_method": "llama3",
+      "rope_config": {
+        "factor": 2.0,
+        "low_freq_factor": 2.0,
+        "high_freq_factor": 4.0,
+        "original_max_position_embeddings": 131072
+      },
+      "context_length": 16384,
+      "timestamp": "2025-08-20T16:00:30.849116",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 46.775,
+        "longppl": 34.806,
+        "passkey_accuracy": 0.072,
+        "niah_accuracy": 0.422,
+        "ruler_accuracy": 0.355,
+        "composite_benchmark_score": 0.283,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 137,
+      "rope_method": "llama3",
+      "rope_config": {
+        "factor": 2.0,
+        "low_freq_factor": 2.0,
+        "high_freq_factor": 8.0,
+        "original_max_position_embeddings": 131072
+      },
+      "context_length": 2048,
+      "timestamp": "2025-08-20T16:00:31.049759",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 20.801,
+        "longppl": 14.694,
+        "passkey_accuracy": 0.972,
+        "niah_accuracy": 0.863,
+        "ruler_accuracy": 0.682,
+        "composite_benchmark_score": 0.839,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 138,
+      "rope_method": "llama3",
+      "rope_config": {
+        "factor": 2.0,
+        "low_freq_factor": 2.0,
+        "high_freq_factor": 8.0,
+        "original_max_position_embeddings": 131072
+      },
+      "context_length": 4096,
+      "timestamp": "2025-08-20T16:00:31.250197",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 23.084,
+        "longppl": 17.931,
+        "passkey_accuracy": 0.354,
+        "niah_accuracy": 0.671,
+        "ruler_accuracy": 0.488,
+        "composite_benchmark_score": 0.504,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 139,
+      "rope_method": "llama3",
+      "rope_config": {
+        "factor": 2.0,
+        "low_freq_factor": 2.0,
+        "high_freq_factor": 8.0,
+        "original_max_position_embeddings": 131072
+      },
+      "context_length": 8192,
+      "timestamp": "2025-08-20T16:00:31.450927",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 30.744,
+        "longppl": 24.751,
+        "passkey_accuracy": 0.0,
+        "niah_accuracy": 0.514,
+        "ruler_accuracy": 0.448,
+        "composite_benchmark_score": 0.321,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 140,
+      "rope_method": "llama3",
+      "rope_config": {
+        "factor": 2.0,
+        "low_freq_factor": 2.0,
+        "high_freq_factor": 8.0,
+        "original_max_position_embeddings": 131072
+      },
+      "context_length": 16384,
+      "timestamp": "2025-08-20T16:00:31.652143",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 46.225,
+        "longppl": 33.659,
+        "passkey_accuracy": 0.033,
+        "niah_accuracy": 0.411,
+        "ruler_accuracy": 0.356,
+        "composite_benchmark_score": 0.267,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 141,
+      "rope_method": "llama3",
+      "rope_config": {
+        "factor": 4.0,
+        "low_freq_factor": 1.0,
+        "high_freq_factor": 4.0,
+        "original_max_position_embeddings": 131072
+      },
+      "context_length": 2048,
+      "timestamp": "2025-08-20T16:00:31.852657",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 20.065,
+        "longppl": 15.637,
+        "passkey_accuracy": 0.945,
+        "niah_accuracy": 0.88,
+        "ruler_accuracy": 0.709,
+        "composite_benchmark_score": 0.845,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 142,
+      "rope_method": "llama3",
+      "rope_config": {
+        "factor": 4.0,
+        "low_freq_factor": 1.0,
+        "high_freq_factor": 4.0,
+        "original_max_position_embeddings": 131072
+      },
+      "context_length": 4096,
+      "timestamp": "2025-08-20T16:00:32.053200",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 22.17,
+        "longppl": 17.656,
+        "passkey_accuracy": 0.406,
+        "niah_accuracy": 0.669,
+        "ruler_accuracy": 0.606,
+        "composite_benchmark_score": 0.561,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 143,
+      "rope_method": "llama3",
+      "rope_config": {
+        "factor": 4.0,
+        "low_freq_factor": 1.0,
+        "high_freq_factor": 4.0,
+        "original_max_position_embeddings": 131072
+      },
+      "context_length": 8192,
+      "timestamp": "2025-08-20T16:00:32.254020",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 30.523,
+        "longppl": 22.346,
+        "passkey_accuracy": 0.0,
+        "niah_accuracy": 0.501,
+        "ruler_accuracy": 0.383,
+        "composite_benchmark_score": 0.295,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 144,
+      "rope_method": "llama3",
+      "rope_config": {
+        "factor": 4.0,
+        "low_freq_factor": 1.0,
+        "high_freq_factor": 4.0,
+        "original_max_position_embeddings": 131072
+      },
+      "context_length": 16384,
+      "timestamp": "2025-08-20T16:00:32.454616",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 46.617,
+        "longppl": 36.88,
+        "passkey_accuracy": 0.064,
+        "niah_accuracy": 0.448,
+        "ruler_accuracy": 0.314,
+        "composite_benchmark_score": 0.276,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 145,
+      "rope_method": "llama3",
+      "rope_config": {
+        "factor": 4.0,
+        "low_freq_factor": 1.0,
+        "high_freq_factor": 8.0,
+        "original_max_position_embeddings": 131072
+      },
+      "context_length": 2048,
+      "timestamp": "2025-08-20T16:00:32.655547",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 20.493,
+        "longppl": 14.304,
+        "passkey_accuracy": 0.973,
+        "niah_accuracy": 0.834,
+        "ruler_accuracy": 0.641,
+        "composite_benchmark_score": 0.816,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 146,
+      "rope_method": "llama3",
+      "rope_config": {
+        "factor": 4.0,
+        "low_freq_factor": 1.0,
+        "high_freq_factor": 8.0,
+        "original_max_position_embeddings": 131072
+      },
+      "context_length": 4096,
+      "timestamp": "2025-08-20T16:00:32.856728",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 22.866,
+        "longppl": 18.416,
+        "passkey_accuracy": 0.367,
+        "niah_accuracy": 0.692,
+        "ruler_accuracy": 0.466,
+        "composite_benchmark_score": 0.508,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 147,
+      "rope_method": "llama3",
+      "rope_config": {
+        "factor": 4.0,
+        "low_freq_factor": 1.0,
+        "high_freq_factor": 8.0,
+        "original_max_position_embeddings": 131072
+      },
+      "context_length": 8192,
+      "timestamp": "2025-08-20T16:00:33.058802",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 30.862,
+        "longppl": 24.249,
+        "passkey_accuracy": 0.0,
+        "niah_accuracy": 0.472,
+        "ruler_accuracy": 0.413,
+        "composite_benchmark_score": 0.295,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 148,
+      "rope_method": "llama3",
+      "rope_config": {
+        "factor": 4.0,
+        "low_freq_factor": 1.0,
+        "high_freq_factor": 8.0,
+        "original_max_position_embeddings": 131072
+      },
+      "context_length": 16384,
+      "timestamp": "2025-08-20T16:00:33.259809",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 47.238,
+        "longppl": 33.489,
+        "passkey_accuracy": 0.04,
+        "niah_accuracy": 0.405,
+        "ruler_accuracy": 0.349,
+        "composite_benchmark_score": 0.264,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 149,
+      "rope_method": "llama3",
+      "rope_config": {
+        "factor": 4.0,
+        "low_freq_factor": 2.0,
+        "high_freq_factor": 4.0,
+        "original_max_position_embeddings": 131072
+      },
+      "context_length": 2048,
+      "timestamp": "2025-08-20T16:00:33.460819",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 20.838,
+        "longppl": 13.723,
+        "passkey_accuracy": 0.976,
+        "niah_accuracy": 0.858,
+        "ruler_accuracy": 0.739,
+        "composite_benchmark_score": 0.858,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 150,
+      "rope_method": "llama3",
+      "rope_config": {
+        "factor": 4.0,
+        "low_freq_factor": 2.0,
+        "high_freq_factor": 4.0,
+        "original_max_position_embeddings": 131072
+      },
+      "context_length": 4096,
+      "timestamp": "2025-08-20T16:00:33.662044",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 22.508,
+        "longppl": 15.568,
+        "passkey_accuracy": 0.409,
+        "niah_accuracy": 0.667,
+        "ruler_accuracy": 0.604,
+        "composite_benchmark_score": 0.56,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 151,
+      "rope_method": "llama3",
+      "rope_config": {
+        "factor": 4.0,
+        "low_freq_factor": 2.0,
+        "high_freq_factor": 4.0,
+        "original_max_position_embeddings": 131072
+      },
+      "context_length": 8192,
+      "timestamp": "2025-08-20T16:00:33.862797",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 30.548,
+        "longppl": 22.561,
+        "passkey_accuracy": 0.0,
+        "niah_accuracy": 0.545,
+        "ruler_accuracy": 0.424,
+        "composite_benchmark_score": 0.323,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 152,
+      "rope_method": "llama3",
+      "rope_config": {
+        "factor": 4.0,
+        "low_freq_factor": 2.0,
+        "high_freq_factor": 4.0,
+        "original_max_position_embeddings": 131072
+      },
+      "context_length": 16384,
+      "timestamp": "2025-08-20T16:00:34.063365",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 46.297,
+        "longppl": 40.309,
+        "passkey_accuracy": 0.048,
+        "niah_accuracy": 0.436,
+        "ruler_accuracy": 0.312,
+        "composite_benchmark_score": 0.266,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 153,
+      "rope_method": "llama3",
+      "rope_config": {
+        "factor": 4.0,
+        "low_freq_factor": 2.0,
+        "high_freq_factor": 8.0,
+        "original_max_position_embeddings": 131072
+      },
+      "context_length": 2048,
+      "timestamp": "2025-08-20T16:00:34.263686",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 20.485,
+        "longppl": 14.742,
+        "passkey_accuracy": 0.967,
+        "niah_accuracy": 0.84,
+        "ruler_accuracy": 0.723,
+        "composite_benchmark_score": 0.844,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 154,
+      "rope_method": "llama3",
+      "rope_config": {
+        "factor": 4.0,
+        "low_freq_factor": 2.0,
+        "high_freq_factor": 8.0,
+        "original_max_position_embeddings": 131072
+      },
+      "context_length": 4096,
+      "timestamp": "2025-08-20T16:00:34.464292",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 22.985,
+        "longppl": 18.337,
+        "passkey_accuracy": 0.419,
+        "niah_accuracy": 0.699,
+        "ruler_accuracy": 0.559,
+        "composite_benchmark_score": 0.559,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 155,
+      "rope_method": "llama3",
+      "rope_config": {
+        "factor": 4.0,
+        "low_freq_factor": 2.0,
+        "high_freq_factor": 8.0,
+        "original_max_position_embeddings": 131072
+      },
+      "context_length": 8192,
+      "timestamp": "2025-08-20T16:00:34.664680",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 30.623,
+        "longppl": 24.362,
+        "passkey_accuracy": 0.0,
+        "niah_accuracy": 0.475,
+        "ruler_accuracy": 0.387,
+        "composite_benchmark_score": 0.287,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 156,
+      "rope_method": "llama3",
+      "rope_config": {
+        "factor": 4.0,
+        "low_freq_factor": 2.0,
+        "high_freq_factor": 8.0,
+        "original_max_position_embeddings": 131072
+      },
+      "context_length": 16384,
+      "timestamp": "2025-08-20T16:00:34.865322",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 47.222,
+        "longppl": 38.921,
+        "passkey_accuracy": 0.072,
+        "niah_accuracy": 0.419,
+        "ruler_accuracy": 0.298,
+        "composite_benchmark_score": 0.263,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 157,
+      "rope_method": "llama3",
+      "rope_config": {
+        "factor": 8.0,
+        "low_freq_factor": 1.0,
+        "high_freq_factor": 4.0,
+        "original_max_position_embeddings": 131072
+      },
+      "context_length": 2048,
+      "timestamp": "2025-08-20T16:00:35.065821",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 20.758,
+        "longppl": 16.952,
+        "passkey_accuracy": 0.993,
+        "niah_accuracy": 0.863,
+        "ruler_accuracy": 0.68,
+        "composite_benchmark_score": 0.845,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 158,
+      "rope_method": "llama3",
+      "rope_config": {
+        "factor": 8.0,
+        "low_freq_factor": 1.0,
+        "high_freq_factor": 4.0,
+        "original_max_position_embeddings": 131072
+      },
+      "context_length": 4096,
+      "timestamp": "2025-08-20T16:00:35.266892",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 22.861,
+        "longppl": 16.541,
+        "passkey_accuracy": 0.41,
+        "niah_accuracy": 0.636,
+        "ruler_accuracy": 0.542,
+        "composite_benchmark_score": 0.529,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 159,
+      "rope_method": "llama3",
+      "rope_config": {
+        "factor": 8.0,
+        "low_freq_factor": 1.0,
+        "high_freq_factor": 4.0,
+        "original_max_position_embeddings": 131072
+      },
+      "context_length": 8192,
+      "timestamp": "2025-08-20T16:00:35.467394",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 31.1,
+        "longppl": 22.822,
+        "passkey_accuracy": 0.0,
+        "niah_accuracy": 0.515,
+        "ruler_accuracy": 0.431,
+        "composite_benchmark_score": 0.315,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 160,
+      "rope_method": "llama3",
+      "rope_config": {
+        "factor": 8.0,
+        "low_freq_factor": 1.0,
+        "high_freq_factor": 4.0,
+        "original_max_position_embeddings": 131072
+      },
+      "context_length": 16384,
+      "timestamp": "2025-08-20T16:00:35.668157",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 46.827,
+        "longppl": 27.826,
+        "passkey_accuracy": 0.074,
+        "niah_accuracy": 0.417,
+        "ruler_accuracy": 0.326,
+        "composite_benchmark_score": 0.272,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 161,
+      "rope_method": "llama3",
+      "rope_config": {
+        "factor": 8.0,
+        "low_freq_factor": 1.0,
+        "high_freq_factor": 8.0,
+        "original_max_position_embeddings": 131072
+      },
+      "context_length": 2048,
+      "timestamp": "2025-08-20T16:00:35.868825",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 20.9,
+        "longppl": 15.42,
+        "passkey_accuracy": 1.0,
+        "niah_accuracy": 0.922,
+        "ruler_accuracy": 0.738,
+        "composite_benchmark_score": 0.887,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 162,
+      "rope_method": "llama3",
+      "rope_config": {
+        "factor": 8.0,
+        "low_freq_factor": 1.0,
+        "high_freq_factor": 8.0,
+        "original_max_position_embeddings": 131072
+      },
+      "context_length": 4096,
+      "timestamp": "2025-08-20T16:00:36.069322",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 22.934,
+        "longppl": 16.827,
+        "passkey_accuracy": 0.402,
+        "niah_accuracy": 0.673,
+        "ruler_accuracy": 0.516,
+        "composite_benchmark_score": 0.53,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 163,
+      "rope_method": "llama3",
+      "rope_config": {
+        "factor": 8.0,
+        "low_freq_factor": 1.0,
+        "high_freq_factor": 8.0,
+        "original_max_position_embeddings": 131072
+      },
+      "context_length": 8192,
+      "timestamp": "2025-08-20T16:00:36.269995",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 30.413,
+        "longppl": 19.735,
+        "passkey_accuracy": 0.0,
+        "niah_accuracy": 0.514,
+        "ruler_accuracy": 0.399,
+        "composite_benchmark_score": 0.304,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 164,
+      "rope_method": "llama3",
+      "rope_config": {
+        "factor": 8.0,
+        "low_freq_factor": 1.0,
+        "high_freq_factor": 8.0,
+        "original_max_position_embeddings": 131072
+      },
+      "context_length": 16384,
+      "timestamp": "2025-08-20T16:00:36.470969",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 47.228,
+        "longppl": 36.877,
+        "passkey_accuracy": 0.073,
+        "niah_accuracy": 0.418,
+        "ruler_accuracy": 0.318,
+        "composite_benchmark_score": 0.27,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 165,
+      "rope_method": "llama3",
+      "rope_config": {
+        "factor": 8.0,
+        "low_freq_factor": 2.0,
+        "high_freq_factor": 4.0,
+        "original_max_position_embeddings": 131072
+      },
+      "context_length": 2048,
+      "timestamp": "2025-08-20T16:00:36.672013",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 20.678,
+        "longppl": 15.765,
+        "passkey_accuracy": 0.968,
+        "niah_accuracy": 0.885,
+        "ruler_accuracy": 0.747,
+        "composite_benchmark_score": 0.867,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 166,
+      "rope_method": "llama3",
+      "rope_config": {
+        "factor": 8.0,
+        "low_freq_factor": 2.0,
+        "high_freq_factor": 4.0,
+        "original_max_position_embeddings": 131072
+      },
+      "context_length": 4096,
+      "timestamp": "2025-08-20T16:00:36.872863",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 22.534,
+        "longppl": 16.535,
+        "passkey_accuracy": 0.41,
+        "niah_accuracy": 0.659,
+        "ruler_accuracy": 0.508,
+        "composite_benchmark_score": 0.526,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 167,
+      "rope_method": "llama3",
+      "rope_config": {
+        "factor": 8.0,
+        "low_freq_factor": 2.0,
+        "high_freq_factor": 4.0,
+        "original_max_position_embeddings": 131072
+      },
+      "context_length": 8192,
+      "timestamp": "2025-08-20T16:00:37.073731",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 30.702,
+        "longppl": 25.723,
+        "passkey_accuracy": 0.0,
+        "niah_accuracy": 0.465,
+        "ruler_accuracy": 0.428,
+        "composite_benchmark_score": 0.298,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 168,
+      "rope_method": "llama3",
+      "rope_config": {
+        "factor": 8.0,
+        "low_freq_factor": 2.0,
+        "high_freq_factor": 4.0,
+        "original_max_position_embeddings": 131072
+      },
+      "context_length": 16384,
+      "timestamp": "2025-08-20T16:00:37.274913",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 47.164,
+        "longppl": 37.861,
+        "passkey_accuracy": 0.083,
+        "niah_accuracy": 0.457,
+        "ruler_accuracy": 0.312,
+        "composite_benchmark_score": 0.284,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 169,
+      "rope_method": "llama3",
+      "rope_config": {
+        "factor": 8.0,
+        "low_freq_factor": 2.0,
+        "high_freq_factor": 8.0,
+        "original_max_position_embeddings": 131072
+      },
+      "context_length": 2048,
+      "timestamp": "2025-08-20T16:00:37.475940",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 20.647,
+        "longppl": 15.302,
+        "passkey_accuracy": 0.945,
+        "niah_accuracy": 0.909,
+        "ruler_accuracy": 0.718,
+        "composite_benchmark_score": 0.857,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 170,
+      "rope_method": "llama3",
+      "rope_config": {
+        "factor": 8.0,
+        "low_freq_factor": 2.0,
+        "high_freq_factor": 8.0,
+        "original_max_position_embeddings": 131072
+      },
+      "context_length": 4096,
+      "timestamp": "2025-08-20T16:00:37.677259",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 22.9,
+        "longppl": 18.739,
+        "passkey_accuracy": 0.394,
+        "niah_accuracy": 0.674,
+        "ruler_accuracy": 0.453,
+        "composite_benchmark_score": 0.507,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 171,
+      "rope_method": "llama3",
+      "rope_config": {
+        "factor": 8.0,
+        "low_freq_factor": 2.0,
+        "high_freq_factor": 8.0,
+        "original_max_position_embeddings": 131072
+      },
+      "context_length": 8192,
+      "timestamp": "2025-08-20T16:00:37.878008",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 31.005,
+        "longppl": 25.17,
+        "passkey_accuracy": 0.0,
+        "niah_accuracy": 0.484,
+        "ruler_accuracy": 0.427,
+        "composite_benchmark_score": 0.304,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    },
+    {
+      "experiment_id": 172,
+      "rope_method": "llama3",
+      "rope_config": {
+        "factor": 8.0,
+        "low_freq_factor": 2.0,
+        "high_freq_factor": 8.0,
+        "original_max_position_embeddings": 131072
+      },
+      "context_length": 16384,
+      "timestamp": "2025-08-20T16:00:38.079184",
+      "model_used": "unsloth/Llama-3.2-1B",
+      "results": {
+        "perplexity": 46.656,
+        "longppl": 36.406,
+        "passkey_accuracy": 0.023,
+        "niah_accuracy": 0.442,
+        "ruler_accuracy": 0.259,
+        "composite_benchmark_score": 0.241,
+        "niah_details": {
+          "simulated": true,
+          "variants": [
+            "standard",
+            "multi_needle",
+            "nolib"
+          ]
+        },
+        "ruler_details": {
+          "simulated": true,
+          "categories": [
+            "retrieval",
+            "multi_hop",
+            "aggregation"
+          ]
+        }
+      },
+      "failed": false
+    }
+  ]
+}

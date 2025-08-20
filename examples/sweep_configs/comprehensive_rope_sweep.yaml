@@ -1,0 +1,98 @@
+# Comprehensive RoPE hyperparameter sweep configuration
+# This config evaluates all RoPE methods across multiple context lengths
+
+# Model Configuration
+model_name: "meta-llama/Llama-2-7b-hf"
+model_type: "hf_local"
+model_path: "./models/llama-2-7b-hf"
+
+# RoPE Methods to Evaluate
+rope_methods:
+  - "linear_interpolation"
+  - "ntk_aware" 
+  - "yarn"
+  - "longrope"
+  - "dynamic_ntk"
+
+# Context Lengths to Test (powers of 2 for systematic analysis)
+context_lengths: [2048, 4096, 8192, 16384, 32768, 65536, 131072]
+
+# Evaluation Metrics
+metrics:
+  - "perplexity"
+  - "passkey_retrieval"
+  - "longppl"
+
+# Parameter Grids for Each Method
+parameter_grids:
+  linear_interpolation:
+    scaling_factor:
+      values: [2, 4, 8, 16, 32]
+      distribution: "grid"
+      
+  ntk_aware:
+    alpha:
+      values: [0.5, 1.0, 2.0, 4.0]
+      distribution: "grid"
+    beta:
+      values: [8, 16, 32, 64, 128]
+      distribution: "grid"
+      
+  yarn:
+    s:
+      values: [4, 8, 16, 32]
+      distribution: "grid"
+    alpha:
+      values: [0.5, 1.0, 2.0]
+      distribution: "grid"
+    beta:
+      values: [16, 32, 64]
+      distribution: "grid"
+    attention_factor:
+      values: [0.05, 0.1, 0.2, 0.5]
+      distribution: "grid"
+    beta_fast:
+      values: [16, 32, 64]
+      distribution: "grid"
+    beta_slow:
+      values: [0.5, 1.0, 2.0]
+      distribution: "grid"
+      
+  longrope:
+    factor_strategy:
+      values: ["uniform", "layer_wise", "dimension_wise"]
+      distribution: "grid"
+    short_factor:
+      values: 
+        - [1, 1, 1, 1, 1, 1, 1, 1]  # uniform
+        - [1, 1, 2, 2, 4, 4, 8, 8]  # progressive
+        - [1, 2, 4, 8, 8, 4, 2, 1]  # pyramid
+      distribution: "grid"
+    long_factor:
+      values:
+        - [1, 2, 4, 8, 16, 8, 4, 2]  # pyramid
+        - [1, 4, 8, 16, 16, 8, 4, 1] # diamond
+        - [2, 4, 8, 16, 16, 16, 8, 4] # plateau
+      distribution: "grid"
+      
+  dynamic_ntk:
+    alpha:
+      values: [0.5, 1.0, 2.0, 4.0, 8.0]
+      distribution: "grid"
+
+# Sweep Settings
+max_configs_per_method: 50  # Limit total experiments per method
+parallel_jobs: 4
+use_cache: true
+cache_dir: "./sweep_cache"
+output_dir: "./sweep_results/comprehensive"
+
+# Early Stopping Configuration
+early_stopping: true
+early_stopping_metric: "perplexity"
+early_stopping_threshold: 200.0  # Stop if perplexity > 200
+early_stopping_patience: 5
+
+# Resource Management
+max_gpu_memory_gb: 24.0
+auto_batch_size: true

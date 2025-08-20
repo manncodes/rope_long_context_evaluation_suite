@@ -1,0 +1,78 @@
+# Quick comparison sweep for rapid prototyping
+# Tests all methods with default/best-known parameters across context lengths
+
+# Model Configuration
+model_name: "microsoft/DialoGPT-small"  # Smaller model for quick testing
+model_type: "hf_hub"
+
+# All major RoPE methods
+rope_methods:
+  - "linear_interpolation"
+  - "ntk_aware"
+  - "yarn" 
+  - "dynamic_ntk"
+
+# Limited context lengths for speed
+context_lengths: [2048, 8192, 32768]
+
+# Essential metrics only
+metrics:
+  - "perplexity"
+  - "passkey_retrieval"
+
+# Minimal parameter grids (best known values)
+parameter_grids:
+  linear_interpolation:
+    scaling_factor:
+      values: [4, 8, 16]  # Most common scaling factors
+      distribution: "grid"
+      
+  ntk_aware:
+    alpha:
+      values: [1.0, 2.0]  # Standard values
+      distribution: "grid"
+    beta:
+      values: [32, 64]    # Common target lengths
+      distribution: "grid"
+      
+  yarn:
+    s:
+      values: [16, 32]    # Proven good values
+      distribution: "grid"
+    alpha:
+      values: [1.0]       # Standard
+      distribution: "grid"
+    beta:
+      values: [32]        # Standard
+      distribution: "grid"
+    attention_factor:
+      values: [0.1]       # Standard
+      distribution: "grid"
+    beta_fast:
+      values: [32]        # Standard
+      distribution: "grid"
+    beta_slow:
+      values: [1.0]       # Standard
+      distribution: "grid"
+      
+  dynamic_ntk:
+    alpha:
+      values: [1.0, 2.0]  # Standard values
+      distribution: "grid"
+
+# Sweep Settings
+max_configs_per_method: 10   # Keep it small for speed
+parallel_jobs: 2
+use_cache: true
+cache_dir: "./sweep_cache/quick_comparison"
+output_dir: "./sweep_results/quick_comparison"
+
+# Aggressive early stopping
+early_stopping: true
+early_stopping_metric: "perplexity"
+early_stopping_threshold: 50.0
+early_stopping_patience: 2
+
+# Minimal resource requirements
+max_gpu_memory_gb: 8.0
+auto_batch_size: true

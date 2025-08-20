@@ -1,0 +1,104 @@
+# Random search hyperparameter sweep
+# Uses random sampling to explore parameter space efficiently
+
+# Model Configuration
+model_name: "meta-llama/Llama-2-7b-hf"
+model_type: "hf_local"
+model_path: "./models/llama-2-7b-hf"
+
+# Multiple methods for comparison
+rope_methods:
+  - "yarn"
+  - "ntk_aware"
+
+# Standard context lengths
+context_lengths: [4096, 16384, 65536]
+
+# All proxy metrics
+metrics:
+  - "perplexity"
+  - "passkey_retrieval"
+  - "longppl"
+
+# Random sampling parameter grids
+parameter_grids:
+  yarn:
+    # Random sampling from continuous distributions
+    s:
+      values:
+        min: 1.0
+        max: 128.0
+        type: float
+      distribution: "log"
+      num_samples: 15
+      
+    alpha:
+      values:
+        min: 0.1
+        max: 8.0
+        type: float
+      distribution: "log"
+      num_samples: 10
+      
+    beta:
+      values:
+        min: 4
+        max: 512
+        type: int
+      distribution: "log"
+      num_samples: 10
+      
+    attention_factor:
+      values:
+        min: 0.005
+        max: 2.0
+        type: float
+      distribution: "log"
+      num_samples: 12
+      
+    beta_fast:
+      values:
+        min: 4
+        max: 256
+        type: int
+      distribution: "log"
+      num_samples: 8
+      
+    beta_slow:
+      values:
+        min: 0.1
+        max: 8.0
+        type: float
+      distribution: "log"
+      num_samples: 8
+      
+  ntk_aware:
+    alpha:
+      values:
+        min: 0.1
+        max: 16.0
+        type: float
+      distribution: "log"
+      num_samples: 20
+      
+    beta:
+      values:
+        min: 4
+        max: 512
+        type: int
+      distribution: "log"
+      num_samples: 15
+
+# Sweep Settings
+max_configs_per_method: 100  # Let random sampling generate up to 100 configs
+parallel_jobs: 6
+use_cache: true
+cache_dir: "./sweep_cache/random_search"
+output_dir: "./sweep_results/random_search"
+
+# No early stopping for random exploration
+early_stopping: false
+
+# Standard resource requirements
+max_gpu_memory_gb: 24.0
+auto_batch_size: true

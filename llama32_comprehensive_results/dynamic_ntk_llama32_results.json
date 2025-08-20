@@ -1,0 +1,278 @@
+[
+  {
+    "rope_method": "dynamic_ntk",
+    "rope_config": {
+      "scaling_factor": 2.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 21.567,
+      "longppl": 16.562,
+      "passkey_retrieval": 1.0
+    },
+    "scaling_info": {
+      "method": "dynamic_ntk",
+      "alpha": 1.0,
+      "base_theta": 10000.0,
+      "max_dynamic_length": 1000000,
+      "original_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:26.214168",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "dynamic_ntk",
+    "rope_config": {
+      "scaling_factor": 2.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 23.379,
+      "longppl": 19.216,
+      "passkey_retrieval": 0.378
+    },
+    "scaling_info": {
+      "method": "dynamic_ntk",
+      "alpha": 1.0,
+      "base_theta": 10000.0,
+      "max_dynamic_length": 1000000,
+      "original_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:26.414706",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "dynamic_ntk",
+    "rope_config": {
+      "scaling_factor": 2.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 32.468,
+      "longppl": 24.769,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "dynamic_ntk",
+      "alpha": 1.0,
+      "base_theta": 10000.0,
+      "max_dynamic_length": 1000000,
+      "original_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:26.615508",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "dynamic_ntk",
+    "rope_config": {
+      "scaling_factor": 2.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 47.835,
+      "longppl": 35.593,
+      "passkey_retrieval": 0.069
+    },
+    "scaling_info": {
+      "method": "dynamic_ntk",
+      "alpha": 1.0,
+      "base_theta": 10000.0,
+      "max_dynamic_length": 1000000,
+      "original_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:26.816311",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "dynamic_ntk",
+    "rope_config": {
+      "scaling_factor": 4.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 21.678,
+      "longppl": 15.425,
+      "passkey_retrieval": 0.972
+    },
+    "scaling_info": {
+      "method": "dynamic_ntk",
+      "alpha": 1.0,
+      "base_theta": 10000.0,
+      "max_dynamic_length": 1000000,
+      "original_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:27.017049",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "dynamic_ntk",
+    "rope_config": {
+      "scaling_factor": 4.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 23.108,
+      "longppl": 17.796,
+      "passkey_retrieval": 0.347
+    },
+    "scaling_info": {
+      "method": "dynamic_ntk",
+      "alpha": 1.0,
+      "base_theta": 10000.0,
+      "max_dynamic_length": 1000000,
+      "original_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:27.218126",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "dynamic_ntk",
+    "rope_config": {
+      "scaling_factor": 4.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 31.924,
+      "longppl": 25.439,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "dynamic_ntk",
+      "alpha": 1.0,
+      "base_theta": 10000.0,
+      "max_dynamic_length": 1000000,
+      "original_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:27.419001",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "dynamic_ntk",
+    "rope_config": {
+      "scaling_factor": 4.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 47.46,
+      "longppl": 35.115,
+      "passkey_retrieval": 0.05
+    },
+    "scaling_info": {
+      "method": "dynamic_ntk",
+      "alpha": 1.0,
+      "base_theta": 10000.0,
+      "max_dynamic_length": 1000000,
+      "original_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:27.619757",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "dynamic_ntk",
+    "rope_config": {
+      "scaling_factor": 8.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 22.586,
+      "longppl": 15.582,
+      "passkey_retrieval": 0.928
+    },
+    "scaling_info": {
+      "method": "dynamic_ntk",
+      "alpha": 1.0,
+      "base_theta": 10000.0,
+      "max_dynamic_length": 1000000,
+      "original_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:27.820661",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "dynamic_ntk",
+    "rope_config": {
+      "scaling_factor": 8.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 23.915,
+      "longppl": 16.879,
+      "passkey_retrieval": 0.401
+    },
+    "scaling_info": {
+      "method": "dynamic_ntk",
+      "alpha": 1.0,
+      "base_theta": 10000.0,
+      "max_dynamic_length": 1000000,
+      "original_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:28.021389",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "dynamic_ntk",
+    "rope_config": {
+      "scaling_factor": 8.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 32.245,
+      "longppl": 23.126,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "dynamic_ntk",
+      "alpha": 1.0,
+      "base_theta": 10000.0,
+      "max_dynamic_length": 1000000,
+      "original_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:28.222517",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "dynamic_ntk",
+    "rope_config": {
+      "scaling_factor": 8.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 48.273,
+      "longppl": 31.676,
+      "passkey_retrieval": 0.008
+    },
+    "scaling_info": {
+      "method": "dynamic_ntk",
+      "alpha": 1.0,
+      "base_theta": 10000.0,
+      "max_dynamic_length": 1000000,
+      "original_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:28.423362",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  }
+]

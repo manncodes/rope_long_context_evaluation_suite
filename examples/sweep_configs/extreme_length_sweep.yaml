@@ -1,0 +1,83 @@
+# Extreme context length evaluation
+# Tests methods at very long context lengths (512K - 2M tokens)
+
+# Model Configuration
+model_name: "meta-llama/Llama-2-13b-hf"
+model_type: "hf_local"
+model_path: "./models/llama-2-13b-hf"
+
+# Methods that can handle extreme lengths
+rope_methods:
+  - "yarn"
+  - "longrope" 
+  - "dynamic_ntk"
+
+# Extreme context lengths (512K to 2M tokens)
+context_lengths: [524288, 1048576, 2097152]  # 512K, 1M, 2M
+
+# Focus on key metrics that work at extreme lengths
+metrics:
+  - "passkey_retrieval"    # More reliable at extreme lengths
+  - "perplexity"           # Basic language modeling
+  
+# Parameter grids optimized for extreme lengths
+parameter_grids:
+  yarn:
+    # Larger ramp parameters for extreme scaling
+    s:
+      values: [32, 64, 128, 256]
+      distribution: "grid"
+    alpha:
+      values: [1.0, 2.0, 4.0]
+      distribution: "grid" 
+    beta:
+      values: [512, 1024, 2048]  # Extreme scaling factors
+      distribution: "grid"
+    attention_factor:
+      values: [0.05, 0.1, 0.2]   # Lower values for stability
+      distribution: "grid"
+    beta_fast:
+      values: [128, 256]
+      distribution: "grid"
+    beta_slow:
+      values: [0.5, 1.0]
+      distribution: "grid"
+      
+  longrope:
+    factor_strategy:
+      values: ["layer_wise", "dimension_wise"]
+      distribution: "grid"
+    # Aggressive scaling patterns for extreme lengths
+    short_factor:
+      values:
+        - [1, 2, 4, 8, 16, 8, 4, 2]   # Progressive pyramid  
+        - [2, 4, 8, 16, 16, 8, 4, 2]  # Enhanced pyramid
+      distribution: "grid"
+    long_factor:
+      values:
+        - [4, 8, 16, 32, 64, 32, 16, 8]   # Extreme pyramid
+        - [8, 16, 32, 64, 64, 32, 16, 8]  # Ultra pyramid
+      distribution: "grid"
+      
+  dynamic_ntk:
+    # Higher alpha values for extreme dynamic scaling
+    alpha:
+      values: [2.0, 4.0, 8.0, 16.0]
+      distribution: "grid"
+
+# Sweep Settings
+max_configs_per_method: 30
+parallel_jobs: 2  # Limited due to memory requirements
+use_cache: true
+cache_dir: "./sweep_cache/extreme_length"
+output_dir: "./sweep_results/extreme_length"
+
+# Conservative early stopping due to computational cost
+early_stopping: true
+early_stopping_metric: "passkey_retrieval"
+early_stopping_threshold: 0.1  # Stop if accuracy < 10%
+early_stopping_patience: 3
+
+# High memory requirements
+max_gpu_memory_gb: 80.0
+auto_batch_size: true

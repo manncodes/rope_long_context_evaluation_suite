@@ -1,0 +1,542 @@
+[
+  {
+    "rope_method": "longrope",
+    "rope_config": {
+      "scaling_factor": 2.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 20.967,
+      "longppl": 16.102,
+      "passkey_retrieval": 1.0
+    },
+    "scaling_info": {
+      "method": "longrope",
+      "short_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "long_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "factor_strategy": "layer_wise",
+      "progressive_extension": true,
+      "short_context_recovery": true,
+      "target_length": 2048000,
+      "original_max_position_embeddings": null,
+      "scaling_factor": null
+    },
+    "timestamp": "2025-08-20T16:00:23.792075",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "longrope",
+    "rope_config": {
+      "scaling_factor": 2.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 22.779,
+      "longppl": 18.723,
+      "passkey_retrieval": 0.378
+    },
+    "scaling_info": {
+      "method": "longrope",
+      "short_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "long_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "factor_strategy": "layer_wise",
+      "progressive_extension": true,
+      "short_context_recovery": true,
+      "target_length": 2048000,
+      "original_max_position_embeddings": null,
+      "scaling_factor": null
+    },
+    "timestamp": "2025-08-20T16:00:23.992434",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "longrope",
+    "rope_config": {
+      "scaling_factor": 2.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 31.868,
+      "longppl": 24.311,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "longrope",
+      "short_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "long_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "factor_strategy": "layer_wise",
+      "progressive_extension": true,
+      "short_context_recovery": true,
+      "target_length": 2048000,
+      "original_max_position_embeddings": null,
+      "scaling_factor": null
+    },
+    "timestamp": "2025-08-20T16:00:24.192817",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "longrope",
+    "rope_config": {
+      "scaling_factor": 2.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 47.235,
+      "longppl": 35.147,
+      "passkey_retrieval": 0.069
+    },
+    "scaling_info": {
+      "method": "longrope",
+      "short_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "long_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "factor_strategy": "layer_wise",
+      "progressive_extension": true,
+      "short_context_recovery": true,
+      "target_length": 2048000,
+      "original_max_position_embeddings": null,
+      "scaling_factor": null
+    },
+    "timestamp": "2025-08-20T16:00:24.393202",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "longrope",
+    "rope_config": {
+      "scaling_factor": 4.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 21.078,
+      "longppl": 14.998,
+      "passkey_retrieval": 0.972
+    },
+    "scaling_info": {
+      "method": "longrope",
+      "short_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "long_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "factor_strategy": "layer_wise",
+      "progressive_extension": true,
+      "short_context_recovery": true,
+      "target_length": 2048000,
+      "original_max_position_embeddings": null,
+      "scaling_factor": null
+    },
+    "timestamp": "2025-08-20T16:00:24.593708",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "longrope",
+    "rope_config": {
+      "scaling_factor": 4.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 22.508,
+      "longppl": 17.334,
+      "passkey_retrieval": 0.347
+    },
+    "scaling_info": {
+      "method": "longrope",
+      "short_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "long_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "factor_strategy": "layer_wise",
+      "progressive_extension": true,
+      "short_context_recovery": true,
+      "target_length": 2048000,
+      "original_max_position_embeddings": null,
+      "scaling_factor": null
+    },
+    "timestamp": "2025-08-20T16:00:24.794048",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "longrope",
+    "rope_config": {
+      "scaling_factor": 4.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 31.324,
+      "longppl": 24.961,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "longrope",
+      "short_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "long_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "factor_strategy": "layer_wise",
+      "progressive_extension": true,
+      "short_context_recovery": true,
+      "target_length": 2048000,
+      "original_max_position_embeddings": null,
+      "scaling_factor": null
+    },
+    "timestamp": "2025-08-20T16:00:24.994313",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "longrope",
+    "rope_config": {
+      "scaling_factor": 4.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 46.86,
+      "longppl": 34.671,
+      "passkey_retrieval": 0.05
+    },
+    "scaling_info": {
+      "method": "longrope",
+      "short_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "long_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "factor_strategy": "layer_wise",
+      "progressive_extension": true,
+      "short_context_recovery": true,
+      "target_length": 2048000,
+      "original_max_position_embeddings": null,
+      "scaling_factor": null
+    },
+    "timestamp": "2025-08-20T16:00:25.194758",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "longrope",
+    "rope_config": {
+      "scaling_factor": 8.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 21.986,
+      "longppl": 15.168,
+      "passkey_retrieval": 0.928
+    },
+    "scaling_info": {
+      "method": "longrope",
+      "short_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "long_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "factor_strategy": "layer_wise",
+      "progressive_extension": true,
+      "short_context_recovery": true,
+      "target_length": 2048000,
+      "original_max_position_embeddings": null,
+      "scaling_factor": null
+    },
+    "timestamp": "2025-08-20T16:00:25.395127",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "longrope",
+    "rope_config": {
+      "scaling_factor": 8.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 23.315,
+      "longppl": 16.456,
+      "passkey_retrieval": 0.401
+    },
+    "scaling_info": {
+      "method": "longrope",
+      "short_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "long_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "factor_strategy": "layer_wise",
+      "progressive_extension": true,
+      "short_context_recovery": true,
+      "target_length": 2048000,
+      "original_max_position_embeddings": null,
+      "scaling_factor": null
+    },
+    "timestamp": "2025-08-20T16:00:25.595741",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "longrope",
+    "rope_config": {
+      "scaling_factor": 8.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 31.645,
+      "longppl": 22.696,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "longrope",
+      "short_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "long_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "factor_strategy": "layer_wise",
+      "progressive_extension": true,
+      "short_context_recovery": true,
+      "target_length": 2048000,
+      "original_max_position_embeddings": null,
+      "scaling_factor": null
+    },
+    "timestamp": "2025-08-20T16:00:25.796132",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "longrope",
+    "rope_config": {
+      "scaling_factor": 8.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 47.673,
+      "longppl": 31.282,
+      "passkey_retrieval": 0.008
+    },
+    "scaling_info": {
+      "method": "longrope",
+      "short_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "long_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "factor_strategy": "layer_wise",
+      "progressive_extension": true,
+      "short_context_recovery": true,
+      "target_length": 2048000,
+      "original_max_position_embeddings": null,
+      "scaling_factor": null
+    },
+    "timestamp": "2025-08-20T16:00:25.996613",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  }
+]

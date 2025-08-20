@@ -1,0 +1,4658 @@
+[
+  {
+    "rope_method": "linear_interpolation",
+    "rope_config": {
+      "scaling_factor": 2.0
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 22.421,
+      "longppl": 16.638,
+      "passkey_retrieval": 0.997
+    },
+    "scaling_info": {
+      "method": "linear_interpolation",
+      "scaling_factor": 2.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:03.672120",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "linear_interpolation",
+    "rope_config": {
+      "scaling_factor": 2.0
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 24.251,
+      "longppl": 18.593,
+      "passkey_retrieval": 0.36
+    },
+    "scaling_info": {
+      "method": "linear_interpolation",
+      "scaling_factor": 2.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:03.872978",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "linear_interpolation",
+    "rope_config": {
+      "scaling_factor": 2.0
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 32.752,
+      "longppl": 26.637,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "linear_interpolation",
+      "scaling_factor": 2.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:04.074422",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "linear_interpolation",
+    "rope_config": {
+      "scaling_factor": 2.0
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 48.624,
+      "longppl": 34.667,
+      "passkey_retrieval": 0.028
+    },
+    "scaling_info": {
+      "method": "linear_interpolation",
+      "scaling_factor": 2.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:04.275012",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "linear_interpolation",
+    "rope_config": {
+      "scaling_factor": 3.0
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 23.275,
+      "longppl": 18.078,
+      "passkey_retrieval": 0.952
+    },
+    "scaling_info": {
+      "method": "linear_interpolation",
+      "scaling_factor": 3.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:04.475475",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "linear_interpolation",
+    "rope_config": {
+      "scaling_factor": 3.0
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 24.607,
+      "longppl": 19.182,
+      "passkey_retrieval": 0.404
+    },
+    "scaling_info": {
+      "method": "linear_interpolation",
+      "scaling_factor": 3.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:04.675937",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "linear_interpolation",
+    "rope_config": {
+      "scaling_factor": 3.0
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 32.775,
+      "longppl": 24.567,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "linear_interpolation",
+      "scaling_factor": 3.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:04.877203",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "linear_interpolation",
+    "rope_config": {
+      "scaling_factor": 3.0
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 49.24,
+      "longppl": 34.474,
+      "passkey_retrieval": 0.024
+    },
+    "scaling_info": {
+      "method": "linear_interpolation",
+      "scaling_factor": 3.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:05.077917",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "linear_interpolation",
+    "rope_config": {
+      "scaling_factor": 4.0
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 22.817,
+      "longppl": 16.664,
+      "passkey_retrieval": 0.984
+    },
+    "scaling_info": {
+      "method": "linear_interpolation",
+      "scaling_factor": 4.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:05.278586",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "linear_interpolation",
+    "rope_config": {
+      "scaling_factor": 4.0
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 24.744,
+      "longppl": 18.565,
+      "passkey_retrieval": 0.379
+    },
+    "scaling_info": {
+      "method": "linear_interpolation",
+      "scaling_factor": 4.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:05.479082",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "linear_interpolation",
+    "rope_config": {
+      "scaling_factor": 4.0
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 32.844,
+      "longppl": 25.154,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "linear_interpolation",
+      "scaling_factor": 4.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:05.679518",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "linear_interpolation",
+    "rope_config": {
+      "scaling_factor": 4.0
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 48.934,
+      "longppl": 33.192,
+      "passkey_retrieval": 0.043
+    },
+    "scaling_info": {
+      "method": "linear_interpolation",
+      "scaling_factor": 4.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:05.880458",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "linear_interpolation",
+    "rope_config": {
+      "scaling_factor": 8.0
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 23.647,
+      "longppl": 18.542,
+      "passkey_retrieval": 0.945
+    },
+    "scaling_info": {
+      "method": "linear_interpolation",
+      "scaling_factor": 8.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:06.081399",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "linear_interpolation",
+    "rope_config": {
+      "scaling_factor": 8.0
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 25.599,
+      "longppl": 20.632,
+      "passkey_retrieval": 0.394
+    },
+    "scaling_info": {
+      "method": "linear_interpolation",
+      "scaling_factor": 8.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:06.282781",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "linear_interpolation",
+    "rope_config": {
+      "scaling_factor": 8.0
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 33.083,
+      "longppl": 24.344,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "linear_interpolation",
+      "scaling_factor": 8.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:06.484038",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "linear_interpolation",
+    "rope_config": {
+      "scaling_factor": 8.0
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 49.15,
+      "longppl": 34.619,
+      "passkey_retrieval": 0.086
+    },
+    "scaling_info": {
+      "method": "linear_interpolation",
+      "scaling_factor": 8.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:06.685079",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 1.0,
+      "beta": 16
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 21.789,
+      "longppl": 15.43,
+      "passkey_retrieval": 0.958
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 1.0,
+      "beta": 16,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:06.906172",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 1.0,
+      "beta": 16
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 23.879,
+      "longppl": 16.61,
+      "passkey_retrieval": 0.399
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 1.0,
+      "beta": 16,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:07.106856",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 1.0,
+      "beta": 16
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 31.204,
+      "longppl": 23.63,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 1.0,
+      "beta": 16,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:07.307282",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 1.0,
+      "beta": 16
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 46.985,
+      "longppl": 39.198,
+      "passkey_retrieval": 0.036
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 1.0,
+      "beta": 16,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:07.508882",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 1.0,
+      "beta": 32
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 21.132,
+      "longppl": 15.432,
+      "passkey_retrieval": 1.0
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 1.0,
+      "beta": 32,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:07.709579",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 1.0,
+      "beta": 32
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 23.54,
+      "longppl": 17.207,
+      "passkey_retrieval": 0.396
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 1.0,
+      "beta": 32,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:07.910064",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 1.0,
+      "beta": 32
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 31.858,
+      "longppl": 20.59,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 1.0,
+      "beta": 32,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:08.110650",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 1.0,
+      "beta": 32
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 47.444,
+      "longppl": 38.826,
+      "passkey_retrieval": 0.038
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 1.0,
+      "beta": 32,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:08.311269",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 1.0,
+      "beta": 64
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 21.475,
+      "longppl": 17.638,
+      "passkey_retrieval": 1.0
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 1.0,
+      "beta": 64,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:08.512101",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 1.0,
+      "beta": 64
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 23.103,
+      "longppl": 18.044,
+      "passkey_retrieval": 0.371
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 1.0,
+      "beta": 64,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:08.712814",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 1.0,
+      "beta": 64
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 31.702,
+      "longppl": 22.61,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 1.0,
+      "beta": 64,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:08.913479",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 1.0,
+      "beta": 64
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 47.895,
+      "longppl": 37.987,
+      "passkey_retrieval": 0.076
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 1.0,
+      "beta": 64,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:09.114316",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 1.5,
+      "beta": 16
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 21.409,
+      "longppl": 16.194,
+      "passkey_retrieval": 0.932
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 1.5,
+      "beta": 16,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:09.315957",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 1.5,
+      "beta": 16
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 23.447,
+      "longppl": 19.256,
+      "passkey_retrieval": 0.368
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 1.5,
+      "beta": 16,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:09.516351",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 1.5,
+      "beta": 16
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 31.606,
+      "longppl": 23.922,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 1.5,
+      "beta": 16,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:09.716746",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 1.5,
+      "beta": 16
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 47.43,
+      "longppl": 33.803,
+      "passkey_retrieval": 0.053
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 1.5,
+      "beta": 16,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:09.917110",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 1.5,
+      "beta": 32
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 21.438,
+      "longppl": 14.584,
+      "passkey_retrieval": 0.959
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 1.5,
+      "beta": 32,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:10.117529",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 1.5,
+      "beta": 32
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 23.556,
+      "longppl": 17.494,
+      "passkey_retrieval": 0.377
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 1.5,
+      "beta": 32,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:10.317923",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 1.5,
+      "beta": 32
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 31.623,
+      "longppl": 25.063,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 1.5,
+      "beta": 32,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:10.518365",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 1.5,
+      "beta": 32
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 47.98,
+      "longppl": 35.012,
+      "passkey_retrieval": 0.066
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 1.5,
+      "beta": 32,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:10.718705",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 1.5,
+      "beta": 64
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 21.571,
+      "longppl": 15.829,
+      "passkey_retrieval": 0.968
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 1.5,
+      "beta": 64,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:10.919071",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 1.5,
+      "beta": 64
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 23.261,
+      "longppl": 16.139,
+      "passkey_retrieval": 0.388
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 1.5,
+      "beta": 64,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:11.119492",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 1.5,
+      "beta": 64
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 31.399,
+      "longppl": 20.668,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 1.5,
+      "beta": 64,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:11.320050",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 1.5,
+      "beta": 64
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 47.867,
+      "longppl": 35.4,
+      "passkey_retrieval": 0.052
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 1.5,
+      "beta": 64,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:11.520966",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 2.0,
+      "beta": 16
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 21.831,
+      "longppl": 16.473,
+      "passkey_retrieval": 0.996
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 2.0,
+      "beta": 16,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:11.721857",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 2.0,
+      "beta": 16
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 23.677,
+      "longppl": 19.492,
+      "passkey_retrieval": 0.382
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 2.0,
+      "beta": 16,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:11.922340",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 2.0,
+      "beta": 16
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 31.174,
+      "longppl": 23.275,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 2.0,
+      "beta": 16,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:12.122695",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 2.0,
+      "beta": 16
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 47.266,
+      "longppl": 32.314,
+      "passkey_retrieval": 0.035
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 2.0,
+      "beta": 16,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:12.323399",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 2.0,
+      "beta": 32
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 21.56,
+      "longppl": 14.569,
+      "passkey_retrieval": 1.0
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 2.0,
+      "beta": 32,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:12.523810",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 2.0,
+      "beta": 32
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 23.249,
+      "longppl": 16.754,
+      "passkey_retrieval": 0.373
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 2.0,
+      "beta": 32,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:12.724403",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 2.0,
+      "beta": 32
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 31.99,
+      "longppl": 24.168,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 2.0,
+      "beta": 32,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:12.925047",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 2.0,
+      "beta": 32
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 47.279,
+      "longppl": 34.136,
+      "passkey_retrieval": 0.049
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 2.0,
+      "beta": 32,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:13.125433",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 2.0,
+      "beta": 64
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 21.765,
+      "longppl": 16.418,
+      "passkey_retrieval": 0.944
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 2.0,
+      "beta": 64,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:13.326109",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 2.0,
+      "beta": 64
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 23.373,
+      "longppl": 17.771,
+      "passkey_retrieval": 0.384
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 2.0,
+      "beta": 64,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:13.526861",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 2.0,
+      "beta": 64
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 31.537,
+      "longppl": 22.703,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 2.0,
+      "beta": 64,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:13.727385",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "ntk_aware",
+    "rope_config": {
+      "alpha": 2.0,
+      "beta": 64
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 47.357,
+      "longppl": 31.665,
+      "passkey_retrieval": 0.062
+    },
+    "scaling_info": {
+      "method": "ntk_aware",
+      "alpha": 2.0,
+      "beta": 64,
+      "base_theta": 10000.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:13.929418",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 2.0,
+      "beta_fast": 24,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 20.355,
+      "longppl": 13.657,
+      "passkey_retrieval": 0.967
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 24,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:14.148805",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 2.0,
+      "beta_fast": 24,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 22.696,
+      "longppl": 18.001,
+      "passkey_retrieval": 0.367
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 24,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:14.349157",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 2.0,
+      "beta_fast": 24,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 30.241,
+      "longppl": 23.053,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 24,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:14.549471",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 2.0,
+      "beta_fast": 24,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 46.6,
+      "longppl": 32.428,
+      "passkey_retrieval": 0.063
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 24,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:14.749756",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 2.0,
+      "beta_fast": 32,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 19.97,
+      "longppl": 14.758,
+      "passkey_retrieval": 0.992
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 32,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:14.950099",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 2.0,
+      "beta_fast": 32,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 22.931,
+      "longppl": 17.861,
+      "passkey_retrieval": 0.379
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 32,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:15.150440",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 2.0,
+      "beta_fast": 32,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 29.634,
+      "longppl": 22.285,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 32,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:15.350772",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 2.0,
+      "beta_fast": 32,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 46.055,
+      "longppl": 36.223,
+      "passkey_retrieval": 0.038
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 32,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:15.551124",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 2.0,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 20.522,
+      "longppl": 17.365,
+      "passkey_retrieval": 0.962
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:15.751892",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 2.0,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 22.309,
+      "longppl": 16.647,
+      "passkey_retrieval": 0.368
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:15.952268",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 2.0,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 30.972,
+      "longppl": 23.007,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:16.152700",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 2.0,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 46.332,
+      "longppl": 35.487,
+      "passkey_retrieval": 0.048
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:16.353144",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 3.0,
+      "beta_fast": 24,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 20.451,
+      "longppl": 14.232,
+      "passkey_retrieval": 0.941
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 24,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:16.553450",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 3.0,
+      "beta_fast": 24,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 22.148,
+      "longppl": 16.645,
+      "passkey_retrieval": 0.388
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 24,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:16.754030",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 3.0,
+      "beta_fast": 24,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 30.261,
+      "longppl": 23.766,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 24,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:16.954733",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 3.0,
+      "beta_fast": 24,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 46.044,
+      "longppl": 35.322,
+      "passkey_retrieval": 0.052
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 24,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:17.155268",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 3.0,
+      "beta_fast": 32,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 19.836,
+      "longppl": 15.394,
+      "passkey_retrieval": 0.969
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 32,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:17.355630",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 3.0,
+      "beta_fast": 32,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 21.399,
+      "longppl": 14.598,
+      "passkey_retrieval": 0.411
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 32,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:17.556280",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 3.0,
+      "beta_fast": 32,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 29.911,
+      "longppl": 23.54,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 32,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:17.756738",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 3.0,
+      "beta_fast": 32,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 45.948,
+      "longppl": 32.23,
+      "passkey_retrieval": 0.045
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 32,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:17.957124",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 3.0,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 21.154,
+      "longppl": 15.743,
+      "passkey_retrieval": 0.977
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:18.158059",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 3.0,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 22.431,
+      "longppl": 16.651,
+      "passkey_retrieval": 0.4
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:18.358540",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 3.0,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 30.156,
+      "longppl": 24.238,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:18.558914",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 3.0,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 46.263,
+      "longppl": 31.828,
+      "passkey_retrieval": 0.027
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:18.759600",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 4.0,
+      "beta_fast": 24,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 19.868,
+      "longppl": 15.89,
+      "passkey_retrieval": 0.96
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 24,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:18.960173",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 4.0,
+      "beta_fast": 24,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 22.45,
+      "longppl": 17.792,
+      "passkey_retrieval": 0.429
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 24,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:19.160912",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 4.0,
+      "beta_fast": 24,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 30.242,
+      "longppl": 21.335,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 24,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:19.361162",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 4.0,
+      "beta_fast": 24,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 46.484,
+      "longppl": 34.233,
+      "passkey_retrieval": 0.06
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 24,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:19.561901",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 4.0,
+      "beta_fast": 32,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 20.269,
+      "longppl": 15.358,
+      "passkey_retrieval": 0.968
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 32,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:19.763581",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 4.0,
+      "beta_fast": 32,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 22.363,
+      "longppl": 18.221,
+      "passkey_retrieval": 0.369
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 32,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:19.963942",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 4.0,
+      "beta_fast": 32,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 29.847,
+      "longppl": 22.707,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 32,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:20.164257",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 4.0,
+      "beta_fast": 32,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 46.12,
+      "longppl": 36.236,
+      "passkey_retrieval": 0.022
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 32,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:20.364603",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 4.0,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 20.085,
+      "longppl": 16.163,
+      "passkey_retrieval": 0.923
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:20.565118",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 4.0,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 22.845,
+      "longppl": 16.057,
+      "passkey_retrieval": 0.385
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:20.765472",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 4.0,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 30.393,
+      "longppl": 22.324,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:20.966316",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 4.0,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 46.654,
+      "longppl": 33.936,
+      "passkey_retrieval": 0.064
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:21.167019",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 8.0,
+      "beta_fast": 24,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 20.933,
+      "longppl": 15.424,
+      "passkey_retrieval": 0.894
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 24,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:21.367415",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 8.0,
+      "beta_fast": 24,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 22.584,
+      "longppl": 17.326,
+      "passkey_retrieval": 0.377
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 24,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:21.568126",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 8.0,
+      "beta_fast": 24,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 30.628,
+      "longppl": 23.092,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 24,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:21.768571",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 8.0,
+      "beta_fast": 24,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 46.599,
+      "longppl": 31.113,
+      "passkey_retrieval": 0.013
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 24,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:21.968891",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 8.0,
+      "beta_fast": 32,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 20.46,
+      "longppl": 15.699,
+      "passkey_retrieval": 0.887
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 32,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:22.169408",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 8.0,
+      "beta_fast": 32,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 22.489,
+      "longppl": 15.949,
+      "passkey_retrieval": 0.378
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 32,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:22.370177",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 8.0,
+      "beta_fast": 32,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 30.878,
+      "longppl": 21.779,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 32,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:22.570399",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 8.0,
+      "beta_fast": 32,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 46.189,
+      "longppl": 36.251,
+      "passkey_retrieval": 0.036
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 32,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:22.770625",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 8.0,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 20.791,
+      "longppl": 17.306,
+      "passkey_retrieval": 0.92
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:22.970914",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 8.0,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 23.029,
+      "longppl": 17.79,
+      "passkey_retrieval": 0.381
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:23.171251",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 8.0,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 30.587,
+      "longppl": 23.247,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:23.371975",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 8.0,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "s": 1.0
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 46.728,
+      "longppl": 30.943,
+      "passkey_retrieval": 0.04
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:23.572462",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "longrope",
+    "rope_config": {
+      "scaling_factor": 2.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 20.967,
+      "longppl": 16.102,
+      "passkey_retrieval": 1.0
+    },
+    "scaling_info": {
+      "method": "longrope",
+      "short_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "long_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "factor_strategy": "layer_wise",
+      "progressive_extension": true,
+      "short_context_recovery": true,
+      "target_length": 2048000,
+      "original_max_position_embeddings": null,
+      "scaling_factor": null
+    },
+    "timestamp": "2025-08-20T16:00:23.792075",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "longrope",
+    "rope_config": {
+      "scaling_factor": 2.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 22.779,
+      "longppl": 18.723,
+      "passkey_retrieval": 0.378
+    },
+    "scaling_info": {
+      "method": "longrope",
+      "short_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "long_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "factor_strategy": "layer_wise",
+      "progressive_extension": true,
+      "short_context_recovery": true,
+      "target_length": 2048000,
+      "original_max_position_embeddings": null,
+      "scaling_factor": null
+    },
+    "timestamp": "2025-08-20T16:00:23.992434",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "longrope",
+    "rope_config": {
+      "scaling_factor": 2.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 31.868,
+      "longppl": 24.311,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "longrope",
+      "short_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "long_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "factor_strategy": "layer_wise",
+      "progressive_extension": true,
+      "short_context_recovery": true,
+      "target_length": 2048000,
+      "original_max_position_embeddings": null,
+      "scaling_factor": null
+    },
+    "timestamp": "2025-08-20T16:00:24.192817",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "longrope",
+    "rope_config": {
+      "scaling_factor": 2.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 47.235,
+      "longppl": 35.147,
+      "passkey_retrieval": 0.069
+    },
+    "scaling_info": {
+      "method": "longrope",
+      "short_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "long_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "factor_strategy": "layer_wise",
+      "progressive_extension": true,
+      "short_context_recovery": true,
+      "target_length": 2048000,
+      "original_max_position_embeddings": null,
+      "scaling_factor": null
+    },
+    "timestamp": "2025-08-20T16:00:24.393202",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "longrope",
+    "rope_config": {
+      "scaling_factor": 4.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 21.078,
+      "longppl": 14.998,
+      "passkey_retrieval": 0.972
+    },
+    "scaling_info": {
+      "method": "longrope",
+      "short_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "long_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "factor_strategy": "layer_wise",
+      "progressive_extension": true,
+      "short_context_recovery": true,
+      "target_length": 2048000,
+      "original_max_position_embeddings": null,
+      "scaling_factor": null
+    },
+    "timestamp": "2025-08-20T16:00:24.593708",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "longrope",
+    "rope_config": {
+      "scaling_factor": 4.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 22.508,
+      "longppl": 17.334,
+      "passkey_retrieval": 0.347
+    },
+    "scaling_info": {
+      "method": "longrope",
+      "short_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "long_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "factor_strategy": "layer_wise",
+      "progressive_extension": true,
+      "short_context_recovery": true,
+      "target_length": 2048000,
+      "original_max_position_embeddings": null,
+      "scaling_factor": null
+    },
+    "timestamp": "2025-08-20T16:00:24.794048",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "longrope",
+    "rope_config": {
+      "scaling_factor": 4.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 31.324,
+      "longppl": 24.961,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "longrope",
+      "short_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "long_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "factor_strategy": "layer_wise",
+      "progressive_extension": true,
+      "short_context_recovery": true,
+      "target_length": 2048000,
+      "original_max_position_embeddings": null,
+      "scaling_factor": null
+    },
+    "timestamp": "2025-08-20T16:00:24.994313",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "longrope",
+    "rope_config": {
+      "scaling_factor": 4.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 46.86,
+      "longppl": 34.671,
+      "passkey_retrieval": 0.05
+    },
+    "scaling_info": {
+      "method": "longrope",
+      "short_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "long_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "factor_strategy": "layer_wise",
+      "progressive_extension": true,
+      "short_context_recovery": true,
+      "target_length": 2048000,
+      "original_max_position_embeddings": null,
+      "scaling_factor": null
+    },
+    "timestamp": "2025-08-20T16:00:25.194758",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "longrope",
+    "rope_config": {
+      "scaling_factor": 8.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 21.986,
+      "longppl": 15.168,
+      "passkey_retrieval": 0.928
+    },
+    "scaling_info": {
+      "method": "longrope",
+      "short_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "long_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "factor_strategy": "layer_wise",
+      "progressive_extension": true,
+      "short_context_recovery": true,
+      "target_length": 2048000,
+      "original_max_position_embeddings": null,
+      "scaling_factor": null
+    },
+    "timestamp": "2025-08-20T16:00:25.395127",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "longrope",
+    "rope_config": {
+      "scaling_factor": 8.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 23.315,
+      "longppl": 16.456,
+      "passkey_retrieval": 0.401
+    },
+    "scaling_info": {
+      "method": "longrope",
+      "short_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "long_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "factor_strategy": "layer_wise",
+      "progressive_extension": true,
+      "short_context_recovery": true,
+      "target_length": 2048000,
+      "original_max_position_embeddings": null,
+      "scaling_factor": null
+    },
+    "timestamp": "2025-08-20T16:00:25.595741",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "longrope",
+    "rope_config": {
+      "scaling_factor": 8.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 31.645,
+      "longppl": 22.696,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "longrope",
+      "short_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "long_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "factor_strategy": "layer_wise",
+      "progressive_extension": true,
+      "short_context_recovery": true,
+      "target_length": 2048000,
+      "original_max_position_embeddings": null,
+      "scaling_factor": null
+    },
+    "timestamp": "2025-08-20T16:00:25.796132",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "longrope",
+    "rope_config": {
+      "scaling_factor": 8.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 47.673,
+      "longppl": 31.282,
+      "passkey_retrieval": 0.008
+    },
+    "scaling_info": {
+      "method": "longrope",
+      "short_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "long_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "factor_strategy": "layer_wise",
+      "progressive_extension": true,
+      "short_context_recovery": true,
+      "target_length": 2048000,
+      "original_max_position_embeddings": null,
+      "scaling_factor": null
+    },
+    "timestamp": "2025-08-20T16:00:25.996613",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "dynamic_ntk",
+    "rope_config": {
+      "scaling_factor": 2.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 21.567,
+      "longppl": 16.562,
+      "passkey_retrieval": 1.0
+    },
+    "scaling_info": {
+      "method": "dynamic_ntk",
+      "alpha": 1.0,
+      "base_theta": 10000.0,
+      "max_dynamic_length": 1000000,
+      "original_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:26.214168",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "dynamic_ntk",
+    "rope_config": {
+      "scaling_factor": 2.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 23.379,
+      "longppl": 19.216,
+      "passkey_retrieval": 0.378
+    },
+    "scaling_info": {
+      "method": "dynamic_ntk",
+      "alpha": 1.0,
+      "base_theta": 10000.0,
+      "max_dynamic_length": 1000000,
+      "original_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:26.414706",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "dynamic_ntk",
+    "rope_config": {
+      "scaling_factor": 2.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 32.468,
+      "longppl": 24.769,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "dynamic_ntk",
+      "alpha": 1.0,
+      "base_theta": 10000.0,
+      "max_dynamic_length": 1000000,
+      "original_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:26.615508",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "dynamic_ntk",
+    "rope_config": {
+      "scaling_factor": 2.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 47.835,
+      "longppl": 35.593,
+      "passkey_retrieval": 0.069
+    },
+    "scaling_info": {
+      "method": "dynamic_ntk",
+      "alpha": 1.0,
+      "base_theta": 10000.0,
+      "max_dynamic_length": 1000000,
+      "original_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:26.816311",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "dynamic_ntk",
+    "rope_config": {
+      "scaling_factor": 4.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 21.678,
+      "longppl": 15.425,
+      "passkey_retrieval": 0.972
+    },
+    "scaling_info": {
+      "method": "dynamic_ntk",
+      "alpha": 1.0,
+      "base_theta": 10000.0,
+      "max_dynamic_length": 1000000,
+      "original_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:27.017049",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "dynamic_ntk",
+    "rope_config": {
+      "scaling_factor": 4.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 23.108,
+      "longppl": 17.796,
+      "passkey_retrieval": 0.347
+    },
+    "scaling_info": {
+      "method": "dynamic_ntk",
+      "alpha": 1.0,
+      "base_theta": 10000.0,
+      "max_dynamic_length": 1000000,
+      "original_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:27.218126",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "dynamic_ntk",
+    "rope_config": {
+      "scaling_factor": 4.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 31.924,
+      "longppl": 25.439,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "dynamic_ntk",
+      "alpha": 1.0,
+      "base_theta": 10000.0,
+      "max_dynamic_length": 1000000,
+      "original_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:27.419001",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "dynamic_ntk",
+    "rope_config": {
+      "scaling_factor": 4.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 47.46,
+      "longppl": 35.115,
+      "passkey_retrieval": 0.05
+    },
+    "scaling_info": {
+      "method": "dynamic_ntk",
+      "alpha": 1.0,
+      "base_theta": 10000.0,
+      "max_dynamic_length": 1000000,
+      "original_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:27.619757",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "dynamic_ntk",
+    "rope_config": {
+      "scaling_factor": 8.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 22.586,
+      "longppl": 15.582,
+      "passkey_retrieval": 0.928
+    },
+    "scaling_info": {
+      "method": "dynamic_ntk",
+      "alpha": 1.0,
+      "base_theta": 10000.0,
+      "max_dynamic_length": 1000000,
+      "original_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:27.820661",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "dynamic_ntk",
+    "rope_config": {
+      "scaling_factor": 8.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 23.915,
+      "longppl": 16.879,
+      "passkey_retrieval": 0.401
+    },
+    "scaling_info": {
+      "method": "dynamic_ntk",
+      "alpha": 1.0,
+      "base_theta": 10000.0,
+      "max_dynamic_length": 1000000,
+      "original_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:28.021389",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "dynamic_ntk",
+    "rope_config": {
+      "scaling_factor": 8.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 32.245,
+      "longppl": 23.126,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "dynamic_ntk",
+      "alpha": 1.0,
+      "base_theta": 10000.0,
+      "max_dynamic_length": 1000000,
+      "original_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:28.222517",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "dynamic_ntk",
+    "rope_config": {
+      "scaling_factor": 8.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 48.273,
+      "longppl": 31.676,
+      "passkey_retrieval": 0.008
+    },
+    "scaling_info": {
+      "method": "dynamic_ntk",
+      "alpha": 1.0,
+      "base_theta": 10000.0,
+      "max_dynamic_length": 1000000,
+      "original_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T16:00:28.423362",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 2.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 20.591,
+      "longppl": 15.191,
+      "passkey_retrieval": 0.986
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 2.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:28.640318",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 2.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 22.433,
+      "longppl": 17.72,
+      "passkey_retrieval": 0.414
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 2.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:28.841448",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 2.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 30.927,
+      "longppl": 24.853,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 2.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:29.041908",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 2.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 46.65,
+      "longppl": 33.547,
+      "passkey_retrieval": 0.067
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 2.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:29.243016",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 2.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 20.438,
+      "longppl": 16.534,
+      "passkey_retrieval": 0.975
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 2.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:29.443796",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 2.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 23.164,
+      "longppl": 17.499,
+      "passkey_retrieval": 0.399
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 2.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:29.644537",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 2.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 30.415,
+      "longppl": 22.761,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 2.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:29.845215",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 2.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 46.847,
+      "longppl": 30.836,
+      "passkey_retrieval": 0.044
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 2.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:30.045771",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 2.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 21.388,
+      "longppl": 16.549,
+      "passkey_retrieval": 1.0
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 2.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:30.246722",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 2.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 22.66,
+      "longppl": 18.853,
+      "passkey_retrieval": 0.413
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 2.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:30.447838",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 2.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 30.676,
+      "longppl": 23.861,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 2.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:30.648539",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 2.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 46.775,
+      "longppl": 34.806,
+      "passkey_retrieval": 0.072
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 2.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:30.849116",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 2.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 20.801,
+      "longppl": 14.694,
+      "passkey_retrieval": 0.972
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 2.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:31.049759",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 2.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 23.084,
+      "longppl": 17.931,
+      "passkey_retrieval": 0.354
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 2.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:31.250197",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 2.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 30.744,
+      "longppl": 24.751,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 2.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:31.450927",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 2.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 46.225,
+      "longppl": 33.659,
+      "passkey_retrieval": 0.033
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 2.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:31.652143",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 4.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 20.065,
+      "longppl": 15.637,
+      "passkey_retrieval": 0.945
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 4.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:31.852657",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 4.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 22.17,
+      "longppl": 17.656,
+      "passkey_retrieval": 0.406
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 4.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:32.053200",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 4.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 30.523,
+      "longppl": 22.346,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 4.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:32.254020",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 4.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 46.617,
+      "longppl": 36.88,
+      "passkey_retrieval": 0.064
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 4.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:32.454616",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 4.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 20.493,
+      "longppl": 14.304,
+      "passkey_retrieval": 0.973
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 4.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:32.655547",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 4.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 22.866,
+      "longppl": 18.416,
+      "passkey_retrieval": 0.367
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 4.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:32.856728",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 4.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 30.862,
+      "longppl": 24.249,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 4.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:33.058802",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 4.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 47.238,
+      "longppl": 33.489,
+      "passkey_retrieval": 0.04
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 4.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:33.259809",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 4.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 20.838,
+      "longppl": 13.723,
+      "passkey_retrieval": 0.976
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 4.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:33.460819",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 4.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 22.508,
+      "longppl": 15.568,
+      "passkey_retrieval": 0.409
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 4.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:33.662044",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 4.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 30.548,
+      "longppl": 22.561,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 4.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:33.862797",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 4.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 46.297,
+      "longppl": 40.309,
+      "passkey_retrieval": 0.048
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 4.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:34.063365",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 4.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 20.485,
+      "longppl": 14.742,
+      "passkey_retrieval": 0.967
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 4.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:34.263686",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 4.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 22.985,
+      "longppl": 18.337,
+      "passkey_retrieval": 0.419
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 4.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:34.464292",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 4.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 30.623,
+      "longppl": 24.362,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 4.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:34.664680",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 4.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 47.222,
+      "longppl": 38.921,
+      "passkey_retrieval": 0.072
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 4.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:34.865322",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 8.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 20.758,
+      "longppl": 16.952,
+      "passkey_retrieval": 0.993
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 8.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:35.065821",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 8.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 22.861,
+      "longppl": 16.541,
+      "passkey_retrieval": 0.41
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 8.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:35.266892",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 8.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 31.1,
+      "longppl": 22.822,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 8.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:35.467394",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 8.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 46.827,
+      "longppl": 27.826,
+      "passkey_retrieval": 0.074
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 8.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:35.668157",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 8.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 20.9,
+      "longppl": 15.42,
+      "passkey_retrieval": 1.0
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 8.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:35.868825",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 8.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 22.934,
+      "longppl": 16.827,
+      "passkey_retrieval": 0.402
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 8.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:36.069322",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 8.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 30.413,
+      "longppl": 19.735,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 8.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:36.269995",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 8.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 47.228,
+      "longppl": 36.877,
+      "passkey_retrieval": 0.073
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 8.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:36.470969",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 8.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 20.678,
+      "longppl": 15.765,
+      "passkey_retrieval": 0.968
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 8.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:36.672013",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 8.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 22.534,
+      "longppl": 16.535,
+      "passkey_retrieval": 0.41
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 8.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:36.872863",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 8.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 30.702,
+      "longppl": 25.723,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 8.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:37.073731",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 8.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 47.164,
+      "longppl": 37.861,
+      "passkey_retrieval": 0.083
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 8.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:37.274913",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 8.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 20.647,
+      "longppl": 15.302,
+      "passkey_retrieval": 0.945
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 8.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:37.475940",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 8.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 22.9,
+      "longppl": 18.739,
+      "passkey_retrieval": 0.394
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 8.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:37.677259",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 8.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 31.005,
+      "longppl": 25.17,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 8.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:37.878008",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 8.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 46.656,
+      "longppl": 36.406,
+      "passkey_retrieval": 0.023
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 8.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:38.079184",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  }
+]

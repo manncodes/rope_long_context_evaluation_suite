@@ -1,0 +1,2802 @@
+[
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 2.0,
+      "beta_fast": 24,
+      "beta_slow": 1,
+      "s": 0.5
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 23.066,
+      "longppl": 21.862,
+      "passkey_retrieval": 0.9
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 0.5,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 24,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:12.184289",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 2.0,
+      "beta_fast": 24,
+      "beta_slow": 1,
+      "s": 0.5
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 28.837,
+      "longppl": 21.699,
+      "passkey_retrieval": 0.358
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 0.5,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 24,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:12.285175",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 2.0,
+      "beta_fast": 24,
+      "beta_slow": 1,
+      "s": 0.5
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 38.025,
+      "longppl": 33.766,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 0.5,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 24,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:12.386409",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 2.0,
+      "beta_fast": 24,
+      "beta_slow": 1,
+      "s": 0.5
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 59.082,
+      "longppl": 43.667,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 0.5,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 24,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:12.487412",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 2.0,
+      "beta_fast": 24,
+      "beta_slow": 3,
+      "s": 1.0
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 23.081,
+      "longppl": 20.02,
+      "passkey_retrieval": 0.846
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 24,
+      "beta_slow": 3,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:12.588594",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 2.0,
+      "beta_fast": 24,
+      "beta_slow": 3,
+      "s": 1.0
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 28.329,
+      "longppl": 27.128,
+      "passkey_retrieval": 0.324
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 24,
+      "beta_slow": 3,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:12.689454",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 2.0,
+      "beta_fast": 24,
+      "beta_slow": 3,
+      "s": 1.0
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 38.411,
+      "longppl": 28.421,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 24,
+      "beta_slow": 3,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:12.790273",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 2.0,
+      "beta_fast": 24,
+      "beta_slow": 3,
+      "s": 1.0
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 58.579,
+      "longppl": 47.849,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 24,
+      "beta_slow": 3,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:12.890717",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 2.0,
+      "beta_fast": 32,
+      "beta_slow": 2,
+      "s": 1.5
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 23.011,
+      "longppl": 19.977,
+      "passkey_retrieval": 0.941
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.5,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 32,
+      "beta_slow": 2,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:12.991086",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 2.0,
+      "beta_fast": 32,
+      "beta_slow": 2,
+      "s": 1.5
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 27.287,
+      "longppl": 19.429,
+      "passkey_retrieval": 0.428
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.5,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 32,
+      "beta_slow": 2,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:13.091440",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 2.0,
+      "beta_fast": 32,
+      "beta_slow": 2,
+      "s": 1.5
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 38.508,
+      "longppl": 30.633,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.5,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 32,
+      "beta_slow": 2,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:13.191796",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 2.0,
+      "beta_fast": 32,
+      "beta_slow": 2,
+      "s": 1.5
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 57.924,
+      "longppl": 53.228,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.5,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 32,
+      "beta_slow": 2,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:13.292207",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 2.0,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "s": 2.0
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 24.481,
+      "longppl": 20.383,
+      "passkey_retrieval": 0.742
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 2.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:13.392505",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 2.0,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "s": 2.0
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 28.456,
+      "longppl": 25.818,
+      "passkey_retrieval": 0.237
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 2.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:13.493010",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 2.0,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "s": 2.0
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 39.652,
+      "longppl": 30.895,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 2.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:13.593399",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 2.0,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "s": 2.0
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 59.144,
+      "longppl": 46.631,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 2.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:13.693780",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 2.0,
+      "beta_fast": 64,
+      "beta_slow": 1,
+      "s": 0.5
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 25.146,
+      "longppl": 25.346,
+      "passkey_retrieval": 0.447
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 0.5,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 64,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:13.794225",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 2.0,
+      "beta_fast": 64,
+      "beta_slow": 1,
+      "s": 0.5
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 30.312,
+      "longppl": 26.539,
+      "passkey_retrieval": 0.001
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 0.5,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 64,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:13.894838",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 2.0,
+      "beta_fast": 64,
+      "beta_slow": 1,
+      "s": 0.5
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 40.247,
+      "longppl": 30.716,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 0.5,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 64,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:13.995272",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 2.0,
+      "beta_fast": 64,
+      "beta_slow": 1,
+      "s": 0.5
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 60.202,
+      "longppl": 45.036,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 0.5,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 64,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:14.095965",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 2.0,
+      "beta_fast": 64,
+      "beta_slow": 3,
+      "s": 1.0
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 25.688,
+      "longppl": 18.342,
+      "passkey_retrieval": 0.616
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 64,
+      "beta_slow": 3,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:14.196435",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 2.0,
+      "beta_fast": 64,
+      "beta_slow": 3,
+      "s": 1.0
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 29.998,
+      "longppl": 24.291,
+      "passkey_retrieval": 0.015
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 64,
+      "beta_slow": 3,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:14.297686",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 2.0,
+      "beta_fast": 64,
+      "beta_slow": 3,
+      "s": 1.0
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 39.031,
+      "longppl": 42.4,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 64,
+      "beta_slow": 3,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:14.398945",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 2.0,
+      "beta_fast": 64,
+      "beta_slow": 3,
+      "s": 1.0
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 60.576,
+      "longppl": 54.655,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 64,
+      "beta_slow": 3,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:14.499382",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 3.0,
+      "beta_fast": 24,
+      "beta_slow": 2,
+      "s": 1.5
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 24.209,
+      "longppl": 17.824,
+      "passkey_retrieval": 0.873
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.5,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 24,
+      "beta_slow": 2,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:14.599922",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 3.0,
+      "beta_fast": 24,
+      "beta_slow": 2,
+      "s": 1.5
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 28.286,
+      "longppl": 24.37,
+      "passkey_retrieval": 0.359
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.5,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 24,
+      "beta_slow": 2,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:14.700518",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 3.0,
+      "beta_fast": 24,
+      "beta_slow": 2,
+      "s": 1.5
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 38.82,
+      "longppl": 30.359,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.5,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 24,
+      "beta_slow": 2,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:14.801007",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 3.0,
+      "beta_fast": 24,
+      "beta_slow": 2,
+      "s": 1.5
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 59.498,
+      "longppl": 49.423,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.5,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 24,
+      "beta_slow": 2,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:14.901984",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 3.0,
+      "beta_fast": 32,
+      "beta_slow": 1,
+      "s": 2.0
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 21.882,
+      "longppl": 16.835,
+      "passkey_retrieval": 0.981
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 2.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 32,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:15.002936",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 3.0,
+      "beta_fast": 32,
+      "beta_slow": 1,
+      "s": 2.0
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 27.593,
+      "longppl": 22.362,
+      "passkey_retrieval": 0.564
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 2.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 32,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:15.103571",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 3.0,
+      "beta_fast": 32,
+      "beta_slow": 1,
+      "s": 2.0
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 37.323,
+      "longppl": 24.154,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 2.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 32,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:15.204539",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 3.0,
+      "beta_fast": 32,
+      "beta_slow": 1,
+      "s": 2.0
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 58.183,
+      "longppl": 57.675,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 2.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 32,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:15.305755",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 3.0,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "s": 0.5
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 23.545,
+      "longppl": 12.0,
+      "passkey_retrieval": 0.846
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 0.5,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:15.406337",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 3.0,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "s": 0.5
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 28.697,
+      "longppl": 27.692,
+      "passkey_retrieval": 0.198
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 0.5,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:15.507552",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 3.0,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "s": 0.5
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 38.922,
+      "longppl": 35.501,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 0.5,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:15.608488",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 3.0,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "s": 0.5
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 58.954,
+      "longppl": 41.481,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 0.5,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:15.709187",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 3.0,
+      "beta_fast": 48,
+      "beta_slow": 3,
+      "s": 1.0
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 24.584,
+      "longppl": 17.928,
+      "passkey_retrieval": 0.748
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 48,
+      "beta_slow": 3,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:15.809774",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 3.0,
+      "beta_fast": 48,
+      "beta_slow": 3,
+      "s": 1.0
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 28.922,
+      "longppl": 22.546,
+      "passkey_retrieval": 0.343
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 48,
+      "beta_slow": 3,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:15.910318",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 3.0,
+      "beta_fast": 48,
+      "beta_slow": 3,
+      "s": 1.0
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 39.676,
+      "longppl": 25.375,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 48,
+      "beta_slow": 3,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:16.010700",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 3.0,
+      "beta_fast": 48,
+      "beta_slow": 3,
+      "s": 1.0
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 59.079,
+      "longppl": 41.149,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 48,
+      "beta_slow": 3,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:16.111535",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 3.0,
+      "beta_fast": 64,
+      "beta_slow": 2,
+      "s": 1.5
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 23.528,
+      "longppl": 17.88,
+      "passkey_retrieval": 0.468
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.5,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 64,
+      "beta_slow": 2,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:16.213068",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 3.0,
+      "beta_fast": 64,
+      "beta_slow": 2,
+      "s": 1.5
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 29.932,
+      "longppl": 22.479,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.5,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 64,
+      "beta_slow": 2,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:16.314240",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 3.0,
+      "beta_fast": 64,
+      "beta_slow": 2,
+      "s": 1.5
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 40.155,
+      "longppl": 42.46,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.5,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 64,
+      "beta_slow": 2,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:16.415372",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 3.0,
+      "beta_fast": 64,
+      "beta_slow": 2,
+      "s": 1.5
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 60.221,
+      "longppl": 42.897,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.5,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 64,
+      "beta_slow": 2,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:16.516435",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 4.0,
+      "beta_fast": 24,
+      "beta_slow": 1,
+      "s": 2.0
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 23.423,
+      "longppl": 13.982,
+      "passkey_retrieval": 0.858
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 2.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 24,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:16.617937",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 4.0,
+      "beta_fast": 24,
+      "beta_slow": 1,
+      "s": 2.0
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 28.536,
+      "longppl": 20.363,
+      "passkey_retrieval": 0.306
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 2.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 24,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:16.718947",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 4.0,
+      "beta_fast": 24,
+      "beta_slow": 1,
+      "s": 2.0
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 38.467,
+      "longppl": 29.698,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 2.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 24,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:16.819693",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 4.0,
+      "beta_fast": 24,
+      "beta_slow": 1,
+      "s": 2.0
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 58.3,
+      "longppl": 47.579,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 2.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 24,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:16.920746",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 4.0,
+      "beta_fast": 32,
+      "beta_slow": 1,
+      "s": 0.5
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 22.645,
+      "longppl": 22.37,
+      "passkey_retrieval": 0.969
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 0.5,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 32,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:17.021778",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 4.0,
+      "beta_fast": 32,
+      "beta_slow": 1,
+      "s": 0.5
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 28.16,
+      "longppl": 21.958,
+      "passkey_retrieval": 0.474
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 0.5,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 32,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:17.122338",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 4.0,
+      "beta_fast": 32,
+      "beta_slow": 1,
+      "s": 0.5
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 38.321,
+      "longppl": 31.303,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 0.5,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 32,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:17.222866",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 4.0,
+      "beta_fast": 32,
+      "beta_slow": 1,
+      "s": 0.5
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 58.441,
+      "longppl": 44.707,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 0.5,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 32,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:17.323270",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 4.0,
+      "beta_fast": 32,
+      "beta_slow": 3,
+      "s": 1.0
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 23.004,
+      "longppl": 18.967,
+      "passkey_retrieval": 0.983
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 32,
+      "beta_slow": 3,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:17.423763",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 4.0,
+      "beta_fast": 32,
+      "beta_slow": 3,
+      "s": 1.0
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 28.13,
+      "longppl": 26.213,
+      "passkey_retrieval": 0.503
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 32,
+      "beta_slow": 3,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:17.524235",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 4.0,
+      "beta_fast": 32,
+      "beta_slow": 3,
+      "s": 1.0
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 38.65,
+      "longppl": 33.891,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 32,
+      "beta_slow": 3,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:17.624625",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 4.0,
+      "beta_fast": 32,
+      "beta_slow": 3,
+      "s": 1.0
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 57.602,
+      "longppl": 38.382,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 32,
+      "beta_slow": 3,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:17.725200",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 4.0,
+      "beta_fast": 48,
+      "beta_slow": 2,
+      "s": 1.5
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 24.135,
+      "longppl": 17.237,
+      "passkey_retrieval": 0.784
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.5,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 48,
+      "beta_slow": 2,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:17.826431",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 4.0,
+      "beta_fast": 48,
+      "beta_slow": 2,
+      "s": 1.5
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 28.494,
+      "longppl": 23.521,
+      "passkey_retrieval": 0.263
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.5,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 48,
+      "beta_slow": 2,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:17.927059",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 4.0,
+      "beta_fast": 48,
+      "beta_slow": 2,
+      "s": 1.5
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 38.285,
+      "longppl": 29.064,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.5,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 48,
+      "beta_slow": 2,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:18.027481",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 4.0,
+      "beta_fast": 48,
+      "beta_slow": 2,
+      "s": 1.5
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 59.135,
+      "longppl": 50.795,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.5,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 48,
+      "beta_slow": 2,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:18.128247",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 4.0,
+      "beta_fast": 64,
+      "beta_slow": 1,
+      "s": 2.0
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 24.699,
+      "longppl": 16.157,
+      "passkey_retrieval": 0.53
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 2.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 64,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:18.229378",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 4.0,
+      "beta_fast": 64,
+      "beta_slow": 1,
+      "s": 2.0
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 30.147,
+      "longppl": 21.079,
+      "passkey_retrieval": 0.01
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 2.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 64,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:18.329911",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 4.0,
+      "beta_fast": 64,
+      "beta_slow": 1,
+      "s": 2.0
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 40.444,
+      "longppl": 34.411,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 2.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 64,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:18.430228",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 4.0,
+      "beta_fast": 64,
+      "beta_slow": 1,
+      "s": 2.0
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 59.834,
+      "longppl": 50.975,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 2.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 64,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:18.530875",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 6.0,
+      "beta_fast": 24,
+      "beta_slow": 1,
+      "s": 0.5
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 24.134,
+      "longppl": 23.103,
+      "passkey_retrieval": 0.73
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 0.5,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 24,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:18.631221",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 6.0,
+      "beta_fast": 24,
+      "beta_slow": 1,
+      "s": 0.5
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 28.419,
+      "longppl": 27.991,
+      "passkey_retrieval": 0.106
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 0.5,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 24,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:18.731600",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 6.0,
+      "beta_fast": 24,
+      "beta_slow": 1,
+      "s": 0.5
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 40.02,
+      "longppl": 32.841,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 0.5,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 24,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:18.832179",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 6.0,
+      "beta_fast": 24,
+      "beta_slow": 1,
+      "s": 0.5
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 59.552,
+      "longppl": 48.299,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 0.5,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 24,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:18.932716",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 6.0,
+      "beta_fast": 24,
+      "beta_slow": 3,
+      "s": 1.0
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 24.077,
+      "longppl": 19.446,
+      "passkey_retrieval": 0.647
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 24,
+      "beta_slow": 3,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:19.033311",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 6.0,
+      "beta_fast": 24,
+      "beta_slow": 3,
+      "s": 1.0
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 29.445,
+      "longppl": 26.546,
+      "passkey_retrieval": 0.091
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 24,
+      "beta_slow": 3,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:19.133846",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 6.0,
+      "beta_fast": 24,
+      "beta_slow": 3,
+      "s": 1.0
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 39.719,
+      "longppl": 33.16,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 24,
+      "beta_slow": 3,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:19.234394",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 6.0,
+      "beta_fast": 24,
+      "beta_slow": 3,
+      "s": 1.0
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 60.236,
+      "longppl": 53.603,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 24,
+      "beta_slow": 3,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:19.334923",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 6.0,
+      "beta_fast": 32,
+      "beta_slow": 2,
+      "s": 1.5
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 23.382,
+      "longppl": 20.169,
+      "passkey_retrieval": 0.899
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.5,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 32,
+      "beta_slow": 2,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:19.435452",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 6.0,
+      "beta_fast": 32,
+      "beta_slow": 2,
+      "s": 1.5
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 29.576,
+      "longppl": 20.917,
+      "passkey_retrieval": 0.237
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.5,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 32,
+      "beta_slow": 2,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:19.536007",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 6.0,
+      "beta_fast": 32,
+      "beta_slow": 2,
+      "s": 1.5
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 38.431,
+      "longppl": 29.592,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.5,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 32,
+      "beta_slow": 2,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:19.636414",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 6.0,
+      "beta_fast": 32,
+      "beta_slow": 2,
+      "s": 1.5
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 58.13,
+      "longppl": 51.614,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.5,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 32,
+      "beta_slow": 2,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:19.736941",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 6.0,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "s": 2.0
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 24.955,
+      "longppl": 26.72,
+      "passkey_retrieval": 0.564
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 2.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:19.837559",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 6.0,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "s": 2.0
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 30.106,
+      "longppl": 20.267,
+      "passkey_retrieval": 0.053
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 2.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:19.938204",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 6.0,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "s": 2.0
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 40.097,
+      "longppl": 31.269,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 2.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:20.038894",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 6.0,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "s": 2.0
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 60.299,
+      "longppl": 45.249,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 2.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:20.139771",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 6.0,
+      "beta_fast": 64,
+      "beta_slow": 1,
+      "s": 0.5
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 25.829,
+      "longppl": 20.403,
+      "passkey_retrieval": 0.341
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 0.5,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 64,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:20.240547",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 6.0,
+      "beta_fast": 64,
+      "beta_slow": 1,
+      "s": 0.5
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 30.608,
+      "longppl": 26.071,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 0.5,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 64,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:20.341077",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 6.0,
+      "beta_fast": 64,
+      "beta_slow": 1,
+      "s": 0.5
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 40.392,
+      "longppl": 40.869,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 0.5,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 64,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:20.441573",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 6.0,
+      "beta_fast": 64,
+      "beta_slow": 1,
+      "s": 0.5
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 61.308,
+      "longppl": 52.964,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 0.5,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 64,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:20.542030",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 6.0,
+      "beta_fast": 64,
+      "beta_slow": 3,
+      "s": 1.0
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 25.778,
+      "longppl": 20.277,
+      "passkey_retrieval": 0.365
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 64,
+      "beta_slow": 3,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:20.642422",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 6.0,
+      "beta_fast": 64,
+      "beta_slow": 3,
+      "s": 1.0
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 30.455,
+      "longppl": 20.8,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 64,
+      "beta_slow": 3,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:20.743034",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 6.0,
+      "beta_fast": 64,
+      "beta_slow": 3,
+      "s": 1.0
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 41.819,
+      "longppl": 34.266,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 64,
+      "beta_slow": 3,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:20.843780",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 6.0,
+      "beta_fast": 64,
+      "beta_slow": 3,
+      "s": 1.0
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 61.12,
+      "longppl": 40.416,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 64,
+      "beta_slow": 3,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:20.944322",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 8.0,
+      "beta_fast": 24,
+      "beta_slow": 2,
+      "s": 1.5
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 26.484,
+      "longppl": 18.596,
+      "passkey_retrieval": 0.55
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.5,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 24,
+      "beta_slow": 2,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:21.045510",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 8.0,
+      "beta_fast": 24,
+      "beta_slow": 2,
+      "s": 1.5
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 30.771,
+      "longppl": 24.427,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.5,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 24,
+      "beta_slow": 2,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:21.147125",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 8.0,
+      "beta_fast": 24,
+      "beta_slow": 2,
+      "s": 1.5
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 40.972,
+      "longppl": 31.65,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.5,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 24,
+      "beta_slow": 2,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:21.248213",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 8.0,
+      "beta_fast": 24,
+      "beta_slow": 2,
+      "s": 1.5
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 60.502,
+      "longppl": 43.21,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 1.5,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 24,
+      "beta_slow": 2,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:21.348835",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 8.0,
+      "beta_fast": 32,
+      "beta_slow": 1,
+      "s": 2.0
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 24.914,
+      "longppl": 23.189,
+      "passkey_retrieval": 0.546
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 2.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 32,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:21.449568",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 8.0,
+      "beta_fast": 32,
+      "beta_slow": 1,
+      "s": 2.0
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 29.269,
+      "longppl": 26.799,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 2.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 32,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:21.550159",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 8.0,
+      "beta_fast": 32,
+      "beta_slow": 1,
+      "s": 2.0
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 39.066,
+      "longppl": 23.217,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 2.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 32,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:21.650725",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 8.0,
+      "beta_fast": 32,
+      "beta_slow": 1,
+      "s": 2.0
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 60.074,
+      "longppl": 48.717,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 2.0,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 32,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:21.751211",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 8.0,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "s": 0.5
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 26.37,
+      "longppl": 20.313,
+      "passkey_retrieval": 0.284
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 0.5,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:21.852294",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 8.0,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "s": 0.5
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 31.294,
+      "longppl": 26.702,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 0.5,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:21.953910",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 8.0,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "s": 0.5
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 41.493,
+      "longppl": 35.305,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 0.5,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:22.054815",
+    "failed": false
+  },
+  {
+    "rope_method": "yarn",
+    "rope_config": {
+      "scaling_factor": 8.0,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "s": 0.5
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 60.35,
+      "longppl": 42.084,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "yarn",
+      "s": 0.5,
+      "alpha": 1.0,
+      "beta": 32.0,
+      "attention_factor": 0.1,
+      "beta_fast": 48,
+      "beta_slow": 1,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:22.155952",
+    "failed": false
+  }
+]

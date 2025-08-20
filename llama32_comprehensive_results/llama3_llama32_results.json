@@ -1,0 +1,1250 @@
+[
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 2.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 20.591,
+      "longppl": 15.191,
+      "passkey_retrieval": 0.986
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 2.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:28.640318",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 2.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 22.433,
+      "longppl": 17.72,
+      "passkey_retrieval": 0.414
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 2.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:28.841448",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 2.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 30.927,
+      "longppl": 24.853,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 2.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:29.041908",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 2.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 46.65,
+      "longppl": 33.547,
+      "passkey_retrieval": 0.067
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 2.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:29.243016",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 2.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 20.438,
+      "longppl": 16.534,
+      "passkey_retrieval": 0.975
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 2.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:29.443796",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 2.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 23.164,
+      "longppl": 17.499,
+      "passkey_retrieval": 0.399
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 2.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:29.644537",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 2.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 30.415,
+      "longppl": 22.761,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 2.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:29.845215",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 2.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 46.847,
+      "longppl": 30.836,
+      "passkey_retrieval": 0.044
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 2.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:30.045771",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 2.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 21.388,
+      "longppl": 16.549,
+      "passkey_retrieval": 1.0
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 2.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:30.246722",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 2.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 22.66,
+      "longppl": 18.853,
+      "passkey_retrieval": 0.413
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 2.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:30.447838",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 2.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 30.676,
+      "longppl": 23.861,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 2.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:30.648539",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 2.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 46.775,
+      "longppl": 34.806,
+      "passkey_retrieval": 0.072
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 2.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:30.849116",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 2.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 20.801,
+      "longppl": 14.694,
+      "passkey_retrieval": 0.972
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 2.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:31.049759",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 2.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 23.084,
+      "longppl": 17.931,
+      "passkey_retrieval": 0.354
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 2.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:31.250197",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 2.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 30.744,
+      "longppl": 24.751,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 2.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:31.450927",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 2.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 46.225,
+      "longppl": 33.659,
+      "passkey_retrieval": 0.033
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 2.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:31.652143",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 4.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 20.065,
+      "longppl": 15.637,
+      "passkey_retrieval": 0.945
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 4.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:31.852657",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 4.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 22.17,
+      "longppl": 17.656,
+      "passkey_retrieval": 0.406
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 4.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:32.053200",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 4.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 30.523,
+      "longppl": 22.346,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 4.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:32.254020",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 4.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 46.617,
+      "longppl": 36.88,
+      "passkey_retrieval": 0.064
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 4.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:32.454616",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 4.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 20.493,
+      "longppl": 14.304,
+      "passkey_retrieval": 0.973
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 4.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:32.655547",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 4.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 22.866,
+      "longppl": 18.416,
+      "passkey_retrieval": 0.367
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 4.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:32.856728",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 4.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 30.862,
+      "longppl": 24.249,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 4.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:33.058802",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 4.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 47.238,
+      "longppl": 33.489,
+      "passkey_retrieval": 0.04
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 4.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:33.259809",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 4.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 20.838,
+      "longppl": 13.723,
+      "passkey_retrieval": 0.976
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 4.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:33.460819",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 4.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 22.508,
+      "longppl": 15.568,
+      "passkey_retrieval": 0.409
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 4.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:33.662044",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 4.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 30.548,
+      "longppl": 22.561,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 4.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:33.862797",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 4.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 46.297,
+      "longppl": 40.309,
+      "passkey_retrieval": 0.048
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 4.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:34.063365",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 4.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 20.485,
+      "longppl": 14.742,
+      "passkey_retrieval": 0.967
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 4.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:34.263686",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 4.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 22.985,
+      "longppl": 18.337,
+      "passkey_retrieval": 0.419
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 4.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:34.464292",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 4.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 30.623,
+      "longppl": 24.362,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 4.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:34.664680",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 4.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 47.222,
+      "longppl": 38.921,
+      "passkey_retrieval": 0.072
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 4.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:34.865322",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 8.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 20.758,
+      "longppl": 16.952,
+      "passkey_retrieval": 0.993
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 8.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:35.065821",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 8.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 22.861,
+      "longppl": 16.541,
+      "passkey_retrieval": 0.41
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 8.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:35.266892",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 8.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 31.1,
+      "longppl": 22.822,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 8.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:35.467394",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 8.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 46.827,
+      "longppl": 27.826,
+      "passkey_retrieval": 0.074
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 8.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:35.668157",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 8.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 20.9,
+      "longppl": 15.42,
+      "passkey_retrieval": 1.0
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 8.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:35.868825",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 8.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 22.934,
+      "longppl": 16.827,
+      "passkey_retrieval": 0.402
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 8.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:36.069322",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 8.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 30.413,
+      "longppl": 19.735,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 8.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:36.269995",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 8.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 47.228,
+      "longppl": 36.877,
+      "passkey_retrieval": 0.073
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 8.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:36.470969",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 8.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 20.678,
+      "longppl": 15.765,
+      "passkey_retrieval": 0.968
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 8.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:36.672013",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 8.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 22.534,
+      "longppl": 16.535,
+      "passkey_retrieval": 0.41
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 8.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:36.872863",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 8.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 30.702,
+      "longppl": 25.723,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 8.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:37.073731",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 8.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 47.164,
+      "longppl": 37.861,
+      "passkey_retrieval": 0.083
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 8.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:37.274913",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 8.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 20.647,
+      "longppl": 15.302,
+      "passkey_retrieval": 0.945
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 8.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:37.475940",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 8.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 22.9,
+      "longppl": 18.739,
+      "passkey_retrieval": 0.394
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 8.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:37.677259",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 8.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 31.005,
+      "longppl": 25.17,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 8.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:37.878008",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  },
+  {
+    "rope_method": "llama3",
+    "rope_config": {
+      "factor": 8.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 46.656,
+      "longppl": 36.406,
+      "passkey_retrieval": 0.023
+    },
+    "scaling_info": {
+      "method": "llama3",
+      "factor": 8.0,
+      "low_freq_factor": 2.0,
+      "high_freq_factor": 8.0,
+      "original_max_position_embeddings": 131072,
+      "description": "Llama3 frequency-based RoPE scaling with separate low and high frequency factors"
+    },
+    "timestamp": "2025-08-20T16:00:38.079184",
+    "model_used": "unsloth/Llama-3.2-1B",
+    "failed": false
+  }
+]

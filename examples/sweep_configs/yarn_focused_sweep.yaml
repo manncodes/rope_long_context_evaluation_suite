@@ -1,0 +1,74 @@
+# YaRN-focused hyperparameter sweep
+# Deep exploration of YaRN parameter space for optimal long-context performance
+
+# Model Configuration  
+model_name: "meta-llama/Llama-2-7b-hf"
+model_type: "hf_local"
+model_path: "./models/llama-2-7b-hf"
+
+# Focus on YaRN method only
+rope_methods:
+  - "yarn"
+
+# Progressive context length testing
+context_lengths: [4096, 8192, 16384, 32768, 65536, 131072, 262144]
+
+# Comprehensive metrics for YaRN evaluation
+metrics:
+  - "perplexity"
+  - "passkey_retrieval"
+  - "longppl"
+
+# Detailed YaRN parameter exploration
+parameter_grids:
+  yarn:
+    # Scale ramp parameter (critical for YaRN)
+    s:
+      values: [2, 4, 8, 12, 16, 24, 32, 48, 64]
+      distribution: "grid"
+      
+    # NTK interpolation factor
+    alpha:
+      values: 
+        min: 0.1
+        max: 4.0
+        type: float
+      distribution: "log"
+      num_samples: 10
+      
+    # Target context length multiplier
+    beta:
+      values: [4, 8, 16, 32, 64, 128, 256]
+      distribution: "grid"
+      
+    # Attention temperature scaling
+    attention_factor:
+      values:
+        min: 0.01
+        max: 1.0
+        type: float
+      distribution: "log" 
+      num_samples: 8
+      
+    # Fast/slow ramp parameters
+    beta_fast:
+      values: [8, 16, 32, 64, 128]
+      distribution: "grid"
+      
+    beta_slow:
+      values: [0.25, 0.5, 1.0, 2.0, 4.0]
+      distribution: "grid"
+
+# Sweep Settings
+max_configs_per_method: 100  # Allow more configs for focused study
+parallel_jobs: 8
+use_cache: true
+cache_dir: "./sweep_cache/yarn_focused"
+output_dir: "./sweep_results/yarn_focused"
+
+# No early stopping for comprehensive exploration
+early_stopping: false
+
+# Resource Management
+max_gpu_memory_gb: 40.0
+auto_batch_size: true

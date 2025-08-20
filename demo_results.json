@@ -1,0 +1,1243 @@
+[
+  {
+    "experiment_config": {
+      "rope_method": "linear_interpolation",
+      "context_length": 4096,
+      "parameters": {
+        "scaling_factor": 2
+      },
+      "model_name": "demo-model",
+      "model_type": "hf_local"
+    },
+    "metrics": {
+      "perplexity": {
+        "perplexity": 35.76285227901101,
+        "loss": 3.494289058458921,
+        "total_tokens": 10000
+      },
+      "passkey_retrieval": {
+        "passkey_accuracy": 0.687639336403114,
+        "correct_retrievals": 7,
+        "total_samples": 10
+      }
+    },
+    "execution_time": 104.85706643274247,
+    "status": "completed"
+  },
+  {
+    "experiment_config": {
+      "rope_method": "linear_interpolation",
+      "context_length": 4096,
+      "parameters": {
+        "scaling_factor": 4
+      },
+      "model_name": "demo-model",
+      "model_type": "hf_local"
+    },
+    "metrics": {
+      "perplexity": {
+        "perplexity": 37.47011288586573,
+        "loss": 3.6104224544822285,
+        "total_tokens": 10000
+      },
+      "passkey_retrieval": {
+        "passkey_accuracy": 0.5161662658408046,
+        "correct_retrievals": 5,
+        "total_samples": 10
+      }
+    },
+    "execution_time": 106.76756680800614,
+    "status": "completed"
+  },
+  {
+    "experiment_config": {
+      "rope_method": "linear_interpolation",
+      "context_length": 4096,
+      "parameters": {
+        "scaling_factor": 8
+      },
+      "model_name": "demo-model",
+      "model_type": "hf_local"
+    },
+    "metrics": {
+      "perplexity": {
+        "perplexity": 44.04558096101148,
+        "loss": 3.773936539344496,
+        "total_tokens": 10000
+      },
+      "passkey_retrieval": {
+        "passkey_accuracy": 0.11870147721090431,
+        "correct_retrievals": 1,
+        "total_samples": 10
+      }
+    },
+    "execution_time": 135.9554902167585,
+    "status": "completed"
+  },
+  {
+    "experiment_config": {
+      "rope_method": "linear_interpolation",
+      "context_length": 8192,
+      "parameters": {
+        "scaling_factor": 2
+      },
+      "model_name": "demo-model",
+      "model_type": "hf_local"
+    },
+    "metrics": {
+      "perplexity": {
+        "perplexity": 40.71371703405687,
+        "loss": 3.6980030227683804,
+        "total_tokens": 10000
+      },
+      "passkey_retrieval": {
+        "passkey_accuracy": 0.5890781968499198,
+        "correct_retrievals": 6,
+        "total_samples": 10
+      }
+    },
+    "execution_time": 167.6010105280804,
+    "status": "completed"
+  },
+  {
+    "experiment_config": {
+      "rope_method": "linear_interpolation",
+      "context_length": 8192,
+      "parameters": {
+        "scaling_factor": 4
+      },
+      "model_name": "demo-model",
+      "model_type": "hf_local"
+    },
+    "metrics": {
+      "perplexity": {
+        "perplexity": 44.14270986706658,
+        "loss": 3.6906365771284593,
+        "total_tokens": 10000
+      },
+      "passkey_retrieval": {
+        "passkey_accuracy": 0.4336333291445878,
+        "correct_retrievals": 4,
+        "total_samples": 10
+      }
+    },
+    "execution_time": 149.87456968840905,
+    "status": "completed"
+  },
+  {
+    "experiment_config": {
+      "rope_method": "linear_interpolation",
+      "context_length": 8192,
+      "parameters": {
+        "scaling_factor": 8
+      },
+      "model_name": "demo-model",
+      "model_type": "hf_local"
+    },
+    "metrics": {
+      "perplexity": {
+        "perplexity": 49.82428012223974,
+        "loss": 3.8770915652420928,
+        "total_tokens": 10000
+      },
+      "passkey_retrieval": {
+        "passkey_accuracy": 0.01634467600331463,
+        "correct_retrievals": 1,
+        "total_samples": 10
+      }
+    },
+    "execution_time": 90.76107894059062,
+    "status": "completed"
+  },
+  {
+    "experiment_config": {
+      "rope_method": "linear_interpolation",
+      "context_length": 16384,
+      "parameters": {
+        "scaling_factor": 2
+      },
+      "model_name": "demo-model",
+      "model_type": "hf_local"
+    },
+    "metrics": {
+      "perplexity": {
+        "perplexity": 46.49870025625106,
+        "loss": 3.89880124439099,
+        "total_tokens": 10000
+      },
+      "passkey_retrieval": {
+        "passkey_accuracy": 0.491931251443814,
+        "correct_retrievals": 6,
+        "total_samples": 10
+      }
+    },
+    "execution_time": 98.01442735861707,
+    "status": "completed"
+  },
+  {
+    "experiment_config": {
+      "rope_method": "linear_interpolation",
+      "context_length": 16384,
+      "parameters": {
+        "scaling_factor": 4
+      },
+      "model_name": "demo-model",
+      "model_type": "hf_local"
+    },
+    "metrics": {
+      "perplexity": {
+        "perplexity": 53.42444737883417,
+        "loss": 3.9731198402306696,
+        "total_tokens": 10000
+      },
+      "passkey_retrieval": {
+        "passkey_accuracy": 0.3749712023294429,
+        "correct_retrievals": 3,
+        "total_samples": 10
+      }
+    },
+    "execution_time": 115.30049259762721,
+    "status": "completed"
+  },
+  {
+    "experiment_config": {
+      "rope_method": "linear_interpolation",
+      "context_length": 16384,
+      "parameters": {
+        "scaling_factor": 8
+      },
+      "model_name": "demo-model",
+      "model_type": "hf_local"
+    },
+    "metrics": {
+      "perplexity": {
+        "perplexity": 58.438740510996716,
+        "loss": 4.137060695761861,
+        "total_tokens": 10000
+      },
+      "passkey_retrieval": {
+        "passkey_accuracy": 0.03410222639514997,
+        "correct_retrievals": 1,
+        "total_samples": 10
+      }
+    },
+    "execution_time": 122.32723071095155,
+    "status": "completed"
+  },
+  {
+    "experiment_config": {
+      "rope_method": "linear_interpolation",
+      "context_length": 32768,
+      "parameters": {
+        "scaling_factor": 2
+      },
+      "model_name": "demo-model",
+      "model_type": "hf_local"
+    },
+    "metrics": {
+      "perplexity": {
+        "perplexity": 71.7343933775075,
+        "loss": 4.278021621897088,
+        "total_tokens": 10000
+      },
+      "passkey_retrieval": {
+        "passkey_accuracy": 0.3890337307278834,
+        "correct_retrievals": 4,
+        "total_samples": 10
+      }
+    },
+    "execution_time": 124.00319358881173,
+    "status": "completed"
+  },
+  {
+    "experiment_config": {
+      "rope_method": "linear_interpolation",
+      "context_length": 32768,
+      "parameters": {
+        "scaling_factor": 4
+      },
+      "model_name": "demo-model",
+      "model_type": "hf_local"
+    },
+    "metrics": {
+      "perplexity": {
+        "perplexity": 69.77244446827723,
+        "loss": 4.3227531983496466,
+        "total_tokens": 10000
+      },
+      "passkey_retrieval": {
+        "passkey_accuracy": 0.20805189116527034,
+        "correct_retrievals": 2,
+        "total_samples": 10
+      }
+    },
+    "execution_time": 93.88828386687068,
+    "status": "completed"
+  },
+  {
+    "experiment_config": {
+      "rope_method": "linear_interpolation",
+      "context_length": 32768,
+      "parameters": {
+        "scaling_factor": 8
+      },
+      "model_name": "demo-model",
+      "model_type": "hf_local"
+    },
+    "metrics": {
+      "perplexity": {
+        "perplexity": 80.54595451156666,
+        "loss": 4.420030920502664,
+        "total_tokens": 10000
+      },
+      "passkey_retrieval": {
+        "passkey_accuracy": 0.16771193229945458,
+        "correct_retrievals": 1,
+        "total_samples": 10
+      }
+    },
+    "execution_time": 109.06816028122402,
+    "status": "completed"
+  },
+  {
+    "experiment_config": {
+      "rope_method": "ntk_aware",
+      "context_length": 4096,
+      "parameters": {
+        "alpha": 1.0,
+        "beta": 16
+      },
+      "model_name": "demo-model",
+      "model_type": "hf_local"
+    },
+    "metrics": {
+      "perplexity": {
+        "perplexity": 28.56633477304596,
+        "loss": 3.2255265489295186,
+        "total_tokens": 10000
+      },
+      "passkey_retrieval": {
+        "passkey_accuracy": 0.7646950874462728,
+        "correct_retrievals": 7,
+        "total_samples": 10
+      }
+    },
+    "execution_time": 135.1895584937012,
+    "status": "completed"
+  },
+  {
+    "experiment_config": {
+      "rope_method": "ntk_aware",
+      "context_length": 4096,
+      "parameters": {
+        "alpha": 1.0,
+        "beta": 32
+      },
+      "model_name": "demo-model",
+      "model_type": "hf_local"
+    },
+    "metrics": {
+      "perplexity": {
+        "perplexity": 29.208687048677678,
+        "loss": 3.2826792693249467,
+        "total_tokens": 10000
+      },
+      "passkey_retrieval": {
+        "passkey_accuracy": 0.7647968490697811,
+        "correct_retrievals": 7,
+        "total_samples": 10
+      }
+    },
+    "execution_time": 136.79443544652014,
+    "status": "completed"
+  },
+  {
+    "experiment_config": {
+      "rope_method": "ntk_aware",
+      "context_length": 4096,
+      "parameters": {
+        "alpha": 2.0,
+        "beta": 16
+      },
+      "model_name": "demo-model",
+      "model_type": "hf_local"
+    },
+    "metrics": {
+      "perplexity": {
+        "perplexity": 29.892163260247315,
+        "loss": 3.4652362554101304,
+        "total_tokens": 10000
+      },
+      "passkey_retrieval": {
+        "passkey_accuracy": 0.7737993822654423,
+        "correct_retrievals": 8,
+        "total_samples": 10
+      }
+    },
+    "execution_time": 138.95974691003522,
+    "status": "completed"
+  },
+  {
+    "experiment_config": {
+      "rope_method": "ntk_aware",
+      "context_length": 4096,
+      "parameters": {
+        "alpha": 2.0,
+        "beta": 32
+      },
+      "model_name": "demo-model",
+      "model_type": "hf_local"
+    },
+    "metrics": {
+      "perplexity": {
+        "perplexity": 32.37186670271673,
+        "loss": 3.552868376707177,
+        "total_tokens": 10000
+      },
+      "passkey_retrieval": {
+        "passkey_accuracy": 0.8122311508288138,
+        "correct_retrievals": 8,
+        "total_samples": 10
+      }
+    },
+    "execution_time": 136.78013256422847,
+    "status": "completed"
+  },
+  {
+    "experiment_config": {
+      "rope_method": "ntk_aware",
+      "context_length": 8192,
+      "parameters": {
+        "alpha": 1.0,
+        "beta": 16
+      },
+      "model_name": "demo-model",
+      "model_type": "hf_local"
+    },
+    "metrics": {
+      "perplexity": {
+        "perplexity": 29.857416779699996,
+        "loss": 3.3369707834191793,
+        "total_tokens": 10000
+      },
+      "passkey_retrieval": {
+        "passkey_accuracy": 0.8156708523009971,
+        "correct_retrievals": 8,
+        "total_samples": 10
+      }
+    },
+    "execution_time": 162.63032545742377,
+    "status": "completed"
+  },
+  {
+    "experiment_config": {
+      "rope_method": "ntk_aware",
+      "context_length": 8192,
+      "parameters": {
+        "alpha": 1.0,
+        "beta": 32
+      },
+      "model_name": "demo-model",
+      "model_type": "hf_local"
+    },
+    "metrics": {
+      "perplexity": {
+        "perplexity": 26.384835442093433,
+        "loss": 3.2349526104704642,
+        "total_tokens": 10000
+      },
+      "passkey_retrieval": {
+        "passkey_accuracy": 0.7710240936220143,
+        "correct_retrievals": 8,
+        "total_samples": 10
+      }
+    },
+    "execution_time": 210.90505694819956,
+    "status": "completed"
+  },
+  {
+    "experiment_config": {
+      "rope_method": "ntk_aware",
+      "context_length": 8192,
+      "parameters": {
+        "alpha": 2.0,
+        "beta": 16
+      },
+      "model_name": "demo-model",
+      "model_type": "hf_local"
+    },
+    "metrics": {
+      "perplexity": {
+        "perplexity": 29.4928273975317,
+        "loss": 3.436814228996225,
+        "total_tokens": 10000
+      },
+      "passkey_retrieval": {
+        "passkey_accuracy": 0.8316477037537949,
+        "correct_retrievals": 8,
+        "total_samples": 10
+      }
+    },
+    "execution_time": 140.22798270142417,
+    "status": "completed"
+  },
+  {
+    "experiment_config": {
+      "rope_method": "ntk_aware",
+      "context_length": 8192,
+      "parameters": {
+        "alpha": 2.0,
+        "beta": 32
+      },
+      "model_name": "demo-model",
+      "model_type": "hf_local"
+    },
+    "metrics": {
+      "perplexity": {
+        "perplexity": 27.750450365234887,
+        "loss": 3.497802056354533,
+        "total_tokens": 10000
+      },
+      "passkey_retrieval": {
+        "passkey_accuracy": 0.9100792183183268,
+        "correct_retrievals": 8,
+        "total_samples": 10
+      }
+    },
+    "execution_time": 120.00328570244238,
+    "status": "completed"
+  },
+  {
+    "experiment_config": {
+      "rope_method": "ntk_aware",
+      "context_length": 16384,
+      "parameters": {
+        "alpha": 1.0,
+        "beta": 16
+      },
+      "model_name": "demo-model",
+      "model_type": "hf_local"
+    },
+    "metrics": {
+      "perplexity": {
+        "perplexity": 24.552328349246178,
+        "loss": 3.1365374963231343,
+        "total_tokens": 10000
+      },
+      "passkey_retrieval": {
+        "passkey_accuracy": 0.8524177634694104,
+        "correct_retrievals": 8,
+        "total_samples": 10
+      }
+    },
+    "execution_time": 154.28193160080684,
+    "status": "completed"
+  },
+  {
+    "experiment_config": {
+      "rope_method": "ntk_aware",
+      "context_length": 16384,
+      "parameters": {
+        "alpha": 1.0,
+        "beta": 32
+      },
+      "model_name": "demo-model",
+      "model_type": "hf_local"
+    },
+    "metrics": {
+      "perplexity": {
+        "perplexity": 23.848680495334346,
+        "loss": 3.1112764682786915,
+        "total_tokens": 10000
+      },
+      "passkey_retrieval": {
+        "passkey_accuracy": 0.8445953090377523,
+        "correct_retrievals": 8,
+        "total_samples": 10
+      }
+    },
+    "execution_time": 145.26433957510906,
+    "status": "completed"
+  },
+  {
+    "experiment_config": {
+      "rope_method": "ntk_aware",
+      "context_length": 16384,
+      "parameters": {
+        "alpha": 2.0,
+        "beta": 16
+      },
+      "model_name": "demo-model",
+      "model_type": "hf_local"
+    },
+    "metrics": {
+      "perplexity": {
+        "perplexity": 27.26307207077572,
+        "loss": 3.227428680172472,
+        "total_tokens": 10000
+      },
+      "passkey_retrieval": {
+        "passkey_accuracy": 0.9319295780466381,
+        "correct_retrievals": 9,
+        "total_samples": 10
+      }
+    },
+    "execution_time": 134.69917391362236,
+    "status": "completed"
+  },
+  {
+    "experiment_config": {
+      "rope_method": "ntk_aware",
+      "context_length": 16384,
+      "parameters": {
+        "alpha": 2.0,
+        "beta": 32
+      },
+      "model_name": "demo-model",
+      "model_type": "hf_local"
+    },
+    "metrics": {
+      "perplexity": {
+        "perplexity": 24.730611605979433,
+        "loss": 3.2585046005100784,
+        "total_tokens": 10000
+      },
+      "passkey_retrieval": {
+        "passkey_accuracy": 0.8647485925995765,
+        "correct_retrievals": 9,
+        "total_samples": 10
+      }
+    },
+    "execution_time": 150.31574935593017,
+    "status": "completed"
+  },
+  {
+    "experiment_config": {
+      "rope_method": "ntk_aware",
+      "context_length": 32768,
+      "parameters": {
+        "alpha": 1.0,
+        "beta": 16
+      },
+      "model_name": "demo-model",
+      "model_type": "hf_local"
+    },
+    "metrics": {
+      "perplexity": {
+        "perplexity": 23.185745287062847,
+        "loss": 3.1249536347512183,
+        "total_tokens": 10000
+      },
+      "passkey_retrieval": {
+        "passkey_accuracy": 0.9680805642911322,
+        "correct_retrievals": 9,
+        "total_samples": 10
+      }
+    },
+    "execution_time": 148.84347041974792,
+    "status": "completed"
+  },
+  {
+    "experiment_config": {
+      "rope_method": "ntk_aware",
+      "context_length": 32768,
+      "parameters": {
+        "alpha": 1.0,
+        "beta": 32
+      },
+      "model_name": "demo-model",
+      "model_type": "hf_local"
+    },
+    "metrics": {
+      "perplexity": {
+        "perplexity": 22.79782701929691,
+        "loss": 3.1364356367907322,
+        "total_tokens": 10000
+      },
+      "passkey_retrieval": {
+        "passkey_accuracy": 0.9598558043547584,
+        "correct_retrievals": 9,
+        "total_samples": 10
+      }
+    },
+    "execution_time": 117.48946968407871,
+    "status": "completed"
+  },
+  {
+    "experiment_config": {
+      "rope_method": "ntk_aware",
+      "context_length": 32768,
+      "parameters": {
+        "alpha": 2.0,
+        "beta": 16
+      },
+      "model_name": "demo-model",
+      "model_type": "hf_local"
+    },
+    "metrics": {
+      "perplexity": {
+        "perplexity": 25.980509320166615,
+        "loss": 3.295587896262221,
+        "total_tokens": 10000
+      },
+      "passkey_retrieval": {
+        "passkey_accuracy": 1.0,
+        "correct_retrievals": 9,
+        "total_samples": 10
+      }
+    },
+    "execution_time": 134.26791110933218,
+    "status": "completed"
+  },
+  {
+    "experiment_config": {
+      "rope_method": "ntk_aware",
+      "context_length": 32768,
+      "parameters": {
+        "alpha": 2.0,
+        "beta": 32
+      },
+      "model_name": "demo-model",
+      "model_type": "hf_local"
+    },
+    "metrics": {
+      "perplexity": {
+        "perplexity": 29.112354465179983,
+        "loss": 3.3047002856686123,
+        "total_tokens": 10000
+      },
+      "passkey_retrieval": {
+        "passkey_accuracy": 1.0,
+        "correct_retrievals": 9,
+        "total_samples": 10
+      }
+    },
+    "execution_time": 136.43490098989892,
+    "status": "completed"
+  },
+  {
+    "experiment_config": {
+      "rope_method": "yarn",
+      "context_length": 4096,
+      "parameters": {
+        "s": 8,
+        "alpha": 1.0,
+        "beta": 32,
+        "attention_factor": 0.1,
+        "beta_fast": 32,
+        "beta_slow": 1.0
+      },
+      "model_name": "demo-model",
+      "model_type": "hf_local"
+    },
+    "metrics": {
+      "perplexity": {
+        "perplexity": 18.30195767566253,
+        "loss": 2.9422497328494743,
+        "total_tokens": 10000
+      },
+      "passkey_retrieval": {
+        "passkey_accuracy": 0.8742421947559087,
+        "correct_retrievals": 9,
+        "total_samples": 10
+      }
+    },
+    "execution_time": 165.8295453652081,
+    "status": "completed"
+  },
+  {
+    "experiment_config": {
+      "rope_method": "yarn",
+      "context_length": 4096,
+      "parameters": {
+        "s": 8,
+        "alpha": 2.0,
+        "beta": 32,
+        "attention_factor": 0.1,
+        "beta_fast": 32,
+        "beta_slow": 1.0
+      },
+      "model_name": "demo-model",
+      "model_type": "hf_local"
+    },
+    "metrics": {
+      "perplexity": {
+        "perplexity": 19.010426254779073,
+        "loss": 2.9187972666582773,
+        "total_tokens": 10000
+      },
+      "passkey_retrieval": {
+        "passkey_accuracy": 0.9535498025378424,
+        "correct_retrievals": 9,
+        "total_samples": 10
+      }
+    },
+    "execution_time": 132.41149567922352,
+    "status": "completed"
+  },
+  {
+    "experiment_config": {
+      "rope_method": "yarn",
+      "context_length": 4096,
+      "parameters": {
+        "s": 16,
+        "alpha": 1.0,
+        "beta": 32,
+        "attention_factor": 0.1,
+        "beta_fast": 32,
+        "beta_slow": 1.0
+      },
+      "model_name": "demo-model",
+      "model_type": "hf_local"
+    },
+    "metrics": {
+      "perplexity": {
+        "perplexity": 22.279990892743776,
+        "loss": 2.956237196070536,
+        "total_tokens": 10000
+      },
+      "passkey_retrieval": {
+        "passkey_accuracy": 0.9093183995060123,
+        "correct_retrievals": 9,
+        "total_samples": 10
+      }
+    },
+    "execution_time": 154.1620210237352,
+    "status": "completed"
+  },
+  {
+    "experiment_config": {
+      "rope_method": "yarn",
+      "context_length": 4096,
+      "parameters": {
+        "s": 16,
+        "alpha": 2.0,
+        "beta": 32,
+        "attention_factor": 0.1,
+        "beta_fast": 32,
+        "beta_slow": 1.0
+      },
+      "model_name": "demo-model",
+      "model_type": "hf_local"
+    },
+    "metrics": {
+      "perplexity": {
+        "perplexity": 21.052022631249873,
+        "loss": 3.0836044941382124,
+        "total_tokens": 10000
+      },
+      "passkey_retrieval": {
+        "passkey_accuracy": 0.9770162026570776,
+        "correct_retrievals": 9,
+        "total_samples": 10
+      }
+    },
+    "execution_time": 147.88882657150575,
+    "status": "completed"
+  },
+  {
+    "experiment_config": {
+      "rope_method": "yarn",
+      "context_length": 8192,
+      "parameters": {
+        "s": 8,
+        "alpha": 1.0,
+        "beta": 32,
+        "attention_factor": 0.1,
+        "beta_fast": 32,
+        "beta_slow": 1.0
+      },
+      "model_name": "demo-model",
+      "model_type": "hf_local"
+    },
+    "metrics": {
+      "perplexity": {
+        "perplexity": 19.740288818919804,
+        "loss": 2.937941372243917,
+        "total_tokens": 10000
+      },
+      "passkey_retrieval": {
+        "passkey_accuracy": 0.9120482515133519,
+        "correct_retrievals": 9,
+        "total_samples": 10
+      }
+    },
+    "execution_time": 120.20991309764536,
+    "status": "completed"
+  },
+  {
+    "experiment_config": {
+      "rope_method": "yarn",
+      "context_length": 8192,
+      "parameters": {
+        "s": 8,
+        "alpha": 2.0,
+        "beta": 32,
+        "attention_factor": 0.1,
+        "beta_fast": 32,
+        "beta_slow": 1.0
+      },
+      "model_name": "demo-model",
+      "model_type": "hf_local"
+    },
+    "metrics": {
+      "perplexity": {
+        "perplexity": 19.443281931914136,
+        "loss": 2.8421677621001153,
+        "total_tokens": 10000
+      },
+      "passkey_retrieval": {
+        "passkey_accuracy": 0.9255321282895339,
+        "correct_retrievals": 9,
+        "total_samples": 10
+      }
+    },
+    "execution_time": 109.80262604841761,
+    "status": "completed"
+  },
+  {
+    "experiment_config": {
+      "rope_method": "yarn",
+      "context_length": 8192,
+      "parameters": {
+        "s": 16,
+        "alpha": 1.0,
+        "beta": 32,
+        "attention_factor": 0.1,
+        "beta_fast": 32,
+        "beta_slow": 1.0
+      },
+      "model_name": "demo-model",
+      "model_type": "hf_local"
+    },
+    "metrics": {
+      "perplexity": {
+        "perplexity": 19.29634681650228,
+        "loss": 3.0429502484959947,
+        "total_tokens": 10000
+      },
+      "passkey_retrieval": {
+        "passkey_accuracy": 0.9189879099128935,
+        "correct_retrievals": 9,
+        "total_samples": 10
+      }
+    },
+    "execution_time": 141.8113325442982,
+    "status": "completed"
+  },
+  {
+    "experiment_config": {
+      "rope_method": "yarn",
+      "context_length": 8192,
+      "parameters": {
+        "s": 16,
+        "alpha": 2.0,
+        "beta": 32,
+        "attention_factor": 0.1,
+        "beta_fast": 32,
+        "beta_slow": 1.0
+      },
+      "model_name": "demo-model",
+      "model_type": "hf_local"
+    },
+    "metrics": {
+      "perplexity": {
+        "perplexity": 20.45854857920085,
+        "loss": 3.076842697370386,
+        "total_tokens": 10000
+      },
+      "passkey_retrieval": {
+        "passkey_accuracy": 0.8984876473930777,
+        "correct_retrievals": 9,
+        "total_samples": 10
+      }
+    },
+    "execution_time": 165.23606154459185,
+    "status": "completed"
+  },
+  {
+    "experiment_config": {
+      "rope_method": "yarn",
+      "context_length": 16384,
+      "parameters": {
+        "s": 8,
+        "alpha": 1.0,
+        "beta": 32,
+        "attention_factor": 0.1,
+        "beta_fast": 32,
+        "beta_slow": 1.0
+      },
+      "model_name": "demo-model",
+      "model_type": "hf_local"
+    },
+    "metrics": {
+      "perplexity": {
+        "perplexity": 20.44649919540398,
+        "loss": 3.046357160362878,
+        "total_tokens": 10000
+      },
+      "passkey_retrieval": {
+        "passkey_accuracy": 0.8909859738915771,
+        "correct_retrievals": 9,
+        "total_samples": 10
+      }
+    },
+    "execution_time": 136.66367132859668,
+    "status": "completed"
+  },
+  {
+    "experiment_config": {
+      "rope_method": "yarn",
+      "context_length": 16384,
+      "parameters": {
+        "s": 8,
+        "alpha": 2.0,
+        "beta": 32,
+        "attention_factor": 0.1,
+        "beta_fast": 32,
+        "beta_slow": 1.0
+      },
+      "model_name": "demo-model",
+      "model_type": "hf_local"
+    },
+    "metrics": {
+      "perplexity": {
+        "perplexity": 19.40067468197982,
+        "loss": 3.0173674428821533,
+        "total_tokens": 10000
+      },
+      "passkey_retrieval": {
+        "passkey_accuracy": 0.9390532960604001,
+        "correct_retrievals": 9,
+        "total_samples": 10
+      }
+    },
+    "execution_time": 164.47518455763924,
+    "status": "completed"
+  },
+  {
+    "experiment_config": {
+      "rope_method": "yarn",
+      "context_length": 16384,
+      "parameters": {
+        "s": 16,
+        "alpha": 1.0,
+        "beta": 32,
+        "attention_factor": 0.1,
+        "beta_fast": 32,
+        "beta_slow": 1.0
+      },
+      "model_name": "demo-model",
+      "model_type": "hf_local"
+    },
+    "metrics": {
+      "perplexity": {
+        "perplexity": 21.34488918585318,
+        "loss": 3.127486955625838,
+        "total_tokens": 10000
+      },
+      "passkey_retrieval": {
+        "passkey_accuracy": 0.9147820069991635,
+        "correct_retrievals": 9,
+        "total_samples": 10
+      }
+    },
+    "execution_time": 140.78631029655497,
+    "status": "completed"
+  },
+  {
+    "experiment_config": {
+      "rope_method": "yarn",
+      "context_length": 16384,
+      "parameters": {
+        "s": 16,
+        "alpha": 2.0,
+        "beta": 32,
+        "attention_factor": 0.1,
+        "beta_fast": 32,
+        "beta_slow": 1.0
+      },
+      "model_name": "demo-model",
+      "model_type": "hf_local"
+    },
+    "metrics": {
+      "perplexity": {
+        "perplexity": 22.307441765112117,
+        "loss": 3.0684280837695863,
+        "total_tokens": 10000
+      },
+      "passkey_retrieval": {
+        "passkey_accuracy": 0.942729095577517,
+        "correct_retrievals": 9,
+        "total_samples": 10
+      }
+    },
+    "execution_time": 147.44545462350723,
+    "status": "completed"
+  },
+  {
+    "experiment_config": {
+      "rope_method": "yarn",
+      "context_length": 32768,
+      "parameters": {
+        "s": 8,
+        "alpha": 1.0,
+        "beta": 32,
+        "attention_factor": 0.1,
+        "beta_fast": 32,
+        "beta_slow": 1.0
+      },
+      "model_name": "demo-model",
+      "model_type": "hf_local"
+    },
+    "metrics": {
+      "perplexity": {
+        "perplexity": 20.918476910284813,
+        "loss": 3.033259119095812,
+        "total_tokens": 10000
+      },
+      "passkey_retrieval": {
+        "passkey_accuracy": 0.9013428789038304,
+        "correct_retrievals": 9,
+        "total_samples": 10
+      }
+    },
+    "execution_time": 147.91900123513895,
+    "status": "completed"
+  },
+  {
+    "experiment_config": {
+      "rope_method": "yarn",
+      "context_length": 32768,
+      "parameters": {
+        "s": 8,
+        "alpha": 2.0,
+        "beta": 32,
+        "attention_factor": 0.1,
+        "beta_fast": 32,
+        "beta_slow": 1.0
+      },
+      "model_name": "demo-model",
+      "model_type": "hf_local"
+    },
+    "metrics": {
+      "perplexity": {
+        "perplexity": 21.46902337585349,
+        "loss": 3.1071470316966385,
+        "total_tokens": 10000
+      },
+      "passkey_retrieval": {
+        "passkey_accuracy": 0.8950172817143367,
+        "correct_retrievals": 9,
+        "total_samples": 10
+      }
+    },
+    "execution_time": 136.21067275078929,
+    "status": "completed"
+  },
+  {
+    "experiment_config": {
+      "rope_method": "yarn",
+      "context_length": 32768,
+      "parameters": {
+        "s": 16,
+        "alpha": 1.0,
+        "beta": 32,
+        "attention_factor": 0.1,
+        "beta_fast": 32,
+        "beta_slow": 1.0
+      },
+      "model_name": "demo-model",
+      "model_type": "hf_local"
+    },
+    "metrics": {
+      "perplexity": {
+        "perplexity": 23.64063375289928,
+        "loss": 3.0888664836397464,
+        "total_tokens": 10000
+      },
+      "passkey_retrieval": {
+        "passkey_accuracy": 0.9431308930074123,
+        "correct_retrievals": 9,
+        "total_samples": 10
+      }
+    },
+    "execution_time": 159.26947976792485,
+    "status": "completed"
+  },
+  {
+    "experiment_config": {
+      "rope_method": "yarn",
+      "context_length": 32768,
+      "parameters": {
+        "s": 16,
+        "alpha": 2.0,
+        "beta": 32,
+        "attention_factor": 0.1,
+        "beta_fast": 32,
+        "beta_slow": 1.0
+      },
+      "model_name": "demo-model",
+      "model_type": "hf_local"
+    },
+    "metrics": {
+      "perplexity": {
+        "perplexity": 23.287921696557547,
+        "loss": 3.144201550285085,
+        "total_tokens": 10000
+      },
+      "passkey_retrieval": {
+        "passkey_accuracy": 0.9645613144389359,
+        "correct_retrievals": 9,
+        "total_samples": 10
+      }
+    },
+    "execution_time": 205.47451660504763,
+    "status": "completed"
+  },
+  {
+    "experiment_config": {
+      "rope_method": "linear_interpolation",
+      "context_length": 32768,
+      "parameters": {
+        "scaling_factor": 16
+      },
+      "model_name": "demo-model",
+      "model_type": "hf_local"
+    },
+    "metrics": {},
+    "execution_time": 0,
+    "status": "failed",
+    "error": "CUDA out of memory"
+  },
+  {
+    "experiment_config": {
+      "rope_method": "linear_interpolation",
+      "context_length": 32768,
+      "parameters": {
+        "scaling_factor": 16
+      },
+      "model_name": "demo-model",
+      "model_type": "hf_local"
+    },
+    "metrics": {},
+    "execution_time": 0,
+    "status": "failed",
+    "error": "CUDA out of memory"
+  },
+  {
+    "experiment_config": {
+      "rope_method": "linear_interpolation",
+      "context_length": 32768,
+      "parameters": {
+        "scaling_factor": 16
+      },
+      "model_name": "demo-model",
+      "model_type": "hf_local"
+    },
+    "metrics": {},
+    "execution_time": 0,
+    "status": "failed",
+    "error": "CUDA out of memory"
+  }
+]

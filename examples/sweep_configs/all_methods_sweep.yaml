@@ -1,0 +1,130 @@
+# Comprehensive sweep comparing ALL supported RoPE scaling methods
+# Now includes the new Llama3 frequency-based scaling method
+
+model_name: "microsoft/DialoGPT-small"
+model_type: "hf_local"
+
+# All supported RoPE methods (matching transformers library)
+rope_methods:
+  - "linear_interpolation"  # transformers: "linear"
+  - "ntk_aware"            # our implementation of NTK scaling
+  - "yarn"                 # transformers: "yarn" 
+  - "longrope"             # transformers: "longrope"
+  - "dynamic_ntk"          # transformers: "dynamic"
+  - "llama3"               # transformers: "llama3" (NEW!)
+
+# Context lengths - evaluate scaling performance
+context_lengths:
+  - 2048
+  - 4096
+  - 8192
+  - 16384
+  - 32768
+
+# Parameter grids for each method
+parameter_grids:
+  linear_interpolation:
+    parameters:
+      - name: "scaling_factor"
+        values: [1.5, 2.0, 4.0, 8.0]
+        distribution: "grid"
+  
+  ntk_aware:
+    parameters:
+      - name: "alpha"
+        values: [1.0, 1.5, 2.0]
+        distribution: "grid"
+      - name: "beta"
+        values: [16, 32, 64]
+        distribution: "grid"
+  
+  yarn:
+    parameters:
+      - name: "scaling_factor"
+        values: [2.0, 4.0, 8.0]
+        distribution: "grid"
+      - name: "beta_fast"
+        values: [32, 64]
+        distribution: "grid"
+      - name: "beta_slow"
+        values: [1, 2]
+        distribution: "grid"
+      - name: "s"
+        values: [1.0, 2.0]
+        distribution: "grid"
+  
+  longrope:
+    parameters:
+      - name: "scaling_factor"
+        values: [2.0, 4.0, 8.0]
+        distribution: "grid"
+      - name: "original_max_position_embeddings"
+        values: [2048]
+        distribution: "grid"
+  
+  dynamic_ntk:
+    parameters:
+      - name: "scaling_factor"
+        values: [1.5, 2.0, 4.0]
+        distribution: "grid"
+      - name: "original_max_position_embeddings"
+        values: [2048]
+        distribution: "grid"
+  
+  # NEW: Llama3 frequency-based scaling parameters
+  llama3:
+    parameters:
+      - name: "factor"
+        values: [2.0, 4.0, 8.0]
+        distribution: "grid"
+      - name: "low_freq_factor"
+        values: [1.0, 2.0]
+        distribution: "grid"
+      - name: "high_freq_factor"
+        values: [4.0, 8.0]
+        distribution: "grid"
+      - name: "original_max_position_embeddings"
+        values: [2048]
+        distribution: "grid"
+
+# Comprehensive metrics evaluation
+metrics:
+  - "perplexity"
+  - "longppl"
+  - "passkey_retrieval"
+
+# Sweep settings
+max_configs_per_method: 12  # Limit to prevent combinatorial explosion
+parallel_jobs: 3
+use_cache: true
+cache_dir: "./all_methods_cache"
+output_dir: "./all_methods_results"
+
+# Early stopping for failed experiments
+early_stopping: true
+early_stopping_patience: 3
+early_stopping_threshold: 100.0
+
+# Visualization settings
+visualization:
+  enabled: true
+  include_plots:
+    - "contour"
+    - "heatmap"
+    - "parameter_sensitivity"
+    - "method_comparison"
+    - "performance_vs_context_length"
+
+# Analysis settings
+analysis:
+  generate_summary: true
+  statistical_tests: true
+  correlation_analysis: true
+  save_best_configs: true
+  
+# Experimental settings
+experimental:
+  use_gradient_checkpointing: true
+  batch_size: 1
+  max_length: 1024
+  temperature: 1.0

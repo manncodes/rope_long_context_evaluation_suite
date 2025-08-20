@@ -1,0 +1,65 @@
+# Example configuration for evaluating Llama3 RoPE scaling method
+model_name: "microsoft/DialoGPT-small"
+model_type: "hf_local"
+
+# Focus on Llama3 method
+rope_methods:
+  - "llama3"
+
+# Context lengths to evaluate
+context_lengths:
+  - 2048
+  - 4096
+  - 8192
+  - 16384
+
+# Parameter grids for Llama3
+parameter_grids:
+  llama3:
+    parameters:
+      - name: "factor"
+        values: [2.0, 4.0, 8.0, 16.0]
+        distribution: "grid"
+      - name: "low_freq_factor"
+        values: [0.5, 1.0, 2.0]
+        distribution: "grid"
+      - name: "high_freq_factor"
+        values: [2.0, 4.0, 8.0]
+        distribution: "grid"
+      - name: "original_max_position_embeddings"
+        values: [2048]
+        distribution: "grid"
+
+# Evaluation metrics
+metrics:
+  - "perplexity"
+  - "longppl"
+  - "passkey_retrieval"
+
+# Sweep configuration
+max_configs_per_method: 20  # Limit to prevent explosion
+parallel_jobs: 2
+use_cache: true
+cache_dir: "./llama3_cache"
+output_dir: "./llama3_results"
+
+# Early stopping for failed experiments
+early_stopping: true
+early_stopping_patience: 3
+early_stopping_threshold: 100.0  # Stop if perplexity > 100
+
+# Visualization settings
+visualization:
+  enabled: true
+  include_plots:
+    - "contour"
+    - "heatmap"
+    - "parameter_sensitivity"
+    - "method_comparison"
+
+# Experimental settings
+experimental:
+  use_gradient_checkpointing: true
+  batch_size: 1
+  max_length: 1024
+  temperature: 1.0

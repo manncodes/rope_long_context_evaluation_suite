@@ -1,0 +1,482 @@
+[
+  {
+    "rope_method": "linear_interpolation",
+    "rope_config": {
+      "scaling_factor": 1.5
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 26.021,
+      "longppl": 20.537,
+      "passkey_retrieval": 0.934
+    },
+    "scaling_info": {
+      "method": "linear_interpolation",
+      "scaling_factor": 1.5,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:40:59.688453",
+    "failed": false
+  },
+  {
+    "rope_method": "linear_interpolation",
+    "rope_config": {
+      "scaling_factor": 1.5
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 31.017,
+      "longppl": 25.923,
+      "passkey_retrieval": 0.491
+    },
+    "scaling_info": {
+      "method": "linear_interpolation",
+      "scaling_factor": 1.5,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:40:59.788871",
+    "failed": false
+  },
+  {
+    "rope_method": "linear_interpolation",
+    "rope_config": {
+      "scaling_factor": 1.5
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 41.031,
+      "longppl": 29.227,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "linear_interpolation",
+      "scaling_factor": 1.5,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:40:59.889370",
+    "failed": false
+  },
+  {
+    "rope_method": "linear_interpolation",
+    "rope_config": {
+      "scaling_factor": 1.5
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 60.226,
+      "longppl": 46.505,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "linear_interpolation",
+      "scaling_factor": 1.5,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:40:59.989740",
+    "failed": false
+  },
+  {
+    "rope_method": "linear_interpolation",
+    "rope_config": {
+      "scaling_factor": 2.0
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 25.911,
+      "longppl": 20.72,
+      "passkey_retrieval": 0.931
+    },
+    "scaling_info": {
+      "method": "linear_interpolation",
+      "scaling_factor": 2.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:00.090134",
+    "failed": false
+  },
+  {
+    "rope_method": "linear_interpolation",
+    "rope_config": {
+      "scaling_factor": 2.0
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 31.169,
+      "longppl": 29.53,
+      "passkey_retrieval": 0.527
+    },
+    "scaling_info": {
+      "method": "linear_interpolation",
+      "scaling_factor": 2.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:00.190737",
+    "failed": false
+  },
+  {
+    "rope_method": "linear_interpolation",
+    "rope_config": {
+      "scaling_factor": 2.0
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 41.004,
+      "longppl": 35.172,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "linear_interpolation",
+      "scaling_factor": 2.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:00.291136",
+    "failed": false
+  },
+  {
+    "rope_method": "linear_interpolation",
+    "rope_config": {
+      "scaling_factor": 2.0
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 61.011,
+      "longppl": 53.487,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "linear_interpolation",
+      "scaling_factor": 2.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:00.391536",
+    "failed": false
+  },
+  {
+    "rope_method": "linear_interpolation",
+    "rope_config": {
+      "scaling_factor": 3.0
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 26.112,
+      "longppl": 24.559,
+      "passkey_retrieval": 0.911
+    },
+    "scaling_info": {
+      "method": "linear_interpolation",
+      "scaling_factor": 3.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:00.491955",
+    "failed": false
+  },
+  {
+    "rope_method": "linear_interpolation",
+    "rope_config": {
+      "scaling_factor": 3.0
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 31.027,
+      "longppl": 27.845,
+      "passkey_retrieval": 0.467
+    },
+    "scaling_info": {
+      "method": "linear_interpolation",
+      "scaling_factor": 3.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:00.592340",
+    "failed": false
+  },
+  {
+    "rope_method": "linear_interpolation",
+    "rope_config": {
+      "scaling_factor": 3.0
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 41.216,
+      "longppl": 34.196,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "linear_interpolation",
+      "scaling_factor": 3.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:00.692832",
+    "failed": false
+  },
+  {
+    "rope_method": "linear_interpolation",
+    "rope_config": {
+      "scaling_factor": 3.0
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 60.484,
+      "longppl": 51.127,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "linear_interpolation",
+      "scaling_factor": 3.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:00.793168",
+    "failed": false
+  },
+  {
+    "rope_method": "linear_interpolation",
+    "rope_config": {
+      "scaling_factor": 4.0
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 25.863,
+      "longppl": 22.681,
+      "passkey_retrieval": 0.993
+    },
+    "scaling_info": {
+      "method": "linear_interpolation",
+      "scaling_factor": 4.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:00.893786",
+    "failed": false
+  },
+  {
+    "rope_method": "linear_interpolation",
+    "rope_config": {
+      "scaling_factor": 4.0
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 31.213,
+      "longppl": 22.047,
+      "passkey_retrieval": 0.493
+    },
+    "scaling_info": {
+      "method": "linear_interpolation",
+      "scaling_factor": 4.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:00.994093",
+    "failed": false
+  },
+  {
+    "rope_method": "linear_interpolation",
+    "rope_config": {
+      "scaling_factor": 4.0
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 40.439,
+      "longppl": 34.396,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "linear_interpolation",
+      "scaling_factor": 4.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:01.094754",
+    "failed": false
+  },
+  {
+    "rope_method": "linear_interpolation",
+    "rope_config": {
+      "scaling_factor": 4.0
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 60.843,
+      "longppl": 43.389,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "linear_interpolation",
+      "scaling_factor": 4.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:01.195148",
+    "failed": false
+  },
+  {
+    "rope_method": "linear_interpolation",
+    "rope_config": {
+      "scaling_factor": 6.0
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 27.31,
+      "longppl": 23.555,
+      "passkey_retrieval": 0.768
+    },
+    "scaling_info": {
+      "method": "linear_interpolation",
+      "scaling_factor": 6.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:01.295448",
+    "failed": false
+  },
+  {
+    "rope_method": "linear_interpolation",
+    "rope_config": {
+      "scaling_factor": 6.0
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 32.758,
+      "longppl": 25.042,
+      "passkey_retrieval": 0.223
+    },
+    "scaling_info": {
+      "method": "linear_interpolation",
+      "scaling_factor": 6.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:01.395735",
+    "failed": false
+  },
+  {
+    "rope_method": "linear_interpolation",
+    "rope_config": {
+      "scaling_factor": 6.0
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 41.455,
+      "longppl": 37.839,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "linear_interpolation",
+      "scaling_factor": 6.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:01.496076",
+    "failed": false
+  },
+  {
+    "rope_method": "linear_interpolation",
+    "rope_config": {
+      "scaling_factor": 6.0
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 62.051,
+      "longppl": 53.776,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "linear_interpolation",
+      "scaling_factor": 6.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:01.596340",
+    "failed": false
+  },
+  {
+    "rope_method": "linear_interpolation",
+    "rope_config": {
+      "scaling_factor": 8.0
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 26.938,
+      "longppl": 18.379,
+      "passkey_retrieval": 0.506
+    },
+    "scaling_info": {
+      "method": "linear_interpolation",
+      "scaling_factor": 8.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:01.696599",
+    "failed": false
+  },
+  {
+    "rope_method": "linear_interpolation",
+    "rope_config": {
+      "scaling_factor": 8.0
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 32.786,
+      "longppl": 23.308,
+      "passkey_retrieval": 0.058
+    },
+    "scaling_info": {
+      "method": "linear_interpolation",
+      "scaling_factor": 8.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:01.797266",
+    "failed": false
+  },
+  {
+    "rope_method": "linear_interpolation",
+    "rope_config": {
+      "scaling_factor": 8.0
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 42.584,
+      "longppl": 36.402,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "linear_interpolation",
+      "scaling_factor": 8.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:01.897686",
+    "failed": false
+  },
+  {
+    "rope_method": "linear_interpolation",
+    "rope_config": {
+      "scaling_factor": 8.0
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 62.721,
+      "longppl": 43.497,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "linear_interpolation",
+      "scaling_factor": 8.0,
+      "original_max_position_embeddings": null,
+      "extended_max_position_embeddings": null
+    },
+    "timestamp": "2025-08-20T15:41:01.998053",
+    "failed": false
+  }
+]

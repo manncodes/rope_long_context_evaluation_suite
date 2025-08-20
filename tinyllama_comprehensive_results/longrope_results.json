@@ -1,0 +1,882 @@
+[
+  {
+    "rope_method": "longrope",
+    "rope_config": {
+      "scaling_factor": 2.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 25.222,
+      "longppl": 23.802,
+      "passkey_retrieval": 0.923
+    },
+    "scaling_info": {
+      "method": "longrope",
+      "short_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "long_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "factor_strategy": "layer_wise",
+      "progressive_extension": true,
+      "short_context_recovery": true,
+      "target_length": 2048000,
+      "original_max_position_embeddings": null,
+      "scaling_factor": null
+    },
+    "timestamp": "2025-08-20T15:41:22.273564",
+    "failed": false
+  },
+  {
+    "rope_method": "longrope",
+    "rope_config": {
+      "scaling_factor": 2.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 28.632,
+      "longppl": 24.255,
+      "passkey_retrieval": 0.424
+    },
+    "scaling_info": {
+      "method": "longrope",
+      "short_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "long_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "factor_strategy": "layer_wise",
+      "progressive_extension": true,
+      "short_context_recovery": true,
+      "target_length": 2048000,
+      "original_max_position_embeddings": null,
+      "scaling_factor": null
+    },
+    "timestamp": "2025-08-20T15:41:22.374125",
+    "failed": false
+  },
+  {
+    "rope_method": "longrope",
+    "rope_config": {
+      "scaling_factor": 2.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 39.385,
+      "longppl": 31.806,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "longrope",
+      "short_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "long_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "factor_strategy": "layer_wise",
+      "progressive_extension": true,
+      "short_context_recovery": true,
+      "target_length": 2048000,
+      "original_max_position_embeddings": null,
+      "scaling_factor": null
+    },
+    "timestamp": "2025-08-20T15:41:22.474528",
+    "failed": false
+  },
+  {
+    "rope_method": "longrope",
+    "rope_config": {
+      "scaling_factor": 2.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 58.941,
+      "longppl": 51.73,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "longrope",
+      "short_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "long_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "factor_strategy": "layer_wise",
+      "progressive_extension": true,
+      "short_context_recovery": true,
+      "target_length": 2048000,
+      "original_max_position_embeddings": null,
+      "scaling_factor": null
+    },
+    "timestamp": "2025-08-20T15:41:22.574910",
+    "failed": false
+  },
+  {
+    "rope_method": "longrope",
+    "rope_config": {
+      "scaling_factor": 3.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 24.243,
+      "longppl": 20.223,
+      "passkey_retrieval": 0.978
+    },
+    "scaling_info": {
+      "method": "longrope",
+      "short_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "long_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "factor_strategy": "layer_wise",
+      "progressive_extension": true,
+      "short_context_recovery": true,
+      "target_length": 2048000,
+      "original_max_position_embeddings": null,
+      "scaling_factor": null
+    },
+    "timestamp": "2025-08-20T15:41:22.675233",
+    "failed": false
+  },
+  {
+    "rope_method": "longrope",
+    "rope_config": {
+      "scaling_factor": 3.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 29.178,
+      "longppl": 20.674,
+      "passkey_retrieval": 0.473
+    },
+    "scaling_info": {
+      "method": "longrope",
+      "short_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "long_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "factor_strategy": "layer_wise",
+      "progressive_extension": true,
+      "short_context_recovery": true,
+      "target_length": 2048000,
+      "original_max_position_embeddings": null,
+      "scaling_factor": null
+    },
+    "timestamp": "2025-08-20T15:41:22.776275",
+    "failed": false
+  },
+  {
+    "rope_method": "longrope",
+    "rope_config": {
+      "scaling_factor": 3.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 39.192,
+      "longppl": 31.075,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "longrope",
+      "short_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "long_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "factor_strategy": "layer_wise",
+      "progressive_extension": true,
+      "short_context_recovery": true,
+      "target_length": 2048000,
+      "original_max_position_embeddings": null,
+      "scaling_factor": null
+    },
+    "timestamp": "2025-08-20T15:41:22.877584",
+    "failed": false
+  },
+  {
+    "rope_method": "longrope",
+    "rope_config": {
+      "scaling_factor": 3.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 59.374,
+      "longppl": 51.98,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "longrope",
+      "short_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "long_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "factor_strategy": "layer_wise",
+      "progressive_extension": true,
+      "short_context_recovery": true,
+      "target_length": 2048000,
+      "original_max_position_embeddings": null,
+      "scaling_factor": null
+    },
+    "timestamp": "2025-08-20T15:41:22.978919",
+    "failed": false
+  },
+  {
+    "rope_method": "longrope",
+    "rope_config": {
+      "scaling_factor": 4.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 23.37,
+      "longppl": 20.326,
+      "passkey_retrieval": 0.877
+    },
+    "scaling_info": {
+      "method": "longrope",
+      "short_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "long_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "factor_strategy": "layer_wise",
+      "progressive_extension": true,
+      "short_context_recovery": true,
+      "target_length": 2048000,
+      "original_max_position_embeddings": null,
+      "scaling_factor": null
+    },
+    "timestamp": "2025-08-20T15:41:23.079839",
+    "failed": false
+  },
+  {
+    "rope_method": "longrope",
+    "rope_config": {
+      "scaling_factor": 4.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 28.307,
+      "longppl": 25.237,
+      "passkey_retrieval": 0.418
+    },
+    "scaling_info": {
+      "method": "longrope",
+      "short_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "long_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "factor_strategy": "layer_wise",
+      "progressive_extension": true,
+      "short_context_recovery": true,
+      "target_length": 2048000,
+      "original_max_position_embeddings": null,
+      "scaling_factor": null
+    },
+    "timestamp": "2025-08-20T15:41:23.181026",
+    "failed": false
+  },
+  {
+    "rope_method": "longrope",
+    "rope_config": {
+      "scaling_factor": 4.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 39.069,
+      "longppl": 26.845,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "longrope",
+      "short_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "long_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "factor_strategy": "layer_wise",
+      "progressive_extension": true,
+      "short_context_recovery": true,
+      "target_length": 2048000,
+      "original_max_position_embeddings": null,
+      "scaling_factor": null
+    },
+    "timestamp": "2025-08-20T15:41:23.281977",
+    "failed": false
+  },
+  {
+    "rope_method": "longrope",
+    "rope_config": {
+      "scaling_factor": 4.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 58.457,
+      "longppl": 43.689,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "longrope",
+      "short_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "long_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "factor_strategy": "layer_wise",
+      "progressive_extension": true,
+      "short_context_recovery": true,
+      "target_length": 2048000,
+      "original_max_position_embeddings": null,
+      "scaling_factor": null
+    },
+    "timestamp": "2025-08-20T15:41:23.383164",
+    "failed": false
+  },
+  {
+    "rope_method": "longrope",
+    "rope_config": {
+      "scaling_factor": 6.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 24.792,
+      "longppl": 18.4,
+      "passkey_retrieval": 0.81
+    },
+    "scaling_info": {
+      "method": "longrope",
+      "short_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "long_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "factor_strategy": "layer_wise",
+      "progressive_extension": true,
+      "short_context_recovery": true,
+      "target_length": 2048000,
+      "original_max_position_embeddings": null,
+      "scaling_factor": null
+    },
+    "timestamp": "2025-08-20T15:41:23.483732",
+    "failed": false
+  },
+  {
+    "rope_method": "longrope",
+    "rope_config": {
+      "scaling_factor": 6.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 29.976,
+      "longppl": 30.779,
+      "passkey_retrieval": 0.304
+    },
+    "scaling_info": {
+      "method": "longrope",
+      "short_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "long_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "factor_strategy": "layer_wise",
+      "progressive_extension": true,
+      "short_context_recovery": true,
+      "target_length": 2048000,
+      "original_max_position_embeddings": null,
+      "scaling_factor": null
+    },
+    "timestamp": "2025-08-20T15:41:23.584104",
+    "failed": false
+  },
+  {
+    "rope_method": "longrope",
+    "rope_config": {
+      "scaling_factor": 6.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 40.429,
+      "longppl": 37.768,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "longrope",
+      "short_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "long_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "factor_strategy": "layer_wise",
+      "progressive_extension": true,
+      "short_context_recovery": true,
+      "target_length": 2048000,
+      "original_max_position_embeddings": null,
+      "scaling_factor": null
+    },
+    "timestamp": "2025-08-20T15:41:23.684477",
+    "failed": false
+  },
+  {
+    "rope_method": "longrope",
+    "rope_config": {
+      "scaling_factor": 6.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 60.08,
+      "longppl": 45.921,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "longrope",
+      "short_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "long_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "factor_strategy": "layer_wise",
+      "progressive_extension": true,
+      "short_context_recovery": true,
+      "target_length": 2048000,
+      "original_max_position_embeddings": null,
+      "scaling_factor": null
+    },
+    "timestamp": "2025-08-20T15:41:23.784932",
+    "failed": false
+  },
+  {
+    "rope_method": "longrope",
+    "rope_config": {
+      "scaling_factor": 8.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 2048,
+    "metrics": {
+      "perplexity": 25.457,
+      "longppl": 21.313,
+      "passkey_retrieval": 0.624
+    },
+    "scaling_info": {
+      "method": "longrope",
+      "short_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "long_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "factor_strategy": "layer_wise",
+      "progressive_extension": true,
+      "short_context_recovery": true,
+      "target_length": 2048000,
+      "original_max_position_embeddings": null,
+      "scaling_factor": null
+    },
+    "timestamp": "2025-08-20T15:41:23.885330",
+    "failed": false
+  },
+  {
+    "rope_method": "longrope",
+    "rope_config": {
+      "scaling_factor": 8.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 4096,
+    "metrics": {
+      "perplexity": 31.637,
+      "longppl": 26.894,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "longrope",
+      "short_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "long_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "factor_strategy": "layer_wise",
+      "progressive_extension": true,
+      "short_context_recovery": true,
+      "target_length": 2048000,
+      "original_max_position_embeddings": null,
+      "scaling_factor": null
+    },
+    "timestamp": "2025-08-20T15:41:23.986203",
+    "failed": false
+  },
+  {
+    "rope_method": "longrope",
+    "rope_config": {
+      "scaling_factor": 8.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 8192,
+    "metrics": {
+      "perplexity": 40.851,
+      "longppl": 36.792,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "longrope",
+      "short_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "long_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "factor_strategy": "layer_wise",
+      "progressive_extension": true,
+      "short_context_recovery": true,
+      "target_length": 2048000,
+      "original_max_position_embeddings": null,
+      "scaling_factor": null
+    },
+    "timestamp": "2025-08-20T15:41:24.087809",
+    "failed": false
+  },
+  {
+    "rope_method": "longrope",
+    "rope_config": {
+      "scaling_factor": 8.0,
+      "original_max_position_embeddings": 2048
+    },
+    "context_length": 16384,
+    "metrics": {
+      "perplexity": 60.058,
+      "longppl": 47.946,
+      "passkey_retrieval": 0.0
+    },
+    "scaling_info": {
+      "method": "longrope",
+      "short_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "long_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "factor_strategy": "layer_wise",
+      "progressive_extension": true,
+      "short_context_recovery": true,
+      "target_length": 2048000,
+      "original_max_position_embeddings": null,
+      "scaling_factor": null
+    },
+    "timestamp": "2025-08-20T15:41:24.188893",
+    "failed": false
+  }
+]

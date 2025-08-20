@@ -1,0 +1,137 @@
+# Comprehensive RoPE sweep on TinyLlama 1.1B - ALL methods, NO shortcuts
+# This configuration will run a thorough evaluation of all RoPE scaling methods
+
+model_name: "TinyLlama/TinyLlama-1.1B-Chat-v1.0"
+model_type: "hf_local"
+
+# ALL RoPE methods - complete coverage
+rope_methods:
+  - "linear_interpolation"
+  - "ntk_aware" 
+  - "yarn"
+  - "longrope"
+  - "dynamic_ntk"
+  - "llama3"
+
+# Context lengths - test scaling performance
+context_lengths:
+  - 2048   # Original max
+  - 4096   # 2x scaling
+  - 8192   # 4x scaling
+  - 16384  # 8x scaling
+
+# Comprehensive parameter grids for each method
+parameter_grids:
+  linear_interpolation:
+    parameters:
+      - name: "scaling_factor"
+        values: [1.5, 2.0, 3.0, 4.0, 6.0, 8.0]
+        distribution: "grid"
+
+  ntk_aware:
+    parameters:
+      - name: "alpha"
+        values: [1.0, 1.2, 1.5, 2.0, 2.5]
+        distribution: "grid"
+      - name: "beta"
+        values: [16, 24, 32, 48, 64]
+        distribution: "grid"
+
+  yarn:
+    parameters:
+      - name: "scaling_factor"
+        values: [2.0, 3.0, 4.0, 6.0, 8.0]
+        distribution: "grid"
+      - name: "beta_fast"
+        values: [24, 32, 48, 64]
+        distribution: "grid"
+      - name: "beta_slow"
+        values: [1, 2, 3]
+        distribution: "grid"
+      - name: "s"
+        values: [0.5, 1.0, 1.5, 2.0]
+        distribution: "grid"
+
+  longrope:
+    parameters:
+      - name: "scaling_factor"
+        values: [2.0, 3.0, 4.0, 6.0, 8.0]
+        distribution: "grid"
+      - name: "original_max_position_embeddings"
+        values: [2048]
+        distribution: "grid"
+        
+  dynamic_ntk:
+    parameters:
+      - name: "scaling_factor"
+        values: [1.5, 2.0, 3.0, 4.0, 6.0]
+        distribution: "grid"
+      - name: "original_max_position_embeddings"
+        values: [2048]
+        distribution: "grid"
+
+  llama3:
+    parameters:
+      - name: "factor"
+        values: [2.0, 3.0, 4.0, 6.0, 8.0]
+        distribution: "grid"
+      - name: "low_freq_factor"
+        values: [0.5, 1.0, 1.5, 2.0]
+        distribution: "grid"
+      - name: "high_freq_factor"
+        values: [2.0, 4.0, 6.0, 8.0]
+        distribution: "grid"
+      - name: "original_max_position_embeddings"
+        values: [2048]
+        distribution: "grid"
+
+# All available metrics - comprehensive evaluation
+metrics:
+  - "perplexity"
+  - "longppl" 
+  - "passkey_retrieval"
+
+# Sweep settings - allow sufficient configurations for thorough testing
+max_configs_per_method: 25  # Don't limit too much - we want comprehensive results
+parallel_jobs: 2  # Conservative for stability
+use_cache: true
+cache_dir: "./tinyllama_cache"
+output_dir: "./tinyllama_results"
+
+# Keep failed experiments for analysis
+early_stopping: false  # NO early stopping - we want ALL results
+save_failed_experiments: true
+
+# Complete visualization suite
+visualization:
+  enabled: true
+  include_plots:
+    - "contour"
+    - "heatmap" 
+    - "parameter_sensitivity"
+    - "method_comparison"
+    - "performance_vs_context_length"
+    - "3d_surface"
+
+# Comprehensive analysis
+analysis:
+  generate_summary: true
+  statistical_tests: true
+  correlation_analysis: true
+  save_best_configs: true
+  save_worst_configs: true  # For learning
+  generate_report: true
+
+# Model settings
+experimental:
+  use_gradient_checkpointing: true
+  batch_size: 1
+  max_length: 512  # Conservative for memory
+  temperature: 1.0
+  do_sample: false  # Deterministic for reproducibility
+  
+# Logging
+logging:
+  level: "INFO"
+  save_logs: true
+  log_file: "tinyllama_sweep.log"
