@@ -41,28 +41,37 @@ check_uv() {
 setup_project() {
     log "Setting up project directory..."
     
-    if [ -d "$PROJECT_NAME" ]; then
-        warn "Directory $PROJECT_NAME already exists. Removing..."
-        rm -rf "$PROJECT_NAME"
+    # Check if we're already in the project directory
+    if [[ "$(basename "$(pwd)")" == "$PROJECT_NAME" ]] && [[ -f "pyproject.toml" ]]; then
+        log "Already in project directory: $(pwd)"
+        return 0
     fi
     
-    # Clone repository (comment out if not using git)
+    # If we have the project files in current directory, stay here
+    if [[ -f "pyproject.toml" ]] && [[ -d "src" ]]; then
+        log "Project files found in current directory: $(pwd)"
+        return 0
+    fi
+    
+    # Clone repository (uncomment if needed)
     # git clone "$REPO_URL"
     # cd "$PROJECT_NAME"
     
-    # If not using git clone, create directory structure
-    mkdir -p "$PROJECT_NAME"
-    cd "$PROJECT_NAME"
-    
-    log "Project directory created: $(pwd)"
+    log "Project directory ready: $(pwd)"
 }
 
 # Initialize UV environment
 setup_uv_environment() {
     log "Initializing UV Python environment with Python $PYTHON_VERSION..."
     
-    # Initialize UV project
-    uv init --python "$PYTHON_VERSION"
+    # Check if pyproject.toml already exists
+    if [[ -f "pyproject.toml" ]]; then
+        log "Existing pyproject.toml found, syncing dependencies..."
+        uv sync
+    else
+        # Initialize UV project only if no pyproject.toml exists
+        uv init --python "$PYTHON_VERSION"
+    fi
     
     # Install core dependencies
     log "Installing core dependencies..."
@@ -85,14 +94,17 @@ setup_uv_environment() {
 create_directories() {
     log "Creating directory structure..."
     
-    mkdir -p data/{longbench,retrieval,niah,ruler}
-    mkdir -p src/rope_long_context_evaluation_suite/{benchmarks,models,metrics,sweep}
-    mkdir -p results/{comprehensive,logs}
-    mkdir -p configs/sweep
-    mkdir -p tests
-    mkdir -p scripts
+    # Only create missing directories
+    mkdir -p data/{longbench,retrieval,niah,ruler} 2>/dev/null || true
+    mkdir -p results/{comprehensive,logs} 2>/dev/null || true
+    mkdir -p configs/sweep 2>/dev/null || true
     
-    log "Directory structure created"
+    # Check if src structure exists
+    if [[ ! -d "src/rope_long_context_evaluation_suite" ]]; then
+        mkdir -p src/rope_long_context_evaluation_suite/{benchmarks,models,metrics,sweep}
+    fi
+    
+    log "Directory structure verified"
 }
 
 # Configure for offline/NFS datasets
