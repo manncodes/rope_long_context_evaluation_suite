@@ -163,7 +163,7 @@ cython_debug/
 # Data directories
 data/
 !data/.gitkeep
-models/
+/models/
 !models/.gitkeep
 cache/
 !cache/.gitkeep
