@@ -28,8 +28,8 @@ sys.path.insert(0, str(Path(__file__).parent / "src"))
 
 def setup_logging(config):
     """Setup logging configuration."""
-    log_level = getattr(logging, config.get('output', {}).get('log_level', 'INFO'))
-    log_file = config.get('output', {}).get('log_file', 'evaluation.log')
+    log_level = getattr(logging, config.get('logging', {}).get('level', 'INFO'))
+    log_file = config.get('logging', {}).get('file', 'evaluation.log')
     
     logging.basicConfig(
         level=log_level,
@@ -47,8 +47,9 @@ def load_config(config_path):
     return config
 
 def validate_config(config):
-    """Validate configuration has required fields."""
-    required_fields = ['model', 'datasets', 'rope_methods', 'evaluation', 'output']
+    """Validate configuration has required fields for new format."""
+    # Updated required fields for new config format
+    required_fields = ['model', 'rope_extension', 'benchmarks', 'evaluation', 'data']
     for field in required_fields:
         if field not in config:
             raise ValueError(f"Missing required config field: {field}")
@@ -57,13 +58,27 @@ def validate_config(config):
     model_config = config['model']
     if 'path' not in model_config:
         raise ValueError("Model path is required")
+    if 'type' not in model_config:
+        raise ValueError("Model type is required (hf_hub, local, or api)")
     
-    # Validate dataset paths
-    datasets = config['datasets']
-    if 'longbench' in datasets and 'path' in datasets['longbench']:
-        longbench_path = Path(datasets['longbench']['path'])
+    # Validate RoPE extension config
+    rope_config = config['rope_extension']
+    if 'method' not in rope_config:
+        raise ValueError("RoPE extension method is required")
+    
+    # Validate data config
+    data_config = config['data']
+    if 'output_dir' not in data_config:
+        raise ValueError("Data output_dir is required")
+    
+    # Validate benchmarks config
+    benchmarks = config['benchmarks']
+    if 'longbench' in benchmarks and benchmarks['longbench'].get('enabled') and 'path' in benchmarks['longbench']:
+        longbench_path = Path(benchmarks['longbench']['path'])
         if not longbench_path.exists():
             logging.warning(f"LongBench data path does not exist: {longbench_path}")
+    
+    logging.info("Configuration validation passed")
 
 def run_traditional_retrieval(config, evaluator, results):
     """Run traditional retrieval evaluation."""
@@ -330,14 +345,14 @@ def save_results(config, results):
     """Save evaluation results."""
     logger = logging.getLogger(__name__)
     
-    output_config = config['output']
-    base_dir = Path(output_config['base_dir'])
+    output_config = config.get('output', {})
+    base_dir = Path(output_config.get('base_dir', config['data']['output_dir']))
     base_dir.mkdir(parents=True, exist_ok=True)
     
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     
     # Save detailed JSON results
-    if 'json' in output_config['formats']:
+    if 'json' in output_config.get('formats', ['json']):
         json_file = base_dir / f"comprehensive_results_{timestamp}.json"
         with open(json_file, 'w') as f:
             json.dump({
@@ -352,7 +367,7 @@ def save_results(config, results):
         logger.info(f"Results saved to: {json_file}")
     
     # Save CSV summary if requested
-    if 'csv' in output_config['formats']:
+    if 'csv' in output_config.get('formats', ['json']):
         import pandas as pd
         
         # Create summary table
@@ -424,7 +439,7 @@ def run_evaluation(config):
                             avg_score = sum(scores) / len(scores)
                             print(f"  {method_name}: {avg_score:.3f} (avg across {len(scores)} tasks)")
         
-        print(f"\nResults saved to: {config['output']['base_dir']}")
+        print(f"\nResults saved to: {config['data']['output_dir']}")
         return results
         
     except Exception as e:
@@ -443,10 +458,12 @@ def main():
     config = load_config(args.config)
     
     if args.output:
-        config['output']['base_dir'] = args.output
+        config['data']['output_dir'] = args.output
     
     if args.verbose:
-        config['output']['log_level'] = 'DEBUG'
+        if 'logging' not in config:
+            config['logging'] = {}
+        config['logging']['level'] = 'DEBUG'
     
     # Validate configuration
     validate_config(config)
@@ -457,7 +474,7 @@ def main():
     # Run evaluation
     results = run_evaluation(config)
     
-    print(f"\nEvaluation completed! Check results in: {config['output']['base_dir']}")
+    print(f"\nEvaluation completed! Check results in: {config['data']['output_dir']}")
 
 if __name__ == "__main__":
     main()
