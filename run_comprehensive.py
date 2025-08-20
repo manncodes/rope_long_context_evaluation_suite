@@ -386,34 +386,21 @@ def run_evaluation(config):
         
         # Import and initialize evaluator
         from rope_long_context_evaluation_suite.core import RoPEEvaluator
+        from omegaconf import OmegaConf
         
         model_config = config['model']
         logger.info(f"Loading model: {model_config['name']} from {model_config['path']}")
         
-        evaluator = RoPEEvaluator(
-            model_path=model_config['path'],
-            model_name=model_config['name'],
-            device=model_config.get('device', 'cuda'),
-            max_length=config['evaluation'].get('max_context_length', 32768)
-        )
+        # Convert config to OmegaConf format expected by RoPEEvaluator
+        omega_config = OmegaConf.create(config)
+        evaluator = RoPEEvaluator(omega_config)
         
-        # Run evaluations
-        results = {}
+        # Run the comprehensive evaluation using the evaluator's built-in method
+        logger.info("Running evaluation...")
+        results = evaluator.evaluate()
         
-        # Traditional retrieval tasks
-        run_traditional_retrieval(config, evaluator, results)
-        
-        # NIAH benchmark  
-        run_niah_evaluation(config, evaluator, results)
-        
-        # RULER benchmark
-        run_ruler_evaluation(config, evaluator, results)
-        
-        # LongBench evaluation
-        run_longbench_evaluation(config, evaluator, results)
-        
-        # Save results
-        save_results(config, results)
+        # Save results using the evaluator's built-in save mechanism (already called in evaluate())
+        logger.info("Evaluation results saved automatically by RoPEEvaluator")
         
         logger.info("Comprehensive evaluation completed successfully!")
         

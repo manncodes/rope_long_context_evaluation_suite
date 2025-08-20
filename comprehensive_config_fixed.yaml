@@ -1,0 +1,74 @@
+# Fixed Comprehensive RoPE Long Context Evaluation Configuration
+# Compatible with RoPEEvaluator interface
+
+# Model Configuration
+model:
+  type: "hf_hub"  # Type: hf_hub, local, or api
+  name: "llama-3.2-1b"  # Used for results directory naming
+  path: "unsloth/Llama-3.2-1B"  # Local path or HF model name - UPDATE THIS
+  tokenizer_path: null  # Optional separate tokenizer path
+  device_map: "auto"
+  torch_dtype: "bfloat16"  # Options: float16, bfloat16, float32
+  attn_implementation: "flash_attention_2"  # Options: eager, flash_attention_2
+  max_memory_gb: 24  # Max GPU memory to use
+  max_length: 32768
+  trust_remote_code: false
+
+# RoPE Extension Configuration (single method)
+rope_extension:
+  method: "yarn"  # Options: none, linear, ntk_aware, yarn, longrope, dynamic_ntk, llama3
+  yarn:
+    scaling_factor: 2.0
+    original_max_position_embeddings: 2048
+    attention_factor: 0.1
+    beta_fast: 32
+    beta_slow: 1
+
+# Benchmark Configuration
+benchmarks:
+  niah:
+    enabled: true
+    variants: ["standard"]
+    context_lengths: [4000, 8000, 16000]
+    max_samples: 10
+    
+  ruler:
+    enabled: true
+    categories: ["retrieval", "qa"]
+    max_length: 16000
+    num_samples: 10
+    
+  longbench:
+    enabled: false  # Disabled by default - requires dataset setup
+    path: "data/longbench"
+    tasks: ["narrativeqa", "qasper", "multifieldqa_en"]
+    max_samples: 5
+    
+  longbench_v2:
+    enabled: false  # Disabled by default
+
+# Evaluation Configuration
+evaluation:
+  batch_size: 1
+  save_predictions: true
+  compute_metrics: true
+  generate_plots: false
+  export_formats: ["json"]
+  
+  generation:
+    max_new_tokens: 100
+    temperature: 0.0
+    do_sample: false
+
+# Data Configuration
+data:
+  cache_dir: "./cache/"
+  output_dir: "./comprehensive_results/"
+
+# Logging Configuration
+logging:
+  level: "INFO"
+  file: "logs/comprehensive_evaluation.log"
+
+# Random seed for reproducibility
+seed: 42
