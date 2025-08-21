@@ -27,7 +27,11 @@ class LongBenchOfficialBenchmark(BaseBenchmark):
         super().__init__(config, model, tokenizer)
         
         if not DATASETS_AVAILABLE:
-            raise ImportError("datasets library required for LongBench. Install with: pip install datasets")
+            raise ImportError(
+                "LongBench official implementation not available. "
+                "Install dependencies with: pip install -e .[benchmarks] "
+                "or run: ./setup_benchmarks.sh"
+            )
         
         # LongBench configuration
         self.version = config.get("version", "v1")  # v1 or v2

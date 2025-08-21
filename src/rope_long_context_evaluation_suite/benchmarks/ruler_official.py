@@ -28,6 +28,11 @@ class RULEROfficialBenchmark(BaseBenchmark):
         
         # Check if RULER is available
         if not self.ruler_path.exists():
+            raise ImportError(
+                "RULER official implementation not available. "
+                "Install dependencies with: pip install -e .[benchmarks] "
+                "or run: ./setup_benchmarks.sh"
+            )
             raise FileNotFoundError(f"RULER repository not found at {self.ruler_path}")
     
     def load_data(self) -> List[Dict]:

@@ -85,8 +85,12 @@ class NIAHOfficialBenchmark(BaseBenchmark):
         """Initialize official NIAH benchmark."""
         super().__init__(config, model, tokenizer)
         
-        if LLMNeedleHaystackTester is None:
-            raise ImportError("Could not import NIAH official implementation. Check third_party setup.")
+        if not NIAH_AVAILABLE:
+            raise ImportError(
+                "NIAH official implementation not available. "
+                "Install dependencies with: pip install -e .[benchmarks] "
+                "or run: ./setup_benchmarks.sh"
+            )
         
         # Configuration
         self.context_lengths = config.get("context_lengths", [4000, 8000, 16000, 32000])
