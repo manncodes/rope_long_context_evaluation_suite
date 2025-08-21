@@ -1,5 +1,5 @@
-# NIAH (Needle in a Haystack) Benchmark Test Configuration
-# Tests the official NIAH implementation
+# NIAH (Needle in a Haystack) Benchmark Test Configuration with LLM Judge
+# Tests the official NIAH implementation with LLM-as-judge evaluation
 
 # Model Configuration - lightweight for testing
 model:
@@ -34,14 +34,14 @@ evaluation:
 # Data Configuration
 data:
   cache_dir: "./cache/"
-  output_dir: "./test_results/niah/"
+  output_dir: "./test_results/niah_llm_judge/"
 
 # Logging Configuration
 logging:
   level: "INFO"
-  file: "logs/niah_test.log"
+  file: "logs/niah_llm_judge_test.log"
 
-# NIAH Benchmark Configuration
+# NIAH Benchmark Configuration with LLM Judge
 benchmarks:
   niah:
     enabled: true
@@ -52,7 +52,7 @@ benchmarks:
     retrieval_question: "What is the special magic number that was hidden?"
     max_samples: 2                  # Small number for quick test
     num_tests: 2                    # Tests per context/depth combination
-    evaluation_method: "regex"      # Options: "regex", "exact", "llm_judge"
+    evaluation_method: "llm_judge"  # Use LLM as judge for evaluation
     
   # Disable other benchmarks
   ruler:

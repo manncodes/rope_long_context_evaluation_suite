@@ -85,28 +85,141 @@ class CustomModelProvider(ModelProvider if NIAH_AVAILABLE else object):
 
 
 class CustomEvaluator(Evaluator if NIAH_AVAILABLE else object):
-    """Custom evaluator for NIAH results."""
+    """Custom evaluator for NIAH results with regex extraction and LLM judge options."""
     
-    CRITERIA = {"accuracy": "Score 1 if the needle is found in the response, 0 otherwise"}
+    CRITERIA = {"accuracy": "Score 1 if the needle is extracted correctly from response, 0 otherwise"}
     
-    def __init__(self, needle: str = None):
+    def __init__(self, needle: str = None, evaluation_method: str = "regex"):
         self.needle = needle or "42"  # Default needle
+        self.evaluation_method = evaluation_method  # "regex", "exact", "llm_judge"
     
     def evaluate_response(self, response: str) -> int:
-        """Evaluate if the needle is found in the response."""
+        """Evaluate if the needle is correctly extracted from the response."""
         try:
-            # Simple containment check for the needle
-            needle_lower = self.needle.lower()
-            response_lower = response.lower()
-            contains_needle = needle_lower in response_lower
-            
-            # Optional debug logging (uncomment for debugging)
-            # logger.debug(f"NIAH Eval - Needle: '{self.needle}', Response: '{response[:50]}...', Found: {contains_needle}")
-            
-            return 1 if contains_needle else 0
+            if self.evaluation_method == "regex":
+                return self._evaluate_with_regex(response)
+            elif self.evaluation_method == "exact":
+                return self._evaluate_exact_match(response)
+            elif self.evaluation_method == "llm_judge":
+                return self._evaluate_with_llm_judge(response)
+            else:
+                return self._evaluate_with_regex(response)  # Default
         except Exception as e:
             logger.error(f"Error evaluating response: {e}")
             return 0
+    
+    def _evaluate_with_regex(self, response: str) -> int:
+        """Extract answer using regex patterns and match with needle."""
+        import re
+        
+        # Common patterns for extracting answers
+        patterns = [
+            # Direct number extraction
+            r'\b' + re.escape(self.needle) + r'\b',
+            # After "answer is" or similar
+            r'(?:answer\s+is|answer:|is)\s*([^\s\.\,\n]+)',
+            # Numbers at the end of sentences
+            r'(\d+)[\.\!\?]*\s*$',
+            # Standalone numbers
+            r'\b(\d+)\b',
+            # After question marks
+            r'\?\s*([^\s\.\,\n]+)',
+        ]
+        
+        # First try exact needle match
+        needle_pattern = r'\b' + re.escape(self.needle) + r'\b'
+        if re.search(needle_pattern, response, re.IGNORECASE):
+            logger.debug(f"NIAH: Found exact needle '{self.needle}' in response")
+            return 1
+        
+        # Then try extracting potential answers
+        for pattern in patterns[1:]:  # Skip the exact match pattern we already tried
+            matches = re.findall(pattern, response, re.IGNORECASE)
+            for match in matches:
+                if isinstance(match, tuple):
+                    match = match[0] if match else ""
+                
+                # Clean the match
+                cleaned_match = str(match).strip().lower()
+                needle_clean = str(self.needle).strip().lower()
+                
+                if cleaned_match == needle_clean:
+                    logger.debug(f"NIAH: Extracted '{match}' matches needle '{self.needle}'")
+                    return 1
+        
+        logger.debug(f"NIAH: No valid extraction found for needle '{self.needle}' in response: '{response[:100]}...'")
+        return 0
+    
+    def _evaluate_exact_match(self, response: str) -> int:
+        """Simple exact substring matching (fallback method)."""
+        needle_lower = self.needle.lower()
+        response_lower = response.lower()
+        return 1 if needle_lower in response_lower else 0
+    
+    def _evaluate_with_llm_judge(self, response: str) -> int:
+        """Use LLM as judge to evaluate if response contains the needle."""
+        try:
+            judge_prompt = f"""You are an expert evaluator for question-answering tasks.
+
+Task: Determine if the model's response correctly answers the question by providing the expected answer.
+
+Expected Answer: {self.needle}
+Model Response: {response}
+
+Instructions:
+1. Look for the expected answer "{self.needle}" in the model's response
+2. The answer can be:
+   - Explicitly stated (e.g., "The answer is {self.needle}")
+   - Embedded in the response (e.g., "The special number is {self.needle}")
+   - Given as part of a longer explanation
+3. Ignore formatting, case, and surrounding text
+4. Focus on whether the correct answer is present
+
+Response format: Answer with ONLY "1" if the expected answer is found, or "0" if not found.
+
+Your evaluation:"""
+
+            # Try to use the model that's already loaded for this evaluation
+            if hasattr(self, '_judge_model') and self._judge_model:
+                # Use the loaded model for evaluation
+                import torch
+                inputs = self._judge_tokenizer(judge_prompt, return_tensors="pt", max_length=512, truncation=True)
+                
+                if hasattr(self._judge_model, 'device'):
+                    device = next(self._judge_model.parameters()).device
+                    inputs = {k: v.to(device) for k, v in inputs.items()}
+                
+                with torch.no_grad():
+                    outputs = self._judge_model.generate(
+                        **inputs,
+                        max_new_tokens=10,
+                        temperature=0.0,
+                        do_sample=False,
+                        pad_token_id=self._judge_tokenizer.pad_token_id,
+                        eos_token_id=self._judge_tokenizer.eos_token_id,
+                    )
+                
+                # Decode only new tokens
+                input_length = inputs['input_ids'].shape[1]
+                new_tokens = outputs[0][input_length:]
+                judge_response = self._judge_tokenizer.decode(new_tokens, skip_special_tokens=True).strip()
+                
+                # Parse the judge response
+                if judge_response.startswith('1') or 'correct' in judge_response.lower():
+                    logger.debug(f"NIAH LLM Judge: Found needle '{self.needle}' - Response: '{judge_response}'")
+                    return 1
+                else:
+                    logger.debug(f"NIAH LLM Judge: Needle '{self.needle}' not found - Response: '{judge_response}'")
+                    return 0
+            else:
+                # Fallback to regex if no judge model available
+                logger.warning("No LLM judge model available, falling back to regex evaluation")
+                return self._evaluate_with_regex(response)
+                
+        except Exception as e:
+            logger.error(f"Error in LLM judge evaluation: {e}")
+            logger.warning("LLM judge failed, falling back to regex evaluation")
+            return self._evaluate_with_regex(response)
 
 
 class NIAHOfficialBenchmark(BaseBenchmark):
@@ -131,10 +244,16 @@ class NIAHOfficialBenchmark(BaseBenchmark):
         # NIAH specific configuration
         self.needle = config.get("needle", "42")
         self.retrieval_question = config.get("retrieval_question", "What is the special magic number that was hidden?")
+        self.evaluation_method = config.get("evaluation_method", "regex")
         
         # Setup custom providers
         self.model_provider = CustomModelProvider(model, tokenizer, self.generation_config)
-        self.evaluator = CustomEvaluator(self.needle)
+        self.evaluator = CustomEvaluator(self.needle, self.evaluation_method)
+        
+        # If using LLM judge, provide access to the model
+        if self.evaluation_method == "llm_judge":
+            self.evaluator._judge_model = model
+            self.evaluator._judge_tokenizer = tokenizer
         
         # Initialize NIAH tester
         self.niah_tester = LLMNeedleHaystackTester(
