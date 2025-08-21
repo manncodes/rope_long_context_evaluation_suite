@@ -12,6 +12,8 @@ This suite provides a unified framework for evaluating and comparing different R
 - **4 Benchmark Types**: Traditional retrieval, NIAH (Needle-in-Haystack), RULER synthetic tasks, LongBench real-world tasks
 - **Advanced Evaluation**: Hyperparameter sweeping with grid/random search and parallel execution
 - **Production Ready**: Offline dataset support, NFS integration, GPU cluster deployment
+- **CUDA OOM Handling**: Automatic detection and graceful handling of out-of-memory errors with context length skipping
+- **Offline Data Support**: Load LongBench data from local JSONL files for air-gapped environments
 - **Rich Analytics**: Detailed metrics, visualizations, comparative analysis across methods
 
 ## Quick Start

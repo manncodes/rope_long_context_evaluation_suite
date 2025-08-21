@@ -3,6 +3,7 @@
 import json
 import logging
 import time
+import torch
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 
@@ -79,6 +80,31 @@ class RoPEEvaluator:
             self.rope_info = {"method": "api_model"}
         
         logger.info("Model loading completed")
+    
+    def _is_cuda_oom_error(self, error: Exception) -> bool:
+        """Check if an error is a CUDA Out of Memory error."""
+        error_str = str(error).lower()
+        cuda_oom_indicators = [
+            "cuda out of memory",
+            "out of memory",
+            "runtime error: cuda",
+            "cuda error: out of memory",
+            "cuda_runtime_error"
+        ]
+        return any(indicator in error_str for indicator in cuda_oom_indicators)
+    
+    def _handle_cuda_oom(self, benchmark_name: str, error: Exception):
+        """Handle CUDA OOM by clearing cache and logging."""
+        logger.error(f"CUDA OOM detected in {benchmark_name}: {error}")
+        logger.info("Clearing CUDA cache...")
+        
+        if torch.cuda.is_available():
+            torch.cuda.empty_cache()
+            current_memory = torch.cuda.memory_allocated() / 1024**3  # GB
+            max_memory = torch.cuda.max_memory_allocated() / 1024**3  # GB
+            logger.info(f"CUDA Memory: Current {current_memory:.2f}GB, Max {max_memory:.2f}GB")
+        
+        logger.warning(f"Skipping remaining context lengths for {benchmark_name} due to CUDA OOM")
     
     def evaluate(self) -> Dict[str, Any]:
         """Run evaluation on all enabled benchmarks.
@@ -157,90 +183,158 @@ class RoPEEvaluator:
         """Run NIAH benchmark evaluation."""
         logger.info("Running NIAH benchmark...")
         
-        # Create config with generation settings
-        niah_config = dict(self.config.benchmarks.niah)
-        niah_config['generation'] = self._get_generation_config()
-        
-        # Use official implementation only
-        benchmark = NIAHOfficialBenchmark(
-            niah_config,
-            self.model,
-            self.tokenizer
-        )
-        logger.info("Using official NIAH implementation")
-        
-        max_samples = self.config.benchmarks.niah.get("max_samples")
-        results = benchmark.evaluate(max_samples)
-        
-        self.results["benchmarks"]["niah"] = results
-        logger.info(f"NIAH evaluation completed. Average score: {results['average_score']:.3f}")
+        try:
+            # Create config with generation settings
+            niah_config = dict(self.config.benchmarks.niah)
+            niah_config['generation'] = self._get_generation_config()
+            
+            # Use official implementation only
+            benchmark = NIAHOfficialBenchmark(
+                niah_config,
+                self.model,
+                self.tokenizer
+            )
+            logger.info("Using official NIAH implementation")
+            
+            max_samples = self.config.benchmarks.niah.get("max_samples")
+            results = benchmark.evaluate(max_samples)
+            
+            self.results["benchmarks"]["niah"] = results
+            logger.info(f"NIAH evaluation completed. Average score: {results['average_score']:.3f}")
+            
+        except Exception as e:
+            if self._is_cuda_oom_error(e):
+                self._handle_cuda_oom("NIAH", e)
+                # Create failed result with OOM info
+                self.results["benchmarks"]["niah"] = {
+                    "benchmark": "NIAHOfficialBenchmark",
+                    "error": "CUDA_OOM",
+                    "error_message": str(e),
+                    "average_score": 0.0,
+                    "num_samples": 0,
+                    "num_valid": 0
+                }
+            else:
+                logger.error(f"NIAH benchmark failed with non-OOM error: {e}")
+                raise
     
     def _run_ruler_benchmark(self):
         """Run RULER benchmark evaluation."""
         logger.info("Running RULER benchmark...")
         
-        # Create config with generation settings
-        ruler_config = dict(self.config.benchmarks.ruler)
-        ruler_config['generation'] = self._get_generation_config()
-        
-        # Use official implementation only
-        benchmark = RULEROfficialBenchmark(
-            ruler_config,
-            self.model,
-            self.tokenizer
-        )
-        logger.info("Using official RULER implementation")
-        
-        max_samples = self.config.benchmarks.ruler.get("max_samples")
-        results = benchmark.evaluate(max_samples)
-        
-        self.results["benchmarks"]["ruler"] = results
-        logger.info(f"RULER evaluation completed. Average score: {results['average_score']:.3f}")
+        try:
+            # Create config with generation settings
+            ruler_config = dict(self.config.benchmarks.ruler)
+            ruler_config['generation'] = self._get_generation_config()
+            
+            # Use official implementation only
+            benchmark = RULEROfficialBenchmark(
+                ruler_config,
+                self.model,
+                self.tokenizer
+            )
+            logger.info("Using official RULER implementation")
+            
+            max_samples = self.config.benchmarks.ruler.get("max_samples")
+            results = benchmark.evaluate(max_samples)
+            
+            self.results["benchmarks"]["ruler"] = results
+            logger.info(f"RULER evaluation completed. Average score: {results['average_score']:.3f}")
+            
+        except Exception as e:
+            if self._is_cuda_oom_error(e):
+                self._handle_cuda_oom("RULER", e)
+                # Create failed result with OOM info
+                self.results["benchmarks"]["ruler"] = {
+                    "benchmark": "RULEROfficialBenchmark", 
+                    "error": "CUDA_OOM",
+                    "error_message": str(e),
+                    "average_score": 0.0,
+                    "num_samples": 0,
+                    "num_valid": 0
+                }
+            else:
+                logger.error(f"RULER benchmark failed with non-OOM error: {e}")
+                raise
     
     def _run_longbench_benchmark(self):
         """Run LongBench benchmark evaluation."""
         logger.info("Running LongBench benchmark...")
         
-        # Create config with generation settings
-        longbench_config = dict(self.config.benchmarks.longbench)
-        longbench_config['generation'] = self._get_generation_config()
-        
-        # Use official implementation only
-        benchmark = LongBenchOfficialBenchmark(
-            longbench_config,
-            self.model,
-            self.tokenizer
-        )
-        logger.info("Using official LongBench implementation")
-        
-        max_samples = self.config.benchmarks.longbench.get("max_samples")
-        results = benchmark.evaluate(max_samples)
-        
-        self.results["benchmarks"]["longbench"] = results
-        logger.info(f"LongBench evaluation completed. Average score: {results['average_score']:.3f}")
+        try:
+            # Create config with generation settings
+            longbench_config = dict(self.config.benchmarks.longbench)
+            longbench_config['generation'] = self._get_generation_config()
+            
+            # Use official implementation only
+            benchmark = LongBenchOfficialBenchmark(
+                longbench_config,
+                self.model,
+                self.tokenizer
+            )
+            logger.info("Using official LongBench implementation")
+            
+            max_samples = self.config.benchmarks.longbench.get("max_samples")
+            results = benchmark.evaluate(max_samples)
+            
+            self.results["benchmarks"]["longbench"] = results
+            logger.info(f"LongBench evaluation completed. Average score: {results['average_score']:.3f}")
+            
+        except Exception as e:
+            if self._is_cuda_oom_error(e):
+                self._handle_cuda_oom("LongBench", e)
+                # Create failed result with OOM info
+                self.results["benchmarks"]["longbench"] = {
+                    "benchmark": "LongBenchOfficialBenchmark",
+                    "error": "CUDA_OOM", 
+                    "error_message": str(e),
+                    "average_score": 0.0,
+                    "num_samples": 0,
+                    "num_valid": 0
+                }
+            else:
+                logger.error(f"LongBench benchmark failed with non-OOM error: {e}")
+                raise
     
     def _run_longbench_v2_benchmark(self):
         """Run LongBench-V2 benchmark evaluation."""
         logger.info("Running LongBench-V2 benchmark...")
         
-        # Create config with generation settings
-        longbench_v2_config = dict(self.config.benchmarks.longbench_v2)
-        longbench_v2_config['generation'] = self._get_generation_config()
-        
-        # LongBench v2 can be handled by the official implementation with version config
-        longbench_v2_config['version'] = 'v2'
-        benchmark = LongBenchOfficialBenchmark(
-            longbench_v2_config,
-            self.model,
-            self.tokenizer
-        )
-        logger.info("Using official LongBench v2 implementation")
-        
-        max_samples = self.config.benchmarks.longbench_v2.get("max_samples")
-        results = benchmark.evaluate(max_samples)
-        
-        self.results["benchmarks"]["longbench_v2"] = results
-        logger.info(f"LongBench-V2 evaluation completed. Average score: {results['average_score']:.3f}")
+        try:
+            # Create config with generation settings
+            longbench_v2_config = dict(self.config.benchmarks.longbench_v2)
+            longbench_v2_config['generation'] = self._get_generation_config()
+            
+            # LongBench v2 can be handled by the official implementation with version config
+            longbench_v2_config['version'] = 'v2'
+            benchmark = LongBenchOfficialBenchmark(
+                longbench_v2_config,
+                self.model,
+                self.tokenizer
+            )
+            logger.info("Using official LongBench v2 implementation")
+            
+            max_samples = self.config.benchmarks.longbench_v2.get("max_samples")
+            results = benchmark.evaluate(max_samples)
+            
+            self.results["benchmarks"]["longbench_v2"] = results
+            logger.info(f"LongBench-V2 evaluation completed. Average score: {results['average_score']:.3f}")
+            
+        except Exception as e:
+            if self._is_cuda_oom_error(e):
+                self._handle_cuda_oom("LongBench-V2", e)
+                # Create failed result with OOM info
+                self.results["benchmarks"]["longbench_v2"] = {
+                    "benchmark": "LongBenchOfficialBenchmark",
+                    "error": "CUDA_OOM",
+                    "error_message": str(e), 
+                    "average_score": 0.0,
+                    "num_samples": 0,
+                    "num_valid": 0
+                }
+            else:
+                logger.error(f"LongBench-V2 benchmark failed with non-OOM error: {e}")
+                raise
     
     def _compute_summary(self):
         """Compute summary statistics across all benchmarks."""

@@ -38,18 +38,29 @@ class LongBenchOfficialBenchmark(BaseBenchmark):
         self.tasks = config.get("tasks", ["narrativeqa", "qasper", "multifieldqa_en"])
         self.max_samples = config.get("max_samples", 100)
         
+        # Support for offline data directory
+        self.offline_data_dir = config.get("offline_data_dir", None)
+        
         # Dataset identifier based on version
         if self.version == "v2":
             self.dataset_name = "THUDM/LongBench-v2"
         else:
             self.dataset_name = "THUDM/LongBench"
         
-        logger.info(f"Initializing LongBench {self.version} with dataset: {self.dataset_name}")
+        if self.offline_data_dir:
+            logger.info(f"Initializing LongBench {self.version} with offline data from: {self.offline_data_dir}")
+        else:
+            logger.info(f"Initializing LongBench {self.version} with dataset: {self.dataset_name}")
     
     def load_data(self) -> List[Dict]:
-        """Load LongBench data from official HuggingFace dataset."""
+        """Load LongBench data from offline JSONL files or HuggingFace dataset."""
         data = []
         
+        # If offline data directory is specified, load from local files
+        if self.offline_data_dir:
+            return self._load_offline_data()
+        
+        # Otherwise, load from HuggingFace dataset
         try:
             if self.version == "v2":
                 # LongBench v2 format
@@ -124,6 +135,86 @@ class LongBenchOfficialBenchmark(BaseBenchmark):
                 "placeholder": True
             })
         
+        return data
+    
+    def _load_offline_data(self) -> List[Dict]:
+        """Load LongBench data from offline JSONL files."""
+        data = []
+        offline_dir = Path(self.offline_data_dir)
+        
+        if not offline_dir.exists():
+            logger.error(f"Offline data directory does not exist: {offline_dir}")
+            return self._generate_placeholder_data()
+        
+        logger.info(f"Loading LongBench data from offline directory: {offline_dir}")
+        
+        for task in self.tasks:
+            jsonl_file = offline_dir / f"{task}.jsonl"
+            
+            if not jsonl_file.exists():
+                logger.warning(f"JSONL file not found: {jsonl_file}, skipping task {task}")
+                continue
+            
+            logger.info(f"Loading task {task} from {jsonl_file}")
+            
+            try:
+                task_samples = 0
+                with open(jsonl_file, 'r', encoding='utf-8') as f:
+                    for line_num, line in enumerate(f, 1):
+                        if self.max_samples and task_samples >= (self.max_samples // len(self.tasks)):
+                            break
+                        
+                        try:
+                            item = json.loads(line.strip())
+                            
+                            # Standardize the format for both v1 and v2
+                            if self.version == "v2":
+                                sample = {
+                                    "id": item.get("_id", f"{task}_{line_num}"),
+                                    "task": task,
+                                    "domain": item.get("domain", task),
+                                    "context": item.get("context", ""),
+                                    "input": item.get("input", ""),
+                                    "expected_output": item.get("output", item.get("answers", [""])[0]),
+                                    "answers": item.get("answers", [item.get("output", "")]),
+                                    "context_length": len(item.get("context", "")),
+                                    "version": "v2"
+                                }
+                            else:
+                                # LongBench v1 format
+                                sample = {
+                                    "id": item.get("_id", f"{task}_{line_num}"),
+                                    "task": task,
+                                    "domain": task,
+                                    "context": item.get("context", ""),
+                                    "input": item.get("input", ""),
+                                    "expected_output": item.get("answers", [item.get("output", "")])[0],
+                                    "answers": item.get("answers", [item.get("output", "")]),
+                                    "context_length": len(item.get("context", "")),
+                                    "version": "v1"
+                                }
+                            
+                            data.append(sample)
+                            task_samples += 1
+                            
+                        except json.JSONDecodeError as e:
+                            logger.warning(f"Invalid JSON on line {line_num} in {jsonl_file}: {e}")
+                            continue
+                        except Exception as e:
+                            logger.warning(f"Error processing line {line_num} in {jsonl_file}: {e}")
+                            continue
+                
+                logger.info(f"Loaded {task_samples} samples from task {task}")
+                
+            except Exception as e:
+                logger.error(f"Error reading {jsonl_file}: {e}")
+                continue
+        
+        if not data:
+            logger.warning("No data loaded from offline files, using placeholder data")
+            return self._generate_placeholder_data()
+        
+        logger.info(f"Total loaded {len(data)} samples from offline data")
         return data
     
     def evaluate_sample(self, sample: Dict) -> Dict:

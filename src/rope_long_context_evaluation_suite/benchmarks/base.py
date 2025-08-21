@@ -29,6 +29,26 @@ class BaseBenchmark(ABC):
         # Setup generation parameters
         self.generation_config = config.get("generation", {})
         
+    def _is_cuda_oom_error(self, error: Exception) -> bool:
+        """Check if an error is a CUDA Out of Memory error."""
+        error_str = str(error).lower()
+        cuda_oom_indicators = [
+            "cuda out of memory",
+            "out of memory", 
+            "runtime error: cuda",
+            "cuda error: out of memory",
+            "cuda_runtime_error"
+        ]
+        return any(indicator in error_str for indicator in cuda_oom_indicators)
+    
+    def _clear_cuda_cache(self):
+        """Clear CUDA cache and log memory usage."""
+        if torch.cuda.is_available():
+            torch.cuda.empty_cache()
+            current_memory = torch.cuda.memory_allocated() / 1024**3  # GB
+            max_memory = torch.cuda.max_memory_allocated() / 1024**3  # GB
+            logger.info(f"CUDA Memory cleared - Current: {current_memory:.2f}GB, Max: {max_memory:.2f}GB")
+        
     @abstractmethod
     def load_data(self) -> List[Dict]:
         """Load benchmark data.
@@ -188,12 +208,48 @@ class BaseBenchmark(ABC):
             data = data[:max_samples]
             logger.info(f"Limiting evaluation to {len(data)} samples")
         
-        # Evaluate samples
+        # Evaluate samples with CUDA OOM handling
         results = []
+        oom_context_length = None  # Track where OOM occurred to skip larger contexts
+        
         for i, sample in enumerate(data):
             logger.info(f"Evaluating sample {i+1}/{len(data)}")
-            result = self.evaluate_sample(sample)
-            results.append(result)
+            
+            # Skip if this sample has a context length >= the OOM threshold
+            current_context_length = sample.get("context_length", 0)
+            if oom_context_length is not None and current_context_length >= oom_context_length:
+                logger.warning(f"Skipping sample {i+1} (context_length={current_context_length}) due to previous CUDA OOM at {oom_context_length}")
+                results.append({
+                    "sample_id": sample.get("id", f"sample_{i}"),
+                    "error": "SKIPPED_CUDA_OOM",
+                    "score": 0.0,
+                    "context_length": current_context_length
+                })
+                continue
+            
+            try:
+                result = self.evaluate_sample(sample)
+                results.append(result)
+                
+            except Exception as e:
+                if self._is_cuda_oom_error(e):
+                    logger.error(f"CUDA OOM detected on sample {i+1} with context_length={current_context_length}: {e}")
+                    oom_context_length = current_context_length
+                    self._clear_cuda_cache()
+                    
+                    # Record this sample as failed
+                    results.append({
+                        "sample_id": sample.get("id", f"sample_{i}"),
+                        "error": "CUDA_OOM",
+                        "score": 0.0,
+                        "context_length": current_context_length
+                    })
+                    
+                    logger.warning(f"Will skip remaining samples with context_length >= {oom_context_length}")
+                else:
+                    # Non-OOM error, let the original error handling continue
+                    result = self.evaluate_sample(sample)
+                    results.append(result)
         
         # Compute aggregate metrics
         valid_results = [r for r in results if "error" not in r]

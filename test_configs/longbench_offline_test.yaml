@@ -1,0 +1,36 @@
+# LongBench Offline Data Test Configuration
+# This config demonstrates loading LongBench data from local JSONL files
+
+model:
+  type: hf_hub
+  name: llama-3.2-1b
+  max_length: 4096
+
+rope_extension:
+  method: none
+
+benchmarks:
+  niah:
+    enabled: false
+
+  ruler: 
+    enabled: false
+
+  longbench:
+    enabled: true
+    version: "v1"
+    # Specify offline data directory containing JSONL files
+    offline_data_dir: "data/longbench"  # Directory should contain narrativeqa.jsonl, qasper.jsonl, etc.
+    tasks: ["narrativeqa", "qasper"]
+    max_samples: 2
+    
+  longbench_v2:
+    enabled: false
+
+generation:
+  max_new_tokens: 100
+  temperature: 0.0
+  do_sample: false
+
+data:
+  output_dir: "test_results/longbench_offline"
