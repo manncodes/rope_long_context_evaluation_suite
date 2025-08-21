@@ -47,7 +47,7 @@ class ModelLoader:
     
     def _load_huggingface_model(self) -> Tuple[PreTrainedModel, PreTrainedTokenizer]:
         """Load model and tokenizer from HuggingFace Hub."""
-        model_name = self.model_config.get("name") or self.model_config.get("path")
+        model_name = self.model_config.get("path") or self.model_config.get("name")
         
         if not model_name:
             raise ValueError("Model name or path must be specified for HuggingFace models")
@@ -148,7 +148,7 @@ class ModelLoader:
             Dictionary containing model information
         """
         return {
-            "name": self.model_config.get("name", "unknown"),
+            "name": self.model_config.get("path") or self.model_config.get("name", "unknown"),
             "type": self.model_config.get("type", "unknown"),
             "path": self.model_config.get("path"),
             "max_length": self.model_config.get("max_length"),
