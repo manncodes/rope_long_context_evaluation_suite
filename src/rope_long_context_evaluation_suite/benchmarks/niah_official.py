@@ -98,7 +98,32 @@ class CustomModelProvider(ModelProvider if NIAH_AVAILABLE else object):
         return self.generate_text(prompt)
     
     def generate_prompt(self, context: str, retrieval_question: str) -> str:
-        """Generate prompt for NIAH test."""
+        """Generate prompt for NIAH test using chat template if available."""
+        # Create messages for chat template
+        messages = [
+            {"role": "user", "content": f"Read the following context carefully and answer the question.\n\nContext: {context}\n\nQuestion: {retrieval_question}"}
+        ]
+        
+        # Set up chat template if not available
+        if hasattr(self.tokenizer, 'apply_chat_template'):
+            # Set Llama chat template if none exists
+            if not self.tokenizer.chat_template:
+                self.tokenizer.chat_template = """{% set loop_messages = messages %}{% for message in loop_messages %}{% set content = '<|start_header_id|>' + message['role'] + '<|end_header_id|>\n\n'+ message['content'] | trim + '<|eot_id|>' %}{% if loop.index0 == 0 %}{% set content = bos_token + content %}{% endif %}{{ content }}{% endfor %}{% if add_generation_prompt %}{{ '<|start_header_id|>assistant<|end_header_id|>\n\n' }}{% endif %}"""
+                logger.info(f"NIAH Chat Template Debug: Set Llama chat template")
+            
+            try:
+                prompt = self.tokenizer.apply_chat_template(
+                    messages, 
+                    tokenize=False, 
+                    add_generation_prompt=True
+                )
+                logger.info(f"NIAH Chat Template Debug: Using chat template format")
+                return prompt
+            except Exception as e:
+                logger.warning(f"NIAH Chat Template Error: {e}, falling back to simple format")
+        
+        # Fallback to simple format
+        logger.info(f"NIAH Chat Template Debug: Using simple format (no chat template support)")
         return f"Context: {context}\n\nQuestion: {retrieval_question}\n\nAnswer:"
 
 
