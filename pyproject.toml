@@ -42,30 +42,14 @@ dependencies = [
     "wandb>=0.15.0",
     "scipy>=1.10.0",
     "scikit-learn>=1.3.0",
-    "openai>=1.0.0",
-    "anthropic>=0.7.0",
+    # API providers moved to optional dependencies
     "einops>=0.7.0",
     "flash-attn>=2.0.0; platform_system == 'Linux'",
     "bitsandbytes>=0.41.0",
     "peft>=0.4.0",
-    # Official benchmark dependencies
-    "langchain>=0.1.9",
-    "langchain-community>=0.0.24",
-    "langchain-core>=0.1.26",
-    "langsmith>=0.1.8",
-    "langchain-openai",
-    "langchain-anthropic", 
-    "langchain-cohere",
-    "cohere>=5.1.2",
+    # Core benchmark dependencies only
     "tiktoken>=0.5.1",
     "python-dotenv>=1.0.0",
-    "tenacity>=8.2.3",
-    "wonderwords",
-    "html2text",
-    "google-generativeai",
-    "flask",
-    "flask-restful",
-    "vllm>=0.5.3",
 ]
 
 [project.optional-dependencies]
@@ -86,23 +70,25 @@ evaluation = [
     "sacrebleu>=2.3.1",
     "evaluate>=0.4.0",
 ]
+api-providers = [
+    # API provider dependencies - install only if using API models
+    "openai>=1.0.0",
+    "anthropic>=0.7.0",
+    "cohere>=5.1.2",
+    "google-generativeai",
+    "langchain-openai",
+    "langchain-anthropic",
+    "langchain-cohere",
+]
 benchmarks = [
-    # All official benchmark dependencies are now in main dependencies
-    # This group kept for backwards compatibility
+    # Official benchmark dependencies - heavy packages
     "langchain>=0.1.9",
     "langchain-community>=0.0.24", 
     "langchain-core>=0.1.26",
     "langsmith>=0.1.8",
-    "langchain-openai",
-    "langchain-anthropic",
-    "langchain-cohere", 
-    "cohere>=5.1.2",
-    "tiktoken>=0.5.1",
-    "python-dotenv>=1.0.0",
     "tenacity>=8.2.3",
     "wonderwords",
     "html2text",
-    "google-generativeai",
     "flask",
     "flask-restful",
     "vllm>=0.5.3",
