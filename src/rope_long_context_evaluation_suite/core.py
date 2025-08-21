@@ -115,8 +115,12 @@ class RoPEEvaluator:
         """Run NIAH benchmark evaluation."""
         logger.info("Running NIAH benchmark...")
         
+        # Create config with generation settings
+        niah_config = dict(self.config.benchmarks.niah)
+        niah_config['generation'] = self.config.evaluation.generation
+        
         benchmark = NIAHBenchmark(
-            self.config.benchmarks.niah,
+            niah_config,
             self.model,
             self.tokenizer
         )
@@ -132,8 +136,12 @@ class RoPEEvaluator:
         logger.info("Running RULER benchmark...")
         
         try:
+            # Create config with generation settings
+            ruler_config = dict(self.config.benchmarks.ruler)
+            ruler_config['generation'] = self.config.evaluation.generation
+            
             benchmark = RULERBenchmark(
-                self.config.benchmarks.ruler,
+                ruler_config,
                 self.model,
                 self.tokenizer
             )
@@ -153,8 +161,12 @@ class RoPEEvaluator:
         logger.info("Running LongBench benchmark...")
         
         try:
+            # Create config with generation settings
+            longbench_config = dict(self.config.benchmarks.longbench)
+            longbench_config['generation'] = self.config.evaluation.generation
+            
             benchmark = LongBench(
-                self.config.benchmarks.longbench,
+                longbench_config,
                 self.model,
                 self.tokenizer
             )
@@ -174,8 +186,12 @@ class RoPEEvaluator:
         logger.info("Running LongBench-V2 benchmark...")
         
         try:
+            # Create config with generation settings
+            longbench_v2_config = dict(self.config.benchmarks.longbench_v2)
+            longbench_v2_config['generation'] = self.config.evaluation.generation
+            
             benchmark = LongBenchV2(
-                self.config.benchmarks.longbench_v2,
+                longbench_v2_config,
                 self.model,
                 self.tokenizer
             )
