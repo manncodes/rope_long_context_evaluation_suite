@@ -45,9 +45,27 @@ dependencies = [
     "openai>=1.0.0",
     "anthropic>=0.7.0",
     "einops>=0.7.0",
-    "flash-attn>=2.0.0; platform_system == 'Linux'",
+    # "flash-attn>=2.0.0; platform_system == 'Linux'",  # Disabled due to CUDA compilation issues
     "bitsandbytes>=0.41.0",
     "peft>=0.4.0",
+    # Official benchmark dependencies
+    "langchain>=0.1.9",
+    "langchain-community>=0.0.24",
+    "langchain-core>=0.1.26",
+    "langsmith>=0.1.8",
+    "langchain-openai",
+    "langchain-anthropic", 
+    "langchain-cohere",
+    "cohere>=5.1.2",
+    "tiktoken>=0.5.1",
+    "python-dotenv>=1.0.0",
+    "tenacity>=8.2.3",
+    "wonderwords",
+    "html2text",
+    "google-generativeai",
+    "flask",
+    "flask-restful",
+    "vllm>=0.5.3",
 ]
 
 [project.optional-dependencies]
@@ -67,6 +85,27 @@ evaluation = [
     "bert-score>=0.3.13",
     "sacrebleu>=2.3.1",
     "evaluate>=0.4.0",
+]
+benchmarks = [
+    # All official benchmark dependencies are now in main dependencies
+    # This group kept for backwards compatibility
+    "langchain>=0.1.9",
+    "langchain-community>=0.0.24", 
+    "langchain-core>=0.1.26",
+    "langsmith>=0.1.8",
+    "langchain-openai",
+    "langchain-anthropic",
+    "langchain-cohere", 
+    "cohere>=5.1.2",
+    "tiktoken>=0.5.1",
+    "python-dotenv>=1.0.0",
+    "tenacity>=8.2.3",
+    "wonderwords",
+    "html2text",
+    "google-generativeai",
+    "flask",
+    "flask-restful",
+    "vllm>=0.5.3",
 ]
 
 [project.urls]

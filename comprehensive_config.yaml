@@ -6,10 +6,10 @@ model:
   type: "hf_hub"  # Type: hf_hub, local, or api
   name: "llama-3.2-1b"  # Used for results directory naming
   path: "unsloth/Llama-3.2-1B"  # Local path or HF model name - UPDATE THIS
-  tokenizer_path: null  # Optional separate tokenizer path
+  tokenizer_path: "unsloth/Llama-3.2-1B"  # Use same as model path
   device_map: "auto"
   torch_dtype: "bfloat16"  # Options: float16, bfloat16, float32
-  attn_implementation: "flash_attention_2"  # Options: eager, flash_attention_2
+  attn_implementation: "eager"  # Options: eager, flash_attention_2
   max_memory_gb: 24  # Max GPU memory to use
   max_length: 32768
   trust_remote_code: false
@@ -113,6 +113,16 @@ output:
   log_level: "INFO"
   log_file: "evaluation.log"
 
+# Data Configuration (for RoPEEvaluator compatibility)
+data:
+  cache_dir: "./cache/"
+  output_dir: "./comprehensive_results/"
+
+# Logging Configuration (for RoPEEvaluator compatibility)
+logging:
+  level: "INFO"
+  file: "logs/comprehensive_evaluation.log"
+
 # Hardware Configuration
 hardware:
   num_gpus: 1
@@ -120,6 +130,33 @@ hardware:
   cpu_threads: 8
   mixed_precision: true
   compile_model: false  # Set to true for PyTorch 2.0+ optimization
+
+# Benchmark Configuration (for RoPEEvaluator compatibility)
+benchmarks:
+  niah:
+    enabled: true
+    variants: ["standard"]
+    context_lengths: [4000, 8000, 16000]
+    max_samples: 10
+    
+  ruler:
+    enabled: true
+    categories: ["retrieval", "qa"]
+    max_length: 16000
+    num_samples: 10
+    
+  longbench:
+    enabled: false  # Disabled by default - requires dataset setup
+    path: "data/longbench"
+    tasks: ["narrativeqa", "qasper", "multifieldqa_en"]
+    max_samples: 5
+    
+  longbench_v2:
+    enabled: false  # Disabled by default
+
+# RoPE Extension Configuration (for single method eval)
+rope_extension:
+  method: "none"  # Start with no extension for baseline
 
 # Experimental Features
 experimental:

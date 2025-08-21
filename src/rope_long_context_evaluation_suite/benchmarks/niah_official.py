@@ -14,16 +14,20 @@ try:
     from needlehaystack.llm_needle_haystack_tester import LLMNeedleHaystackTester
     from needlehaystack.providers.model import ModelProvider
     from needlehaystack.evaluators.evaluator import Evaluator
+    NIAH_AVAILABLE = True
 except ImportError as e:
     logging.warning(f"Could not import NIAH official implementation: {e}")
     LLMNeedleHaystackTester = None
+    ModelProvider = object  # Fallback base class
+    Evaluator = object  # Fallback base class
+    NIAH_AVAILABLE = False
 
 from .base import BaseBenchmark
 
 logger = logging.getLogger(__name__)
 
 
-class CustomModelProvider(ModelProvider):
+class CustomModelProvider(ModelProvider if NIAH_AVAILABLE else object):
     """Custom model provider that wraps our model and tokenizer."""
     
     def __init__(self, model, tokenizer, generation_config):
@@ -61,7 +65,7 @@ class CustomModelProvider(ModelProvider):
             return ""
 
 
-class CustomEvaluator(Evaluator):
+class CustomEvaluator(Evaluator if NIAH_AVAILABLE else object):
     """Custom evaluator for NIAH results."""
     
     def evaluate_response(self, response: str, expected_response: str) -> int:

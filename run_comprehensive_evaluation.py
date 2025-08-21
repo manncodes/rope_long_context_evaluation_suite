@@ -17,7 +17,7 @@ import random
 # Add src to path  
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'src'))
 
-from rope_long_context_evaluation_suite.models.factory import get_rope_extension, list_available_extensions
+from rope_long_context_evaluation_suite.models.factory import get_rope_extension, list_available_methods
 from rope_long_context_evaluation_suite.metrics import PerplexityMetric, LongPPLMetric, PasskeyRetrievalMetric
 
 def generate_test_data(tokenizer, context_length: int, num_samples: int = 10) -> List[str]:

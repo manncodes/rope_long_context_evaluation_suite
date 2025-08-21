@@ -9,10 +9,8 @@ from typing import Any, Dict, List, Optional
 from omegaconf import DictConfig
 
 from .benchmarks import (
-    # Official implementations (preferred)
-    NIAHOfficialBenchmark, RULEROfficialBenchmark, LongBenchOfficialBenchmark,
-    # Legacy implementations (fallback)
-    NIAHBenchmark, RULERBenchmark, LongBench, LongBenchV2
+    # Official implementations only
+    NIAHOfficialBenchmark, RULEROfficialBenchmark, LongBenchOfficialBenchmark
 )
 from .models import ModelLoader, get_rope_extension
 from .utils import Config, save_results, setup_logging
@@ -163,21 +161,13 @@ class RoPEEvaluator:
         niah_config = dict(self.config.benchmarks.niah)
         niah_config['generation'] = self._get_generation_config()
         
-        # Try official implementation first, fallback to legacy
-        try:
-            benchmark = NIAHOfficialBenchmark(
-                niah_config,
-                self.model,
-                self.tokenizer
-            )
-            logger.info("Using official NIAH implementation")
-        except Exception as e:
-            logger.warning(f"Failed to load official NIAH, using legacy: {e}")
-            benchmark = NIAHBenchmark(
-                niah_config,
-                self.model,
-                self.tokenizer
-            )
+        # Use official implementation only
+        benchmark = NIAHOfficialBenchmark(
+            niah_config,
+            self.model,
+            self.tokenizer
+        )
+        logger.info("Using official NIAH implementation")
         
         max_samples = self.config.benchmarks.niah.get("max_samples")
         results = benchmark.evaluate(max_samples)
@@ -189,107 +179,68 @@ class RoPEEvaluator:
         """Run RULER benchmark evaluation."""
         logger.info("Running RULER benchmark...")
         
-        try:
-            # Create config with generation settings
-            ruler_config = dict(self.config.benchmarks.ruler)
-            ruler_config['generation'] = self._get_generation_config()
-            
-            # Try official implementation first, fallback to legacy
-            try:
-                benchmark = RULEROfficialBenchmark(
-                    ruler_config,
-                    self.model,
-                    self.tokenizer
-                )
-                logger.info("Using official RULER implementation")
-            except Exception as e:
-                logger.warning(f"Failed to load official RULER, using legacy: {e}")
-                benchmark = RULERBenchmark(
-                    ruler_config,
-                    self.model,
-                    self.tokenizer
-                )
-            
-            max_samples = self.config.benchmarks.ruler.get("max_samples")
-            results = benchmark.evaluate(max_samples)
-            
-            self.results["benchmarks"]["ruler"] = results
-            logger.info(f"RULER evaluation completed. Average score: {results['average_score']:.3f}")
-            
-        except Exception as e:
-            logger.error(f"RULER benchmark failed: {e}")
-            self.results["benchmarks"]["ruler"] = {"error": str(e)}
+        # Create config with generation settings
+        ruler_config = dict(self.config.benchmarks.ruler)
+        ruler_config['generation'] = self._get_generation_config()
+        
+        # Use official implementation only
+        benchmark = RULEROfficialBenchmark(
+            ruler_config,
+            self.model,
+            self.tokenizer
+        )
+        logger.info("Using official RULER implementation")
+        
+        max_samples = self.config.benchmarks.ruler.get("max_samples")
+        results = benchmark.evaluate(max_samples)
+        
+        self.results["benchmarks"]["ruler"] = results
+        logger.info(f"RULER evaluation completed. Average score: {results['average_score']:.3f}")
     
     def _run_longbench_benchmark(self):
         """Run LongBench benchmark evaluation."""
         logger.info("Running LongBench benchmark...")
         
-        try:
-            # Create config with generation settings
-            longbench_config = dict(self.config.benchmarks.longbench)
-            longbench_config['generation'] = self._get_generation_config()
-            
-            # Try official implementation first, fallback to legacy
-            try:
-                benchmark = LongBenchOfficialBenchmark(
-                    longbench_config,
-                    self.model,
-                    self.tokenizer
-                )
-                logger.info("Using official LongBench implementation")
-            except Exception as e:
-                logger.warning(f"Failed to load official LongBench, using legacy: {e}")
-                benchmark = LongBench(
-                    longbench_config,
-                    self.model,
-                    self.tokenizer
-                )
-            
-            max_samples = self.config.benchmarks.longbench.get("max_samples")
-            results = benchmark.evaluate(max_samples)
-            
-            self.results["benchmarks"]["longbench"] = results
-            logger.info(f"LongBench evaluation completed. Average score: {results['average_score']:.3f}")
-            
-        except Exception as e:
-            logger.error(f"LongBench benchmark failed: {e}")
-            self.results["benchmarks"]["longbench"] = {"error": str(e)}
+        # Create config with generation settings
+        longbench_config = dict(self.config.benchmarks.longbench)
+        longbench_config['generation'] = self._get_generation_config()
+        
+        # Use official implementation only
+        benchmark = LongBenchOfficialBenchmark(
+            longbench_config,
+            self.model,
+            self.tokenizer
+        )
+        logger.info("Using official LongBench implementation")
+        
+        max_samples = self.config.benchmarks.longbench.get("max_samples")
+        results = benchmark.evaluate(max_samples)
+        
+        self.results["benchmarks"]["longbench"] = results
+        logger.info(f"LongBench evaluation completed. Average score: {results['average_score']:.3f}")
     
     def _run_longbench_v2_benchmark(self):
         """Run LongBench-V2 benchmark evaluation."""
         logger.info("Running LongBench-V2 benchmark...")
         
-        try:
-            # Create config with generation settings
-            longbench_v2_config = dict(self.config.benchmarks.longbench_v2)
-            longbench_v2_config['generation'] = self._get_generation_config()
-            
-            # LongBench v2 can be handled by the official implementation with version config
-            try:
-                longbench_v2_config['version'] = 'v2'
-                benchmark = LongBenchOfficialBenchmark(
-                    longbench_v2_config,
-                    self.model,
-                    self.tokenizer
-                )
-                logger.info("Using official LongBench v2 implementation")
-            except Exception as e:
-                logger.warning(f"Failed to load official LongBench v2, using legacy: {e}")
-                benchmark = LongBenchV2(
-                    longbench_v2_config,
-                    self.model,
-                    self.tokenizer
-                )
-            
-            max_samples = self.config.benchmarks.longbench_v2.get("max_samples")
-            results = benchmark.evaluate(max_samples)
-            
-            self.results["benchmarks"]["longbench_v2"] = results
-            logger.info(f"LongBench-V2 evaluation completed. Average score: {results['average_score']:.3f}")
-            
-        except Exception as e:
-            logger.error(f"LongBench-V2 benchmark failed: {e}")
-            self.results["benchmarks"]["longbench_v2"] = {"error": str(e)}
+        # Create config with generation settings
+        longbench_v2_config = dict(self.config.benchmarks.longbench_v2)
+        longbench_v2_config['generation'] = self._get_generation_config()
+        
+        # LongBench v2 can be handled by the official implementation with version config
+        longbench_v2_config['version'] = 'v2'
+        benchmark = LongBenchOfficialBenchmark(
+            longbench_v2_config,
+            self.model,
+            self.tokenizer
+        )
+        logger.info("Using official LongBench v2 implementation")
+        
+        max_samples = self.config.benchmarks.longbench_v2.get("max_samples")
+        results = benchmark.evaluate(max_samples)
+        
+        self.results["benchmarks"]["longbench_v2"] = results
+        logger.info(f"LongBench-V2 evaluation completed. Average score: {results['average_score']:.3f}")
     
     def _compute_summary(self):
         """Compute summary statistics across all benchmarks."""
