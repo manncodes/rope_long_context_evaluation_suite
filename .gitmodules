@@ -1,0 +1,9 @@
+[submodule "third_party/LLMTest_NeedleInAHaystack"]
+	path = third_party/LLMTest_NeedleInAHaystack
+	url = https://github.com/gkamradt/LLMTest_NeedleInAHaystack.git
+[submodule "third_party/RULER"]
+	path = third_party/RULER
+	url = https://github.com/NVIDIA/RULER.git
+[submodule "third_party/LongBench"]
+	path = third_party/LongBench
+	url = https://github.com/THUDM/LongBench.git

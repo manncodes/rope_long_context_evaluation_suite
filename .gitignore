@@ -227,5 +227,4 @@ config/local.yaml
 # Custom config overrides
 config/custom_*.yaml
 
-# Third-party benchmark repositories (cloned externally)
-third_party/
+# Third-party benchmark repositories are now included as git submodules
