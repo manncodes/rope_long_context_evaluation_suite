@@ -179,6 +179,19 @@ class NIAHOfficialBenchmark(BaseBenchmark):
                 }
             }
     
+    def prepare_input(self, sample: Dict) -> str:
+        """Prepare input for NIAH test (handled by official implementation)."""
+        return sample.get("input", "")
+    
+    def extract_answer(self, response: str, sample: Dict) -> str:
+        """Extract answer from response (handled by official implementation)."""
+        return response.strip()
+    
+    def compute_score(self, prediction: str, ground_truth: str, sample: Dict) -> float:
+        """Compute score (handled by official implementation)."""
+        # Simple exact match for now - official implementation does more sophisticated scoring
+        return 1.0 if prediction.strip().lower() == ground_truth.strip().lower() else 0.0
+    
     def get_benchmark_info(self) -> Dict:
         """Get information about the NIAH benchmark."""
         return {

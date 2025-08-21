@@ -256,3 +256,21 @@ class LongBenchOfficialBenchmark(BaseBenchmark):
             "repository": "https://github.com/THUDM/LongBench",
             "huggingface": self.dataset_name
         }
+    
+    def prepare_input(self, sample: Dict) -> str:
+        """Prepare input for LongBench test."""
+        if sample.get("version") == "v2":
+            return self._construct_v2_prompt(sample)
+        else:
+            return self._construct_v1_prompt(sample)
+    
+    def extract_answer(self, response: str, sample: Dict) -> str:
+        """Extract answer from response."""
+        return response.strip()
+    
+    def compute_score(self, prediction: str, ground_truth: str, sample: Dict) -> float:
+        """Compute score for LongBench."""
+        if sample.get("version") == "v2":
+            return self._evaluate_v2_response(prediction, {"answer": ground_truth})
+        else:
+            return self._evaluate_v1_response(prediction, ground_truth)
