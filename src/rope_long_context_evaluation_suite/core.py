@@ -111,13 +111,40 @@ class RoPEEvaluator:
         
         return self.results
     
+    def _get_generation_config(self) -> Dict[str, Any]:
+        """Get generation config with default values if not specified.
+        
+        Returns:
+            Dictionary containing generation configuration
+        """
+        default_config = {
+            "max_new_tokens": 100,
+            "temperature": 0.0,
+            "do_sample": False,
+            "top_p": 1.0,
+            "top_k": 50,
+            "repetition_penalty": 1.0,
+            "length_penalty": 1.0,
+            "num_beams": 1
+        }
+        
+        # Get evaluation config if it exists
+        eval_config = getattr(self.config, 'evaluation', {})
+        generation_config = getattr(eval_config, 'generation', {})
+        
+        # Merge defaults with provided config
+        result = default_config.copy()
+        result.update(generation_config)
+        
+        return result
+    
     def _run_niah_benchmark(self):
         """Run NIAH benchmark evaluation."""
         logger.info("Running NIAH benchmark...")
         
         # Create config with generation settings
         niah_config = dict(self.config.benchmarks.niah)
-        niah_config['generation'] = self.config.evaluation.generation
+        niah_config['generation'] = self._get_generation_config()
         
         benchmark = NIAHBenchmark(
             niah_config,
@@ -138,7 +165,7 @@ class RoPEEvaluator:
         try:
             # Create config with generation settings
             ruler_config = dict(self.config.benchmarks.ruler)
-            ruler_config['generation'] = self.config.evaluation.generation
+            ruler_config['generation'] = self._get_generation_config()
             
             benchmark = RULERBenchmark(
                 ruler_config,
@@ -163,7 +190,7 @@ class RoPEEvaluator:
         try:
             # Create config with generation settings
             longbench_config = dict(self.config.benchmarks.longbench)
-            longbench_config['generation'] = self.config.evaluation.generation
+            longbench_config['generation'] = self._get_generation_config()
             
             benchmark = LongBench(
                 longbench_config,
@@ -188,7 +215,7 @@ class RoPEEvaluator:
         try:
             # Create config with generation settings
             longbench_v2_config = dict(self.config.benchmarks.longbench_v2)
-            longbench_v2_config['generation'] = self.config.evaluation.generation
+            longbench_v2_config['generation'] = self._get_generation_config()
             
             benchmark = LongBenchV2(
                 longbench_v2_config,
