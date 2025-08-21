@@ -1,0 +1,22 @@
+{
+  "sweep_info": {
+    "total_runs": 1,
+    "successful_runs": 0,
+    "failed_runs": 1,
+    "total_time_hours": 0.013616155253516303,
+    "sweep_directory": "quick_sweep_results/comprehensive_sweep_20250821_012531",
+    "timestamp": "2025-08-21 01:26:20"
+  },
+  "performance_analysis": {
+    "error": "No successful results to analyze"
+  },
+  "best_configurations": {
+    "error": "No successful results to analyze"
+  },
+  "rope_method_comparison": {
+    "error": "No successful results to analyze"
+  },
+  "context_length_analysis": {
+    "error": "No successful results to analyze"
+  }
+}

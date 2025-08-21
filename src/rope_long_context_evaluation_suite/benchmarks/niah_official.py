@@ -112,9 +112,13 @@ class NIAHOfficialBenchmark(BaseBenchmark):
             )
         
         # Configuration
-        self.context_lengths = config.get("context_lengths", [4000, 8000, 16000, 32000])
+        self.context_lengths = config.get("context_lengths", [2048, 4096])
         self.document_depth_percents = config.get("depth_percents", [10, 50, 90])
-        self.num_tests = config.get("num_tests", 10)
+        self.num_tests = config.get("num_tests", 3)
+        
+        # NIAH specific configuration
+        self.needle = config.get("needle", "The special magic number that was hidden is: 42")
+        self.retrieval_question = config.get("retrieval_question", "What is the special magic number that was hidden?")
         
         # Setup custom providers
         self.model_provider = CustomModelProvider(model, tokenizer, self.generation_config)
@@ -124,6 +128,8 @@ class NIAHOfficialBenchmark(BaseBenchmark):
         self.niah_tester = LLMNeedleHaystackTester(
             model_to_test=self.model_provider,
             evaluator=self.evaluator,
+            needle=self.needle,
+            retrieval_question=self.retrieval_question,
             context_lengths=self.context_lengths,
             document_depth_percents=self.document_depth_percents,
             save_results=False,  # We'll handle results ourselves
@@ -156,45 +162,65 @@ class NIAHOfficialBenchmark(BaseBenchmark):
     def evaluate_sample(self, sample: Dict) -> Dict:
         """Evaluate a single NIAH sample using official implementation."""
         try:
-            # Configure the tester for this specific test
-            self.niah_tester.context_lengths = [sample["context_length"]]
-            self.niah_tester.document_depth_percents = [sample["depth_percent"]]
+            import asyncio
             
-            # Run the test
-            results = []
-            # Note: The official NIAH tester runs asyncio internally
-            # We need to adapt it to our synchronous interface
+            # Configure the tester for this specific test  
+            context_length = sample["context_length"]
+            depth_percent = sample["depth_percent"]
             
-            # For now, simulate the result structure
-            # In a full implementation, you'd need to adapt the async calls
-            score = 1.0  # Placeholder - would come from actual test
+            # Create a new event loop for this evaluation
+            loop = asyncio.new_event_loop()
+            asyncio.set_event_loop(loop)
             
-            return {
-                "sample_id": sample["id"],
-                "context_length": sample["context_length"],
-                "depth_percent": sample["depth_percent"],
-                "score": score,
-                "prediction": "test_prediction",
-                "target": sample["expected_output"],
-                "metadata": {
-                    "test_number": sample["test_number"],
-                    "evaluation_method": "official_niah"
+            try:
+                # Run the official NIAH evaluation
+                result = loop.run_until_complete(
+                    self.niah_tester.evaluate_and_log(context_length, depth_percent)
+                )
+                
+                # The official implementation doesn't return results directly
+                # We need to check if the evaluation was successful by running a test
+                context = loop.run_until_complete(
+                    self.niah_tester.generate_context(context_length, depth_percent)
+                )
+                
+                prompt = self.model_provider.generate_prompt(context, self.retrieval_question)
+                response = loop.run_until_complete(self.model_provider.evaluate_model(prompt))
+                
+                # Use the official evaluator to score the response
+                score = self.evaluator.evaluate_response(self.needle, response)
+                
+                return {
+                    "sample_id": sample["id"],
+                    "context_length": context_length,
+                    "depth_percent": depth_percent,
+                    "score": score,
+                    "prediction": response.strip(),
+                    "target": self.needle,
+                    "metadata": {
+                        "test_number": sample["test_number"],
+                        "evaluation_method": "official_niah",
+                        "needle": self.needle,
+                        "retrieval_question": self.retrieval_question
+                    }
                 }
-            }
+                
+            finally:
+                loop.close()
             
         except Exception as e:
             logger.error(f"Error evaluating NIAH sample {sample['id']}: {e}")
             return {
                 "sample_id": sample["id"],
-                "context_length": sample["context_length"],
-                "depth_percent": sample["depth_percent"],
+                "context_length": sample.get("context_length", 0),
+                "depth_percent": sample.get("depth_percent", 0),
                 "score": 0.0,
                 "prediction": "",
-                "target": sample["expected_output"],
+                "target": self.needle,
                 "error": str(e),
                 "metadata": {
-                    "test_number": sample["test_number"],
-                    "evaluation_method": "official_niah"
+                    "test_number": sample.get("test_number", 0),
+                    "evaluation_method": "official_niah_failed"
                 }
             }
     
