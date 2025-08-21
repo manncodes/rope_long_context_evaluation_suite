@@ -39,7 +39,25 @@ class CustomModelProvider(ModelProvider if NIAH_AVAILABLE else object):
     def generate_text(self, prompt: str, max_tokens: int = 256) -> str:
         """Generate text using our model."""
         try:
-            inputs = self.tokenizer(prompt, return_tensors="pt", truncation=True)
+            # Get model max length, accounting for generation tokens
+            model_max_length = getattr(self.model.config, 'max_position_embeddings', 2048)
+            max_input_length = model_max_length - max_tokens - 10  # Leave buffer for generation
+            
+            # Debug tokenization
+            original_tokens = len(self.tokenizer.encode(prompt))
+            logger.info(f"NIAH Tokenization Debug:")
+            logger.info(f"  Model max length: {model_max_length}")
+            logger.info(f"  Max input length (after buffer): {max_input_length}")
+            logger.info(f"  Original prompt tokens: {original_tokens}")
+            logger.info(f"  Prompt suffix: '{prompt[-200:]}'")
+            
+            inputs = self.tokenizer(prompt, return_tensors="pt", 
+                                  max_length=max_input_length, truncation=True)
+            
+            # Log actual input length after tokenization
+            actual_input_length = inputs['input_ids'].shape[1]
+            logger.info(f"  Actual input tokens: {actual_input_length}")
+            logger.info(f"  Truncated: {original_tokens > actual_input_length}")
             
             if hasattr(self.model, 'device'):
                 inputs = {k: v.to(self.model.device) for k, v in inputs.items()}
