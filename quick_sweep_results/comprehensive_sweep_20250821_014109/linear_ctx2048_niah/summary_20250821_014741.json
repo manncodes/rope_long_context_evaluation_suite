@@ -1,0 +1,153 @@
+{
+  "config": {
+    "model": {
+      "type": "hf_hub",
+      "name": "llama-3.2-1b",
+      "max_length": 2048
+    },
+    "rope_extension": {
+      "method": "linear"
+    },
+    "benchmarks_enabled": [
+      "niah"
+    ],
+    "seed": null
+  },
+  "model_info": {
+    "name": "unsloth/Llama-3.2-1B",
+    "type": "hf_hub",
+    "path": "unsloth/Llama-3.2-1B",
+    "max_length": 2048,
+    "torch_dtype": "bfloat16",
+    "device": "auto"
+  },
+  "rope_info": {
+    "method": "linear",
+    "config": {
+      "scaling_factor": 2.0
+    },
+    "scaling_factor": 2.0
+  },
+  "summary": {
+    "num_benchmarks": 1,
+    "benchmarks_run": [
+      "niah"
+    ],
+    "overall_average": 0.0,
+    "best_benchmark": [
+      "niah",
+      {
+        "benchmark": "NIAHOfficialBenchmark",
+        "num_samples": 3,
+        "num_valid": 3,
+        "error_rate": 0.0,
+        "average_score": 0.0,
+        "min_score": 0,
+        "max_score": 0,
+        "results": [
+          {
+            "sample_id": "niah_0",
+            "context_length": 2048,
+            "depth_percent": 10,
+            "score": 0,
+            "prediction": "42\n\nBut it's the process that creates things like opium and heroin\nseems bad.  The special number is 42.  It's the same as the\nprocess of technological progress. Technological\nprogress means making things more of what we want.\nWhen we want something we want we consider\nprogress.  When it transforms something we don't want\nwant—when it becomes opium—seems bad. The special\nnumber is 42. It's the process",
+            "target": "The special magic number that was hidden is: 42",
+            "metadata": {
+              "test_number": 1,
+              "evaluation_method": "official_niah",
+              "needle": "The special magic number that was hidden is: 42",
+              "retrieval_question": "What is the special magic number that was hidden?"
+            }
+          },
+          {
+            "sample_id": "niah_1",
+            "context_length": 2048,
+            "depth_percent": 10,
+            "score": 0,
+            "prediction": "42\n\nBut it's the process that creates things like opium and heroin\nseems bad.  The special number is 42.  It's the same as the\nprocess of technological progress. Technological\nprogress means making things more of what we want.\nWhen we want something we want we consider\nprogress.  When it transforms something we don't want\nwant—when it becomes opium—seems bad. The special\nnumber is 42. It's the process",
+            "target": "The special magic number that was hidden is: 42",
+            "metadata": {
+              "test_number": 2,
+              "evaluation_method": "official_niah",
+              "needle": "The special magic number that was hidden is: 42",
+              "retrieval_question": "What is the special magic number that was hidden?"
+            }
+          },
+          {
+            "sample_id": "niah_2",
+            "context_length": 2048,
+            "depth_percent": 10,
+            "score": 0,
+            "prediction": "42\n\nBut it's the process that creates things like opium and heroin\nseems bad.  The special number is 42.  It's the same as the\nprocess of technological progress. Technological\nprogress means making things more of what we want.\nWhen we want something we want we consider\nprogress.  When it transforms something we don't want\nwant—when it becomes opium—seems bad. The special\nnumber is 42. It's the process",
+            "target": "The special magic number that was hidden is: 42",
+            "metadata": {
+              "test_number": 3,
+              "evaluation_method": "official_niah",
+              "needle": "The special magic number that was hidden is: 42",
+              "retrieval_question": "What is the special magic number that was hidden?"
+            }
+          }
+        ]
+      }
+    ],
+    "worst_benchmark": [
+      "niah",
+      {
+        "benchmark": "NIAHOfficialBenchmark",
+        "num_samples": 3,
+        "num_valid": 3,
+        "error_rate": 0.0,
+        "average_score": 0.0,
+        "min_score": 0,
+        "max_score": 0,
+        "results": [
+          {
+            "sample_id": "niah_0",
+            "context_length": 2048,
+            "depth_percent": 10,
+            "score": 0,
+            "prediction": "42\n\nBut it's the process that creates things like opium and heroin\nseems bad.  The special number is 42.  It's the same as the\nprocess of technological progress. Technological\nprogress means making things more of what we want.\nWhen we want something we want we consider\nprogress.  When it transforms something we don't want\nwant—when it becomes opium—seems bad. The special\nnumber is 42. It's the process",
+            "target": "The special magic number that was hidden is: 42",
+            "metadata": {
+              "test_number": 1,
+              "evaluation_method": "official_niah",
+              "needle": "The special magic number that was hidden is: 42",
+              "retrieval_question": "What is the special magic number that was hidden?"
+            }
+          },
+          {
+            "sample_id": "niah_1",
+            "context_length": 2048,
+            "depth_percent": 10,
+            "score": 0,
+            "prediction": "42\n\nBut it's the process that creates things like opium and heroin\nseems bad.  The special number is 42.  It's the same as the\nprocess of technological progress. Technological\nprogress means making things more of what we want.\nWhen we want something we want we consider\nprogress.  When it transforms something we don't want\nwant—when it becomes opium—seems bad. The special\nnumber is 42. It's the process",
+            "target": "The special magic number that was hidden is: 42",
+            "metadata": {
+              "test_number": 2,
+              "evaluation_method": "official_niah",
+              "needle": "The special magic number that was hidden is: 42",
+              "retrieval_question": "What is the special magic number that was hidden?"
+            }
+          },
+          {
+            "sample_id": "niah_2",
+            "context_length": 2048,
+            "depth_percent": 10,
+            "score": 0,
+            "prediction": "42\n\nBut it's the process that creates things like opium and heroin\nseems bad.  The special number is 42.  It's the same as the\nprocess of technological progress. Technological\nprogress means making things more of what we want.\nWhen we want something we want we consider\nprogress.  When it transforms something we don't want\nwant—when it becomes opium—seems bad. The special\nnumber is 42. It's the process",
+            "target": "The special magic number that was hidden is: 42",
+            "metadata": {
+              "test_number": 3,
+              "evaluation_method": "official_niah",
+              "needle": "The special magic number that was hidden is: 42",
+              "retrieval_question": "What is the special magic number that was hidden?"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "benchmark_scores": {
+    "niah": 0.0
+  }
+}
