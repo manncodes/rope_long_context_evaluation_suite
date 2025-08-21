@@ -120,11 +120,11 @@ def save_results(results: Dict[str, Any], output_path: Union[str, Path]) -> None
     output_path = Path(output_path)
     output_path.parent.mkdir(parents=True, exist_ok=True)
     
-    # Convert any numpy types to Python types for JSON serialization
-    results = convert_numpy_types(results)
+    # Convert DictConfig objects and numpy types to Python types for JSON serialization
+    serializable_results = convert_dictconfig_to_dict(results)
     
     with open(output_path, 'w') as f:
-        json.dump(results, f, indent=2, ensure_ascii=False)
+        json.dump(serializable_results, f, indent=2, ensure_ascii=False)
 
 
 def load_results(results_path: Union[str, Path]) -> Dict[str, Any]:
@@ -143,6 +143,31 @@ def load_results(results_path: Union[str, Path]) -> Dict[str, Any]:
     
     with open(results_path, 'r') as f:
         return json.load(f)
+
+
+def convert_dictconfig_to_dict(obj: Any) -> Any:
+    """Recursively convert DictConfig objects to regular dicts and handle numpy types.
+    
+    Args:
+        obj: Object to convert
+        
+    Returns:
+        Object with DictConfig and numpy types converted
+    """
+    if hasattr(obj, '_content'):  # Check if it's a DictConfig
+        return OmegaConf.to_container(obj, resolve=True)
+    elif isinstance(obj, dict):
+        return {k: convert_dictconfig_to_dict(v) for k, v in obj.items()}
+    elif isinstance(obj, list):
+        return [convert_dictconfig_to_dict(item) for item in obj]
+    elif isinstance(obj, np.integer):
+        return int(obj)
+    elif isinstance(obj, np.floating):
+        return float(obj)
+    elif isinstance(obj, np.ndarray):
+        return obj.tolist()
+    else:
+        return obj
 
 
 def convert_numpy_types(obj: Any) -> Any:

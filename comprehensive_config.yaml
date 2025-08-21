@@ -3,13 +3,16 @@
 
 # Model Configuration
 model:
+  type: "hf_hub"  # Type: hf_hub, local, or api
   name: "llama-3.2-1b"  # Used for results directory naming
   path: "unsloth/Llama-3.2-1B"  # Local path or HF model name - UPDATE THIS
   tokenizer_path: null  # Optional separate tokenizer path
-  device: "cuda"
+  device_map: "auto"
   torch_dtype: "bfloat16"  # Options: float16, bfloat16, float32
   attn_implementation: "flash_attention_2"  # Options: eager, flash_attention_2
   max_memory_gb: 24  # Max GPU memory to use
+  max_length: 32768
+  trust_remote_code: false
 
 # Dataset Configuration (Offline/NFS paths)
 datasets:

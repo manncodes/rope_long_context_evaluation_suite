@@ -25,6 +25,18 @@ class RoPEEvaluator:
             config: Configuration object
         """
         self.config = config
+        
+        # Setup logging if not already configured
+        if not logging.getLogger().handlers:
+            log_config = getattr(config, 'logging', {})
+            log_file = getattr(log_config, 'file', 'logs/evaluation.log')
+            log_level = getattr(log_config, 'level', 'INFO')
+            
+            setup_logging(
+                level=getattr(logging, log_level),
+                log_file=log_file
+            )
+        
         self.model_loader = ModelLoader(config)
         self.model = None
         self.tokenizer = None
