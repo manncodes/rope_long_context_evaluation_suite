@@ -8,7 +8,12 @@ from typing import Any, Dict, List, Optional
 
 from omegaconf import DictConfig
 
-from .benchmarks import NIAHBenchmark, RULERBenchmark, LongBench, LongBenchV2
+from .benchmarks import (
+    # Official implementations (preferred)
+    NIAHOfficialBenchmark, RULEROfficialBenchmark, LongBenchOfficialBenchmark,
+    # Legacy implementations (fallback)
+    NIAHBenchmark, RULERBenchmark, LongBench, LongBenchV2
+)
 from .models import ModelLoader, get_rope_extension
 from .utils import Config, save_results, setup_logging
 
@@ -158,11 +163,21 @@ class RoPEEvaluator:
         niah_config = dict(self.config.benchmarks.niah)
         niah_config['generation'] = self._get_generation_config()
         
-        benchmark = NIAHBenchmark(
-            niah_config,
-            self.model,
-            self.tokenizer
-        )
+        # Try official implementation first, fallback to legacy
+        try:
+            benchmark = NIAHOfficialBenchmark(
+                niah_config,
+                self.model,
+                self.tokenizer
+            )
+            logger.info("Using official NIAH implementation")
+        except Exception as e:
+            logger.warning(f"Failed to load official NIAH, using legacy: {e}")
+            benchmark = NIAHBenchmark(
+                niah_config,
+                self.model,
+                self.tokenizer
+            )
         
         max_samples = self.config.benchmarks.niah.get("max_samples")
         results = benchmark.evaluate(max_samples)
@@ -179,11 +194,21 @@ class RoPEEvaluator:
             ruler_config = dict(self.config.benchmarks.ruler)
             ruler_config['generation'] = self._get_generation_config()
             
-            benchmark = RULERBenchmark(
-                ruler_config,
-                self.model,
-                self.tokenizer
-            )
+            # Try official implementation first, fallback to legacy
+            try:
+                benchmark = RULEROfficialBenchmark(
+                    ruler_config,
+                    self.model,
+                    self.tokenizer
+                )
+                logger.info("Using official RULER implementation")
+            except Exception as e:
+                logger.warning(f"Failed to load official RULER, using legacy: {e}")
+                benchmark = RULERBenchmark(
+                    ruler_config,
+                    self.model,
+                    self.tokenizer
+                )
             
             max_samples = self.config.benchmarks.ruler.get("max_samples")
             results = benchmark.evaluate(max_samples)
@@ -204,11 +229,21 @@ class RoPEEvaluator:
             longbench_config = dict(self.config.benchmarks.longbench)
             longbench_config['generation'] = self._get_generation_config()
             
-            benchmark = LongBench(
-                longbench_config,
-                self.model,
-                self.tokenizer
-            )
+            # Try official implementation first, fallback to legacy
+            try:
+                benchmark = LongBenchOfficialBenchmark(
+                    longbench_config,
+                    self.model,
+                    self.tokenizer
+                )
+                logger.info("Using official LongBench implementation")
+            except Exception as e:
+                logger.warning(f"Failed to load official LongBench, using legacy: {e}")
+                benchmark = LongBench(
+                    longbench_config,
+                    self.model,
+                    self.tokenizer
+                )
             
             max_samples = self.config.benchmarks.longbench.get("max_samples")
             results = benchmark.evaluate(max_samples)
@@ -229,11 +264,22 @@ class RoPEEvaluator:
             longbench_v2_config = dict(self.config.benchmarks.longbench_v2)
             longbench_v2_config['generation'] = self._get_generation_config()
             
-            benchmark = LongBenchV2(
-                longbench_v2_config,
-                self.model,
-                self.tokenizer
-            )
+            # LongBench v2 can be handled by the official implementation with version config
+            try:
+                longbench_v2_config['version'] = 'v2'
+                benchmark = LongBenchOfficialBenchmark(
+                    longbench_v2_config,
+                    self.model,
+                    self.tokenizer
+                )
+                logger.info("Using official LongBench v2 implementation")
+            except Exception as e:
+                logger.warning(f"Failed to load official LongBench v2, using legacy: {e}")
+                benchmark = LongBenchV2(
+                    longbench_v2_config,
+                    self.model,
+                    self.tokenizer
+                )
             
             max_samples = self.config.benchmarks.longbench_v2.get("max_samples")
             results = benchmark.evaluate(max_samples)
