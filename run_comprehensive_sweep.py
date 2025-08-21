@@ -28,6 +28,9 @@ from rope_long_context_evaluation_suite.utils import setup_logging
 from omegaconf import OmegaConf, DictConfig
 import copy
 
+# Import our comprehensive visualizer
+from comprehensive_sweep_visualizer import enhance_sweep_results_with_visualization
+
 logger = logging.getLogger(__name__)
 
 class ComprehensiveSweepRunner:
@@ -302,7 +305,7 @@ class ComprehensiveSweepRunner:
             if i % 5 == 0 or i == total_runs:
                 self.save_sweep_results()
         
-        # Final save
+        # Final save with visualization
         self.save_sweep_results()
         
         end_time = time.time()
@@ -310,6 +313,10 @@ class ComprehensiveSweepRunner:
         
         # Create final summary
         sweep_summary = self.create_sweep_summary(total_time)
+        
+        # Create proper results structure and generate visualizations
+        self.create_results_structure()
+        self.generate_visualizations_and_analysis()
         
         logger.info("\n" + "=" * 80)
         logger.info("🎉 COMPREHENSIVE SWEEP COMPLETE")
@@ -323,19 +330,32 @@ class ComprehensiveSweepRunner:
         return sweep_summary
     
     def save_sweep_results(self):
-        """Save comprehensive sweep results."""
+        """Save comprehensive sweep results with proper structure."""
+        # Create proper results directory structure
+        results_base_dir = Path("results")
+        results_base_dir.mkdir(exist_ok=True)
+        
+        # Create sweep-specific directory in results/
+        sweep_name = f"sweep_{time.strftime('%Y%m%d_%H%M%S')}"
+        final_results_dir = results_base_dir / sweep_name
+        final_results_dir.mkdir(parents=True, exist_ok=True)
+        
         # Save detailed results
-        results_file = self.sweep_dir / "comprehensive_results.json"
+        results_file = final_results_dir / "comprehensive_results.json"
         with open(results_file, 'w') as f:
             json.dump(self.results, f, indent=2, default=str)
         
         # Save failed runs
         if self.failed_runs:
-            failed_file = self.sweep_dir / "failed_runs.json" 
+            failed_file = final_results_dir / "failed_runs.json" 
             with open(failed_file, 'w') as f:
                 json.dump(self.failed_runs, f, indent=2, default=str)
         
+        # Update sweep_dir reference for final save
+        self.final_results_dir = final_results_dir
+        
         logger.info(f"Saved {len(self.results)} results to {results_file}")
+        logger.info(f"Final results directory: {final_results_dir}")
     
     def create_sweep_summary(self, total_time: float) -> Dict[str, Any]:
         """Create comprehensive sweep summary.
@@ -513,6 +533,93 @@ class ComprehensiveSweepRunner:
             'length_statistics': length_stats,
             'performance_by_length': [(length, stats['mean_score']) for length, stats in sorted_lengths]
         }
+
+
+    def generate_visualizations_and_analysis(self):
+        """Generate comprehensive visualizations and analysis."""
+        if not hasattr(self, 'final_results_dir'):
+            logger.warning("No final results directory set. Using sweep_dir.")
+            self.final_results_dir = self.sweep_dir
+        
+        logger.info("🎨 Generating comprehensive visualizations and analysis...")
+        
+        try:
+            # Generate visualizations using our comprehensive visualizer
+            viz_report = enhance_sweep_results_with_visualization(
+                self.results, 
+                self.final_results_dir
+            )
+            
+            # Save visualization report
+            viz_report_file = self.final_results_dir / "visualization_report.json"
+            with open(viz_report_file, 'w') as f:
+                json.dump(viz_report, f, indent=2, default=str)
+            
+            logger.info("✅ Visualization generation complete!")
+            logger.info(f"📊 Generated {len(viz_report.get('generated_files', {}))} visualization files")
+            logger.info(f"📈 Contour plots: {len([f for f in viz_report.get('generated_files', {}).keys() if 'contour' in f])}")
+            logger.info(f"📉 Analysis plots: {len([f for f in viz_report.get('generated_files', {}).keys() if 'contour' not in f])}")
+            
+            # Log best configuration if available
+            if 'summary' in viz_report and 'best_configuration' in viz_report['summary']:
+                best_config = viz_report['summary']['best_configuration']
+                logger.info(f"🏆 Best Configuration: {best_config['method']} @ {best_config['context_length']} tokens")
+                logger.info(f"🎯 Best Score: {best_config['score']:.4f}")
+            
+        except Exception as e:
+            logger.error(f"Failed to generate visualizations: {e}")
+            import traceback
+            logger.error(traceback.format_exc())
+    
+    def create_results_structure(self):
+        """Create comprehensive results directory structure."""
+        if not hasattr(self, 'final_results_dir'):
+            return
+            
+        # Create subdirectories
+        subdirs = [
+            "plots",
+            "contour_plots", 
+            "raw_data",
+            "analysis",
+            "metrics"
+        ]
+        
+        for subdir in subdirs:
+            (self.final_results_dir / subdir).mkdir(parents=True, exist_ok=True)
+        
+        # Create README
+        readme_content = f"""# Comprehensive RoPE Evaluation Sweep Results
+
+Generated: {time.strftime('%Y-%m-%d %H:%M:%S')}
+
+## Directory Structure
+
+- `plots/`: Main analysis plots and visualizations
+- `contour_plots/`: Contour plots for parameter pairs vs benchmark scores  
+- `raw_data/`: Raw result data (JSON files)
+- `analysis/`: Statistical analysis and reports
+- `metrics/`: Individual metric breakdowns
+
+## Files
+
+- `comprehensive_results.json`: Complete sweep results with all metadata
+- `visualization_report.json`: Summary of generated visualizations and key insights
+- `sweep_summary.json`: High-level summary statistics and best configurations
+- `failed_runs.json`: Details of any failed evaluation runs (if any)
+
+## Key Results
+
+Total Experiments: {len(self.results)}
+Successful Runs: {len([r for r in self.results if not r.get('failed', False)])}
+Failed Runs: {len(self.failed_runs)}
+
+View the visualization_report.json for detailed insights and best performing configurations.
+"""
+        
+        readme_file = self.final_results_dir / "README.md"
+        with open(readme_file, 'w') as f:
+            f.write(readme_content)
 
 
 def main():
