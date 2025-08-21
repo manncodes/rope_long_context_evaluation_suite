@@ -34,6 +34,7 @@ class CustomModelProvider(ModelProvider if NIAH_AVAILABLE else object):
         self.model = model
         self.tokenizer = tokenizer
         self.generation_config = generation_config
+        self.model_name = getattr(model.config, 'name_or_path', 'unknown')
         
     def generate_text(self, prompt: str, max_tokens: int = 256) -> str:
         """Generate text using our model."""
@@ -63,6 +64,24 @@ class CustomModelProvider(ModelProvider if NIAH_AVAILABLE else object):
         except Exception as e:
             logger.error(f"Error generating text: {e}")
             return ""
+    
+    def encode_text_to_tokens(self, text: str) -> list:
+        """Encode text to tokens."""
+        return self.tokenizer.encode(text)
+    
+    def decode_tokens(self, tokens: list, context_length: int = None) -> str:
+        """Decode tokens to text."""
+        if context_length:
+            tokens = tokens[:context_length]
+        return self.tokenizer.decode(tokens, skip_special_tokens=True)
+    
+    async def evaluate_model(self, prompt: str) -> str:
+        """Evaluate model with async interface."""
+        return self.generate_text(prompt)
+    
+    def generate_prompt(self, context: str, retrieval_question: str) -> str:
+        """Generate prompt for NIAH test."""
+        return f"Context: {context}\n\nQuestion: {retrieval_question}\n\nAnswer:"
 
 
 class CustomEvaluator(Evaluator if NIAH_AVAILABLE else object):
