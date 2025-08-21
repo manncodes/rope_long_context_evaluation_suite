@@ -1,0 +1,121 @@
+{
+  "config": {
+    "model": {
+      "type": "hf_hub",
+      "name": "llama-3.2-1b",
+      "max_length": 2048
+    },
+    "rope_extension": {
+      "method": "none"
+    },
+    "benchmarks_enabled": [
+      "niah"
+    ],
+    "seed": null
+  },
+  "model_info": {
+    "name": "unsloth/Llama-3.2-1B",
+    "type": "hf_hub",
+    "path": "unsloth/Llama-3.2-1B",
+    "max_length": 2048,
+    "torch_dtype": "bfloat16",
+    "device": "auto"
+  },
+  "rope_info": {
+    "method": "none"
+  },
+  "summary": {
+    "num_benchmarks": 1,
+    "benchmarks_run": [
+      "niah"
+    ],
+    "overall_average": 0.0,
+    "best_benchmark": [
+      "niah",
+      {
+        "benchmark": "NIAHOfficialBenchmark",
+        "num_samples": 2,
+        "num_valid": 2,
+        "error_rate": 0.0,
+        "average_score": 0.0,
+        "min_score": 0,
+        "max_score": 0,
+        "results": [
+          {
+            "sample_id": "niah_0",
+            "context_length": 2048,
+            "depth_percent": 10,
+            "score": 0,
+            "prediction": "1.5 times the number of founders.\n\nThe reason I want to know first whether a startup\n\nQuestion: What is the special magic number that was hidden?\n\nAnswer: 1.5 times the number of founders.\n\nThe reason I want to know first whether a startup\n\nQuestion: What is the special magic number that was hidden?\n\nAnswer: 1.5 times the number of founders.\n\nThe reason I want to know first whether a startup\n\nQuestion: What is the special magic number that",
+            "target": "42",
+            "metadata": {
+              "test_number": 1,
+              "evaluation_method": "official_niah",
+              "needle": "42",
+              "retrieval_question": "What is the special magic number that was hidden?"
+            }
+          },
+          {
+            "sample_id": "niah_1",
+            "context_length": 2048,
+            "depth_percent": 10,
+            "score": 0,
+            "prediction": "1.5 times the number of founders.\n\nThe reason I want to know first whether a startup\n\nQuestion: What is the special magic number that was hidden?\n\nAnswer: 1.5 times the number of founders.\n\nThe reason I want to know first whether a startup\n\nQuestion: What is the special magic number that was hidden?\n\nAnswer: 1.5 times the number of founders.\n\nThe reason I want to know first whether a startup\n\nQuestion: What is the special magic number that",
+            "target": "42",
+            "metadata": {
+              "test_number": 2,
+              "evaluation_method": "official_niah",
+              "needle": "42",
+              "retrieval_question": "What is the special magic number that was hidden?"
+            }
+          }
+        ]
+      }
+    ],
+    "worst_benchmark": [
+      "niah",
+      {
+        "benchmark": "NIAHOfficialBenchmark",
+        "num_samples": 2,
+        "num_valid": 2,
+        "error_rate": 0.0,
+        "average_score": 0.0,
+        "min_score": 0,
+        "max_score": 0,
+        "results": [
+          {
+            "sample_id": "niah_0",
+            "context_length": 2048,
+            "depth_percent": 10,
+            "score": 0,
+            "prediction": "1.5 times the number of founders.\n\nThe reason I want to know first whether a startup\n\nQuestion: What is the special magic number that was hidden?\n\nAnswer: 1.5 times the number of founders.\n\nThe reason I want to know first whether a startup\n\nQuestion: What is the special magic number that was hidden?\n\nAnswer: 1.5 times the number of founders.\n\nThe reason I want to know first whether a startup\n\nQuestion: What is the special magic number that",
+            "target": "42",
+            "metadata": {
+              "test_number": 1,
+              "evaluation_method": "official_niah",
+              "needle": "42",
+              "retrieval_question": "What is the special magic number that was hidden?"
+            }
+          },
+          {
+            "sample_id": "niah_1",
+            "context_length": 2048,
+            "depth_percent": 10,
+            "score": 0,
+            "prediction": "1.5 times the number of founders.\n\nThe reason I want to know first whether a startup\n\nQuestion: What is the special magic number that was hidden?\n\nAnswer: 1.5 times the number of founders.\n\nThe reason I want to know first whether a startup\n\nQuestion: What is the special magic number that was hidden?\n\nAnswer: 1.5 times the number of founders.\n\nThe reason I want to know first whether a startup\n\nQuestion: What is the special magic number that",
+            "target": "42",
+            "metadata": {
+              "test_number": 2,
+              "evaluation_method": "official_niah",
+              "needle": "42",
+              "retrieval_question": "What is the special magic number that was hidden?"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "benchmark_scores": {
+    "niah": 0.0
+  }
+}

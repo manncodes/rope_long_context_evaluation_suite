@@ -96,10 +96,14 @@ class CustomEvaluator(Evaluator if NIAH_AVAILABLE else object):
         """Evaluate if the needle is found in the response."""
         try:
             # Simple containment check for the needle
-            if self.needle.lower() in response.lower():
-                return 1
-            else:
-                return 0
+            needle_lower = self.needle.lower()
+            response_lower = response.lower()
+            contains_needle = needle_lower in response_lower
+            
+            # Optional debug logging (uncomment for debugging)
+            # logger.debug(f"NIAH Eval - Needle: '{self.needle}', Response: '{response[:50]}...', Found: {contains_needle}")
+            
+            return 1 if contains_needle else 0
         except Exception as e:
             logger.error(f"Error evaluating response: {e}")
             return 0
@@ -125,7 +129,7 @@ class NIAHOfficialBenchmark(BaseBenchmark):
         self.num_tests = config.get("num_tests", 3)
         
         # NIAH specific configuration
-        self.needle = config.get("needle", "The special magic number that was hidden is: 42")
+        self.needle = config.get("needle", "42")
         self.retrieval_question = config.get("retrieval_question", "What is the special magic number that was hidden?")
         
         # Setup custom providers

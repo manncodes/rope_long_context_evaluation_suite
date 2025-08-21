@@ -48,7 +48,7 @@ benchmarks:
     variants: ["standard"]
     context_lengths: [2048, 4096]  # Test different context lengths
     depth_percents: [10, 50]       # Test different insertion depths
-    needle: "The special magic number that was hidden is: 42"
+    needle: "42"
     retrieval_question: "What is the special magic number that was hidden?"
     max_samples: 2                  # Small number for quick test
     num_tests: 2                    # Tests per context/depth combination
