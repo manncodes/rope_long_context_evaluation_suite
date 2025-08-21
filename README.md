@@ -61,18 +61,46 @@ rope_methods:
       alpha: 8.0
 ```
 
-### Basic Evaluation
+## Usage
+
+### Single Model Evaluation
 
 ```bash
 # Quick validation
 python scripts/validation/validate_imports.py
 
-# Single method evaluation
-python run_comprehensive_evaluation.py
-
-# Hyperparameter sweep
-python examples/run_sweep_example.py
+# Single evaluation with specific parameters
+python run_evaluation.py --model "meta-llama/Llama-2-7b-hf" --benchmarks niah ruler --rope-method yarn
 ```
+
+### Comprehensive Parameter Sweep
+
+For systematic evaluation across **all RoPE methods, context lengths, and benchmarks**:
+
+```bash
+# Quick test sweep (3 RoPE methods × 2 context lengths × 1 benchmark = 6 runs)
+python run_comprehensive_sweep.py --config sweep_configs/quick_test_sweep.yaml
+
+# Full comprehensive sweep (14 RoPE methods × 4 context lengths × 3 benchmarks = 168 runs)  
+python run_comprehensive_sweep.py --config sweep_configs/full_sweep.yaml
+
+# Custom filtered sweeps
+python run_comprehensive_sweep.py --rope-methods none linear ntk_aware
+python run_comprehensive_sweep.py --context-lengths 4000 8000
+python run_comprehensive_sweep.py --benchmarks niah ruler
+python run_comprehensive_sweep.py --max-runs 10  # Limit for testing
+```
+
+### Sweep Results Analysis
+
+The comprehensive sweep generates:
+- **Individual run results**: Detailed results for each parameter combination
+- **Performance analysis**: Statistical comparison across all dimensions  
+- **Best configurations**: Top-performing RoPE method + context length combinations
+- **Method comparison**: Rankings and statistical significance tests
+- **Context scaling**: Performance trends across different sequence lengths
+
+Results saved in: `comprehensive_results/comprehensive_sweep_YYYYMMDD_HHMMSS/`
 
 ## Supported Methods
 
