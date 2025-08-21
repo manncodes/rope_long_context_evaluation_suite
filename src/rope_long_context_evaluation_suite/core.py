@@ -30,7 +30,7 @@ class RoPEEvaluator:
         if not logging.getLogger().handlers:
             log_config = getattr(config, 'logging', {})
             log_file = getattr(log_config, 'file', 'logs/evaluation.log')
-            log_level = getattr(log_config, 'level', 'INFO')
+            log_level = getattr(log_config, 'level', 'DEBUG')  # Force DEBUG for verbose output
             
             setup_logging(
                 level=getattr(logging, log_level),
