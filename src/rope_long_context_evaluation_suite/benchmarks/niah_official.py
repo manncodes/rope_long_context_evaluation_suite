@@ -87,11 +87,19 @@ class CustomModelProvider(ModelProvider if NIAH_AVAILABLE else object):
 class CustomEvaluator(Evaluator if NIAH_AVAILABLE else object):
     """Custom evaluator for NIAH results."""
     
-    def evaluate_response(self, response: str, expected_response: str) -> int:
-        """Evaluate if the response contains the expected answer."""
+    CRITERIA = {"accuracy": "Score 1 if the needle is found in the response, 0 otherwise"}
+    
+    def __init__(self, needle: str = None):
+        self.needle = needle or "42"  # Default needle
+    
+    def evaluate_response(self, response: str) -> int:
+        """Evaluate if the needle is found in the response."""
         try:
-            # Simple substring matching - can be made more sophisticated
-            return 1 if expected_response.lower() in response.lower() else 0
+            # Simple containment check for the needle
+            if self.needle.lower() in response.lower():
+                return 1
+            else:
+                return 0
         except Exception as e:
             logger.error(f"Error evaluating response: {e}")
             return 0
@@ -122,7 +130,7 @@ class NIAHOfficialBenchmark(BaseBenchmark):
         
         # Setup custom providers
         self.model_provider = CustomModelProvider(model, tokenizer, self.generation_config)
-        self.evaluator = CustomEvaluator()
+        self.evaluator = CustomEvaluator(self.needle)
         
         # Initialize NIAH tester
         self.niah_tester = LLMNeedleHaystackTester(
@@ -188,7 +196,7 @@ class NIAHOfficialBenchmark(BaseBenchmark):
                 response = loop.run_until_complete(self.model_provider.evaluate_model(prompt))
                 
                 # Use the official evaluator to score the response
-                score = self.evaluator.evaluate_response(self.needle, response)
+                score = self.evaluator.evaluate_response(response)
                 
                 return {
                     "sample_id": sample["id"],
