@@ -1,0 +1,87 @@
+{
+  "sweep_info": {
+    "total_runs": 1,
+    "successful_runs": 1,
+    "failed_runs": 0,
+    "total_time_hours": 0.02642694526248508,
+    "sweep_directory": "test_results/niah_llm_judge/comprehensive_sweep_20250821_023533",
+    "timestamp": "2025-08-21 02:37:08"
+  },
+  "performance_analysis": {
+    "overall_statistics": {
+      "mean_score": 0.0,
+      "max_score": 0.0,
+      "min_score": 0.0,
+      "num_evaluations": 1
+    },
+    "benchmark_statistics": {
+      "niah": {
+        "mean_score": 0.0,
+        "max_score": 0.0,
+        "min_score": 0.0,
+        "num_evaluations": 1
+      }
+    }
+  },
+  "best_configurations": {
+    "top_configurations": [
+      {
+        "score": 0.0,
+        "rope_method": "none",
+        "context_length": 2048,
+        "benchmarks": [
+          "niah"
+        ],
+        "config": {
+          "rope_method": "none",
+          "rope_config": "{}",
+          "context_length": 2048,
+          "benchmarks": [
+            "niah"
+          ],
+          "run_name": "none_ctx2048_niah",
+          "timestamp": "2025-08-21 02:37:08"
+        }
+      }
+    ],
+    "worst_configurations": []
+  },
+  "rope_method_comparison": {
+    "method_statistics": {
+      "none": {
+        "mean_score": 0.0,
+        "max_score": 0.0,
+        "min_score": 0.0,
+        "num_evaluations": 1,
+        "scores": [
+          0.0
+        ]
+      }
+    },
+    "ranking": [
+      [
+        "none",
+        0.0
+      ]
+    ]
+  },
+  "context_length_analysis": {
+    "length_statistics": {
+      "2048": {
+        "mean_score": 0.0,
+        "max_score": 0.0,
+        "min_score": 0.0,
+        "num_evaluations": 1,
+        "scores": [
+          0.0
+        ]
+      }
+    },
+    "performance_by_length": [
+      [
+        2048,
+        0.0
+      ]
+    ]
+  }
+}

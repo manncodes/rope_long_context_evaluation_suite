@@ -159,25 +159,11 @@ class CustomEvaluator(Evaluator if NIAH_AVAILABLE else object):
     def _evaluate_with_llm_judge(self, response: str) -> int:
         """Use LLM as judge to evaluate if response contains the needle."""
         try:
-            judge_prompt = f"""You are an expert evaluator for question-answering tasks.
+            judge_prompt = f"""Does the text contain the number {self.needle}?
 
-Task: Determine if the model's response correctly answers the question by providing the expected answer.
+Text: {response}
 
-Expected Answer: {self.needle}
-Model Response: {response}
-
-Instructions:
-1. Look for the expected answer "{self.needle}" in the model's response
-2. The answer can be:
-   - Explicitly stated (e.g., "The answer is {self.needle}")
-   - Embedded in the response (e.g., "The special number is {self.needle}")
-   - Given as part of a longer explanation
-3. Ignore formatting, case, and surrounding text
-4. Focus on whether the correct answer is present
-
-Response format: Answer with ONLY "1" if the expected answer is found, or "0" if not found.
-
-Your evaluation:"""
+Answer: Yes or No?"""
 
             # Try to use the model that's already loaded for this evaluation
             if hasattr(self, '_judge_model') and self._judge_model:
@@ -205,11 +191,20 @@ Your evaluation:"""
                 judge_response = self._judge_tokenizer.decode(new_tokens, skip_special_tokens=True).strip()
                 
                 # Parse the judge response
-                if judge_response.startswith('1') or 'correct' in judge_response.lower():
-                    logger.debug(f"NIAH LLM Judge: Found needle '{self.needle}' - Response: '{judge_response}'")
+                logger.info(f"NIAH LLM Judge Debug:")
+                logger.info(f"  Needle: '{self.needle}'")
+                logger.info(f"  Model Response: '{response[:50]}...'" if len(response) > 50 else f"  Model Response: '{response}'")
+                logger.info(f"  Judge Response: '{judge_response}'")
+                
+                judge_lower = judge_response.lower().strip()
+                if (judge_response.startswith('1') or 
+                    'yes' in judge_lower or 
+                    'correct' in judge_lower or
+                    'true' in judge_lower):
+                    logger.info(f"  Decision: Found needle - Score: 1")
                     return 1
                 else:
-                    logger.debug(f"NIAH LLM Judge: Needle '{self.needle}' not found - Response: '{judge_response}'")
+                    logger.info(f"  Decision: Needle not found - Score: 0")
                     return 0
             else:
                 # Fallback to regex if no judge model available
