@@ -90,8 +90,31 @@ class CustomEvaluator(Evaluator if NIAH_AVAILABLE else object):
     CRITERIA = {"accuracy": "Score 1 if the needle is extracted correctly from response, 0 otherwise"}
     
     def __init__(self, needle: str = None, evaluation_method: str = "regex"):
-        self.needle = needle or "42"  # Default needle
+        self.needle = needle or "The secret key is XGXGWKEU42ZKDP and should be remembered for later use."
         self.evaluation_method = evaluation_method  # "regex", "exact", "llm_judge"
+        
+        # Extract the actual secret key from the needle sentence
+        self.secret_key = self._extract_key_from_needle(self.needle)
+    
+    def _extract_key_from_needle(self, needle: str) -> str:
+        """Extract the secret key from the needle sentence."""
+        import re
+        
+        # Pattern to extract key from sentences like "The secret key is XGXGWKEU42ZKDP and..."
+        patterns = [
+            r'(?:secret key|key|password|code)\s+is\s+([A-Z0-9]+)',
+            r'(?:secret key|key|password|code):\s*([A-Z0-9]+)',
+            r'remember\s+([A-Z0-9]{8,})',
+            r'([A-Z0-9]{8,})',  # Fallback: any long alphanumeric string
+        ]
+        
+        for pattern in patterns:
+            match = re.search(pattern, needle, re.IGNORECASE)
+            if match:
+                return match.group(1)
+        
+        # If no pattern matches, return the original needle
+        return needle
     
     def evaluate_response(self, response: str) -> int:
         """Evaluate if the needle is correctly extracted from the response."""
@@ -109,30 +132,31 @@ class CustomEvaluator(Evaluator if NIAH_AVAILABLE else object):
             return 0
     
     def _evaluate_with_regex(self, response: str) -> int:
-        """Extract answer using regex patterns and match with needle."""
+        """Extract secret key using regex patterns and match with expected key."""
         import re
         
-        # Common patterns for extracting answers
+        # Patterns for extracting secret keys from responses
         patterns = [
-            # Direct number extraction
-            r'\b' + re.escape(self.needle) + r'\b',
+            # Direct key extraction
+            r'\b' + re.escape(self.secret_key) + r'\b',
+            # After "secret key is" or similar  
+            r'(?:secret key|key|password|code)\s+is\s+([A-Z0-9]+)',
+            r'(?:secret key|key|password|code):\s*([A-Z0-9]+)',
             # After "answer is" or similar
-            r'(?:answer\s+is|answer:|is)\s*([^\s\.\,\n]+)',
-            # Numbers at the end of sentences
-            r'(\d+)[\.\!\?]*\s*$',
-            # Standalone numbers
-            r'\b(\d+)\b',
+            r'(?:answer\s+is|answer:|is)\s*([A-Z0-9]+)',
+            # Standalone alphanumeric keys
+            r'\b([A-Z0-9]{8,})\b',
             # After question marks
-            r'\?\s*([^\s\.\,\n]+)',
+            r'\?\s*([A-Z0-9]+)',
         ]
         
-        # First try exact needle match
-        needle_pattern = r'\b' + re.escape(self.needle) + r'\b'
-        if re.search(needle_pattern, response, re.IGNORECASE):
-            logger.debug(f"NIAH: Found exact needle '{self.needle}' in response")
+        # First try exact secret key match
+        key_pattern = r'\b' + re.escape(self.secret_key) + r'\b'
+        if re.search(key_pattern, response, re.IGNORECASE):
+            logger.debug(f"NIAH: Found exact secret key '{self.secret_key}' in response")
             return 1
         
-        # Then try extracting potential answers
+        # Then try extracting potential keys
         for pattern in patterns[1:]:  # Skip the exact match pattern we already tried
             matches = re.findall(pattern, response, re.IGNORECASE)
             for match in matches:
@@ -140,26 +164,26 @@ class CustomEvaluator(Evaluator if NIAH_AVAILABLE else object):
                     match = match[0] if match else ""
                 
                 # Clean the match
-                cleaned_match = str(match).strip().lower()
-                needle_clean = str(self.needle).strip().lower()
+                cleaned_match = str(match).strip().upper()
+                key_clean = str(self.secret_key).strip().upper()
                 
-                if cleaned_match == needle_clean:
-                    logger.debug(f"NIAH: Extracted '{match}' matches needle '{self.needle}'")
+                if cleaned_match == key_clean:
+                    logger.debug(f"NIAH: Extracted '{match}' matches secret key '{self.secret_key}'")
                     return 1
         
-        logger.debug(f"NIAH: No valid extraction found for needle '{self.needle}' in response: '{response[:100]}...'")
+        logger.debug(f"NIAH: No valid secret key found. Expected: '{self.secret_key}', Response: '{response[:100]}...'")
         return 0
     
     def _evaluate_exact_match(self, response: str) -> int:
         """Simple exact substring matching (fallback method)."""
-        needle_lower = self.needle.lower()
+        key_lower = self.secret_key.lower()
         response_lower = response.lower()
-        return 1 if needle_lower in response_lower else 0
+        return 1 if key_lower in response_lower else 0
     
     def _evaluate_with_llm_judge(self, response: str) -> int:
         """Use LLM as judge to evaluate if response contains the needle."""
         try:
-            judge_prompt = f"""Does the text contain the number {self.needle}?
+            judge_prompt = f"""Does the text contain the secret key {self.secret_key}?
 
 Text: {response}
 
@@ -192,7 +216,7 @@ Answer: Yes or No?"""
                 
                 # Parse the judge response
                 logger.info(f"NIAH LLM Judge Debug:")
-                logger.info(f"  Needle: '{self.needle}'")
+                logger.info(f"  Secret Key: '{self.secret_key}'")
                 logger.info(f"  Model Response: '{response[:50]}...'" if len(response) > 50 else f"  Model Response: '{response}'")
                 logger.info(f"  Judge Response: '{judge_response}'")
                 
@@ -237,8 +261,8 @@ class NIAHOfficialBenchmark(BaseBenchmark):
         self.num_tests = config.get("num_tests", 3)
         
         # NIAH specific configuration
-        self.needle = config.get("needle", "42")
-        self.retrieval_question = config.get("retrieval_question", "What is the special magic number that was hidden?")
+        self.needle = config.get("needle", "The secret key is XGXGWKEU42ZKDP and should be remembered for later use.")
+        self.retrieval_question = config.get("retrieval_question", "What is the secret key mentioned in the document?")
         self.evaluation_method = config.get("evaluation_method", "regex")
         
         # Setup custom providers
@@ -311,6 +335,14 @@ class NIAHOfficialBenchmark(BaseBenchmark):
                 )
                 
                 prompt = self.model_provider.generate_prompt(context, self.retrieval_question)
+                
+                # Debug: Show what prompt is actually being used
+                logger.info(f"NIAH Prompt Debug:")
+                logger.info(f"  Context length: {len(context)} chars")
+                logger.info(f"  Needle: '{self.needle}'")
+                logger.info(f"  Question: '{self.retrieval_question}'")
+                logger.info(f"  Prompt preview: '{prompt[-200:]}...' (last 200 chars)")
+                
                 response = loop.run_until_complete(self.model_provider.evaluate_model(prompt))
                 
                 # Use the official evaluator to score the response

@@ -48,8 +48,8 @@ benchmarks:
     variants: ["standard"]
     context_lengths: [2048, 4096]  # Test different context lengths
     depth_percents: [10, 50]       # Test different insertion depths
-    needle: "42"
-    retrieval_question: "What is the special magic number that was hidden?"
+    needle: "The secret key is XGXGWKEU42ZKDP and should be remembered for later use."
+    retrieval_question: "What is the secret key mentioned in the document?"
     max_samples: 2                  # Small number for quick test
     num_tests: 2                    # Tests per context/depth combination
     evaluation_method: "regex"      # Options: "regex", "exact", "llm_judge"
