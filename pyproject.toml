@@ -45,7 +45,7 @@ dependencies = [
     "openai>=1.0.0",
     "anthropic>=0.7.0",
     "einops>=0.7.0",
-    # "flash-attn>=2.0.0; platform_system == 'Linux'",  # Disabled due to CUDA compilation issues
+    "flash-attn>=2.0.0; platform_system == 'Linux'",
     "bitsandbytes>=0.41.0",
     "peft>=0.4.0",
     # Official benchmark dependencies
