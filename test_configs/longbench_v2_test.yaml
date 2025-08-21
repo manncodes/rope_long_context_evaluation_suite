@@ -1,0 +1,36 @@
+# LongBench v2 Test Configuration
+# Tests the LongBench v2 benchmark implementation
+
+model:
+  type: hf_hub
+  name: unsloth/Llama-3.2-1B
+  max_length: 4096
+
+rope_extension:
+  method: none
+
+benchmarks:
+  niah:
+    enabled: false
+
+  ruler: 
+    enabled: false
+
+  longbench:
+    enabled: false
+    
+  longbench_v2:
+    enabled: true
+    version: "v2"                              # Use LongBench v2
+    dataset_name: "THUDM/LongBench-v2"        # HuggingFace dataset
+    max_samples: 2                             # Small number for testing
+    # Optional: offline_data_dir for local data
+    # offline_data_dir: "data/longbench_v2"   # Uncomment for offline usage
+
+generation:
+  max_new_tokens: 100
+  temperature: 0.0
+  do_sample: false
+
+data:
+  output_dir: "test_results/longbench_v2"
